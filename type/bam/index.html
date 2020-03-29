@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Basically A Mono</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/resources/logo.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/resources/logo.png">
+<!-- Editor Themes -->
+<link rel="stylesheet" href="lib/codemirror-5.51.0/theme/colorforth.css">
+<link rel="stylesheet" href="lib/codemirror-5.51.0/theme/eclipse.css">
+<link rel="stylesheet" href="lib/codemirror-5.51.0/theme/lesser-dark.css">
+<link rel="stylesheet" href="lib/codemirror-5.51.0/theme/lucario.css">
+<link rel="stylesheet" href="lib/codemirror-5.51.0/theme/mbo.css">
+<link rel="stylesheet" href="lib/codemirror-5.51.0/theme/monokai.css">
+<link rel="stylesheet" href="lib/codemirror-5.51.0/theme/moxer.css">
+<link rel="stylesheet" href="lib/codemirror-5.51.0/theme/ssms.css">
+<link rel="stylesheet" href="lib/codemirror-5.51.0/theme/twilight.css">
+<link rel="stylesheet" href="lib/codemirror-5.51.0/theme/vibrant-ink.css">
+<link rel="stylesheet" href="lib/codemirror-5.51.0/theme/xq-light.css">
+<!-- Styles -->
+<link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="lib/codemirror-5.51.0/codemirror.css">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body onload="initialize()">
+
+<!-- Navbar -->
+<div id="top-bar" class="w3-top nav-bar mono w3-card">
+  <div class="w3-black">
+    <!--Small header-->
+    <div class="w3-bar w3-black w3-content w3-hide-large mtd">
+        <a class="w3-hide-large" href="#">mental type design</a>
+    </div>
+    <!--Large header-->
+    <div class="w3-hide-small w3-hide-medium mtd">
+      <div class="mtd-wide">
+        <span class="mtd-first">experi<a href="#">mental type design</a></span> -
+        ele<a href="https://experi.mentallydesigned.com/type/">mental type design</a> -
+        funda<a href="https://experi.mentallydesigned.com/type/">mental type design</a> -
+        incre<a href="https://incre.mentallydesigned.com/">mental type design</a> -
+        monu<a href="https://experi.mentallydesigned.com/type/">mental type design</a> -
+        instru<a href="https://experi.mentallydesigned.com/type/">mental type design</a> -
+        senti<a href="https://experi.mentallydesigned.com/type/">mental type design</a> -
+        environ<a href="https://experi.mentallydesigned.com/type/">mental type design</a> -
+        develop<a href="https://experi.mentallydesigned.com/type/">mental type design</a> -
+      </div>
+    </div>
+  </div>
+  <div class="nav-dark-grey nav-wrapper">
+    <div class="w3-bar nav-dark-grey w3-content w3-center">
+      <a class="w3-bar-item w3-hide-medium w3-hide-large w3-right nav-item" href="javascript:void(0)" onclick="toggleMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <div class="w3-bar-item w3-hide-small w3-hide-medium nav-spacer"></div>
+      <a href="#"           class="w3-bar-item w3-hover-green w3-padding-large nav-item bam-blue title-item" onclick="hideMenu()">BAM</a>
+      <a href="#overview"   class="w3-bar-item w3-hide-small nav-item">Overview</a>
+      <a href="#preview"    class="w3-bar-item w3-hide-small nav-item">Preview</a>
+      <!-- <a href="#notes"      class="w3-bar-item w3-hide-small nav-item">Notes</a> -->
+      <a href="#characters" class="w3-bar-item w3-hide-small nav-item">Characters</a>
+      <div class="w3-bar-item w3-hide-small w3-hide-medium w3-right nav-spacer"></div>
+      <div class="w3-bar-item w3-hide-small w3-hide-medium w3-right download-btn">
+        <a href="downloads/bam.zip">Download</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="mobileNav" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top nav-bar mono">
+  <a href="#overview"   class="w3-bar-item w3-padding-large nav-item nav-item-hover" onclick="hideMenu()">Overview</a>
+  <a href="#preview"    class="w3-bar-item w3-padding-large nav-item nav-item-hover" onclick="hideMenu()">Preview</a>
+  <!-- <a href="#notes"      class="w3-bar-item w3-padding-large nav-item nav-item-hover" onclick="hideMenu()">Notes</a> -->
+  <a href="#characters" class="w3-bar-item w3-padding-large nav-item nav-item-hover" onclick="hideMenu()">Characters</a>
+</div>
+
+<!-- Page content -->
+<div id="content" class="w3-content content">
+
+  <!-- The Title Section -->
+  <div class="bam-blue">
+    <div class="w3-container w3-content w3-center w3-padding-64 section">
+      <h1 class="w3-wide mono" style="font-weight:500;">Basically A Mono</h1>
+      <p class="w3-opacity mono subtitle" style="font-weight:200;">A monospace typeface for the geometrically inclined.</p>
+    </div>
+  </div>
+
+  <!-- The Overview Section -->
+  <div id="overview" class="section-wrapper">
+    <div class="w3-display-container w3-content w3-padding-64 section" id="samples"></div>
+  </div>
+
+  <!-- The Preview Section -->
+  <div id="preview" class="section-wrapper section-light-grey">
+    <div class="w3-display-container w3-content w3-padding-64 section" id="code">
+    </div>
+  </div>
+
+  <!-- The Notes Section -->
+  <div id="notes" class="section-wrapper">
+    <div class="w3-display-container w3-content w3-padding-64 section">
+    </div>
+  </div>
+
+  <!-- The Characters Section -->
+  <div id="characters" class="section-wrapper section-light-grey">
+    <div class="w3-display-container w3-content w3-padding-64 section" id="charmap">
+    </div>
+  </div>
+
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-center nav-dark-grey w3-xlarge">
+  <a href="https://github.com/mental-design/basically-a-mono"><i class="fa fa-github w3-hover-opacity"></i></a>
+  <!-- <i class="fa fa-google w3-hover-opacity"></i> -->
+  <p class="w3-medium mono"><span class="copyright">©</span><a href="https://experi.mentallydesigned.com/type/">mental type design</a></p>
+</footer>
+
+<!-- Scripts -->
+<script src="lib/codemirror-5.51.0/codemirror.js"></script>
+<script src="lib/codemirror-5.51.0/mode/javascript.js"></script>
+<script src="lib/codemirror-5.51.0/mode/markdown.js"></script>
+<script src="lib/codemirror-5.51.0/mode/python.js"></script>
+<script src="lib/codemirror-5.51.0/mode/swift.js"></script>
+<script src="lib/codemirror-5.51.0/mode/cpp.js"></script>
+<script src="scripts/sample-slider.js"></script>
+<script src="scripts/sample-control.js"></script>
+<script src="scripts/sample-line.js"></script>
+<script src="scripts/sample.js"></script>
+<script src="scripts/preview-dropdown.js"></script>
+<script src="scripts/preview.js"></script>
+<script src="scripts/characters.js"></script>
+<script src="scripts/w3.js"></script>
+<script>
+  function initialize(){
+    adjustToNavbar();
+
+    var sampleDiv = document.getElementById('samples');
+    SampleSection.init(sampleDiv);
+
+    var previewDiv = document.getElementById('code');
+    PreviewSection.init(previewDiv);
+
+    var characterDiv = document.getElementById('charmap');
+    CharacterSection.init(characterDiv);
+  }
+</script>
+
+<!-- Example Code -->
+<pre id="javascript" hidden>
+var PreviewSection = (function() {
+
+  var codeMirror;
+
+  // main init method
+  function init(previewDiv) {
+    // Create Controller
+    var controlDiv = document.createElement('div');
+    initializeControls(controlDiv, controlInfo, defaults);
+    previewDiv.appendChild(controlDiv);
+    
+    // Create Editor
+    var codeMirrorDiv = document.createElement('div');
+    initializeCodeMirror(codeMirrorDiv);
+    previewDiv.appendChild(codeMirrorDiv);
+
+    // Set defaults
+    let defaultLang = controlInfo.langs[defaults.langIndex];
+    let defaultTheme = controlInfo.themes[defaults.themeIndex];
+    let defaultSize = controlInfo.sizes[defaults.sizeIndex];
+    updateLang(defaultLang);
+    updateTheme(defaultTheme);
+    updateFontSize(defaultSize);
+  }
+
+  // Control info
+  var controlInfo = {
+    langs: ["Javascript", "Swift", "Python"],
+    themes: ["Default", "Midnight", "Monokai", "Eclipse", "Night"], // TODO: Load list from added stylesheets
+    sizes: [8, 9, 10, 11, 12, 13, 14, 16, 18, 20, 22, 24, 28, 30, 36, 42, 48, 56, 64, 80, 96]
+  };
+
+  // Setup info
+  var defaults = {
+    langIndex: 2,
+    themeIndex: 1,
+    sizeIndex: 6
+  };
+
+  /* =============== create methods ================ */
+
+  // ===== Editor =====
+  function initializeCodeMirror(div) {
+    div.classList.add("code-wrapper");
+    codeMirror = CodeMirror(div, {
+      viewportMargin: 100
+    });
+  }
+
+  // ===== Controls =====
+  function initializeControls(controlDiv, controlInfo, defaults) {
+    // Setup controlDiv
+    controlDiv.id = "editor-controls"
+    controlDiv.classList.add("control");
+    controlDiv.classList.add("control-wrapper");
+
+    // Create languange selector
+    var langDiv = document.createElement('div');
+    PreviewDropdown.init(langDiv,
+                         controlInfo.langs,
+                         defaults.langIndex,
+                         updateLang);
+    langDiv.classList.add('separator');
+    controlDiv.appendChild(langDiv);
+
+    // Create theme selector
+    var themeDiv = document.createElement('div');
+    PreviewDropdown.init(themeDiv,
+                         controlInfo.themes,
+                         defaults.themeIndex,
+                         updateTheme);
+    themeDiv.classList.add('separator');
+    controlDiv.appendChild(themeDiv);
+
+    // Create size slider
+    var size = controlInfo.sizes[defaults.sizeIndex];
+    var sizeControl = document.createElement('div');
+    SampleSlider.init(sizeControl,
+                      size,
+                      controlInfo.sizes,
+                      toSizeLabel,
+                      changeSize);
+    sizeControl.classList.add("size-control");
+    controlDiv.appendChild(sizeControl);
+  }
+
+  /* =============== control callback methods ================ */
+
+  function updateLang(langName) {
+    var lang = langName.toLowerCase();
+
+    let codeSample = document.getElementById(lang).innerHTML;
+    codeMirror.setValue(codeSample);
+    codeMirror.setOption("mode", lang);
+  }
+
+  function updateTheme(themeName) {
+    let theme = themeName.toLowerCase();
+    codeMirror.setOption("theme", theme);
+  }
+
+  function updateFontSize(size) {
+    let cm = document.getElementsByClassName("CodeMirror")[0];
+    cm.style.fontSize = toSizeLabel(size);
+  }
+
+  function toSizeLabel(size) {
+    return size + "px";
+  }
+
+  function changeSize(slider, sizes) {
+    var size = sizes[slider.value];
+    updateFontSize(size);
+  }
+
+  /* =============== export public methods =============== */
+
+  return {
+    init: init
+  };
+}());
+</pre>
+<pre id="python" hidden>"""
+Convert UFO files to OTF/TTF/WOFF2.
+"""
+
+import argparse
+import os
+
+import defcon
+import ufo2ft
+
+
+def get_font_name(font):
+    """Parse the font name from the Font object.
+
+    :param font: A defcon Font object
+    :type font: defcon.Font
+    :returns: The font name
+    :rtype: {[str]}
+    """
+    info = font.info
+    familyName = info.familyName.replace(" ", "")
+    styleName = info.styleName
+    return f"{familyName}-{styleName}"
+
+
+def convert_font(input_path, output_path, convert):
+    """Convert a Font object.
+
+    Render down all glyph in a font object and save it.
+    :param input_path: The path to the UFO file
+    :type input_path: str
+    :param output_path: The output path (optional)
+    :type output_path: str
+    :param convert_otf: Flag to convert to OTF
+    :type convert_otf: boolean
+    :param convert_woff: Flag to convert to WOFF2
+    :type convert_woff: boolean
+    """
+    # Load font
+    font = defcon.Font(input_path)
+    font_name = get_font_name(font)
+
+    if output_path is None:
+        output_path = os.path.dirname(input_path)
+    out_folder = output_path
+
+    # Convert to OTF
+    if convert["otf"] or convert["woff2"]:
+        print("Converting rendered UFO to OTF")
+        otf = ufo2ft.compileOTF(font)
+
+        # OTF
+        if convert["otf"]:
+            otf_file = font_name + ".otf"
+            otf_folder = os.path.join(out_folder, 'otf')
+            otf_path = os.path.join(otf_folder, otf_file)
+            if not os.path.exists(otf_folder):
+                os.makedirs(otf_folder)
+            print(f"Saving OTF to {otf_path}")
+            otf.save(otf_path)
+
+        # WOFF2
+        if convert["woff2"]:
+            otf.flavor = "woff2"
+            woff2_file = font_name + "." + otf.flavor
+            woff2_folder = os.path.join(out_folder, 'woff2')
+            woff2_path = os.path.join(woff2_folder, woff2_file)
+            if not os.path.exists(woff2_folder):
+                os.makedirs(woff2_folder)
+            print(f"Saving WOFF2 to {woff2_path}")
+            otf.save(woff2_path)
+
+    # Convert to TTF
+    if convert["ttf"]:
+        print("Converting rendered UFO to TTF")
+        ttf = ufo2ft.compileTTF(font)
+
+        # OTF
+        if convert["otf"]:
+            ttf_file = font_name + ".ttf"
+            ttf_folder = os.path.join(out_folder, 'ttf')
+            ttf_path = os.path.join(ttf_folder, ttf_file)
+            if not os.path.exists(ttf_folder):
+                os.makedirs(ttf_folder)
+            print(f"Saving TTF to {ttf_path}")
+            ttf.save(ttf_path)
+
+
+def main(input_path, output_path, convert):
+    """
+    The main function
+    """
+    if input_path.endswith(".ufo"):
+        convert_font(input_path, output_path, convert)
+    elif os.path.isdir(input_path):
+        ufo_files = [f for f in os.listdir(input_path)
+                     if os.path.splitext(f)[-1] == ".ufo"]
+
+        if len(ufo_files) < 1:
+            print(f"Could not find any .ufo files in {input_path}")
+            return
+
+        for file in ufo_files:
+            file_path = os.path.join(input_path, file)
+            convert_font(file_path, output_path, convert)
+    else:
+        print(f"Could not find any .ufo files in {input_path}")
+
+
+def create_argparser():
+    """Create the argparse
+
+    :returns: an argparser
+    :rtype: argparse.ArgumentParser
+    """
+    parser = argparse.ArgumentParser()
+    parser.add_argument("input", help="the input .ufo file or folder containing .ufo files")
+    parser.add_argument("-o", "--output", help="the output .ufo file")
+    parser.add_argument("-c", "--convert", action='store_true',
+                        help="convert .ufo to .otf")
+    parser.add_argument("-w", "--woff", action='store_true',
+                        help="convert .ufo to .woff2")
+    parser.add_argument("-t", "--ttf", action='store_true',
+                        help="convert .ufo to .ttf")
+    parser.add_argument("-a", "--all", action='store_true',
+                        help="convert .ufo to all formats")
+    return parser
+
+
+if __name__ == '__main__':
+    parser = create_argparser()
+    args = parser.parse_args()
+
+    input_path = args.input
+    output_path = args.output
+    convert_otf = args.convert
+    convert_woff = args.woff
+    convert_ttf = args.ttf
+    convert_all = args.all
+
+    convert = {
+        "otf": convert_otf or convert_all,
+        "ttf": convert_ttf or convert_all,
+        "woff2": convert_woff or convert_all
+    }
+
+    main(input_path, output_path, convert)
+</pre>
+<pre id="swift" hidden>
+//
+//  OrderData.swift
+//
+
+import Foundation
+import SwiftUI
+import Combine
+
+let testData: [OrderItem] = OrderData.load("orderItems.json")
+
+final class OrderData: ObservableObject {
+    @Published var orderList: [OrderItem]
+    
+    init() {
+        self.orderList = OrderData.load("orderItems.json")
+        fetchData()  // Note: this will attempt a fetch each time order data is created.
+    }
+
+    func fetchData() {
+        print("Fetching data from server.")
+        loadFromServer("orderItems.json") { (success, data) in
+            print(data)
+            self.orderList = data
+        }
+    }
+    
+    /// Load the file from the bundle
+    ///
+    /// - Parameters:
+    ///     - filename: The name of the file to load from the main bundle
+    ///
+    /// - Returns: the default list of OrderItem
+    static func load&ltT: Decodable&gt(_ filename: String) -> T {
+        let data: Data
+
+        guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
+            else {
+                fatalError("Couldn't find \(filename) in main bundle.")
+        }
+
+        do {
+            data = try Data(contentsOf: file)
+        } catch {
+            fatalError("Couldn't load \(filename) from main bundle:\n\(error)")
+        }
+
+        do {
+            let decoder = JSONDecoder()
+            return try decoder.decode(T.self, from: data)
+        } catch {
+            fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
+        }
+    }
+}
+
+// TODO: move this into a fetcher class
+func loadFromServer(_ filename: String, completion: @escaping (_ success:Bool, _ orderData:[OrderItem])->()) {
+    
+    let serverURL = "http://localhost:8000"  // TODO: make this a property
+    
+    // load from server
+    let url = URL(string:"\(serverURL)/\(filename)")!
+    let task = URLSession.shared.dataTask(with:url) { (data, response, error) in
+        if let err = error {
+            print("Error fetching from server: \(err)")
+        }
+        else {
+            if let orderData = data {
+                let decoder = JSONDecoder()
+                do {
+                    let orderList: [OrderItem] = try decoder.decode([OrderItem].self, from: orderData)
+                    completion(true, orderList)
+                }
+                catch {
+                    print("Failed to decode JSON")
+                }
+            }
+        }
+    }
+    task.resume()
+}
+</pre>
+<pre id="markdown" hidden>
+RConfMatrixPlot
+===
+
+RConfMatrixPlot is a framework in R for visualizing confusion matrices. The workflow is as follows, after loading the confusion matrix,
+
+1. Convert the confusion matrix to a `dist` object.
+2. Transform the `dist` object into a data representation for the visualization.
+3. Visualize the data representation.
+
+The files for each step are in the folders 'distance/', 'process/' and 'plot/'.
+
+Here is an example for multidimensional scaling.
+
+```
+# Create example confusion matrix and labels
+n = 6
+confMatrix = matrix(abs(runif(n^2)), n, n) # square matrix with uniform distribution
+confMatrix = sweep(confMatrix, 2, rowSums(confMatrix), `/`) # normalize rows
+
+labels = list(names = 1:n,
+              colors = c("#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#bcbd22"))
+
+
+# 1. Get distance matrix from confusion matrix
+dstMatrix = getDistances(confMatrix)
+# 2. Get MDS representation
+mdsRep = calculateMDS(dstMatrix)
+# 3. Plot MDS
+plotMDS(mdsRep, labels)
+
+```
+
+![ScreenShot](images/mds_plot.png)
+</pre>
+<pre id="c++" hidden>
+#include "PluginProcessor.h"
+#include "PluginEditor.h"
+
+inline double grainDurationToLength(double dur, int sampleRate) {
+    return dur/1000*sampleRate;
+}
+
+//==============================================================================
+SttrAudioProcessor::SttrAudioProcessor()
+: mix(0.5, 0.15)
+, grainDuration(33)
+, dryDelay(0, 0.000167)
+, windowMix(0, 0.15)
+, _delayBuffer(DEFAULT_CHANNEL_NO, 0)
+, _grainLength(0, 0.0005)
+, _lfoPhase(0)
+{
+}
+
+SttrAudioProcessor::~SttrAudioProcessor()
+{
+}
+
+void SttrAudioProcessor::setParameter (int index, float newValue)
+{
+    switch (index)
+    {
+        case mixParam:
+            mix.target = newValue;
+            break;
+            
+        case grainDurationParam:
+            grainDuration = pow(10, 3*newValue);
+            _grainLength.target = grainDurationToLength(grainDuration, getSampleRate());
+            break;
+            
+        case dryDelayParam:
+            dryDelay.target = newValue;
+            break;
+            
+        case windowMixParam:
+            windowMix.target = newValue;
+            break;
+            
+        default:
+            break;
+    }
+}
+
+const String SttrAudioProcessor::getParameterName (int index)
+{
+    switch (index)
+    {
+        case grainDurationParam:
+            return "Grain Duration";
+            
+        case mixParam:
+            return "Mix";
+            
+        case dryDelayParam:
+            return "Dry Position";
+            
+        case windowMixParam:
+            return "Overtones";
+            
+        default:
+            return String::empty;
+    }
+}
+
+//==============================================================================
+// Use this method as the place to do any pre-playback
+// initialisation that you need..
+void SttrAudioProcessor::prepareToPlay(double sampleRate, int samplesPerBlock)
+{
+    _delayBuffer.setSize(DEFAULT_CHANNEL_NO, 4*MAX_GRAIN_DURATION*sampleRate/1000.0); // TODO: optimize delay length.
+    _grainLength.target = grainDurationToLength(grainDuration, sampleRate);
+    _grainLength.value = _grainLength.target;
+    
+    // initialize delay line
+    _delayWriter = 0;
+    
+    // initialize delay reader
+    _delayReader = wrapAround(_delayWriter - _grainLength.value*1.5*dryDelay.value, _delayBuffer.getNumSamples());
+    
+    // initialize grain readers
+    _grain[0].pivot = _delayWriter;
+    _grain[0].reader = 0;
+    _grain[0].length = _grainLength.value;
+    _grain[0].wrapLength = _delayBuffer.getNumSamples();
+    
+    _grain[1].pivot = wrapAround(_grain[0].pivot - _grainLength.value/2, _delayBuffer.getNumSamples());
+    _grain[1].reader = _grain[0].reader + _grainLength.value/2;
+    _grain[1].length = _grainLength.value;
+    _grain[1].wrapLength = _delayBuffer.getNumSamples();
+}
+
+void SttrAudioProcessor::releaseResources()
+{
+    // When playback stops, you can use this as an opportunity to free up any
+    // spare memory, etc.
+}
+
+void SttrAudioProcessor::processBlock(AudioSampleBuffer& buffer, MidiBuffer& midiMessages)
+{
+    unsigned int delayLength = _delayBuffer.getNumSamples();
+    
+    // per sample calculation
+    for (int n = 0; n < buffer.getNumSamples(); n++)
+    {
+        // per channel calculation
+        for (int channel = 0; channel < getNumInputChannels(); ++channel)
+        {
+            float* channelData = buffer.getSampleData(channel);
+            float* delayData = _delayBuffer.getSampleData(channel);
+
+            // read input signal
+            delayData[_delayWriter] = channelData[n];
+            
+            // write output signal
+            channelData[n] = 0;
+            
+            // wet signal
+            for (int g = 0; g < NUM_GRAINS; g++)
+                channelData[n] += _grain[g].getWindowSample(windowMix.value) * _grain[g].getSample(delayData);
+            
+            // mix dry signal
+            float delaySample = interpolateSample(delayData, _delayReader, delayLength);
+            channelData[n] = interpolate(delaySample, channelData[n], mix.value);
+        }
+        
+        // increment writer
+        _delayWriter++;
+        _delayWriter = wrapAround(_delayWriter, delayLength);
+        
+        // increment reader
+        _delayReader = wrapAround(_delayWriter - _grainLength.value*1.5*dryDelay.value, delayLength);
+        
+        // increment grain readers
+        for (int g = 0; g < NUM_GRAINS; g++)
+            _grain[g].increment();
+        
+        // slew parameters @ audio rate
+        dryDelay.step();
+        _grainLength.step();
+        updateGrains();
+    }
+    
+    // slew parameters @ buffer rate
+    mix.step();
+    windowMix.step();
+
+    // Clean-up extra channels
+    for (int i = getNumInputChannels(); i < getNumOutputChannels(); ++i)
+        buffer.clear (i, 0, buffer.getNumSamples());
+}
+
+//==============================================================================
+bool SttrAudioProcessor::hasEditor() const
+{
+    return true; // (change this to false if you choose to not supply an editor)
+}
+
+AudioProcessorEditor* SttrAudioProcessor::createEditor()
+{
+    return new SttrAudioProcessorEditor (this);
+}
+
+//==============================================================================
+void SttrAudioProcessor::getStateInformation(MemoryBlock& destData)
+{
+    XmlElement paramList ("sttr");
+    
+    paramList.setAttribute("grainDuration", String(getParameter(grainDurationParam)));
+    paramList.setAttribute("mix", String(getParameter(mixParam)));
+    paramList.setAttribute("dryDelay", String(getParameter(dryDelayParam)));
+    paramList.setAttribute("windowMix", String(getParameter(windowMixParam)));
+    
+    String xmlString = paramList.createDocument(String::empty);
+    destData.append(xmlString.toRawUTF8(), xmlString.getNumBytesAsUTF8());
+}
+
+void SttrAudioProcessor::setStateInformation(const void* data, int sizeInBytes)
+{
+    MemoryBlock stateData(data, sizeInBytes);
+    String xmlString = stateData.toString();
+    
+    ScopedPointer&ltXmlElement&gt paramList = XmlDocument::parse(xmlString);
+    
+    float grainDurationRestore = paramList->getStringAttribute("grainDuration").getFloatValue();
+    float mixRestore = paramList->getStringAttribute("mix").getFloatValue();
+    float dryDelayRestore = paramList->getStringAttribute("dryDelay").getFloatValue();
+    float windowMixRestore = paramList->getStringAttribute("windowMix").getFloatValue();
+
+    setParameter(grainDurationParam, grainDurationRestore);
+    setParameter(mixParam, mixRestore);
+    setParameter(dryDelayParam, dryDelayRestore);
+    setParameter(windowMixParam, windowMixRestore);
+}
+</pre>
+
+</body>
+</html>
+

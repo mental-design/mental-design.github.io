@@ -1,0 +1,58 @@
+[
+  {
+    "settings": {
+      "weightIndex": 6,
+      "sizeIndex": 12,
+      "alignIndex": 0
+    },
+    "text": "Basic Geometry<br>Circles & Lines<br>Parameterized Glyphs"
+  },
+  {
+    "settings": {
+      "weightIndex": 1,
+      "sizeIndex": 9,
+      "alignIndex": 1
+    },
+    "text": "Circles in code<br>Infinite Loops ∞<br>race condition<br>synchronized deadlock<br>(Political Bureaucracy?)<br>Out of order execution<br>segfault … Done!"
+  },
+  {
+    "settings": {
+      "weightIndex": 3,
+      "sizeIndex": 10,
+      "alignIndex": 2
+    },
+    "text": "Optimal Circles<br>Constant Lines<br>Strict x-height<br>Vertical/Horizontal Terminals<br>It's that basic!"
+  },
+  {
+    "settings": {
+      "weightIndex": 1,
+      "sizeIndex": 7,
+      "alignIndex": 1
+    },
+    "text": "↓ Sweep through the weights and see the characters breathe. ↓"
+  },
+  {
+    "settings": {
+      "weightIndex": 4,
+      "sizeIndex": 14,
+      "alignIndex": 1
+    },
+    "text": "!?@#$%&^~-+*=<br><>{}(|)[]/\\<br>!?.:;,¿¡"
+  },
+  {
+    "settings": {
+      "weightIndex": 1,
+      "sizeIndex": 8,
+      "alignIndex": 1
+    },
+    "text": "See Basically A Mono in action with an interactive code preview."
+  },
+  {
+    "settings": {
+      "weightIndex": 5,
+      "sizeIndex": 14,
+      "alignIndex": 1
+    },
+    "text": "↓"
+  }
+]
