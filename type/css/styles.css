@@ -1,0 +1,18 @@
+@import '../bam/fonts/basicallyamono.css';
+
+#name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+
+  width: 100px;
+  height: 100px;
+
+  font-family: 'BasicallyAMono' !important;
+  font-size: 25pt;
+  font-weight: 200;
+
+  
+}
