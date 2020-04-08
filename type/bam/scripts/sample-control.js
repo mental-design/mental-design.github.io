@@ -49,7 +49,7 @@ var SampleControl = (function() {
     var alignIndex = controlInfo.alignments.indexOf(alignment);
 
     var div = document.createElement('div');
-    div.className = "control-item align-control";
+    div.className = "control-item align-control control-last";
 
     var alignTags = ['left', 'center', 'right'];
     for (var i = 0; i < alignTags.length; i++) {

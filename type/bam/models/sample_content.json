@@ -1,7 +1,7 @@
 [
   {
     "settings": {
-      "weightIndex": 6,
+      "weightIndex": 1,
       "sizeIndex": 12,
       "alignIndex": 0
     },
@@ -9,7 +9,7 @@
   },
   {
     "settings": {
-      "weightIndex": 1,
+      "weightIndex": 3,
       "sizeIndex": 9,
       "alignIndex": 1
     },
@@ -17,7 +17,7 @@
   },
   {
     "settings": {
-      "weightIndex": 3,
+      "weightIndex": 6,
       "sizeIndex": 10,
       "alignIndex": 2
     },
