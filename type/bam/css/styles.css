@@ -4,7 +4,7 @@ html {
 
 body {
   font-family: "SF Display", "Helvetica Neue", Fallback, sans-serif;  
-  min-width: 520px;
+  min-width: 488px;
 }
 
 code, .mono, .CodeMirror {
@@ -58,7 +58,7 @@ a:hover {
 .mtd-wide {
   width: 2500px;
   position: absolute;
-  left: -15px;
+  left: -10px;
   padding-left: 0px;
   color: #2f2f2f;
   font-weight: 300;
@@ -125,7 +125,7 @@ a:hover {
 }
 
 .nav-spacer {
-  width: 32px !important;
+  padding: 8px !important;
 }
 
 .pop-menu {
@@ -161,8 +161,8 @@ a:hover {
 }
 
 .section {
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .dark-section {
