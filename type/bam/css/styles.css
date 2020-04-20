@@ -4,7 +4,7 @@ html {
 
 body {
   font-family: "SF Display", "Helvetica Neue", Fallback, sans-serif;  
-  min-width: 488px;
+  min-width: 400px;
 }
 
 code, .mono, .CodeMirror {
@@ -205,6 +205,10 @@ h1 {
   margin-bottom: 5px;
 }
 
+.control {
+  text-align: center;
+}
+
 .control-wrapper {
   height: 25px;
 }
@@ -255,6 +259,16 @@ h1 {
   color: #1E6FBF;
   border-radius: 3px;
   vertical-align: -1px;
+}
+
+@media (max-width:472px) {
+  .control-wrapper {
+    height: 50px;
+  }
+
+  .align-control {
+    margin-left: 0px;
+  }
 }
 
 .selected {

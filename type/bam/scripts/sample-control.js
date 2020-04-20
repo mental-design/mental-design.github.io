@@ -40,7 +40,7 @@ var SampleControl = (function() {
     controlDiv.hidden = true;
 
     // The wrapper keeps the layout static even when the controls are hiding
-    controlWrapper.className = "w3-center control-wrapper";
+    controlWrapper.className = "control-wrapper";
     controlWrapper.appendChild(controlDiv);
   }
 
