@@ -263,7 +263,11 @@ h1 {
 
 @media (max-width:472px) {
   .control-wrapper {
-    height: 50px;
+    height: 55px;
+  }
+
+  .control-item {
+    margin-bottom: 5px;
   }
 
   .align-control {

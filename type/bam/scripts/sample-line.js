@@ -9,22 +9,24 @@ var SampleLine = (function() {
   /* =============== initialize methods ================ */
 
   function initializeSampleLine(lineDiv, controlInfo, content) {
-    lineDiv.classList.add("sample-line")
-    lineDiv.onmouseover = function() {
-      var control = lineDiv.getElementsByClassName('control')[0];
-      control.hidden = false;
-    };
-    lineDiv.onmouseout = function() {
-      var control = lineDiv.getElementsByClassName('control')[0];
-      control.hidden = true;
-    }
+    var settings = translateSettings(content.settings, controlInfo);
+
+    lineDiv.classList.add("sample-line");
     lineDiv.onpaste = function(e) {
       e.preventDefault();  // cancel paste
       var text = (e.originalEvent || e).clipboardData.getData('text/plain');  // get text
       document.execCommand("insertHTML", false, text);  // insert text manually
     }
-
-    var settings = translateSettings(content.settings, controlInfo);
+    if (!settings.showControl) {
+      lineDiv.onmouseover = function() {
+        var control = lineDiv.getElementsByClassName('control')[0];
+        control.hidden = false;
+      };
+      lineDiv.onmouseout = function() {
+        var control = lineDiv.getElementsByClassName('control')[0];
+        control.hidden = true;
+      }
+    }
 
     var controlWrapper = document.createElement('div');
     SampleControl.init(controlWrapper, controlInfo, settings);
@@ -50,6 +52,9 @@ var SampleLine = (function() {
     translated.weight = controlInfo.weights[settings.weightIndex];
     translated.size = controlInfo.sizes[settings.sizeIndex];
     translated.alignment = controlInfo.alignments[settings.alignIndex];
+    translated.showControl = settings.showControl > 0;
+
+    console.log(settings.showControl);
     return translated;
   }  
 

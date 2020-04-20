@@ -37,7 +37,7 @@ var SampleControl = (function() {
     controlDiv.appendChild(weightControl);
     controlDiv.appendChild(sizeControl);
     controlDiv.appendChild(alignControl);
-    controlDiv.hidden = true;
+    controlDiv.hidden = !settings.showControl;
 
     // The wrapper keeps the layout static even when the controls are hiding
     controlWrapper.className = "control-wrapper";
