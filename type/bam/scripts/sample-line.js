@@ -53,8 +53,6 @@ var SampleLine = (function() {
     translated.size = controlInfo.sizes[settings.sizeIndex];
     translated.alignment = controlInfo.alignments[settings.alignIndex];
     translated.showControl = settings.showControl > 0;
-
-    console.log(settings.showControl);
     return translated;
   }  
 
