@@ -55,6 +55,13 @@ a:hover {
   height: 32px;
 }
 
+.mtd-small {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 16px;
+  height: 32px;
+}
+
 .mtd-wide {
   width: 2500px;
   position: absolute;
@@ -89,7 +96,7 @@ a:hover {
 .download-btn {
   height: 34px;
   border-radius: 5px;
-  border: 1px solid #3e3e3e !important;
+  border: 1px solid #4e4e4e !important;
   margin: 5px;
   margin-right: 0px;
   padding: 6px 10px !important;
@@ -99,7 +106,7 @@ a:hover {
 }
 
 .download-btn:hover {
-  background-color: #333;
+  background-color: #3e3e3e;
   color:#fff;
 }
 
@@ -117,7 +124,7 @@ a:hover {
 }
 
 .nav-wrapper {
-  height: 100%;
+  height: 45px;
   width: 100%;
 }
 
@@ -129,6 +136,10 @@ a:hover {
   padding: 8px !important;
 }
 
+.menu-item {
+  font-size: 18px;
+}
+
 .pop-menu {
   margin-top:46px;
 }
@@ -137,8 +148,9 @@ a:hover {
   font-weight: 400;
   color:#fff !important;
   letter-spacing: 1px;
-  padding-top: 14px !important;
-  line-height: 18px;
+  padding-top: 15px !important;
+  line-height: 19px;
+  height: 45px;
 }
 
 .mobile-left {
