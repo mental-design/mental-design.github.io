@@ -40,8 +40,8 @@ a:hover {
 }
 
 .title-item {
-  font-weight: 600;
-  letter-spacing: 3px;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 
 .title-item:hover {
@@ -113,11 +113,12 @@ a:hover {
 
 .nav-dark-grey {
   color: #e7e7e7;
-  background: #1f1f1f;
+  background: #303030;
 }
 
 .nav-wrapper {
   height: 100%;
+  width: 100%;
 }
 
 .nav-bar {
@@ -138,6 +139,17 @@ a:hover {
   letter-spacing: 1px;
   padding-top: 14px !important;
   line-height: 18px;
+}
+
+.mobile-left {
+  width:10% !important;
+}
+
+.nav-center {
+  display: block;
+  width: 80% !important;
+  text-align: center;
+  margin:0 auto;
 }
 
 .nav-item-hover:hover {
