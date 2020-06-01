@@ -67,11 +67,12 @@ var CharacterSection = (function() {
     darkButton.onclick = function() {
       var charDiv = this.parentElement.parentElement;
       var cellBgColor = "#fefefe";
-      if (charDiv.classList.contains("w3-black")) {
-        charDiv.classList.remove("w3-black");
+      var darkClass = "w3-black"
+      if (charDiv.classList.contains(darkClass)) {
+        charDiv.classList.remove(darkClass);
       }
       else {
-        charDiv.classList.add("w3-black");
+        charDiv.classList.add(darkClass);
         cellBgColor = "#111";
       }
 
