@@ -73,7 +73,7 @@ var CharacterSection = (function() {
       }
       else {
         charDiv.classList.add(darkClass);
-        cellBgColor = "#111";
+        cellBgColor = "#0c0c0c";
       }
 
       let charCells = document.getElementsByClassName("char-cell");
