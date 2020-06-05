@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Basically A Sans Serif</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+
+<link rel="icon" href="resources/favicon.ico" type="image/x-icon">
+<link rel="manifest" href="resources/favicon/site.webmanifest">
+<!-- Styles -->
+<link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body onload="initialize()">
+
+<!-- Navbar -->
+<div id="top-bar" class="w3-top nav-bar sample-font w3-card">
+  <div class="w3-black">
+    <!--Small header-->
+    <div class="w3-bar w3-black w3-content w3-hide-medium w3-hide-large mtd-small">
+        <a href="../">mental type design</a>
+    </div>
+    <!--Medium header-->
+    <div class="w3-bar w3-black w3-content w3-hide-small w3-hide-large mtd">
+        <a href="../">mental type design</a>
+    </div>
+    <!--Large header-->
+    <div class="w3-hide-small w3-hide-medium mtd">
+      <div class="mtd-wide">
+        <span class="mtd-first">experi<a href="../">mental type design</a></span> -
+        ele<a href="../">mental type design</a> -
+        funda<a href="../">mental type design</a> -
+        incre<a href="https://incre.mentallydesigned.com/">mental type design</a> -
+        monu<a href="../">mental type design</a> -
+        instru<a href="../">mental type design</a> -
+        senti<a href="../">mental type design</a> -
+        environ<a href="../">mental type design</a> -
+        develop<a href="../">mental type design</a> -
+      </div>
+    </div>
+  </div>
+  <!-- Navigation -->
+  <div class="nav-dark-grey nav-wrapper">
+    <div class="w3-bar nav-dark-grey w3-content w3-center">
+      <a class="w3-bar-item w3-hide-medium w3-hide-large mobile-left nav-item menu-item" href="javascript:void(0)" onclick="toggleMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <div class="w3-bar-item w3-hide-medium w3-hide-large nav-item nav-center"><a href="#" class="title-item">Basically A Sans Serif</a></div>
+      <div class="w3-bar-item w3-hide-small w3-hide-medium nav-spacer"></div>
+      <a href="#" class="w3-bar-item w3-hide-small w3-hover-green w3-padding-large nav-item bam-silver title-item" onclick="hideMenu()">BASS</a>
+      <a href="#overview" class="w3-bar-item w3-hide-small nav-item">Text</a>
+      <!-- <a href="#notes"      class="w3-bar-item w3-hide-small nav-item">Notes</a> -->
+      <a href="#characters" class="w3-bar-item w3-hide-small nav-item">Characters</a>
+      <div class="w3-bar-item w3-hide-small w3-hide-medium w3-right nav-spacer"></div>
+      <div class="w3-bar-item w3-hide-small w3-hide-large w3-right download-spacer"></div>
+      <div class="w3-bar-item w3-hide-small w3-right download-btn">
+        <a href="downloads/bam-vers1_001.zip">Download</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="mobileNav" class="w3-bar-block w3-card w3-black w3-hide w3-hide-large w3-hide-medium w3-top nav-bar sample-font">
+  <a href="#overview"   class="w3-bar-item w3-padding-large nav-item nav-item-hover" onclick="hideMenu()">Text</a>
+  <!-- <a href="#notes"      class="w3-bar-item w3-padding-large nav-item nav-item-hover" onclick="hideMenu()">Notes</a> -->
+  <a href="#characters" class="w3-bar-item w3-padding-large nav-item nav-item-hover" onclick="hideMenu()">Characters</a>
+  <a href="downloads/bam-vers1_001.zip" class="w3-bar-item w3-padding-large nav-item nav-item-hover" onclick="hideMenu()">Download</a>
+</div>
+
+<!-- Page content -->
+<div id="content" class="w3-content content">
+
+  <!-- The Title Section -->
+  <div class="w3-white">
+    <div class="w3-container w3-content w3-center w3-padding-64 section">
+      <h1 class="w3-wide sample-font title" style="font-weight:600;">Basically A Sans Serif</h1>
+      <p class="w3-opacity sample-font subtitle" style="font-weight:200;">A very geometrically designed sans serif typeface.</p>
+    </div>
+  </div>
+
+  <!-- The Overview Section -->
+  <div id="overview" class="section-wrapper section-light-grey">
+    <div class="w3-display-container w3-content w3-padding-32 section dark-section" id="samples"></div>
+  </div>
+
+  <!-- The Notes Section -->
+  <div id="notes" class="section-wrapper">
+    <div class="w3-display-container w3-content w3-padding-32 section">
+    </div>
+  </div>
+
+  <!-- The Characters Section -->
+  <div id="characters" class="section-wrapper section-light-grey">
+    <div class="w3-display-container w3-content w3-padding-32 section dark-section" id="charmap">
+    </div>
+  </div>
+
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-center w3-black w3-xlarge">
+  <!-- <i class="fa fa-google w3-hover-opacity"></i> -->
+  <a href="https://github.com/mental-design/basically-a-sample-font"><i class="fa fa-github w3-hover-opacity"></i></a>
+  <a href="mailto:type@mentallydesigned.com"><i class="fa fa-envelope"></i></a>
+  <p class="w3-medium sample-font"><span class="copyright">©</span><a href="../">mental type design</a></p>
+
+</footer>
+
+<!-- Scripts -->
+<script src="scripts/sample-slider.js"></script>
+<script src="scripts/sample-control.js"></script>
+<script src="scripts/sample-line.js"></script>
+<script src="scripts/sample.js"></script>
+<script src="scripts/characters.js"></script>
+<script src="scripts/w3.js"></script>
+<script>
+  function initialize(){
+    adjustToNavbar();
+
+    var sampleDiv = document.getElementById('samples');
+    SampleSection.init(sampleDiv);
+
+    var characterDiv = document.getElementById('charmap');
+    CharacterSection.init(characterDiv);
+  }
+</script>
+
+</body>
+</html>
+
