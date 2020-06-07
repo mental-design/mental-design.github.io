@@ -50,14 +50,20 @@ a:hover {
 }
 
 .mtd {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
   padding-left: 24px;
   height: 32px;
 }
 
-.mtd-small {
+.mobile-padding {
   padding-left: 16px !important;
+}
+
+.mtd-small {
+  /* Make it look good on mobile device */
+  padding-top: 6px !important;
+  padding-bottom: 4px !important;
 }
 
 .mtd-wide {
