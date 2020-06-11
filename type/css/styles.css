@@ -1,7 +1,11 @@
 @import '../bam/fonts/basicallyamono.css';
+@import '../bass/fonts/basicallyasansserif.css';
 
 .bam {
   font-family: 'BasicallyAMono' !important;
+}
+.bass {
+  font-family: 'BasicallyASansSerif' !important;
 }
 
 #name {
@@ -13,8 +17,7 @@
 
   width: 120px;
   height: 140px;
-
-  font-family: 'BasicallyAMono' !important;
+  
   font-size: 25pt;
   font-weight: 200;
 }
