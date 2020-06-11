@@ -175,7 +175,7 @@ a:hover {
 
 .title-item {
   font-weight: 500;
-  font-size: 17px;
+  font-size: 16px;
   letter-spacing: 1px;
 }
 
@@ -189,6 +189,7 @@ a:hover {
   width: 80% !important;
   text-align: center;
   margin:0 auto;
+  line-height: 22px;
 }
 
 .nav-item-hover:hover {
@@ -208,9 +209,9 @@ a:hover {
 }
 
 .title {
-  /*max-width:800px;*/
+  font-weight: 600;
   font-size: 56px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 .section {
@@ -227,6 +228,7 @@ a:hover {
 }
 
 .subtitle {
+  font-weight: 200;
   font-size: 26px;
 }
 

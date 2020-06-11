@@ -138,9 +138,9 @@ a:hover {
 .nav-item {
   font-weight: 400;
   color:#fff !important;
-  letter-spacing: 1px;
+  letter-spacing: 0em;
   padding-top: 14px !important;
-  line-height: 20px;
+  line-height: 22px;
   height: 45px;
 }
 
@@ -150,7 +150,7 @@ a:hover {
 
 .title-item {
   font-weight: 500;
-  font-size: 17px;
+  font-size: 16px;
   letter-spacing: 1px;
 }
 
@@ -183,7 +183,9 @@ a:hover {
 }
 
 .title {
-  max-width:800px;
+  font-weight: 500;
+  font-size: 48px;
+  letter-spacing: 2px;
 }
 
 .section {
@@ -200,6 +202,7 @@ a:hover {
 }
 
 .subtitle {
+  font-weight: 200;
   font-size: 24px;
 }
 
