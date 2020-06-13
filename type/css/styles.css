@@ -32,10 +32,14 @@
   padding-left: 16px;
 }
 
+.bar-title {
+  font-weight: 400;
+  margin-left: 16px;
+}
+
 .bar-item {
   text-decoration: none;
   font-weight: 300;
-
   margin-left: 16px;
 }
 
