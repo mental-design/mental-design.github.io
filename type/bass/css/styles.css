@@ -8,7 +8,7 @@ body {
 }
 
 .sample-font {
-  font-family: 'BasicallyASansSerif', sans-serif !important;
+  font-family: "BasicallyASansSerif", sans-serif !important;
 }
 
 a:link {
@@ -301,7 +301,11 @@ h1 {
 }
 
 .spacing-control .control-label {
-  width: 30px;
+  width: 45px;
+}
+
+.height-control .control-label {
+  width: 35px;
 }
 
 .align-control {

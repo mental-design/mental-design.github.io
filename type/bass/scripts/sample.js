@@ -23,6 +23,8 @@ var SampleSection = (function() {
       18, 22, 26, 30, 36,
       42, 48, 56, 64, 80,
       96, 120, 144],
+    lineHeights: [1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0],
+    letterSpacings: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     alignments: ['left-align', 'center', 'right-align']
   };
 

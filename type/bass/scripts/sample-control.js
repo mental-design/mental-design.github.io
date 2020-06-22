@@ -30,12 +30,32 @@ var SampleControl = (function() {
     sizeControl.classList.add("size-control");
     sizeControl.classList.add("separator");
 
+    var letterSpacingControl = document.createElement('div');
+    SampleSlider.init(letterSpacingControl,
+                      settings.letterSpacing,
+                      controlInfo.letterSpacings,
+                      toLetterSpaceLabel,
+                      changeLetterSpacing);
+    letterSpacingControl.classList.add("spacing-control");
+    letterSpacingControl.classList.add("separator");
+
+    var lineHeightControl = document.createElement('div');
+    SampleSlider.init(lineHeightControl,
+                      settings.lineHeight,
+                      controlInfo.lineHeights,
+                      toLineHeightLabel,
+                      changeLineHeight);
+    lineHeightControl.classList.add("height-control");
+    lineHeightControl.classList.add("separator");
+
     var alignControl = createAlignControl(settings.alignment);
 
     var controlDiv = document.createElement('div');
     controlDiv.className = "control";
     controlDiv.appendChild(weightControl);
     controlDiv.appendChild(sizeControl);
+    controlDiv.appendChild(letterSpacingControl);
+    controlDiv.appendChild(lineHeightControl);
     controlDiv.appendChild(alignControl);
     controlDiv.hidden = !settings.showControl;
 
@@ -88,8 +108,16 @@ var SampleControl = (function() {
     return weightName + " " + weight;
   }
 
-  function toSizeLabel(size) {
-    return size + "px";
+  function toSizeLabel(value) {
+    return value + "pt";
+  }
+
+  function toLetterSpaceLabel(value) {
+    return value + "px";
+  }
+
+  function toLineHeightLabel(value) {
+    return value.toFixed(1);;
   }
 
   /* =============== handle event methods ================ */
@@ -111,7 +139,27 @@ var SampleControl = (function() {
 
     // Update the font size
     var sample = line.getElementsByClassName("sample")[0];
-    sample.style.fontSize = size + "px";
+    sample.style.fontSize = size + "pt";
+  }
+
+  function changeLetterSpacing(slider, values) {
+    var value = values[slider.value];
+
+    var line = slider.parentElement.parentElement.parentElement.parentElement;
+
+    // Update the font letter spacing
+    var sample = line.getElementsByClassName("sample")[0];
+    sample.style.letterSpacing = value + "px";
+  }
+
+  function changeLineHeight(slider, values) {
+    var value = values[slider.value];
+
+    var line = slider.parentElement.parentElement.parentElement.parentElement;
+
+    // Update the font line height
+    var sample = line.getElementsByClassName("sample")[0];
+    sample.style.lineHeight = value.toFixed(1);
   }
 
   function changeAlign(aControl, index, alignments) {
