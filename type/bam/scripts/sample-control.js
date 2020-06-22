@@ -89,7 +89,7 @@ var SampleControl = (function() {
   }
 
   function toSizeLabel(size) {
-    return size + "px";
+    return size + "pt";
   }
 
   /* =============== handle event methods ================ */
@@ -111,7 +111,7 @@ var SampleControl = (function() {
 
     // Update the font size
     var sample = line.getElementsByClassName("sample")[0];
-    sample.style.fontSize = size + "px";
+    sample.style.fontSize = size + "pt";
   }
 
   function changeAlign(aControl, index, alignments) {
