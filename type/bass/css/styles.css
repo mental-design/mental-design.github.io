@@ -297,15 +297,15 @@ h1 {
 }
 
 .size-control .control-label {
-  width: 50px;
+  width: 0px;
 }
 
 .spacing-control .control-label {
-  width: 45px;
+  width: 0px;
 }
 
 .height-control .control-label {
-  width: 35px;
+  width: 0px;
 }
 
 .align-control {

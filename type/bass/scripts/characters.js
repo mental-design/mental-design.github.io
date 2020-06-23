@@ -159,10 +159,10 @@ var CharacterSection = (function() {
   /* =============== control callback methods ================ */
 
   function updateFontSize(size) {
-    let divWPx = toSizeLabel(1.4 * size);
-    let divHPx = toSizeLabel(1.5 * size);
-    let lhPx = toSizeLabel(1.6 * size);
-    let sizePx = toSizeLabel(size);
+    let divWPx = (1.4 * size) + 'px';
+    let divHPx = (1.5 * size) + 'px';
+    let lhPx = (1.6 * size) + 'px';
+    let sizePx = (size) + 'px';
 
     let charCells = document.getElementsByClassName("char-cell");
     for (const idx in charCells) {
@@ -252,7 +252,7 @@ var CharacterSection = (function() {
   }
 
   function toSizeLabel(size) {
-    return size + "px";
+    return ""; //size + "px";
   }
   
   /* =============== export public methods =============== */

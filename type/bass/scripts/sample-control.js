@@ -109,15 +109,15 @@ var SampleControl = (function() {
   }
 
   function toSizeLabel(value) {
-    return value + "pt";
+    return ""; // value + " pt";
   }
 
   function toLetterSpaceLabel(value) {
-    return value + "px";
+    return ""; // value.toFixed(1) + " em";
   }
 
   function toLineHeightLabel(value) {
-    return value.toFixed(1);;
+    return ""; // value.toFixed(1);
   }
 
   /* =============== handle event methods ================ */
@@ -149,7 +149,7 @@ var SampleControl = (function() {
 
     // Update the font letter spacing
     var sample = line.getElementsByClassName("sample")[0];
-    sample.style.letterSpacing = value + "px";
+    sample.style.letterSpacing = value + "em";
   }
 
   function changeLineHeight(slider, values) {
