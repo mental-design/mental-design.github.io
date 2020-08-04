@@ -159,7 +159,7 @@ var SampleControl = (function() {
 
     // Update the font line height
     var sample = line.getElementsByClassName("sample")[0];
-    sample.style.lineHeight = value.toFixed(1);
+    sample.style.lineHeight = value;
   }
 
   function changeAlign(aControl, index, alignments) {
