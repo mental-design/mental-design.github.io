@@ -150,7 +150,7 @@ var CharacterSection = (function() {
     SampleSlider.init(sizeControl,
                       size,
                       controlInfo.sizes,
-                      toSizeLabel,
+                      "resources/font_size.svg",
                       changeSize);
     sizeControl.classList.add("size-control");
     controlDiv.appendChild(sizeControl);
@@ -249,10 +249,6 @@ var CharacterSection = (function() {
     var weightIndex = controlInfo.weights.indexOf(weight);
     var weightName = controlInfo.weightNames[weightIndex];
     return weightName + " " + weight;
-  }
-
-  function toSizeLabel(size) {
-    return ""; //size + "px";
   }
   
   /* =============== export public methods =============== */
