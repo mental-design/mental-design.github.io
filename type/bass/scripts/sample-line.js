@@ -40,7 +40,7 @@ var SampleLine = (function() {
   function initializeTextArea(textDiv, text, settings) {
     textDiv.style.fontWeight = settings.weight;
     textDiv.style.fontSize = settings.size + 'pt';
-    textDiv.style.letterSpacing = settings.letterSpacing + 'px';
+    textDiv.style.letterSpacing = settings.letterSpacing + 'em';
     textDiv.style.lineHeight = settings.lineHeight;
     textDiv.className = "sample-font sample " + "w3-" + settings.alignment;
     textDiv.contentEditable = true;

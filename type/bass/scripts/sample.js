@@ -22,8 +22,8 @@ var SampleSection = (function() {
       18, 22, 26, 30, 36,
       42, 48, 56, 64, 80,
       96, 120, 144],
-    lineHeights: range(1.0, 2.0, 50),
-    letterSpacings: range(0.0, 1.0, 50),
+    letterSpacings: range(0, 0.5, 51),
+    lineHeights: range(1.0, 2.0, 101),
     alignments: ['left-align', 'center', 'right-align']
   };
 
