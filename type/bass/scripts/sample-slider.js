@@ -7,8 +7,17 @@ var SampleSlider = (function() {
     // Label
     var label = document.createElement('div');
     label.className = 'control-label';
-    label.innerHTML = toLabel(value);
-    controlDiv.appendChild(label);
+
+    if (typeof toLabel == "function") {
+      label.innerHTML = toLabel(value);
+      controlDiv.appendChild(label);
+    }
+    else {  // SVG icon
+      var icon = document.createElement('img');
+      icon.className = 'control-icon';
+      icon.src = toLabel;
+      controlDiv.appendChild(icon);
+    }
 
     // Slider
     var slider = document.createElement('input');
@@ -25,10 +34,13 @@ var SampleSlider = (function() {
     slider.setAttribute('max', valueArray.length - 1);
     slider.value = valueArray.indexOf(value);
 
+
     slider.oninput = function() {
-      // Update the label
-      var label = this.parentElement.getElementsByClassName("control-label")[0];
-      label.innerHTML = toLabel(valueArray[this.value]);
+      if (typeof toLabel == "function") {
+        // Update the label
+        var label = this.parentElement.getElementsByClassName("control-label")[0];
+        label.innerHTML = toLabel(valueArray[this.value]);
+      }
 
       // Callback
       callback(this, valueArray);

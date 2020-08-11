@@ -25,7 +25,7 @@ var SampleControl = (function() {
     SampleSlider.init(sizeControl,
                       settings.size,
                       controlInfo.sizes,
-                      toSizeLabel,
+                      "resources/font_size.svg",
                       changeSize);
     sizeControl.classList.add("size-control");
     sizeControl.classList.add("separator");
@@ -34,7 +34,7 @@ var SampleControl = (function() {
     SampleSlider.init(letterSpacingControl,
                       settings.letterSpacing,
                       controlInfo.letterSpacings,
-                      toLetterSpaceLabel,
+                      "resources/letter_spacing.svg",
                       changeLetterSpacing);
     letterSpacingControl.classList.add("spacing-control");
     letterSpacingControl.classList.add("separator");
@@ -43,7 +43,7 @@ var SampleControl = (function() {
     SampleSlider.init(lineHeightControl,
                       settings.lineHeight,
                       controlInfo.lineHeights,
-                      toLineHeightLabel,
+                      "resources/line_height.svg",
                       changeLineHeight);
     lineHeightControl.classList.add("height-control");
     lineHeightControl.classList.add("separator");
@@ -106,18 +106,6 @@ var SampleControl = (function() {
     var weightIndex = controlInfo.weights.indexOf(weight);
     var weightName = controlInfo.weightNames[weightIndex];
     return weightName + " " + weight;
-  }
-
-  function toSizeLabel(value) {
-    return ""; // value + " pt";
-  }
-
-  function toLetterSpaceLabel(value) {
-    return ""; // value.toFixed(1) + " em";
-  }
-
-  function toLineHeightLabel(value) {
-    return ""; // value.toFixed(1);
   }
 
   /* =============== handle event methods ================ */

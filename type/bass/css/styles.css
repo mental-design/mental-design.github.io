@@ -285,11 +285,19 @@ h1 {
   display: inline-block;
   text-align: right;
   width: 100px;
+  height: 25px;
   color: #1E6FBF;
   margin-right: 10px;
   vertical-align: middle;
   opacity: 1;
   font-size: 15px;
+}
+
+.control-icon {
+  height: 25px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  margin-right: 5px;
 }
 
 .weight-control .control-label {
