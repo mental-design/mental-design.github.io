@@ -274,7 +274,7 @@ h1 {
 
 .control-item {
   display: inline-block;
-  padding-right: 15px;
+  padding-right: 5px;
 }
 
 .control-last {
@@ -291,7 +291,7 @@ h1 {
   width: 100px;
   height: 25px;
   color: #1E6FBF;
-  margin-right: 10px;
+  margin-right: 5px;
   vertical-align: middle;
   opacity: 1;
   font-size: 15px;
@@ -300,7 +300,7 @@ h1 {
 .control-icon {
   height: 25px;
   padding-bottom: 5px;
-  padding-left: 10px;
+  padding-left: 5px;
   margin-right: 5px;
 }
 
@@ -325,14 +325,13 @@ h1 {
 }
 
 .align-control i {
-  margin-left: 3px;
   padding: 5px;
   color: #1E6FBF;
   border-radius: 3px;
   vertical-align: -1px;
 }
 
-@media (max-width:472px) {
+@media (max-width:645px) {
   .control-wrapper {
     height: 55px;
   }
@@ -342,7 +341,7 @@ h1 {
   }
 
   .align-control {
-    margin-left: 0px;
+    margin-left: 3px;
   }
 }
 
