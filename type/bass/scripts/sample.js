@@ -1,9 +1,7 @@
 var SampleSection = (function() {
 
   // main init method
-  function init(div) {
-    var url = 'models/sample_content.json';
-
+  function init(div, url) {
     fetchData(url, function(content){
       initializeSampleArea(div, controlInfo, content);
     });
