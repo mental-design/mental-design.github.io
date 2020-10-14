@@ -18,11 +18,9 @@ var SampleSection = (function() {
       'Thin', 'ExtraLight', 'Light', 'Regular', 'Medium',
       'SemiBold', 'Bold'
       ],
-    sizes: [
-      8, 10, 12, 14, 16,
-      18, 22, 26, 30, 36,
-      42, 48, 56, 64, 80,
-      96, 120, 144],
+    sizes: sizes(8, 200, 50),
+    letterSpacings: range(0, 0.5, 51),
+    lineHeights: range(1.0, 2.0, 101),
     alignments: ['left-align', 'center', 'right-align']
   };
 
@@ -76,6 +74,19 @@ var SampleSection = (function() {
       .then(function(values){
         callback(values[0]);
     });
+  }
+
+  /* =============== utility methods =============== */
+  function range(start, stop, count) {
+    var rng = stop - start;
+    var step = rng / (count-1);
+    return [...Array(count).keys()].map(i => start + i * step);
+  }
+
+  function sizes(start, stop, count) {
+    var lgArray = range(Math.log2(start), Math.log2(stop), count);
+    var outArray = lgArray.map(i => 2 ** i);
+    return outArray;
   }
 
   /* =============== export public methods =============== */

@@ -151,7 +151,7 @@ a:hover {
 .title-item {
   font-weight: 500;
   font-size: 16px;
-  letter-spacing: 1px;
+  /*letter-spacing: 1px;*/
 }
 
 .title-item:hover {
@@ -185,7 +185,7 @@ a:hover {
 .title {
   font-weight: 500;
   font-size: 48px;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
 }
 
 .section {
@@ -264,6 +264,13 @@ h1 {
   vertical-align: middle;
   opacity: 1;
   font-size: 15px;
+}
+
+.control-icon {
+  height: 25px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  margin-right: 5px;
 }
 
 .weight-control .control-label {

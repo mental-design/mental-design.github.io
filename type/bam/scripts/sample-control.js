@@ -25,10 +25,30 @@ var SampleControl = (function() {
     SampleSlider.init(sizeControl,
                       settings.size,
                       controlInfo.sizes,
-                      toSizeLabel,
+                      "resources/font_size.svg",
                       changeSize);
     sizeControl.classList.add("size-control");
     sizeControl.classList.add("separator");
+
+    var letterSpacingControl = document.createElement('div');
+    SampleSlider.init(letterSpacingControl,
+                      settings.letterSpacing,
+                      controlInfo.letterSpacings,
+                      "resources/letter_spacing.svg",
+                      changeLetterSpacing);
+    letterSpacingControl.classList.add("spacing-control");
+    letterSpacingControl.classList.add("separator");
+
+    var lineHeightControl = document.createElement('div');
+    SampleSlider.init(lineHeightControl,
+                      settings.lineHeight,
+                      controlInfo.lineHeights,
+                      "resources/line_height.svg",
+                      changeLineHeight);
+    lineHeightControl.classList.add("height-control");
+    lineHeightControl.classList.add("separator");
+
+    var alignControl = createAlignControl(settings.alignment);
 
     var alignControl = createAlignControl(settings.alignment);
 
@@ -36,6 +56,8 @@ var SampleControl = (function() {
     controlDiv.className = "control";
     controlDiv.appendChild(weightControl);
     controlDiv.appendChild(sizeControl);
+    controlDiv.appendChild(letterSpacingControl);
+    controlDiv.appendChild(lineHeightControl);
     controlDiv.appendChild(alignControl);
     controlDiv.hidden = !settings.showControl;
 
@@ -112,6 +134,26 @@ var SampleControl = (function() {
     // Update the font size
     var sample = line.getElementsByClassName("sample")[0];
     sample.style.fontSize = size + "pt";
+  }
+
+  function changeLetterSpacing(slider, values) {
+    var value = values[slider.value];
+
+    var line = slider.parentElement.parentElement.parentElement.parentElement;
+
+    // Update the font letter spacing
+    var sample = line.getElementsByClassName("sample")[0];
+    sample.style.letterSpacing = value + "em";
+  }
+
+  function changeLineHeight(slider, values) {
+    var value = values[slider.value];
+
+    var line = slider.parentElement.parentElement.parentElement.parentElement;
+
+    // Update the font line height
+    var sample = line.getElementsByClassName("sample")[0];
+    sample.style.lineHeight = value;
   }
 
   function changeAlign(aControl, index, alignments) {
