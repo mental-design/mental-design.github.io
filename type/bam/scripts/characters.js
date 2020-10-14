@@ -15,10 +15,7 @@ var CharacterSection = (function() {
       'Thin', 'ExtraLight', 'Light', 'Regular', 'Medium',
       'SemiBold', 'Bold'
       ],
-    sizes: [
-      20, 24, 30, 36, 42,
-      48, 56, 64, 80, 96,
-      128, 160]
+    sizes: sizes(20, 160, 40)
   };
 
   // Setup info
@@ -150,7 +147,7 @@ var CharacterSection = (function() {
     SampleSlider.init(sizeControl,
                       size,
                       controlInfo.sizes,
-                      toSizeLabel,
+                      "resources/font_size.svg",
                       changeSize);
     sizeControl.classList.add("size-control");
     controlDiv.appendChild(sizeControl);
@@ -253,6 +250,18 @@ var CharacterSection = (function() {
 
   function toSizeLabel(size) {
     return size + "px";
+  }
+
+  function range(start, stop, count) {
+    var rng = stop - start;
+    var step = rng / (count-1);
+    return [...Array(count).keys()].map(i => start + i * step);
+  }
+
+  function sizes(start, stop, count) {
+    var lgArray = range(Math.log2(start), Math.log2(stop), count);
+    var outArray = lgArray.map(i => 2 ** i);
+    return outArray;
   }
   
   /* =============== export public methods =============== */
