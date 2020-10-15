@@ -1,22 +1,22 @@
 [
   {
     "settings": {
-      "weightIndex": 1,
-      "sizeIndex": 12,
+      "weightIndex": 3,
+      "sizeIndex": 25,
       "alignIndex": 0,
-      "letterSpacingIndex": 0,
-      "lineHeightIndex": 0,
+      "letterSpacingIndex": 10,
+      "lineHeightIndex": 30,
       "showControl": 0
     },
     "text": "Basic Geometry<br>Circles & Lines<br>Parameterized Glyphs"
   },
   {
     "settings": {
-      "weightIndex": 3,
-      "sizeIndex": 9,
+      "weightIndex": 1,
+      "sizeIndex": 23,
       "alignIndex": 1,
       "letterSpacingIndex": 0,
-      "lineHeightIndex": 0,
+      "lineHeightIndex": 30,
       "showControl": 0
     },
     "text": "Circles in code o<br>Infinite ∞ Loops<br>race condition<br>synchronized deadlock<br>(Political Bureaucracy?)<br>Out of order, execution<br>segfault … Done!"
@@ -24,10 +24,10 @@
   {
     "settings": {
       "weightIndex": 5,
-      "sizeIndex": 10,
+      "sizeIndex": 24,
       "alignIndex": 2,
       "letterSpacingIndex": 0,
-      "lineHeightIndex": 0,
+      "lineHeightIndex": 30,
       "showControl": 0
     },
     "text": "Optimal Circles<br>Constant Lines<br>Vertical/Horizontal Terminals<br>It's that basic!"
@@ -35,21 +35,21 @@
   {
     "settings": {
       "weightIndex": 1,
-      "sizeIndex": 7,
+      "sizeIndex": 20,
       "alignIndex": 1,
       "letterSpacingIndex": 0,
-      "lineHeightIndex": 0,
+      "lineHeightIndex": 30,
       "showControl": 0
     },
-    "text": "Sweep through the weights below and see the characters breathe. ↓"
+    "text": "Change the weights below and see the characters breathe.<br>↓"
   },
   {
     "settings": {
-      "weightIndex": 4,
-      "sizeIndex": 14,
+      "weightIndex": 5,
+      "sizeIndex": 30,
       "alignIndex": 1,
-      "letterSpacingIndex": 0,
-      "lineHeightIndex": 0,
+      "letterSpacingIndex": 5,
+      "lineHeightIndex": 20,
       "showControl": 1
     },
     "text": "@#$%&^~-+*=<br><>{}(|)[]/\\<br>!?.:;,¿¡"
@@ -57,10 +57,10 @@
   {
     "settings": {
       "weightIndex": 3,
-      "sizeIndex": 10,
+      "sizeIndex": 27,
       "alignIndex": 1,
       "letterSpacingIndex": 0,
-      "lineHeightIndex": 0,
+      "lineHeightIndex": 30,
       "showControl": 0
     },
     "text": "Enter your own text here<br> and try out Basically A Mono."
@@ -68,10 +68,10 @@
   {
     "settings": {
       "weightIndex": 1,
-      "sizeIndex": 8,
+      "sizeIndex": 20,
       "alignIndex": 1,
       "letterSpacingIndex": 0,
-      "lineHeightIndex": 0,
+      "lineHeightIndex": 30,
       "showControl": 0
     },
     "text": "Or see Basically A Mono in action with the interactive code preview below."
@@ -79,7 +79,7 @@
   {
     "settings": {
       "weightIndex": 5,
-      "sizeIndex": 14,
+      "sizeIndex": 40,
       "alignIndex": 1,
       "letterSpacingIndex": 0,
       "lineHeightIndex": 0,

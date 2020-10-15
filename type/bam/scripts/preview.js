@@ -6,7 +6,7 @@ var PreviewSection = (function() {
   function init(previewDiv) {
     // Randomize defaults
     defaults.langIndex = chooseFromArray([0, 2, 3, 4]);
-    defaults.themeIndex = chooseFromArray([2, 3, 4, 8, 9]);
+    defaults.themeIndex = chooseFromArray([2, 3, 4, 7, 9]);
 
     // Create Controller
     var controlDiv = document.createElement('div');
