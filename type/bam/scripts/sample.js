@@ -1,10 +1,7 @@
 var SampleSection = (function() {
 
   // main init method
-  function init(div) {
-    // var url = 'models/test_content.json';
-    var url = 'models/sample_content.json';
-
+  function init(div, url) {
     fetchData(url, function(content){
       initializeSampleArea(div, controlInfo, content);
     });
@@ -46,13 +43,18 @@ var SampleSection = (function() {
     darkButton.className = "w3-display-topright w3-xlarge";
     darkButton.setAttribute('id', 'dark-mode');
 
+    var darkClass = "w3-black";
+    var lightClass = "section-light-grey";
+
     darkButton.onclick = function() {
       var overviewDiv = this.parentElement.parentElement;
-      if (overviewDiv.classList.contains("w3-black")) {
-        overviewDiv.classList.remove("w3-black");
+      if (overviewDiv.classList.contains(darkClass)) {
+        overviewDiv.classList.remove(darkClass);
+        overviewDiv.classList.add(lightClass);
       }
       else {
-        overviewDiv.classList.add("w3-black");
+        overviewDiv.classList.remove(lightClass);
+        overviewDiv.classList.add(darkClass);
       }
     }
 

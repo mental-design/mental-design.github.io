@@ -50,8 +50,6 @@ var SampleControl = (function() {
 
     var alignControl = createAlignControl(settings.alignment);
 
-    var alignControl = createAlignControl(settings.alignment);
-
     var controlDiv = document.createElement('div');
     controlDiv.className = "control";
     controlDiv.appendChild(weightControl);
@@ -108,10 +106,6 @@ var SampleControl = (function() {
     var weightIndex = controlInfo.weights.indexOf(weight);
     var weightName = controlInfo.weightNames[weightIndex];
     return weightName + " " + weight;
-  }
-
-  function toSizeLabel(size) {
-    return size + "pt";
   }
 
   /* =============== handle event methods ================ */

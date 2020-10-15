@@ -54,9 +54,9 @@ a:hover {
 }
 
 .mtd-wide {
-  width: 2500px;
+  width: 100%;
+  white-space: nowrap;
   position: absolute;
-  left: -10px;
   padding-left: 0px;
   color: #2f2f2f;
   font-weight: 300;
@@ -297,7 +297,7 @@ h1 {
   vertical-align: -1px;
 }
 
-@media (max-width:472px) {
+@media (max-width:645px) {
   .control-wrapper {
     height: 55px;
   }
@@ -307,7 +307,7 @@ h1 {
   }
 
   .align-control {
-    margin-left: 0px;
+    margin-left: 3px;
   }
 }
 

@@ -39,7 +39,9 @@ var SampleLine = (function() {
 
   function initializeTextArea(textDiv, text, settings) {
     textDiv.style.fontWeight = settings.weight;
-    textDiv.style.fontSize = settings.size + 'px';
+    textDiv.style.fontSize = settings.size + 'pt';
+    textDiv.style.letterSpacing = settings.letterSpacing + 'em';
+    textDiv.style.lineHeight = settings.lineHeight;
     textDiv.className = "mono sample " + "w3-" + settings.alignment;
     textDiv.contentEditable = true;
     textDiv.innerHTML = text;
@@ -51,6 +53,8 @@ var SampleLine = (function() {
     var translated = {};
     translated.weight = controlInfo.weights[settings.weightIndex];
     translated.size = controlInfo.sizes[settings.sizeIndex];
+    translated.letterSpacing = controlInfo.letterSpacings[settings.letterSpacingIndex];
+    translated.lineHeight = controlInfo.lineHeights[settings.lineHeightIndex];
     translated.alignment = controlInfo.alignments[settings.alignIndex];
     translated.showControl = settings.showControl > 0;
     return translated;

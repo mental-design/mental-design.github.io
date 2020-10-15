@@ -34,7 +34,6 @@ var SampleSlider = (function() {
     slider.setAttribute('max', valueArray.length - 1);
     slider.value = valueArray.indexOf(value);
 
-
     slider.oninput = function() {
       if (typeof toLabel == "function") {
         // Update the label
