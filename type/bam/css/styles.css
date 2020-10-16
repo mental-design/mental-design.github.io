@@ -244,7 +244,7 @@ h1 {
 
 .control-item {
   display: inline-block;
-  padding-right: 15px;
+  padding-right: 5px;
 }
 
 .control-last {
@@ -259,8 +259,9 @@ h1 {
   display: inline-block;
   text-align: right;
   width: 100px;
+  height: 25px;
   color: #1E6FBF;
-  margin-right: 10px;
+  margin-right: 5px;
   vertical-align: middle;
   opacity: 1;
   font-size: 15px;
@@ -278,11 +279,15 @@ h1 {
 }
 
 .size-control .control-label {
-  width: 50px;
+  width: 0px;
 }
 
 .spacing-control .control-label {
-  width: 30px;
+  width: 0px;
+}
+
+.height-control .control-label {
+  width: 0px;
 }
 
 .align-control {
@@ -290,14 +295,13 @@ h1 {
 }
 
 .align-control i {
-  margin-left: 3px;
   padding: 5px;
   color: #1E6FBF;
   border-radius: 3px;
   vertical-align: -1px;
 }
 
-@media (max-width:645px) {
+@media (max-width:670px) {
   .control-wrapper {
     height: 55px;
   }

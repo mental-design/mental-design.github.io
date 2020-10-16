@@ -331,7 +331,7 @@ h1 {
   vertical-align: -1px;
 }
 
-@media (max-width:645px) {
+@media (max-width:670px) {
   .control-wrapper {
     height: 55px;
   }

@@ -1,68 +1,46 @@
 [
   {
     "settings": {
-      "weightIndex": 3,
-      "sizeIndex": 12,
-      "alignIndex": 0,
-      "letterSpacingIndex": 0,
-      "lineHeightIndex": 1,
+      "weightIndex": 1,
+      "sizeIndex": 30,
+      "alignIndex": 1,
+      "letterSpacingIndex": 40,
+      "lineHeightIndex": 50,
       "showControl": 0
     },
-    "text": "ÆŒÐÞß<br>æœðþı"
+    "text": "NEUTRAL<br>PRECISE<br>BALANCED<br>SIMPLE"
   },
   {
     "settings": {
-      "weightIndex": 1,
-      "sizeIndex": 12,
-      "alignIndex": 0,
+      "weightIndex": 6,
+      "sizeIndex": 25,
+      "alignIndex": 2,
       "letterSpacingIndex": 0,
-      "lineHeightIndex": 1,
+      "lineHeightIndex": 25,
       "showControl": 0
     },
-    "text": "@#$%&^~-+*=<br><>{}(|)[]/\\<br>!?.:;,¿¡"
+    "text": "SYSTEMATICALLY ENGINEERED<br>NUMERICALLY CONSTRUCTED<br>PARAMETRICALLY TUNED<br>ESSENTIALLY DESIGNED"
   },
   {
     "settings": {
       "weightIndex": 2,
-      "sizeIndex": 8,
+      "sizeIndex": 12,
       "alignIndex": 0,
       "letterSpacingIndex": 0,
-      "lineHeightIndex": 1,
+      "lineHeightIndex": 30,
       "showControl": 0
     },
-    "text": "Staf þann er flestir menn kalla þ, þann kalla ég af því heldur þe að þá er það atkvæði hans í hverju máli sem eftir lifir nafnsins er úr er tekinn raddarstafur úr nafni hans, sem alla hefi ég samhljóðendur samda í það mark nú sem ég reit snemma í þeirra umræðu. [...] Höfuðstaf þe-sins rita ég hvergi nema í vers upphafi því að hans atkvæði má eigi æxla þótt hann standi eftir raddarstaf í samstöfun."
+    "text": "The design process of a typeface starts with a concept that is encoded into components that are then combined to create each glyph. No point is manipulated directly, rather each glyph is adjusted by parameters that translates the concept into shapes, paths, and points. The parameters for the components are tuned for each glyph to ensure they work together. This enables a systematic approach to type design."
   },
   {
     "settings": {
-      "weightIndex": 3,
-      "sizeIndex": 13,
-      "alignIndex": 1,
-      "letterSpacingIndex": 0,
-      "lineHeightIndex": 1,
-      "showControl": 0
-    },
-    "text": "CHAMBURGEFONSTIVY<br>chamburgefonstivy"
-  },
-  {
-    "settings": {
-      "weightIndex": 3,
-      "sizeIndex": 8,
-      "alignIndex": 0,
-      "letterSpacingIndex": 0,
-      "lineHeightIndex": 2,
-      "showControl": 0
-    },
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-  },
-  {
-    "settings": {
-      "weightIndex": 3,
+      "weightIndex": 2,
       "sizeIndex": 4,
-      "alignIndex": 0,
-      "letterSpacingIndex": 0,
-      "lineHeightIndex": 3,
+      "alignIndex": 3,
+      "letterSpacingIndex": 3,
+      "lineHeightIndex": 30,
       "showControl": 0
     },
-    "text": "Copyright 2020 Mental Type Design (http://experi.mentallydesigned.com/type/), with Reserved Font Name \"Basically A Sans Serif\". All Rights Reserved. <br><br>This Font Software is licensed under the SIL Open Font License, Version 1.1. <br><br>This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL <br><br>-----------------------------------------------------------<br>  SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007<br>-----------------------------------------------------------<br><br>PREAMBLE <br>The goals of the Open Font License (OFL) are to stimulate worldwide development of collaborative font projects, to support the font creation efforts of academic and linguistic communities, and to provide a free and open framework in which fonts may be shared and improved in partnership with others.<br><br>The OFL allows the licensed fonts to be used, studied, modified and redistributed freely as long as they are not sold by themselves. The fonts, including any derivative works, can be bundled, embedded, redistributed and/or sold with any software provided that any reserved names are not used by derivative works. The fonts and derivatives, however, cannot be released under any other type of license. The requirement for fonts to remain under this license does not apply to any document created using the fonts or their derivatives. <br><br>DEFINITIONS <br>\"Font Software\" refers to the set of files released by the Copyright Holder(s) under this license and clearly marked as such. This may include source files, build scripts and documentation. <br><br>\"Reserved Font Name\" refers to any names specified as such after the copyright statement(s). <br><br>\"Original Version\" refers to the collection of Font Software components as distributed by the Copyright Holder(s). <br><br>\"Modified Version\" refers to any derivative made by adding to, deleting, or substituting -- in part or in whole -- any of the components of the Original Version, by changing formats or by porting the Font Software to a new environment. <br><br>\"Author\" refers to any designer, engineer, programmer, technical writer or other person who contributed to the Font Software. <br><br>PERMISSION & CONDITIONS <br>Permission is hereby granted, free of charge, to any person obtaining a copy of the Font Software, to use, study, copy, merge, embed, modify, redistribute, and sell modified and unmodified copies of the Font Software, subject to the following conditions: <br><br>1) Neither the Font Software nor any of its individual components, in Original or Modified Versions, may be sold by itself. <br><br>2) Original or Modified Versions of the Font Software may be bundled, redistributed and/or sold with any software, provided that each copy contains the above copyright notice and this license. These can be included either as stand-alone text files, human-readable headers or in the appropriate machine-readable metadata fields within text or binary files as long as those fields can be easily viewed by the user. <br><br>3) No Modified Version of the Font Software may use the Reserved Font Name(s) unless explicit written permission is granted by the corresponding Copyright Holder. This restriction only applies to the primary font name as presented to the users. <br><br>4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font Software shall not be used to promote, endorse or advertise any Modified Version, except to acknowledge the contribution(s) of the Copyright Holder(s) and the Author(s) or with their explicit written permission. <br><br>5) The Font Software, modified or unmodified, in part or in whole, must be distributed entirely under this license, and must not be distributed under any other license. The requirement for fonts to remain under this license does not apply to any document created using the Font Software. <br><br>TERMINATION <br>This license becomes null and void if any of the above conditions are not met. <br><br>DISCLAIMER <br>THE FONT SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM OTHER DEALINGS IN THE FONT SOFTWARE."
+    "text": "He was quiet in his ways, and his habits were regular. It was rare for him to be up after ten at night, and he had invariably breakfasted and gone out before I rose in the morning. Sometimes he spent his day at the chemical laboratory, sometimes in the dissecting-rooms, and occasionally in long walks, which appeared to take him into the lowest portions of the City. Nothing could exceed his energy when the working fit was upon him; but now and again a reaction would seize him, and for days on end he would lie upon the sofa in the sitting-room, hardly uttering a word or moving a muscle from morning to night. On these occasions I have noticed such a dreamy, vacant expression in his eyes, that I might have suspected him of being addicted to the use of some narcotic, had not the temperance and cleanliness of his whole life forbidden such a notion."
   }
 ]

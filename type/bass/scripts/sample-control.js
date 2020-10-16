@@ -71,7 +71,7 @@ var SampleControl = (function() {
     var div = document.createElement('div');
     div.className = "control-item align-control control-last";
 
-    var alignTags = ['left', 'center', 'right'];
+    var alignTags = ['left', 'center', 'right', 'justify'];
     for (var i = 0; i < alignTags.length; i++) {
       var alignButton = createAlignButton(alignTags[i], i);
       if(i == alignIndex) {
