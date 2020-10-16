@@ -251,13 +251,13 @@ var CharacterSection = (function() {
   function toSizeLabel(size) {
     return size + "px";
   }
-
+  // TODO: move this into a utility file
   function range(start, stop, count) {
     var rng = stop - start;
     var step = rng / (count-1);
     return [...Array(count).keys()].map(i => start + i * step);
   }
-
+  // TODO: move this into a utility file
   function sizes(start, stop, count) {
     var lgArray = range(Math.log2(start), Math.log2(stop), count);
     var outArray = lgArray.map(i => 2 ** i);

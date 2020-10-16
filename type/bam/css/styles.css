@@ -279,11 +279,11 @@ h1 {
 }
 
 .size-control .control-label {
-  width: 0px;
+  width: 35px;
 }
 
 .spacing-control .control-label {
-  width: 0px;
+  width: 25px;
 }
 
 .height-control .control-label {

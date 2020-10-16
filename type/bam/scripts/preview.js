@@ -35,7 +35,7 @@ var PreviewSection = (function() {
     themes: ["Colorforth", "Eclipse", "Lesser-Dark", "Lucario", "Mbo",
              "Monokai", "Moxer", "SSMS", "Twilight", "Vibrant-Ink",
              "Xq-Light"],
-    sizes: [8, 9, 10, 11, 12, 13, 14, 16, 18, 20, 22, 24, 28, 30, 36, 42, 48, 56, 64, 80, 96],
+    sizes: [6, 7, 8, 9, 10, 11, 12, 14, 16, 18, 20, 22, 24, 28, 32, 36],
     spacing: [1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0]
   };
 
@@ -43,7 +43,7 @@ var PreviewSection = (function() {
   var defaults = {
     langIndex: 2,
     themeIndex: 3,
-    sizeIndex: 6,
+    sizeIndex: 4,
     spacingIndex: 3
   };
 
@@ -163,7 +163,7 @@ var PreviewSection = (function() {
   }
 
   function toSizeLabel(size) {
-    return size + "px";
+    return Math.round(size) + "pt";
   }
 
   function getRandomInt(max) {

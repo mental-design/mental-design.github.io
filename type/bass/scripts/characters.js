@@ -21,7 +21,7 @@ var CharacterSection = (function() {
   // Setup info
   var defaults = {
     weightIndex: 3,
-    sizeIndex: 3
+    sizeIndex: 15
   };
 
   /* =============== initialize methods ================ */
