@@ -16,7 +16,7 @@ var SampleSection = (function() {
       'SemiBold', 'Bold'
       ],
     sizes: sizes(8, 200, 50),
-    letterSpacings: range(0, 0.5, 51),
+    letterSpacings: range(-0.1, 0.5, 61),
     lineHeights: range(1.0, 2.0, 101),
     alignments: ['left-align', 'center', 'right-align', 'justify']
   };

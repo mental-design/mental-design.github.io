@@ -1,46 +1,57 @@
 [
   {
     "settings": {
-      "weightIndex": 1,
+      "weightIndex": 6,
       "sizeIndex": 30,
       "alignIndex": 1,
-      "letterSpacingIndex": 40,
+      "letterSpacingIndex": 50,
       "lineHeightIndex": 50,
       "showControl": 0
     },
-    "text": "NEUTRAL<br>PRECISE<br>BALANCED<br>SIMPLE"
+    "text": "NEUTRAL<br>PRECISE<br>SIMPLE<br>BALANCED"
   },
   {
     "settings": {
-      "weightIndex": 6,
+      "weightIndex": 0,
       "sizeIndex": 25,
       "alignIndex": 2,
-      "letterSpacingIndex": 0,
+      "letterSpacingIndex": 12,
       "lineHeightIndex": 25,
       "showControl": 0
     },
-    "text": "SYSTEMATICALLY ENGINEERED<br>NUMERICALLY CONSTRUCTED<br>PARAMETRICALLY TUNED<br>ESSENTIALLY DESIGNED"
+    "text": "NUMERICALLY CONSTRUCTED<br>SYSTEMATICALLY DESIGNED<br>PROGRESSIVELY TUNED<br>TYPE. ENGINEERED."
   },
   {
     "settings": {
       "weightIndex": 3,
       "sizeIndex": 12,
       "alignIndex": 0,
-      "letterSpacingIndex": 0,
+      "letterSpacingIndex": 10,
       "lineHeightIndex": 30,
       "showControl": 0
     },
-    "text": "The design process of a typeface starts with a concept that is encoded into components that are then combined to create each glyph. No point is manipulated directly, rather each glyph is adjusted by parameters that translates the concept into shapes, paths, and points. The parameters for the components are tuned for each glyph to ensure they work together. This enables a systematic approach to type design."
+    "text": "At Mental Type Design, the design process of a typeface starts with a concept. The concept is encoded into components which are programmatically translated into shapes, paths, and points. These components are then combined to create each glyph. No point is manipulated directly, rather each glyph is adjusted by parameters that change the settings for each component. The parameters are tuned along a grid system which guides the proportions then iteratively adjusted to make the characters fit together harmoniously. This systematic design approach reduces arbitrary artifacts and gives the typeface a coherent look and feel."
   },
   {
     "settings": {
       "weightIndex": 2,
-      "sizeIndex": 4,
-      "alignIndex": 3,
-      "letterSpacingIndex": 3,
-      "lineHeightIndex": 30,
+      "sizeIndex": 20,
+      "alignIndex": 0,
+      "letterSpacingIndex": 7,
+      "lineHeightIndex": 20,
       "showControl": 0
     },
-    "text": "He was quiet in his ways, and his habits were regular. It was rare for him to be up after ten at night, and he had invariably breakfasted and gone out before I rose in the morning. Sometimes he spent his day at the chemical laboratory, sometimes in the dissecting-rooms, and occasionally in long walks, which appeared to take him into the lowest portions of the City. Nothing could exceed his energy when the working fit was upon him; but now and again a reaction would seize him, and for days on end he would lie upon the sofa in the sitting-room, hardly uttering a word or moving a muscle from morning to night. On these occasions I have noticed such a dreamy, vacant expression in his eyes, that I might have suspected him of being addicted to the use of some narcotic, had not the temperance and cleanliness of his whole life forbidden such a notion."
+    "text": "Beauty in Geometry<br>Designed by Numbers<br>Keep it Simple<br><span style='color:#999'>[Smart Catchphrase Here]</span><br><span style='font-weight:600'>Steal This Font!!!*</span>"
+  },
+  {
+    "settings": {
+      "weightIndex": 1,
+      "sizeIndex": 10,
+      "alignIndex": 0,
+      "letterSpacingIndex": 12,
+      "lineHeightIndex": 20,
+      "showControl": 0
+    },
+    "text": "*It's actually free. Free as in Beer, Freedom of Speech, and “Feel Free to Donate!” :-)"
   }
 ]
