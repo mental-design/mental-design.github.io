@@ -11,10 +11,7 @@ var SampleSection = (function() {
   // Control info
   var controlInfo = {
     weights: [100, 200, 300, 400, 500, 600, 700],
-    weightNames: [
-      'Thin', 'ExtraLight', 'Light', 'Regular', 'Medium',
-      'SemiBold', 'Bold'
-      ],
+    weightNames: ['Thin', 'ExtraLight', 'Light', 'Regular', 'Medium', 'SemiBold', 'Bold'],
     sizes: sizes(8, 200, 50),
     letterSpacings: range(-0.1, 0.5, 61),
     lineHeights: range(1.0, 2.0, 101),

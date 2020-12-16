@@ -88,7 +88,7 @@
 
   <!-- The Notes Section -->
   <div id="notes" class="section-wrapper">
-    <div class="w3-display-container w3-content w3-padding-32 section">
+    <div class="w3-display-container w3-content w3-padding-32 section" id="description">
     </div>
   </div>
 
@@ -117,16 +117,38 @@
 <script src="scripts/sample.js"></script>
 <script src="scripts/characters.js"></script>
 <script src="scripts/w3.js"></script>
+<script src="lib/marked-1.2.7/marked.min.js"></script>
 <script>
   function initialize(){
-    adjustToNavbar();
+    adjustToNavbar(); 
 
-    var url = 'models/sample_content.json';
+    // The Overview Section
+    var sampleUrl = 'models/sample_content.json';
     var sampleDiv = document.getElementById('samples');
-    SampleSection.init(sampleDiv, url);
+    SampleSection.init(sampleDiv, sampleUrl);
 
+    // The Notes Section
+    var notesDiv = document.getElementById('description');
+    var notesUrl = 'models/notes_content.md';
+    fetchNotes(notesUrl, function(content){
+      notesDiv.innerHTML = marked(content);
+    });
+    
+    // The Characters Section
     var characterDiv = document.getElementById('charmap');
     CharacterSection.init(characterDiv);
+  }
+
+  function fetchNotes(url, callback) {
+    var notesRequest = fetch(url)
+      .then(function(response) {
+         return response.text()
+      });
+
+    Promise.all([notesRequest])
+      .then(function(values){
+        callback(values[0]);
+    });
   }
 </script>
 
