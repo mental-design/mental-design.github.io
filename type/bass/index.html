@@ -111,16 +111,17 @@
 </footer>
 
 <!-- Scripts -->
+<script src="lib/marked-1.2.7/marked.min.js"></script>
 <script src="scripts/sample-slider.js"></script>
 <script src="scripts/sample-control.js"></script>
 <script src="scripts/sample-line.js"></script>
 <script src="scripts/sample.js"></script>
+<script src="scripts/notes.js"></script>
 <script src="scripts/characters.js"></script>
 <script src="scripts/w3.js"></script>
-<script src="lib/marked-1.2.7/marked.min.js"></script>
 <script>
   function initialize(){
-    adjustToNavbar(); 
+    adjustToNavbar();
 
     // The Overview Section
     var sampleUrl = 'models/sample_content.json';
@@ -130,25 +131,11 @@
     // The Notes Section
     var notesDiv = document.getElementById('description');
     var notesUrl = 'models/notes_content.md';
-    fetchNotes(notesUrl, function(content){
-      notesDiv.innerHTML = marked(content);
-    });
+    NotesSection.init(notesDiv, notesUrl);
     
     // The Characters Section
     var characterDiv = document.getElementById('charmap');
     CharacterSection.init(characterDiv);
-  }
-
-  function fetchNotes(url, callback) {
-    var notesRequest = fetch(url)
-      .then(function(response) {
-         return response.text()
-      });
-
-    Promise.all([notesRequest])
-      .then(function(values){
-        callback(values[0]);
-    });
   }
 </script>
 
