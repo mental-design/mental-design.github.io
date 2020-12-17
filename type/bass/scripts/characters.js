@@ -4,7 +4,7 @@ var CharacterSection = (function() {
   function init(div) {
 
     fetchData(function(data){
-      initializeCharactersDiv(div, data);
+      initializeCharactersDiv(div, data, getSettings());
     });
   }
 
@@ -23,10 +23,14 @@ var CharacterSection = (function() {
     weightIndex: 3,
     sizeIndex: 15
   };
+  var smallScreenDefaults = {
+    weightIndex: 3,
+    sizeIndex: 5
+  };
 
   /* =============== initialize methods ================ */
 
-  function initializeCharactersDiv(div, data) {
+  function initializeCharactersDiv(div, data, settings) {
     let glyphList = Object.values(data["glyphMap"]).map(function(e){
       return parseInt(e).toString(16);
     });
@@ -39,7 +43,7 @@ var CharacterSection = (function() {
 
     // Create Controller
     var controlDiv = document.createElement('div');
-    initializeControls(controlDiv, controlInfo, defaults);
+    initializeControls(controlDiv, controlInfo, settings);
     div.appendChild(controlDiv);
     
     // Add characters per type
@@ -51,9 +55,9 @@ var CharacterSection = (function() {
     }
 
     // Set defaults
-    var weight = controlInfo.weights[defaults.weightIndex];
+    var weight = controlInfo.weights[settings.weightIndex];
     updateWeight(weight);
-    var size = controlInfo.sizes[defaults.sizeIndex];
+    var size = controlInfo.sizes[settings.sizeIndex];
     updateFontSize(size);
   }
 
@@ -124,13 +128,13 @@ var CharacterSection = (function() {
   }
 
   // ===== Controls =====
-  function initializeControls(controlDiv, controlInfo, defaults) {
+  function initializeControls(controlDiv, controlInfo, settings) {
     controlDiv.id = "char-controls"
     controlDiv.classList.add("control");
     controlDiv.classList.add("w3-center");
 
     // Create weight slider
-    var weight = controlInfo.weights[defaults.weightIndex];
+    var weight = controlInfo.weights[settings.weightIndex];
     var weightControl = document.createElement('div');
     SampleSlider.init(weightControl,
                       weight,
@@ -142,7 +146,7 @@ var CharacterSection = (function() {
     controlDiv.appendChild(weightControl);
 
     // Create size slider
-    var size = controlInfo.sizes[defaults.sizeIndex];
+    var size = controlInfo.sizes[settings.sizeIndex];
     var sizeControl = document.createElement('div');
     SampleSlider.init(sizeControl,
                       size,
@@ -258,6 +262,10 @@ var CharacterSection = (function() {
     var lgArray = range(Math.log2(start), Math.log2(stop), count);
     var outArray = lgArray.map(i => 2 ** i);
     return outArray;
+  }
+
+  function getSettings() {
+    return (screen.width < 600) ? smallScreenDefaults : defaults;
   }
   
   /* =============== export public methods =============== */
