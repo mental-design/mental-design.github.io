@@ -8,7 +8,8 @@
       "lineHeightIndex": 50,
       "showControl": 0,
       "smallScreen": {
-        "sizeIndex": 20
+        "sizeIndex": 21,
+        "lineHeightIndex": 30
       }
     },
     "text": "NEUTRAL<br>PRECISE<br>SIMPLE<br>BALANCED"

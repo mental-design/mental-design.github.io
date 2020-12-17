@@ -50,7 +50,7 @@ var SampleLine = (function() {
   /* =============== utility methods ================ */
 
   function translateSettings(settings, controlInfo) {
-    if (screen.width < 600) {
+    if (screen.width < 600) {  // Settings for mobile devices
       if ("smallScreen" in settings) {
         var smallSettings = settings.smallScreen;
 
