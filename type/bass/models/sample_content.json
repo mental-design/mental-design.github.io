@@ -6,7 +6,10 @@
       "alignIndex": 1,
       "letterSpacingIndex": 50,
       "lineHeightIndex": 50,
-      "showControl": 0
+      "showControl": 0,
+      "smallScreen": {
+        "sizeIndex": 20
+      }
     },
     "text": "NEUTRAL<br>PRECISE<br>SIMPLE<br>BALANCED"
   },
@@ -17,7 +20,10 @@
       "alignIndex": 2,
       "letterSpacingIndex": 12,
       "lineHeightIndex": 25,
-      "showControl": 0
+      "showControl": 0,
+      "smallScreen": {
+        "sizeIndex": 15
+      }
     },
     "text": "NUMERICALLY CONSTRUCTED<br>SYSTEMATICALLY DESIGNED<br>PROGRESSIVELY TUNED<br>TYPE. ENGINEERED."
   },
@@ -28,7 +34,11 @@
       "alignIndex": 0,
       "letterSpacingIndex": 10,
       "lineHeightIndex": 30,
-      "showControl": 0
+      "showControl": 0,
+      "smallScreen": {
+        "sizeIndex": 8,
+        "lineHeightIndex": 50
+      }
     },
     "text": "At Mental Type Design, the design process of a typeface starts with a concept. The concept is encoded into components which are programmatically translated into shapes, paths, and points. These components are then combined to create each glyph. No point is manipulated directly, rather each glyph is adjusted by parameters that change the settings for each component. The parameters are tuned along a grid system which guides the proportions then iteratively adjusted to make the characters fit together harmoniously. This systematic design approach reduces arbitrary artifacts and gives the typeface a coherent look and feel."
   },
@@ -39,7 +49,10 @@
       "alignIndex": 0,
       "letterSpacingIndex": 7,
       "lineHeightIndex": 20,
-      "showControl": 0
+      "showControl": 0,
+      "smallScreen": {
+        "sizeIndex": 15
+      }
     },
     "text": "Beauty in Geometry<br>Designed by Numbers<br>Keeping It Simple<br><span style='color:#999'>> catchphrase goes here <</span><br><span style='font-weight:600'>Steal This Font!!!*</span>"
   },
@@ -50,7 +63,10 @@
       "alignIndex": 0,
       "letterSpacingIndex": 12,
       "lineHeightIndex": 20,
-      "showControl": 0
+      "showControl": 0,
+      "smallScreen": {
+        "sizeIndex": 8
+      }
     },
     "text": "*It's actually free. Free as in Beer, Freedom of Speech, and “Feel Free to Donate!” :-)"
   }
