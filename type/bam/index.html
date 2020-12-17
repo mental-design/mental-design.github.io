@@ -109,7 +109,7 @@
 
   <!-- The Notes Section -->
   <div id="notes" class="section-wrapper">
-    <div class="w3-display-container w3-content w3-padding-32 section">
+    <div class="w3-display-container w3-content w3-padding-32 section" id="description">
     </div>
   </div>
 
@@ -139,6 +139,7 @@
 <script src="lib/codemirror-5.51.0/mode/python.js"></script>
 <script src="lib/codemirror-5.51.0/mode/swift.js"></script>
 <script src="lib/codemirror-5.51.0/mode/cpp.js"></script>
+<script src="lib/marked-1.2.7/marked.min.js"></script>
 <script src="scripts/sample-slider.js"></script>
 <script src="scripts/sample-control.js"></script>
 <script src="scripts/sample-line.js"></script>
@@ -158,8 +159,27 @@
     var previewDiv = document.getElementById('code');
     PreviewSection.init(previewDiv);
 
+    // The Notes Section
+    var notesDiv = document.getElementById('description');
+    var notesUrl = 'models/notes_content.md';
+    fetchNotes(notesUrl, function(content){
+      notesDiv.innerHTML = marked(content);
+    });
+
     var characterDiv = document.getElementById('charmap');
     CharacterSection.init(characterDiv);
+  }
+
+  function fetchNotes(url, callback) {
+    var notesRequest = fetch(url)
+      .then(function(response) {
+         return response.text()
+      });
+
+    Promise.all([notesRequest])
+      .then(function(values){
+        callback(values[0]);
+    });
   }
 </script>
 
