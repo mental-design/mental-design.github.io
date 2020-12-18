@@ -31,8 +31,6 @@ var CharacterSection = (function() {
   /* =============== initialize methods ================ */
 
   function initializeCharactersDiv(div, data, settings) {
-    div.classList.add("ss00");
-
     let glyphList = Object.values(data["glyphMap"]).map(function(e){
       return parseInt(e).toString(16);
     });
@@ -126,6 +124,7 @@ var CharacterSection = (function() {
   function initializeCharDiv(div, char) {
     div.classList.add("char-cell");
     div.classList.add('mono');
+    div.classList.add('ss00');
     div.innerHTML = "&#x" + char;
   }
 

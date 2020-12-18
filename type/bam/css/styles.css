@@ -303,6 +303,7 @@ input:checked + .switch-slider:before {
 }
 
 #dark-mode {
+  font-size: 26px;
   width: 48px;
   height: 48px;
   padding-top: 16px;
@@ -311,7 +312,7 @@ input:checked + .switch-slider:before {
 }
 
 #dark-icon {
-  vertical-align: 1px;
+  vertical-align: 0px;
 }
 
 .sample-line {

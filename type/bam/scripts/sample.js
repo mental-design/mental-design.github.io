@@ -93,7 +93,6 @@ var SampleSection = (function() {
 
   function initializeDarkModeButton(darkButton) {
     darkButton.classList.add("w3-display-topright");
-    darkButton.classList.add("w3-xlarge");
     darkButton.setAttribute('id', 'dark-mode');
 
     var darkClass = "w3-black";
