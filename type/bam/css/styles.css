@@ -448,6 +448,7 @@ input:checked + .switch-slider:before {
   color: #1E6FBF;
   opacity: 1;
   font-size: 15px;
+  font-weight: 500;
   vertical-align: middle;
   margin-left: 10px;
 }
