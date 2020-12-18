@@ -6,7 +6,10 @@
       "alignIndex": 0,
       "letterSpacingIndex": 10,
       "lineHeightIndex": 30,
-      "showControl": 0
+      "showControl": 0,
+      "smallScreen": {
+        "sizeIndex": 18
+      }
     },
     "text": "Basic Geometry<br>Circles & Lines<br>Parameterized Glyphs"
   },
@@ -17,7 +20,10 @@
       "alignIndex": 1,
       "letterSpacingIndex": 0,
       "lineHeightIndex": 30,
-      "showControl": 0
+      "showControl": 0,
+      "smallScreen": {
+        "sizeIndex": 15
+      }
     },
     "text": "Circles in code o<br>Infinite ∞ Loops<br>race condition<br>synchronized deadlock<br>(Political Bureaucracy?)<br>Out of order, execution<br>segfault … Done!"
   },
@@ -28,7 +34,10 @@
       "alignIndex": 2,
       "letterSpacingIndex": 0,
       "lineHeightIndex": 30,
-      "showControl": 0
+      "showControl": 0,
+      "smallScreen": {
+        "sizeIndex": 15
+      }
     },
     "text": "Optimal Circles<br>Constant Lines<br>Vertical/Horizontal Terminals<br>It's that basic!"
   },
@@ -39,7 +48,10 @@
       "alignIndex": 1,
       "letterSpacingIndex": 0,
       "lineHeightIndex": 30,
-      "showControl": 0
+      "showControl": 0,
+      "smallScreen": {
+        "sizeIndex": 14
+      }
     },
     "text": "Change the weights below and see the characters breathe.<br>↓"
   },
@@ -50,7 +62,10 @@
       "alignIndex": 1,
       "letterSpacingIndex": 5,
       "lineHeightIndex": 20,
-      "showControl": 1
+      "showControl": 1,
+      "smallScreen": {
+        "sizeIndex": 24
+      }
     },
     "text": "@#$%&^~-+*=<br><>{}(|)[]/\\<br>!?.:;,¿¡"
   },
@@ -61,7 +76,11 @@
       "alignIndex": 1,
       "letterSpacingIndex": 0,
       "lineHeightIndex": 30,
-      "showControl": 0
+      "showControl": 0,
+      "smallScreen": {
+        "sizeIndex": 20,
+        "lineHeightIndex": 15
+      }
     },
     "text": "Enter your own text here<br> and try out Basically A Mono."
   },
@@ -72,7 +91,10 @@
       "alignIndex": 1,
       "letterSpacingIndex": 0,
       "lineHeightIndex": 30,
-      "showControl": 0
+      "showControl": 0,
+      "smallScreen": {
+        "sizeIndex": 15
+      }
     },
     "text": "Or see Basically A Mono in action with the interactive code preview below."
   },
@@ -83,7 +105,10 @@
       "alignIndex": 1,
       "letterSpacingIndex": 0,
       "lineHeightIndex": 0,
-      "showControl": 0
+      "showControl": 0,
+      "smallScreen": {
+        "sizeIndex": 30
+      }
     },
     "text": "↓"
   }
