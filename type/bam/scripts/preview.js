@@ -1,14 +1,15 @@
 var PreviewSection = (function() {
 
   var codeMirror;
+  var codeMirrorDiv;
 
   // main init method
   function init(previewDiv) {
+    previewDiv.classList.add("ss00");
+
     // Randomize defaults
     defaults.langIndex = chooseFromArray([0, 2, 3, 4]);
     defaults.themeIndex = chooseFromArray([2, 3, 4, 7, 9]);
-
-    previewDiv.classList.add("ss00");
 
     // Create Controller
     var controlDiv = document.createElement('div');
@@ -16,7 +17,7 @@ var PreviewSection = (function() {
     previewDiv.appendChild(controlDiv);
     
     // Create Editor
-    var codeMirrorDiv = document.createElement('div');
+    codeMirrorDiv = document.createElement('div');
     initializeCodeMirror(codeMirrorDiv);
     previewDiv.appendChild(codeMirrorDiv);
 
@@ -24,7 +25,7 @@ var PreviewSection = (function() {
     let defaultLang = controlInfo.langs[defaults.langIndex];
     let defaultTheme = controlInfo.themes[defaults.themeIndex];
     let defaultSize = controlInfo.sizes[defaults.sizeIndex];
-    let defaultSpacing = controlInfo.spacing[defaults.spacingIndex];
+    let defaultSpacing = controlInfo.spacings[defaults.spacingIndex];
     updateLang(defaultLang);
     updateTheme(defaultTheme);
     updateFontSize(defaultSize);
@@ -38,7 +39,8 @@ var PreviewSection = (function() {
              "Monokai", "Moxer", "SSMS", "Twilight", "Vibrant-Ink",
              "Xq-Light"],
     sizes: [6, 7, 8, 9, 10, 11, 12, 14, 16, 18, 20, 22, 24, 28, 32, 36],
-    spacing: [1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0]
+    spacings: [1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0],
+    styles: [0, 1]
   };
 
   // Setup info
@@ -46,7 +48,8 @@ var PreviewSection = (function() {
     langIndex: 2,
     themeIndex: 3,
     sizeIndex: 4,
-    spacingIndex: 3
+    spacingIndex: 3,
+    styleIndex: 0
   };
 
   /* =============== initialize methods ================ */
@@ -97,16 +100,34 @@ var PreviewSection = (function() {
     sizeControl.classList.add('separator');
     controlDiv.appendChild(sizeControl);
 
-    // Create size slider
-    var spacing = controlInfo.spacing[defaults.spacingIndex];
+    // Create spacing slider
+    var spacing = controlInfo.spacings[defaults.spacingIndex];
     var spacingControl = document.createElement('div');
     SampleSlider.init(spacingControl,
                       spacing,
-                      controlInfo.spacing,
+                      controlInfo.spacings,
                       function(d){return d.toFixed(1);},
                       changeSpacing);
     spacingControl.classList.add("spacing-control");
+    spacingControl.classList.add('separator');
     controlDiv.appendChild(spacingControl);
+
+    // Create style set slider
+    var styleSet = controlInfo.styles[defaults.styleIndex];
+    var styleControl = document.createElement('div');
+    SampleSlider.init(styleControl,
+                      styleSet,
+                      controlInfo.styles,
+                      function(){return "a";},
+                      changeStyleSet);
+    styleControl.classList.add("style-set-control");
+    styleControl.classList.add("mono");
+    var label = document.createElement("div");
+    label.classList.add("control-label");
+    label.classList.add("ss01");
+    label.innerHTML = "a";
+    styleControl.appendChild(label);
+    controlDiv.appendChild(styleControl);
   }
 
   /* =============== control callback methods ================ */
@@ -136,6 +157,17 @@ var PreviewSection = (function() {
     codeMirror.refresh();
   }
 
+  function updateStyleSet(style) {
+    if (style == 0) {
+      codeMirrorDiv.classList.remove("ss01");
+      codeMirrorDiv.classList.add("ss00");
+    }
+    else {
+      codeMirrorDiv.classList.remove("ss00");
+      codeMirrorDiv.classList.add("ss01");  
+    }
+  }
+
   function changeSize(slider, sizes) {
     var size = sizes[slider.value];
     updateFontSize(size);
@@ -144,6 +176,11 @@ var PreviewSection = (function() {
   function changeSpacing(slider, spacings) {
     var spacing = spacings[slider.value];
     updateLineSpacing(spacing);
+  }
+
+  function changeStyleSet(slider, styleSets) {
+    var style = styleSets[slider.value];
+    updateStyleSet(style);
   }
 
   /* =============== utility methods =============== */

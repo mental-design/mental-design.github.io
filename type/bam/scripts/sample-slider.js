@@ -2,19 +2,19 @@ var SampleSlider = (function() {
 
   // main init method
   function init(controlDiv, value, values, toLabel, callback) {
-    controlDiv.className = "control-item";
+    controlDiv.classList.add("control-item");
 
     // Label
-    var label = document.createElement('div');
-    label.className = 'control-label';
+    var label = document.createElement("div");
+    label.classList.add("control-label");
 
     if (typeof toLabel == "function") {
       label.innerHTML = toLabel(value);
       controlDiv.appendChild(label);
     }
     else {  // SVG icon
-      var icon = document.createElement('img');
-      icon.className = 'control-icon';
+      var icon = document.createElement("img");
+      icon.classList.add("control-icon");
       icon.src = toLabel;
       controlDiv.appendChild(icon);
     }
@@ -28,7 +28,7 @@ var SampleSlider = (function() {
   /* =============== initialize methods ================ */
 
   function initializeSlider(slider, value, valueArray, toLabel, callback) {
-    slider.className = 'slider';
+    slider.classList.add('slider');
     slider.setAttribute('type', 'range');
     slider.setAttribute('min', 0);
     slider.setAttribute('max', valueArray.length - 1);

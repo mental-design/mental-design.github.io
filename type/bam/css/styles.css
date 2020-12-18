@@ -367,14 +367,26 @@ input:checked + .switch-slider:before {
 
 .size-control .control-label {
   width: 35px;
+  line-height: 1.65;
 }
 
 .spacing-control .control-label {
   width: 25px;
+  line-height: 1.65;
 }
 
 .height-control .control-label {
   width: 0px;
+}
+
+.style-set-control .control-label {
+  font-size: 20px;
+  line-height: 1.2;
+  width: 25px;
+}
+
+.style-set-control .slider {
+  width: 40px;
 }
 
 .align-control {
@@ -444,7 +456,7 @@ input:checked + .switch-slider:before {
   display: inline-block;
   text-align: left;
   width: 95px;
-  height: 25px;
+  /*height: 25px;*/
   color: #1E6FBF;
   opacity: 1;
   font-size: 15px;
