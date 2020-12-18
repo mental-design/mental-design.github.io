@@ -31,6 +31,8 @@ var CharacterSection = (function() {
   /* =============== initialize methods ================ */
 
   function initializeCharactersDiv(div, data, settings) {
+    div.classList.add("ss00");
+
     let glyphList = Object.values(data["glyphMap"]).map(function(e){
       return parseInt(e).toString(16);
     });

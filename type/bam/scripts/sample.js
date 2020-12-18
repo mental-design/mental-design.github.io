@@ -24,6 +24,11 @@ var SampleSection = (function() {
   /* =============== initialize methods ================ */
 
   function initializeSampleArea(sampleDiv, controlInfo, sectionContent) {
+    // Add style set toggle
+    var styleButton = document.createElement('div');
+    initializeStyleButton(styleButton);
+    sampleDiv.appendChild(styleButton);
+
     // Add darkmode button
     var darkButton = document.createElement('div');
     initializeDarkModeButton(darkButton);
@@ -39,8 +44,56 @@ var SampleSection = (function() {
     }
   }
 
+  function initializeStyleButton(styleButton) {
+    // The toggle button
+    styleButton.classList.add("w3-display-topleft");
+    styleButton.setAttribute('id', 'toggle-style');
+
+    var input = document.createElement('input');
+    input.type = "checkbox";
+    
+    input.oninput = function() {
+      var overviewDiv = document.body;  //this.parentElement.parentElement.parentElement;
+      if(input.checked) {  // ss01
+        overviewDiv.classList.remove("ss00");
+        overviewDiv.classList.add("ss01");
+      }
+      else {  // ss00
+        overviewDiv.classList.remove("ss01");
+        overviewDiv.classList.add("ss00");
+      }
+    };
+    var span = document.createElement('span');
+    span.classList.add("switch-slider");
+
+    var label = document.createElement('label');
+    label.classList.add("switch");
+    label.appendChild(input);
+    label.appendChild(span);
+
+    // single story a
+    var singleSpan = document.createElement('span');
+    singleSpan.classList.add("switch-label");
+    singleSpan.classList.add("single-story");
+    singleSpan.classList.add("mono");
+    singleSpan.innerHTML = "a";
+
+    // double story a    
+    var doubleSpan = document.createElement('span');
+    doubleSpan.classList.add("switch-label");
+    doubleSpan.classList.add("double-story");
+    doubleSpan.classList.add("mono");
+    doubleSpan.innerHTML = "a";
+
+    // Construct
+    styleButton.appendChild(singleSpan);
+    styleButton.appendChild(label);
+    styleButton.appendChild(doubleSpan);
+  }
+
   function initializeDarkModeButton(darkButton) {
-    darkButton.className = "w3-display-topright w3-xlarge";
+    darkButton.classList.add("w3-display-topright");
+    darkButton.classList.add("w3-xlarge");
     darkButton.setAttribute('id', 'dark-mode');
 
     var darkClass = "w3-black";

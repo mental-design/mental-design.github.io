@@ -8,6 +8,8 @@ var PreviewSection = (function() {
     defaults.langIndex = chooseFromArray([0, 2, 3, 4]);
     defaults.themeIndex = chooseFromArray([2, 3, 4, 7, 9]);
 
+    previewDiv.classList.add("ss00");
+
     // Create Controller
     var controlDiv = document.createElement('div');
     initializeControls(controlDiv, controlInfo, defaults);
