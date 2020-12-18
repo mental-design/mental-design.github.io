@@ -1,9 +1,10 @@
 @import '../fonts/basicallyamono.css';
+@import '../../bass/fonts/basicallyasansserif.css';
 html {
 }
 
 body {
-  font-family: "SF Display", "Helvetica Neue", Fallback, sans-serif;  
+  font-family: 'BasicallyASansSerif', sans-serif;  
   min-width: 400px;
 }
 
@@ -312,7 +313,7 @@ input:checked + .switch-slider:before {
 }
 
 #dark-icon {
-  vertical-align: 0px;
+  vertical-align: 1px;
 }
 
 .sample-line {
@@ -350,6 +351,7 @@ input:checked + .switch-slider:before {
   vertical-align: middle;
   opacity: 1;
   font-size: 15px;
+  font-weight: 500;
 }
 
 .control-icon {
@@ -360,7 +362,7 @@ input:checked + .switch-slider:before {
 }
 
 .weight-control .control-label {
-  width: 100px;
+  width: 110px;
 }
 
 .size-control .control-label {
@@ -386,7 +388,7 @@ input:checked + .switch-slider:before {
   vertical-align: -1px;
 }
 
-@media (max-width:670px) {
+@media (max-width:678px) {
   .control-wrapper {
     height: 55px;
   }
@@ -441,7 +443,7 @@ input:checked + .switch-slider:before {
 .drop-label {
   display: inline-block;
   text-align: left;
-  width: 90px;
+  width: 95px;
   height: 25px;
   color: #1E6FBF;
   opacity: 1;

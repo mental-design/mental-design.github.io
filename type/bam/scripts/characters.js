@@ -102,7 +102,6 @@ var CharacterSection = (function() {
     if (categoryName.length > 0) {
       var titleDiv = document.createElement('div');
       titleDiv.classList.add('char-title');
-      titleDiv.classList.add('mono');
       titleDiv.innerHTML = categoryName;
       div.appendChild(titleDiv);
     }
