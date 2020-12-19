@@ -118,7 +118,7 @@
     adjustToNavbar();
 
     // The Overview Section
-    var sampleUrl = getSampleUrl();  // "models/sample_content.json";
+    var sampleUrl = "models/sample_content.json";
     var sampleDiv = document.getElementById('samples');
     SampleSection.init(sampleDiv, sampleUrl);
 
@@ -130,24 +130,6 @@
     // The Characters Section
     var characterDiv = document.getElementById('charmap');
     CharacterSection.init(characterDiv);
-  }
-
-  function getSampleUrl() {
-    var url_string = window.location.href
-    var url = new URL(url_string);
-    var mode = url.searchParams.get("m");
-    var sampleUrl = "";
-    switch(mode) {
-      case "test":
-        sampleUrl = "models/test_content.json"
-        break;
-      case "lang":
-        sampleUrl = "models/test_language.json"
-        break;
-      default:
-        sampleUrl = "models/sample_content.json";
-    }
-    return sampleUrl;
   }
 </script>
 
