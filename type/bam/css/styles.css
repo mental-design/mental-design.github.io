@@ -345,7 +345,6 @@ input:checked + .switch-slider:before {
   display: inline-block;
   text-align: right;
   width: 100px;
-  height: 25px;
   color: #1E6FBF;
   margin-right: 5px;
   vertical-align: middle;
@@ -383,6 +382,8 @@ input:checked + .switch-slider:before {
   font-size: 20px;
   line-height: 1.2;
   width: 25px;
+  text-align: center;
+  margin-right: 0px;
 }
 
 .style-set-control .slider {
@@ -462,7 +463,8 @@ input:checked + .switch-slider:before {
   font-size: 15px;
   font-weight: 500;
   vertical-align: middle;
-  margin-left: 10px;
+  margin-left: 7px;
+  margin-right: 2px;
 }
 
 .drop-menu {
