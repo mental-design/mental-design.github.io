@@ -48,49 +48,23 @@ a:hover {
   color: #fff !important;
 }
 
+
+
 .mtd {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
   padding-left: 24px;
   height: 32px;
+  color: #fff;
+  font-weight: 400;
 }
 
-.mtd-small {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 16px;
-  height: 32px;
+.mobile-padding {
+  padding-left: 16px !important;
 }
 
 .mtd-wide {
   width: 100%;
-  white-space: nowrap;
-  position: absolute;
-  padding-left: 0px;
-  color: #2f2f2f;
-  font-weight: 300;
-}
-
-.mtd-wide a {
-  color:#2f2f2f;
-  font-weight: 500;
-}
-
-.mtd-wide a:hover {
-  color:#fff;
-  font-weight: 400;
-  text-decoration: none;
-}
-
-.mtd-first a {
-  color:#fff;
-  font-weight: 400;
-}
-
-.mtd-first a:hover {
-  color:#fff;
-  font-weight: 400;
-  text-decoration: underline;
 }
 
 .download-btn {
