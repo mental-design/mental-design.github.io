@@ -54,47 +54,16 @@ a:hover {
   padding-bottom: 5px !important;
   padding-left: 24px;
   height: 32px;
+  color: #fff;
+  font-weight: 400;
 }
 
 .mobile-padding {
   padding-left: 16px !important;
 }
 
-.mtd-small {
-  /* Make it look good on mobile device */
-  padding-top: 6px !important;
-  padding-bottom: 4px !important;
-}
-
 .mtd-wide {
   width: 100%;
-  white-space: nowrap;
-  position: absolute;
-  padding-left: 0px;
-  color: #2f2f2f;
-  font-weight: 300;
-}
-
-.mtd-wide a {
-  color:#2f2f2f;
-  font-weight: 400;
-}
-
-.mtd-wide a:hover {
-  color:#fff;
-  font-weight: 400;
-  text-decoration: none;
-}
-
-.mtd-first a {
-  color:#fff;
-  font-weight: 400;
-}
-
-.mtd-first a:hover {
-  color:#fff;
-  font-weight: 400;
-  text-decoration: underline;
 }
 
 .download-btn {
