@@ -54,13 +54,16 @@
   <div class="nav-dark-grey nav-wrapper">
     <div class="w3-bar nav-dark-grey w3-content w3-center">
       <a class="w3-bar-item w3-hide-medium w3-hide-large mobile-left nav-item menu-item" href="javascript:void(0)" onclick="toggleMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-      <div class="w3-bar-item w3-hide-medium w3-hide-large nav-item nav-center"><a href="#" class="title-item">Basically A Mono</a></div>
+      <div class="w3-bar-item w3-hide-medium w3-hide-large nav-item nav-center">
+        <a href="#" class="title-item" onclick="hideMenu()">Basically A Mono</a>
+      </div>
       <div class="w3-bar-item w3-hide-small w3-hide-medium nav-spacer"></div>
       <a href="#" class="w3-bar-item w3-hide-small w3-hover-green w3-padding-large nav-item bam-blue title-item" onclick="hideMenu()">BAM</a>
       <a href="#overview"   class="w3-bar-item w3-hide-small nav-item">Text</a>
       <a href="#preview"    class="w3-bar-item w3-hide-small nav-item">Code</a>
       <a href="#notes"      class="w3-bar-item w3-hide-small nav-item">Notes</a>
       <a href="#characters" class="w3-bar-item w3-hide-small nav-item">Characters</a>
+      <a href="#donation"   class="w3-bar-item w3-hide-small nav-item">Donate</a>
       <div class="w3-bar-item w3-hide-small w3-hide-medium w3-right nav-spacer"></div>
       <div class="w3-bar-item w3-hide-small w3-hide-large w3-right download-spacer"></div>
       <div class="w3-bar-item w3-hide-small w3-right download-btn">
@@ -77,6 +80,7 @@
   <a href="#notes"      class="w3-bar-item nav-item nav-item-hover mtd-small" onclick="hideMenu()">Notes</a>
   <a href="#characters" class="w3-bar-item nav-item nav-item-hover mtd-small" onclick="hideMenu()">Characters</a>
   <a href="downloads/bam-vers1_201.zip" class="w3-bar-item nav-item nav-item-hover mtd-small" onclick="hideMenu()">Download</a>
+  <a href="#donation" class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Donate</a>
 </div>
 
 <!-- Page content -->
@@ -105,7 +109,11 @@
   <div id="notes" class="section-wrapper">
     <div class="w3-display-container w3-content section padding-top-32" id="description">
     </div>
-    <div class="w3-display-container w3-content section padding-bottom-32" id="donation">
+  </div>
+
+  <!-- Donation -->
+  <div id="donation" class="section-wrapper">
+    <div class="w3-display-container w3-content section padding-bottom-32">
       <!-- KoFi Button -->
       <a href='https://ko-fi.com/U7U52ZM5J' target='_blank'>
         <img class="donate-btn" src='resources/kofi.png' border='0' alt='Buy Me a Coffee at ko-fi.com' id="kofi"/>

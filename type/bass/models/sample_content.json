@@ -6,8 +6,9 @@
       "alignIndex": 1,
       "letterSpacingIndex": 50,
       "lineHeightIndex": 50,
-      "showControl": 1,
+      "showControl": 0,
       "smallScreen": {
+        "weightIndex": 1,
         "sizeIndex": 21,
         "lineHeightIndex": 30
       }
@@ -23,6 +24,7 @@
       "lineHeightIndex": 25,
       "showControl": 0,
       "smallScreen": {
+        "weightIndex": 6,
         "sizeIndex": 15
       }
     },
@@ -66,6 +68,7 @@
       "lineHeightIndex": 20,
       "showControl": 0,
       "smallScreen": {
+        "weightIndex": 2,
         "sizeIndex": 8
       }
     },
