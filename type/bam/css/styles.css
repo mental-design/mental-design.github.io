@@ -48,7 +48,38 @@ a:hover {
   color: #fff !important;
 }
 
+.donate-btn {
+  height: 28px;
+  border-radius: 5px;
+  padding: 7px;
+  vertical-align: middle;
+}
 
+#paypal-form {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#paypal {
+  padding: 8px;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  background: #FFC43A;
+}
+
+#kofi {
+  background: #444B56;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.padding-top-32 {
+  padding-top: 32px !important;
+}
+
+.padding-bottom-32 {
+  padding-bottom: 32px !important;
+}
 
 .mtd {
   padding-top: 5px !important;

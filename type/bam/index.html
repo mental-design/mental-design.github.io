@@ -103,7 +103,21 @@
 
   <!-- The Notes Section -->
   <div id="notes" class="section-wrapper">
-    <div class="w3-display-container w3-content w3-padding-32 section" id="description">
+    <div class="w3-display-container w3-content section padding-top-32" id="description">
+    </div>
+    <div class="w3-display-container w3-content section padding-bottom-32" id="donation">
+      <!-- KoFi Button -->
+      <a href='https://ko-fi.com/U7U52ZM5J' target='_blank'>
+        <img class="donate-btn" src='resources/kofi.png' border='0' alt='Buy Me a Coffee at ko-fi.com' id="kofi"/>
+      </a>
+      <!-- Paypal Donate Button -->
+      <form action="https://www.paypal.com/donate" method="post" target="_top" id="paypal-form">
+        <input type="hidden" name="cmd" value="_donations" />
+        <input type="hidden" name="business" value="N8P9ZPYYQHVKS" />
+        <input type="hidden" name="currency_code" value="USD" />
+        <input type="image" src="resources/paypal.png" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" class="donate-btn " id="paypal"/>
+        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+      </form>
     </div>
   </div>
 

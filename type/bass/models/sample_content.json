@@ -6,7 +6,7 @@
       "alignIndex": 1,
       "letterSpacingIndex": 50,
       "lineHeightIndex": 50,
-      "showControl": 0,
+      "showControl": 1,
       "smallScreen": {
         "sizeIndex": 21,
         "lineHeightIndex": 30
