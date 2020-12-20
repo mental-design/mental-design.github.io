@@ -8,7 +8,8 @@
       "lineHeightIndex": 30,
       "showControl": 0,
       "smallScreen": {
-        "sizeIndex": 18
+        "sizeIndex": 18,
+        "letterSpacingIndex": 5
       }
     },
     "text": "Basic Geometry<br>Circles & Lines<br>Parameterized Glyphs"
