@@ -48,6 +48,10 @@ a:hover {
   color: #fff !important;
 }
 
+#donation a:hover {
+  text-decoration: none;
+}
+
 .donate-btn {
   height: 28px;
   border-radius: 5px;
