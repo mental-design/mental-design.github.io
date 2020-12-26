@@ -72,12 +72,12 @@
         "sizeIndex": 8
       }
     },
-    "text": "*It's actually free. Free as in Beer, Freedom of Speech, and “Feel Free to Donate!” :-)"
+    "text": "*It's actually free. Free as in Beer, Freedom of Speech, and “Feel Free to Donate!” :-)<br><br>"
   },
   {
     "settings": {
       "weightIndex": 3,
-      "sizeIndex": 25,
+      "sizeIndex": 22,
       "alignIndex": 0,
       "letterSpacingIndex": 10,
       "lineHeightIndex": 20,
@@ -87,6 +87,6 @@
         "lineHeightIndex": 15
       }
     },
-    "text": "Enter your own text here<br> and try out Basically A Sans Serif."
+    "text": "Enter your own text here and try out Basically A Sans Serif."
   }
 ]

@@ -5,18 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
   <!-- Favicon -->
-  <link rel="icon" href="resources/favicon/favicon32.png" sizes="32x32">
-  <link rel="icon" href="resources/favicon/favicon57.png" sizes="57x57">
-  <link rel="icon" href="resources/favicon/favicon76.png" sizes="76x76">
-  <link rel="icon" href="resources/favicon/favicon96.png" sizes="96x96">
-  <link rel="icon" href="resources/favicon/favicon128.png" sizes="128x128">
-  <link rel="icon" href="resources/favicon/favicon192.png" sizes="192x192">
-  <link rel="icon" href="resources/favicon/favicon228.png" sizes="228x228">
-  <link rel="shortcut icon" sizes="196x196" href="resources/favicon/favicon196.png">
-  <link rel="apple-touch-icon" href="resources/favicon/favicon120.png" sizes="120x120">
-  <link rel="apple-touch-icon" href="resources/favicon/favicon152.png" sizes="152x152">
-  <link rel="apple-touch-icon" href="resources/favicon/favicon180.png" sizes="180x180">
-  <link rel="manifest" href="resources/favicon/site.webmanifest">
+  <link rel="shortcut icon" sizes="196x196" href="resources/favicon/logo196.png">
+  <link rel="icon" type="image/png" sizes="228x228" href="resources/favicon/logo228.png">
+  <link rel="icon" sizes="192x192" href="resources/favicon/logo192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="resources/favicon/logo180.png">
   <!-- Styles -->
   <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/w3.css">
@@ -49,7 +41,7 @@
       <a href="#overview"   class="w3-bar-item w3-hide-small nav-item">Text</a>
       <a href="#notes"      class="w3-bar-item w3-hide-small nav-item">Notes</a>
       <a href="#characters" class="w3-bar-item w3-hide-small nav-item">Characters</a>
-      <a href="#donation"   class="w3-bar-item w3-hide-small nav-item">Donate</a>
+      <a href="#donate"   class="w3-bar-item w3-hide-small nav-item">Donate</a>
       <div class="w3-bar-item w3-hide-small w3-hide-medium w3-right nav-spacer"></div>
       <div class="w3-bar-item w3-hide-small w3-hide-large w3-right download-spacer"></div>
       <div class="w3-bar-item w3-hide-small w3-right download-btn">
@@ -65,7 +57,7 @@
   <a href="#notes"      class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Notes</a>
   <a href="#characters" class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Characters</a>
   <a href="downloads/bass-vers1_000.zip" class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Download</a>
-  <a href="#donation" class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Donate</a>
+  <a href="#donate" class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Donate</a>
 </div>
 
 <!-- Page content -->
@@ -86,13 +78,15 @@
 
   <!-- The Notes Section -->
   <div id="notes" class="section-wrapper">
-    <div class="w3-display-container w3-content section padding-top-32" id="description">
+    <div class="w3-display-container w3-content section padding-top-32 notes" id="description">
     </div>
   </div>
 
   <!-- Donation -->
-  <div id="donation" class="section-wrapper">
-    <div class="w3-display-container w3-content section padding-bottom-32">
+  <div id="donate" class="section-wrapper">
+    <div class="w3-display-container w3-content section padding-bottom-32 notes">
+      <h3>Donate</h3>
+      <p>If you find the typeface useful and would like to show support please donate.</p>
       <!-- KoFi Button -->
       <a href='https://ko-fi.com/U7U52ZM5J' target='_blank'>
         <img class="donate-btn" src='resources/kofi.png' border='0' alt='Buy Me a Coffee at ko-fi.com' id="kofi"/>
@@ -124,7 +118,7 @@
   <a href="https://github.com/mental-design/basically-a-sans-serif"><i class="fa fa-github w3-hover-opacity"></i></a>
   <a href="mailto:type@mentallydesigned.com"><i class="fa fa-envelope"></i></a>
   <a href="https://www.instagram.com/mentaltypedesign/"><i class="fa fa-instagram"></i></a>
-  <a href="https://twitter.com/MentalType"><i class="fa fa-twitter"></i></a>
+  <!-- <a href="https://twitter.com/MentalType"><i class="fa fa-twitter"></i></a> -->
   <p class="w3-medium sample-font"><span class="copyright">©</span><a href="../">mental design</a></p>
 </footer>
 
@@ -142,7 +136,7 @@
     adjustToNavbar();
 
     // The Overview Section
-    var sampleUrl = "models/sample_content.json";
+    var sampleUrl = getSampleUrl();  // "models/sample_content.json";
     var sampleDiv = document.getElementById('samples');
     SampleSection.init(sampleDiv, sampleUrl);
 
@@ -154,6 +148,24 @@
     // The Characters Section
     var characterDiv = document.getElementById('charmap');
     CharacterSection.init(characterDiv);
+  }
+
+  function getSampleUrl() {
+    var url_string = window.location.href
+    var url = new URL(url_string);
+    var mode = url.searchParams.get("m");
+    var sampleUrl = "";
+    switch(mode) {
+      case "test":
+        sampleUrl = "models/test_content.json"
+        break;
+      case "lang":
+        sampleUrl = "models/test_language.json"
+        break;
+      default:
+        sampleUrl = "models/sample_content.json";
+    }
+    return sampleUrl;
   }
 </script>
 

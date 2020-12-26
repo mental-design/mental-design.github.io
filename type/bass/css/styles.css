@@ -3,8 +3,11 @@ html {
 }
 
 body {
-  font-family: "BasicallyASansSerif", "Helvetica Neue", Fallback, sans-serif;  
   min-width: 400px;
+}
+
+body, h1, h2, h3 {
+  font-family: 'BasicallyASansSerif', sans-serif;  
 }
 
 .sample-font {
@@ -19,12 +22,29 @@ a:hover {
   text-decoration: underline;
 }
 
-#donation a:hover {
+.notes {
+  font-weight: 300;
+  font-size: 16pt;
+}
+
+.notes strong {
+  font-weight: 600;
+}
+
+.notes p {
+  margin-top: 0;
+}
+
+#description a:link {
+  text-decoration: underline;
+}
+
+#donate a:hover {
   text-decoration: none;
 }
 
 .donate-btn {
-  height: 28px;
+  height: 32px;
   border-radius: 5px;
   padding: 7px;
   vertical-align: middle;
@@ -33,7 +53,7 @@ a:hover {
 
 #paypal-form {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: 0;
 }
 
 #paypal {
@@ -375,6 +395,7 @@ h1 {
   border-radius: 50%;
   background: #1E6FBF;
   cursor: pointer;
+  border: 1px solid #1E6FBF;
 }
 
 .section-light-grey {

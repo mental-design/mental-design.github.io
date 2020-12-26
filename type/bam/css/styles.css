@@ -4,8 +4,11 @@ html {
 }
 
 body {
-  font-family: 'BasicallyASansSerif', sans-serif;  
   min-width: 400px;
+}
+
+body, h1, h2, h3 {
+  font-family: 'BasicallyASansSerif', sans-serif;  
 }
 
 code, .sample-font, .mono, .CodeMirror {
@@ -25,6 +28,19 @@ a:link {
 }
 
 a:hover {
+  text-decoration: underline;
+}
+
+.notes {
+  font-weight: 300;
+  font-size: 14pt;
+}
+
+.notes strong {
+  font-weight: 600;
+}
+
+#description a:link {
   text-decoration: underline;
 }
 
@@ -48,12 +64,16 @@ a:hover {
   color: #fff !important;
 }
 
-#donation a:hover {
+#donate a:hover {
   text-decoration: none;
 }
 
+.notes p {
+  margin-top: 0;
+}
+
 .donate-btn {
-  height: 28px;
+  height: 32px;
   border-radius: 5px;
   padding: 7px;
   vertical-align: middle;
@@ -61,7 +81,7 @@ a:hover {
 
 #paypal-form {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: 0;
 }
 
 #paypal {
@@ -434,7 +454,7 @@ input:checked + .switch-slider:before {
   width: 75px;
   background: #AEC7E8;
   opacity: 1;
-  outline: none;
+  /*outline: none;*/
   -webkit-transition: .2s;
   transition: opacity .2s;
   vertical-align: middle;
@@ -448,6 +468,7 @@ input:checked + .switch-slider:before {
   border-radius: 50%;
   background: #1E6FBF;
   cursor: pointer;
+  border: 1px solid #1E6FBF;
 }
 
 .section-light-grey {
