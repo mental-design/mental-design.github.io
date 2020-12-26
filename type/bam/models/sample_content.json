@@ -45,8 +45,8 @@
   {
     "settings": {
       "weightIndex": 3,
-      "sizeIndex": 27,
-      "alignIndex": 1,
+      "sizeIndex": 23,
+      "alignIndex": 0,
       "letterSpacingIndex": 0,
       "lineHeightIndex": 30,
       "showControl": 1,

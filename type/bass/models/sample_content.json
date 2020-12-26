@@ -73,5 +73,20 @@
       }
     },
     "text": "*It's actually free. Free as in Beer, Freedom of Speech, and “Feel Free to Donate!” :-)"
+  },
+  {
+    "settings": {
+      "weightIndex": 3,
+      "sizeIndex": 25,
+      "alignIndex": 0,
+      "letterSpacingIndex": 10,
+      "lineHeightIndex": 20,
+      "showControl": 1,
+      "smallScreen": {
+        "sizeIndex": 20,
+        "lineHeightIndex": 15
+      }
+    },
+    "text": "Enter your own text here<br> and try out Basically A Sans Serif."
   }
 ]
