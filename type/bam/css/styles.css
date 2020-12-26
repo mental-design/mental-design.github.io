@@ -8,7 +8,7 @@ body {
   min-width: 400px;
 }
 
-code, .mono, .CodeMirror {
+code, .sample-font, .mono, .CodeMirror {
   font-family: 'BasicallyAMono', monospace !important;
 }
 
