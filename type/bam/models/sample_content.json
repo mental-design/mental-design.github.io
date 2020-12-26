@@ -44,40 +44,12 @@
   },
   {
     "settings": {
-      "weightIndex": 1,
-      "sizeIndex": 20,
-      "alignIndex": 1,
-      "letterSpacingIndex": 0,
-      "lineHeightIndex": 30,
-      "showControl": 0,
-      "smallScreen": {
-        "sizeIndex": 14
-      }
-    },
-    "text": "Change the weights below and see the characters breathe.<br>↓"
-  },
-  {
-    "settings": {
-      "weightIndex": 5,
-      "sizeIndex": 30,
-      "alignIndex": 1,
-      "letterSpacingIndex": 5,
-      "lineHeightIndex": 20,
-      "showControl": 1,
-      "smallScreen": {
-        "sizeIndex": 24
-      }
-    },
-    "text": "@#$%&^~-+*=<br><>{}(|)[]/\\<br>!?.:;,¿¡"
-  },
-  {
-    "settings": {
       "weightIndex": 3,
       "sizeIndex": 27,
       "alignIndex": 1,
       "letterSpacingIndex": 0,
       "lineHeightIndex": 30,
-      "showControl": 0,
+      "showControl": 1,
       "smallScreen": {
         "sizeIndex": 20,
         "lineHeightIndex": 15
