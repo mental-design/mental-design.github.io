@@ -1,4 +1,4 @@
-Basically A Mono (BAM) is a geometric monoline monospaced typeface primarily designed for code.
+Basically A Mono (BAM) is a geometric monolinear monospaced typeface primarily designed for code.
 <!-- Motivation -->The main motivation for designing BAM was to have a visually uniform typeface to reduce clutter. Basic guidelines were set to achieve the goals:
 
 1) Use lines with uniformly thickness. (No line modulation.)

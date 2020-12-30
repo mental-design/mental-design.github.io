@@ -201,7 +201,6 @@ var CharacterSection = (function() {
 
   function fetchData(callback) {
     // file containing the unicode characters to show
-    // var unicodeURL = 'models/test_unicode.json';
     var unicodeURL = 'models/unicode.json';
     var unicodeRequest = fetch(unicodeURL)
       .then(function(response) { 
@@ -209,7 +208,6 @@ var CharacterSection = (function() {
       });
 
     // file containing the actual characters in the typeface
-    // TODO: read off woff file if possible.
     var codemapURL = 'models/code_map.json';
     var codemapRequest = fetch(codemapURL)
       .then(function(response) { 
