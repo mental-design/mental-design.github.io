@@ -134,6 +134,7 @@ a:hover {
   padding-bottom: 3px !important;
   font-weight: 300;
   color:#fff;
+  font-size: 14px;
 }
 
 .download-btn:hover {
@@ -320,6 +321,7 @@ h1 {
   vertical-align: middle;
   opacity: 1;
   font-size: 15px;
+  font-weight: 500;
 }
 
 .control-icon {

@@ -132,6 +132,7 @@ a:hover {
   padding-bottom: 3px !important;
   font-weight: 300;
   color:#fff;
+  font-size: 14px;
 }
 
 .download-btn:hover {
@@ -196,7 +197,8 @@ a:hover {
 }
 
 .nav-center {
-  padding-top: 13px !important;
+  padding-top: 14px !important;
+  padding-bottom: 0px !important;
   display: block;
   width: 80% !important;
   text-align: center;
