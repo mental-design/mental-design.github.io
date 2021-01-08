@@ -40,6 +40,12 @@ a:hover {
   font-weight: 600;
 }
 
+.notes h3 {
+  font-weight: 500;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
 #description a:link {
   text-decoration: underline;
 }
@@ -441,6 +447,14 @@ input:checked + .switch-slider:before {
 
   .align-control {
     margin-left: 3px;
+  }
+
+  .notes {
+    font-size: 11pt;
+  }
+
+  .notes h3 {
+    font-size: 14pt;
   }
 }
 
