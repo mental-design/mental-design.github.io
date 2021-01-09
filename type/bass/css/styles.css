@@ -24,15 +24,32 @@ a:hover {
 
 .notes {
   font-weight: 300;
-  font-size: 16pt;
+  font-size: 16px;
 }
 
 .notes strong {
   font-weight: 600;
 }
 
+.notes h3 {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
 .notes p {
   margin-top: 0;
+}
+
+@media (max-width:600px) {
+  .notes {
+    font-size: 13px;
+  }
+
+  .notes h3 {
+    font-size: 15px;
+  }
 }
 
 #description a:link {

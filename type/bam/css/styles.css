@@ -33,7 +33,7 @@ a:hover {
 
 .notes {
   font-weight: 300;
-  font-size: 14pt;
+  font-size: 16px;
 }
 
 .notes strong {
@@ -42,8 +42,19 @@ a:hover {
 
 .notes h3 {
   font-weight: 500;
-    margin-bottom: 0px;
-    margin-top: 0px;
+  font-size: 18px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+@media (max-width:600px) {
+  .notes {
+    font-size: 13px;
+  }
+
+  .notes h3 {
+    font-size: 15px;
+  }
 }
 
 #description a:link {
@@ -447,14 +458,6 @@ input:checked + .switch-slider:before {
 
   .align-control {
     margin-left: 3px;
-  }
-
-  .notes {
-    font-size: 11pt;
-  }
-
-  .notes h3 {
-    font-size: 14pt;
   }
 }
 
