@@ -51,17 +51,11 @@ var SampleSection = (function() {
 
     var input = document.createElement('input');
     input.type = "checkbox";
+    input.checked = true;
+    selectStyleSet(input.checked);
     
     input.oninput = function() {
-      var overviewDiv = document.body;  //this.parentElement.parentElement.parentElement;
-      if(input.checked) {  // ss01
-        overviewDiv.classList.remove("ss00");
-        overviewDiv.classList.add("ss01");
-      }
-      else {  // ss00
-        overviewDiv.classList.remove("ss01");
-        overviewDiv.classList.add("ss00");
-      }
+      selectStyleSet(input.checked);
     };
     var span = document.createElement('span');
     span.classList.add("switch-slider");
@@ -114,6 +108,18 @@ var SampleSection = (function() {
     icon.className = "fa fa-adjust";
     icon.id = "dark-icon";
     darkButton.appendChild(icon);
+  }
+
+  function selectStyleSet(select) {
+      var overviewDiv = document.body;
+      if(select) {  // ss01
+        overviewDiv.classList.remove("ss00");
+        overviewDiv.classList.add("ss01");
+      }
+      else {  // ss00
+        overviewDiv.classList.remove("ss01");
+        overviewDiv.classList.add("ss00");
+      }
   }
 
   /* =============== data fetch methods =============== */
