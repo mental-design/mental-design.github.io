@@ -77,13 +77,13 @@
   {
     "settings": {
       "weightIndex": 3,
-      "sizeIndex": 22,
+      "sizeIndex": 20,
       "alignIndex": 0,
       "letterSpacingIndex": 10,
       "lineHeightIndex": 20,
       "showControl": 1,
       "smallScreen": {
-        "sizeIndex": 20,
+        "sizeIndex": 15,
         "lineHeightIndex": 15
       }
     },

@@ -44,11 +44,11 @@ a:hover {
 
 @media (max-width:600px) {
   .notes {
-    font-size: 13px;
+    font-weight: 300;
   }
 
   .notes h3 {
-    font-size: 15px;
+  font-weight: 600;
   }
 }
 
