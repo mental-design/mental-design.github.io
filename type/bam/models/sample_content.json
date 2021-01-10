@@ -44,14 +44,28 @@
   },
   {
     "settings": {
+      "weightIndex": 2,
+      "sizeIndex": 10,
+      "alignIndex": 0,
+      "letterSpacingIndex": 0,
+      "lineHeightIndex": 30,
+      "showControl": 0,
+      "smallScreen": {
+        "sizeIndex": 5
+      }
+    },
+    "text": "At Mental Design, the design process of a typeface starts with a concept. The concept is encoded into components which are programmatically translated into shapes, paths, and points. These components are then combined to create each glyph. No point is manipulated directly, rather each glyph is adjusted by parameters that change the settings for each component. The parameters are tuned along a grid system which guides the proportions then iteratively adjusted to make the characters fit together harmoniously. This systematic design approach reduces arbitrary artifacts and gives the typeface a coherent look and feel."
+  },
+  {
+    "settings": {
       "weightIndex": 3,
-      "sizeIndex": 23,
+      "sizeIndex": 20,
       "alignIndex": 0,
       "letterSpacingIndex": 0,
       "lineHeightIndex": 30,
       "showControl": 1,
       "smallScreen": {
-        "sizeIndex": 20,
+        "sizeIndex": 15,
         "lineHeightIndex": 15
       }
     },
@@ -60,13 +74,13 @@
   {
     "settings": {
       "weightIndex": 1,
-      "sizeIndex": 20,
+      "sizeIndex": 18,
       "alignIndex": 1,
       "letterSpacingIndex": 0,
       "lineHeightIndex": 30,
       "showControl": 0,
       "smallScreen": {
-        "sizeIndex": 15
+        "sizeIndex": 13
       }
     },
     "text": "Or see Basically A Mono in action with the interactive code preview below."
