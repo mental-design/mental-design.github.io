@@ -488,6 +488,16 @@ input:checked + .switch-slider:before {
   border: 1px solid #1E6FBF;
 }
 
+.slider::-moz-range-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #1E6FBF;
+  cursor: pointer;
+  border: 1px solid #1E6FBF;
+}
+
 .section-light-grey {
   background: #f7f7f7;
 }
