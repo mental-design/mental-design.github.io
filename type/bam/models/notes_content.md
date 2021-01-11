@@ -8,7 +8,7 @@ BAM provides both single story and double story lowercase *a* glyphs via stylist
 The single story *a* fits the overall minimalist idea of BAM and is recommended for print or display use. However, we understand the importance of being able to differentiate between **a** and **o**, especially when reading and writing code, which is why we provide the double story *a* as the default. So you can be sure you read "**Yes, I can.**" and not "**Yes, I con.**"
 
 ### LICENSE
-Basically A Mono is licensed under the [SIL Open Font License][1]. It is free for personal and commercial use. Send us an email (type@mentallydesigned.com) to share with us how you used the typeface. Have fun!
+Basically A Mono is licensed under the [SIL Open Font License][1]. It is free for personal and commercial use. Send us an email (type@mentallydesigned.com) to share how you used the typeface. Have fun!
 
 <!-- References -->
 [1]: downloads/License.txt
