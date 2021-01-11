@@ -5,7 +5,7 @@ While influenced by geometric sans serifs such as ITC Avant Garde Gothic and Fut
 BASS is designed for display use, but also works well in logos due to the very geometric nature of the typeface.
 
 ### LICENSE
-Basically A Sans Serif is licensed under the [SIL Open Font License][1]. It is free for personal and commercial use. Send us an email (type@mentallydesigned.com) to let us know how you used the typeface. Have fun!
+Basically A Sans Serif is licensed under the [SIL Open Font License][1]. It is free for personal and commercial use. Send us an email (type@mentallydesigned.com) to share with us how you used the typeface. Have fun!
 
 [1]: downloads/License.txt
 [2]: ../bam/index.html
