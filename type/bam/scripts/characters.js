@@ -4,7 +4,7 @@ var CharacterSection = (function() {
   function init(div) {
 
     fetchData(function(data){
-      initializeCharactersDiv(div, data);
+      initializeCharactersDiv(div, data, getSettings());
     });
   }
 
@@ -15,21 +15,22 @@ var CharacterSection = (function() {
       'Thin', 'ExtraLight', 'Light', 'Regular', 'Medium',
       'SemiBold', 'Bold'
       ],
-    sizes: [
-      20, 24, 30, 36, 42,
-      48, 56, 64, 80, 96,
-      128, 160]
+    sizes: sizes(20, 160, 40)
   };
 
   // Setup info
   var defaults = {
     weightIndex: 3,
-    sizeIndex: 3
+    sizeIndex: 15
+  };
+  var smallScreenDefaults = {
+    weightIndex: 3,
+    sizeIndex: 5
   };
 
   /* =============== initialize methods ================ */
 
-  function initializeCharactersDiv(div, data) {
+  function initializeCharactersDiv(div, data, settings) {
     let glyphList = Object.values(data["glyphMap"]).map(function(e){
       return parseInt(e).toString(16);
     });
@@ -42,7 +43,7 @@ var CharacterSection = (function() {
 
     // Create Controller
     var controlDiv = document.createElement('div');
-    initializeControls(controlDiv, controlInfo, defaults);
+    initializeControls(controlDiv, controlInfo, settings);
     div.appendChild(controlDiv);
     
     // Add characters per type
@@ -54,9 +55,9 @@ var CharacterSection = (function() {
     }
 
     // Set defaults
-    var weight = controlInfo.weights[defaults.weightIndex];
+    var weight = controlInfo.weights[settings.weightIndex];
     updateWeight(weight);
-    var size = controlInfo.sizes[defaults.sizeIndex];
+    var size = controlInfo.sizes[settings.sizeIndex];
     updateFontSize(size);
   }
 
@@ -94,6 +95,10 @@ var CharacterSection = (function() {
   function initializeCategoryDiv(div, category, glyphList) {
     let categoryName = category["category"];
     let range = category["range"];
+    var styleset = 0;
+    if ("styleset" in category){
+      styleset = category["styleset"];
+    }
 
     div.classList.add("char-category");
 
@@ -101,7 +106,6 @@ var CharacterSection = (function() {
     if (categoryName.length > 0) {
       var titleDiv = document.createElement('div');
       titleDiv.classList.add('char-title');
-      titleDiv.classList.add('mono');
       titleDiv.innerHTML = categoryName;
       div.appendChild(titleDiv);
     }
@@ -113,27 +117,28 @@ var CharacterSection = (function() {
       let char = charList[idx];
       if (glyphList.includes(char)) {
         var charDiv = document.createElement('div');
-        initializeCharDiv(charDiv, charList[idx]);
+        initializeCharDiv(charDiv, charList[idx], styleset);
         charListDiv.appendChild(charDiv);
       }
     }
     div.appendChild(charListDiv);
   }
 
-  function initializeCharDiv(div, char) {
+  function initializeCharDiv(div, char, styleset) {
     div.classList.add("char-cell");
-    div.classList.add('mono');
+    div.classList.add("mono");
+    div.classList.add("ss0" + styleset);
     div.innerHTML = "&#x" + char;
   }
 
   // ===== Controls =====
-  function initializeControls(controlDiv, controlInfo, defaults) {
+  function initializeControls(controlDiv, controlInfo, settings) {
     controlDiv.id = "char-controls"
     controlDiv.classList.add("control");
     controlDiv.classList.add("w3-center");
 
     // Create weight slider
-    var weight = controlInfo.weights[defaults.weightIndex];
+    var weight = controlInfo.weights[settings.weightIndex];
     var weightControl = document.createElement('div');
     SampleSlider.init(weightControl,
                       weight,
@@ -145,12 +150,12 @@ var CharacterSection = (function() {
     controlDiv.appendChild(weightControl);
 
     // Create size slider
-    var size = controlInfo.sizes[defaults.sizeIndex];
+    var size = controlInfo.sizes[settings.sizeIndex];
     var sizeControl = document.createElement('div');
     SampleSlider.init(sizeControl,
                       size,
                       controlInfo.sizes,
-                      toSizeLabel,
+                      "resources/font_size.svg",
                       changeSize);
     sizeControl.classList.add("size-control");
     controlDiv.appendChild(sizeControl);
@@ -253,6 +258,22 @@ var CharacterSection = (function() {
 
   function toSizeLabel(size) {
     return size + "px";
+  }
+  // TODO: move this into a utility file
+  function range(start, stop, count) {
+    var rng = stop - start;
+    var step = rng / (count-1);
+    return [...Array(count).keys()].map(i => start + i * step);
+  }
+  // TODO: move this into a utility file
+  function sizes(start, stop, count) {
+    var lgArray = range(Math.log2(start), Math.log2(stop), count);
+    var outArray = lgArray.map(i => 2 ** i);
+    return outArray;
+  }
+
+  function getSettings() {
+    return (screen.width < 600) ? smallScreenDefaults : defaults;
   }
   
   /* =============== export public methods =============== */

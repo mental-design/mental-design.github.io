@@ -2,86 +2,79 @@
 <html lang="en">
 <head>
 <title>Basically A Mono</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width">
-
-<link rel="icon" href="resources/favicon.ico" type="image/x-icon">
-<link rel="manifest" href="resources/favicon/site.webmanifest">
-<!-- Editor Themes -->
-<link rel="stylesheet" href="lib/codemirror-5.51.0/theme/colorforth.css">
-<link rel="stylesheet" href="lib/codemirror-5.51.0/theme/eclipse.css">
-<link rel="stylesheet" href="lib/codemirror-5.51.0/theme/lesser-dark.css">
-<link rel="stylesheet" href="lib/codemirror-5.51.0/theme/lucario.css">
-<link rel="stylesheet" href="lib/codemirror-5.51.0/theme/mbo.css">
-<link rel="stylesheet" href="lib/codemirror-5.51.0/theme/monokai.css">
-<link rel="stylesheet" href="lib/codemirror-5.51.0/theme/moxer.css">
-<link rel="stylesheet" href="lib/codemirror-5.51.0/theme/ssms.css">
-<link rel="stylesheet" href="lib/codemirror-5.51.0/theme/twilight.css">
-<link rel="stylesheet" href="lib/codemirror-5.51.0/theme/vibrant-ink.css">
-<link rel="stylesheet" href="lib/codemirror-5.51.0/theme/xq-light.css">
-<!-- Styles -->
-<link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="lib/codemirror-5.51.0/codemirror.css">
-<link rel="stylesheet" href="css/w3.css">
-<link rel="stylesheet" href="css/styles.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="resources/favicon/logo32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="resources/favicon/logo228.png" sizes="228x228">
+  <link rel="shortcut icon" sizes="196x196" href="resources/favicon/logo196.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="resources/favicon/logo180.png">
+  <!-- Editor Themes -->
+  <link rel="stylesheet" href="lib/codemirror-5.51.0/theme/colorforth.css">
+  <link rel="stylesheet" href="lib/codemirror-5.51.0/theme/eclipse.css">
+  <link rel="stylesheet" href="lib/codemirror-5.51.0/theme/lesser-dark.css">
+  <link rel="stylesheet" href="lib/codemirror-5.51.0/theme/lucario.css">
+  <link rel="stylesheet" href="lib/codemirror-5.51.0/theme/mbo.css">
+  <link rel="stylesheet" href="lib/codemirror-5.51.0/theme/monokai.css">
+  <link rel="stylesheet" href="lib/codemirror-5.51.0/theme/moxer.css">
+  <link rel="stylesheet" href="lib/codemirror-5.51.0/theme/ssms.css">
+  <link rel="stylesheet" href="lib/codemirror-5.51.0/theme/twilight.css">
+  <link rel="stylesheet" href="lib/codemirror-5.51.0/theme/vibrant-ink.css">
+  <link rel="stylesheet" href="lib/codemirror-5.51.0/theme/xq-light.css">
+  <!-- Styles -->
+  <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="lib/codemirror-5.51.0/codemirror.css">
+  <link rel="stylesheet" href="css/w3.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body onload="initialize()">
 
 <!-- Navbar -->
-<div id="top-bar" class="w3-top nav-bar mono w3-card">
+<div id="top-bar" class="w3-top nav-bar sample-font w3-card">
   <div class="w3-black">
     <!--Small header-->
-    <div class="w3-bar w3-black w3-content w3-hide-medium w3-hide-large mtd-small">
-        <a href="../">mental type design</a>
+    <div class="w3-bar w3-content w3-hide-medium w3-hide-large mtd mobile-padding">
+        <a href="../">mental design</a>
     </div>
-    <!--Medium header-->
-    <div class="w3-bar w3-black w3-content w3-hide-small w3-hide-large mtd">
-        <a href="../">mental type design</a>
-    </div>
-    <!--Large header-->
-    <div class="w3-hide-small w3-hide-medium mtd">
-      <div class="mtd-wide">
-        <span class="mtd-first">experi<a href="../">mental type design</a></span> -
-        ele<a href="../">mental type design</a> -
-        funda<a href="../">mental type design</a> -
-        incre<a href="https://incre.mentallydesigned.com/">mental type design</a> -
-        monu<a href="../">mental type design</a> -
-        instru<a href="../">mental type design</a> -
-        senti<a href="../">mental type design</a> -
-        environ<a href="../">mental type design</a> -
-        develop<a href="../">mental type design</a> -
-      </div>
+    <!--Medium/Large header-->
+    <div class="w3-hide-small mtd mtd-wide">
+        <a href="../">mental design</a>
     </div>
   </div>
   <!-- Navigation -->
   <div class="nav-dark-grey nav-wrapper">
     <div class="w3-bar nav-dark-grey w3-content w3-center">
       <a class="w3-bar-item w3-hide-medium w3-hide-large mobile-left nav-item menu-item" href="javascript:void(0)" onclick="toggleMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-      <div class="w3-bar-item w3-hide-medium w3-hide-large nav-item nav-center"><a href="#" class="title-item">Basically A Mono</a></div>
+      <div class="w3-bar-item w3-hide-medium w3-hide-large nav-item nav-center">
+        <a href="#" class="title-item" onclick="hideMenu()">Basically A Mono</a>
+      </div>
       <div class="w3-bar-item w3-hide-small w3-hide-medium nav-spacer"></div>
       <a href="#" class="w3-bar-item w3-hide-small w3-hover-green w3-padding-large nav-item bam-blue title-item" onclick="hideMenu()">BAM</a>
-      <a href="#overview" class="w3-bar-item w3-hide-small nav-item">Text</a>
-      <a href="#preview" class="w3-bar-item w3-hide-small nav-item">Code</a>
-      <!-- <a href="#notes"      class="w3-bar-item w3-hide-small nav-item">Notes</a> -->
+      <a href="#overview"   class="w3-bar-item w3-hide-small nav-item">Text</a>
+      <a href="#preview"    class="w3-bar-item w3-hide-small nav-item">Code</a>
+      <a href="#notes"      class="w3-bar-item w3-hide-small nav-item">Notes</a>
       <a href="#characters" class="w3-bar-item w3-hide-small nav-item">Characters</a>
+      <a href="#donate"   class="w3-bar-item w3-hide-small nav-item">Donate</a>
       <div class="w3-bar-item w3-hide-small w3-hide-medium w3-right nav-spacer"></div>
       <div class="w3-bar-item w3-hide-small w3-hide-large w3-right download-spacer"></div>
       <div class="w3-bar-item w3-hide-small w3-right download-btn">
-        <a href="downloads/bam-vers1_001.zip">Download</a>
+        <a href="downloads/bam-vers1_201.zip">Download</a>
       </div>
     </div>
   </div>
 </div>
 
 <!-- Navbar on small screens -->
-<div id="mobileNav" class="w3-bar-block w3-card w3-black w3-hide w3-hide-large w3-hide-medium w3-top nav-bar mono">
-  <a href="#overview"   class="w3-bar-item w3-padding-large nav-item nav-item-hover" onclick="hideMenu()">Text</a>
-  <a href="#preview"    class="w3-bar-item w3-padding-large nav-item nav-item-hover" onclick="hideMenu()">Code</a>
-  <!-- <a href="#notes"      class="w3-bar-item w3-padding-large nav-item nav-item-hover" onclick="hideMenu()">Notes</a> -->
-  <a href="#characters" class="w3-bar-item w3-padding-large nav-item nav-item-hover" onclick="hideMenu()">Characters</a>
-  <a href="downloads/bam-vers1_001.zip" class="w3-bar-item w3-padding-large nav-item nav-item-hover" onclick="hideMenu()">Download</a>
+<div id="mobileNav" class="w3-bar-block w3-card w3-black w3-hide w3-hide-large w3-hide-medium w3-top nav-bar sample-font">
+  <a href="#overview"   class="w3-bar-item nav-item nav-item-hover mtd-small" onclick="hideMenu()">Text</a>
+  <a href="#preview"    class="w3-bar-item nav-item nav-item-hover mtd-small" onclick="hideMenu()">Code</a>
+  <a href="#notes"      class="w3-bar-item nav-item nav-item-hover mtd-small" onclick="hideMenu()">Notes</a>
+  <a href="#characters" class="w3-bar-item nav-item nav-item-hover mtd-small" onclick="hideMenu()">Characters</a>
+  <a href="downloads/bam-vers1_201.zip" class="w3-bar-item nav-item nav-item-hover mtd-small" onclick="hideMenu()">Download</a>
+  <a href="#donate" class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Donate</a>
 </div>
 
 <!-- Page content -->
@@ -90,8 +83,8 @@
   <!-- The Title Section -->
   <div class="bam-blue">
     <div class="w3-container w3-content w3-center w3-padding-64 section">
-      <h1 class="w3-wide mono" style="font-weight:500;">Basically A Mono</h1>
-      <p class="w3-opacity mono subtitle" style="font-weight:200;">A monospaced typeface for the geometrically inclined.</p>
+      <h1 class="w3-wide sample-font title">Basically A Mono</h1>
+      <p class="w3-opacity sample-font subtitle">A monospaced typeface for the geometrically inclined.</p>
     </div>
   </div>
 
@@ -108,7 +101,26 @@
 
   <!-- The Notes Section -->
   <div id="notes" class="section-wrapper">
-    <div class="w3-display-container w3-content w3-padding-32 section">
+    <div class="w3-display-container w3-content section padding-top-32 notes" id="description">
+    </div>
+  </div>
+
+  <!-- Donation -->
+  <div id="donate" class="section-wrapper">
+    <div class="w3-display-container w3-content section padding-bottom-32 notes">
+      <h3>DONATE</h3>
+      <p>If you find the typeface useful and would like to show support, please donate. As an independent designer your support means a lot.</p>
+      <!-- KoFi Button -->
+      <a href='https://ko-fi.com/U7U52ZM5J' target='_blank'>
+        <img class="donate-btn" src='resources/kofi.png' border='0' alt='Buy Me a Coffee at ko-fi.com' id="kofi"/>
+      </a>
+      <!-- Paypal Donate Button -->
+      <form action="https://www.paypal.com/donate" method="post" target="_top" id="paypal-form">
+        <input type="hidden" name="cmd" value="_donations" />
+        <input type="hidden" name="business" value="N8P9ZPYYQHVKS" />
+        <input type="hidden" name="currency_code" value="USD" />
+        <input type="image" src="resources/paypal.png" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" class="donate-btn " id="paypal"/>
+      </form>
     </div>
   </div>
 
@@ -125,11 +137,13 @@
 <!-- Footer -->
 <footer class="w3-container w3-padding-32 w3-center w3-black w3-xlarge">
   <!-- <i class="fa fa-google w3-hover-opacity"></i> -->
-  <a href="https://github.com/mental-design/basically-a-mono"><i class="fa fa-github w3-hover-opacity"></i></a>
+  <a href="https://github.com/mental-design/basically-a-sans-serif"><i class="fa fa-github w3-hover-opacity"></i></a>
+  <a href="https://www.instagram.com/mentaltypedesign/"><i class="fa fa-instagram"></i></a>
   <a href="mailto:type@mentallydesigned.com"><i class="fa fa-envelope"></i></a>
-  <p class="w3-medium mono"><span class="copyright">©</span><a href="../">mental type design</a></p>
-
+  <!-- <a href="https://twitter.com/MentalType"><i class="fa fa-twitter"></i></a> -->
+  <p class="w3-medium sample-font"><span class="copyright">©</span><a href="../">mental design</a></p>
 </footer>
+
 
 <!-- Scripts -->
 <script src="lib/codemirror-5.51.0/codemirror.js"></script>
@@ -138,6 +152,7 @@
 <script src="lib/codemirror-5.51.0/mode/python.js"></script>
 <script src="lib/codemirror-5.51.0/mode/swift.js"></script>
 <script src="lib/codemirror-5.51.0/mode/cpp.js"></script>
+<script src="lib/marked-1.2.7/marked.min.js"></script>
 <script src="scripts/sample-slider.js"></script>
 <script src="scripts/sample-control.js"></script>
 <script src="scripts/sample-line.js"></script>
@@ -150,14 +165,34 @@
   function initialize(){
     adjustToNavbar();
 
+    var url = 'models/sample_content.json';
     var sampleDiv = document.getElementById('samples');
-    SampleSection.init(sampleDiv);
+    SampleSection.init(sampleDiv, url);
 
     var previewDiv = document.getElementById('code');
     PreviewSection.init(previewDiv);
 
+    // The Notes Section
+    var notesDiv = document.getElementById('description');
+    var notesUrl = 'models/notes_content.md';
+    fetchNotes(notesUrl, function(content){
+      notesDiv.innerHTML = marked(content);
+    });
+
     var characterDiv = document.getElementById('charmap');
     CharacterSection.init(characterDiv);
+  }
+
+  function fetchNotes(url, callback) {
+    var notesRequest = fetch(url)
+      .then(function(response) {
+         return response.text()
+      });
+
+    Promise.all([notesRequest])
+      .then(function(values){
+        callback(values[0]);
+    });
   }
 </script>
 

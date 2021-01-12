@@ -1,73 +1,101 @@
 [
   {
     "settings": {
-      "weightIndex": 1,
-      "sizeIndex": 12,
+      "weightIndex": 3,
+      "sizeIndex": 25,
       "alignIndex": 0,
-      "showControl": 0
+      "letterSpacingIndex": 5,
+      "lineHeightIndex": 30,
+      "showControl": 0,
+      "smallScreen": {
+        "sizeIndex": 18,
+        "letterSpacingIndex": 5
+      }
     },
     "text": "Basic Geometry<br>Circles & Lines<br>Parameterized Glyphs"
   },
   {
     "settings": {
-      "weightIndex": 3,
-      "sizeIndex": 9,
+      "weightIndex": 1,
+      "sizeIndex": 23,
       "alignIndex": 1,
-      "showControl": 0
+      "letterSpacingIndex": 0,
+      "lineHeightIndex": 30,
+      "showControl": 0,
+      "smallScreen": {
+        "sizeIndex": 15
+      }
     },
     "text": "Circles in code o<br>Infinite ∞ Loops<br>race condition<br>synchronized deadlock<br>(Political Bureaucracy?)<br>Out of order, execution<br>segfault … Done!"
   },
   {
     "settings": {
       "weightIndex": 5,
-      "sizeIndex": 10,
+      "sizeIndex": 24,
       "alignIndex": 2,
-      "showControl": 0
+      "letterSpacingIndex": 0,
+      "lineHeightIndex": 30,
+      "showControl": 0,
+      "smallScreen": {
+        "sizeIndex": 15
+      }
     },
-    "text": "Optimal Circles<br>Constant Lines<br>Strict x-height<br>Vertical/Horizontal Terminals<br>It's that basic!"
+    "text": "Optimal Circles<br>Constant Lines<br>Vertical/Horizontal Terminals<br>It's that basic!"
   },
   {
     "settings": {
-      "weightIndex": 1,
-      "sizeIndex": 7,
-      "alignIndex": 1,
-      "showControl": 0
+      "weightIndex": 2,
+      "sizeIndex": 10,
+      "alignIndex": 0,
+      "letterSpacingIndex": 0,
+      "lineHeightIndex": 30,
+      "showControl": 0,
+      "smallScreen": {
+        "sizeIndex": 5
+      }
     },
-    "text": "Sweep through the weights below and see the characters breathe. ↓"
-  },
-  {
-    "settings": {
-      "weightIndex": 4,
-      "sizeIndex": 14,
-      "alignIndex": 1,
-      "showControl": 1
-    },
-    "text": "@#$%&^~-+*=<br><>{}(|)[]/\\<br>!?.:;,¿¡"
+    "text": "At Mental Design, the design process of a typeface starts with a concept. The concept is encoded into components which are programmatically translated into shapes, paths, and points. These components are then combined to create each glyph. No point is manipulated directly, rather each glyph is adjusted by parameters that change the settings for each component. The parameters are tuned along a grid system which guides the proportions then iteratively adjusted to make the characters fit together harmoniously. This systematic design approach reduces arbitrary artifacts and gives the typeface a coherent look and feel.<br><br>"
   },
   {
     "settings": {
       "weightIndex": 3,
-      "sizeIndex": 10,
-      "alignIndex": 1,
-      "showControl": 0
+      "sizeIndex": 20,
+      "alignIndex": 0,
+      "letterSpacingIndex": 0,
+      "lineHeightIndex": 30,
+      "showControl": 1,
+      "smallScreen": {
+        "sizeIndex": 15,
+        "lineHeightIndex": 15
+      }
     },
-    "text": "Enter your own text here<br> and try out Basically A Mono."
+    "text": "Enter your own text here and try out Basically A Mono."
   },
   {
     "settings": {
       "weightIndex": 1,
-      "sizeIndex": 8,
+      "sizeIndex": 18,
       "alignIndex": 1,
-      "showControl": 0
+      "letterSpacingIndex": 0,
+      "lineHeightIndex": 30,
+      "showControl": 0,
+      "smallScreen": {
+        "sizeIndex": 13
+      }
     },
     "text": "Or see Basically A Mono in action with the interactive code preview below."
   },
   {
     "settings": {
-      "weightIndex": 5,
-      "sizeIndex": 14,
+      "weightIndex": 6,
+      "sizeIndex": 40,
       "alignIndex": 1,
-      "showControl": 0
+      "letterSpacingIndex": 0,
+      "lineHeightIndex": 0,
+      "showControl": 0,
+      "smallScreen": {
+        "sizeIndex": 30
+      }
     },
     "text": "↓"
   }

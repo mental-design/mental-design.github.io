@@ -1,0 +1,15 @@
+Basically A Mono (BAM) is a **monospaced** and **monolinear** typeface constructed from basic geometric components - lines and circles. To sum it up, it's basically a mono! (bam!)
+
+The motivation for designing BAM was to create a typeface that had a clean and organized look befit for coding and software engineering where organization of code, functions, data, files, etc. is of key importance. The typeface is created from custom drawing code, instead of font design software. 
+Each point, line, curve is calculated and no point is manipulated manually. 
+The result is a typeface with very precise geometry.
+
+BAM provides both single story and double story lowercase **a** glyphs via stylistic sets.
+The single story **a** fits the overall minimalist idea of BAM and is recommended for print or display use. However, we understand the importance of being able to differentiate between **a** and **o**, especially when reading and writing code, which is why we provide the double story **a** as the default. So you can be sure it's "**Yes, I can.**" and not "**Yes, I con.**"
+
+### LICENSE
+Basically A Mono is licensed under the [SIL Open Font License][1]. It is free for personal and commercial use. Send us an email (type@mentallydesigned.com) to share how you used the typeface. Have fun!
+
+<!-- References -->
+[1]: downloads/License.txt
+
