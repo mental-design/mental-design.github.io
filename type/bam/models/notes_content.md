@@ -1,6 +1,6 @@
 Basically A Mono (BAM) is a **monospaced** and **monolinear** typeface constructed from basic geometric components - lines and circles. To sum it up, it's basically a mono! (bam!)
 
-The motivation for designing BAM was to create a typeface that had a clean and organized look befit for coding and software engineering where organization of code, functions, data, files, etc. is of key importance. The typeface is created from custom drawing code, instead of font design software. 
+The motivation for designing BAM was to create a typeface that had a clean and organized look befit for coding and software engineering where organization of code, functions, data, files, etc., is of key importance. The typeface is created from custom drawing code, instead of font design software. 
 Each point, line, curve is calculated and no point is manipulated manually. 
 The result is a typeface with very precise geometry.
 
