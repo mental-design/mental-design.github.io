@@ -270,10 +270,6 @@ a:hover {
   width: 100%;
 }
 
-.section-wrapper:target {
-    padding-top: 76px;
-}
-
 .subtitle {
   font-weight: 200;
   font-size: 26px;
