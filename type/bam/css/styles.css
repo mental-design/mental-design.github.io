@@ -563,6 +563,18 @@ input:checked + .switch-slider:before {
   text-align: center;
 }
 
+.social {
+  font-weight: 200;
+}
+
+.mail {
+  vertical-align: 1px;
+}
+
+.blog {
+  vertical-align: -1px;
+}
+
 .copyright {
   font-size: 24px;
   font-weight: 200;

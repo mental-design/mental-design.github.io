@@ -451,6 +451,18 @@ h1 {
   text-align: center;
 }
 
+.social {
+  font-weight: 200;
+}
+
+.mail {
+  vertical-align: 1px;
+}
+
+.blog {
+  vertical-align: -1px;
+}
+
 .copyright {
   font-size: 18px;
   font-weight: 300;
