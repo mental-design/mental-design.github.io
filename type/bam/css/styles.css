@@ -467,7 +467,7 @@ input:checked + .switch-slider:before {
   width: 75px;
   background: #AEC7E8;
   opacity: 1;
-  /*outline: none;*/
+  outline: none;
   -webkit-transition: .2s;
   transition: opacity .2s;
   vertical-align: middle;
