@@ -11,76 +11,51 @@
   <link rel="shortcut icon" sizes="196x196" href="resources/favicon/logo196.png">
   <link rel="apple-touch-icon" sizes="180x180" href="resources/favicon/logo180.png">
   <!-- Styles -->
-  <link rel="stylesheet" href="bam/lib/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/w3.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
-<body class="w3-black">
-<!-- Sidebar -->
-<div id="sidebar" class="w3-sidebar w3-bar-block w3-animate-opacity bam" style="display:none">
-  <div><span class="w3-opacity-max bar-title bass">Fonts</span></div>
-  <div><a href="bam/" class="w3-large bar-item bam">BAM</a></div>
-  <div><a href="bass/" class="w3-large bar-item bass">BASS</a></div>
-</div>
+<body class="w3-black bass">
+  <!-- Intro div -->
+  <div id="intro" class="w3-display-container w3-display-middle" hidden>
+    <span class="mental">mental</span><span class="design">design</span>
+  </div>
 
-<!-- Sidebar Button -->
-<div class="w3-xlarge side-button" onclick="toggleSidebar()"><i id="sb-btn" class="fa fa-question-circle"></i></div>
+  <!-- Nav div -->
+  <div id="nav" class="w3-top">
+    <div class="w3-bar">
+      <span class="mental">mental</span><span class="design">design</span>
+    </div>
+    <div id="menu" class="w3-bar-block">
+      <a href="#" id="menu-fonts" class="w3-bar-item" onclick="handleClick('fonts')">fonts</a>
+      <a href="#" id="menu-about" class="w3-bar-item" onclick="handleClick('about')">about</a>
+      <a href="#" id="menu-contacts" class="w3-bar-item" onclick="handleClick('contact')">contact</a>
+    </div>
+  </div>
 
-<!-- Main -->
-<div id="name" class="bass">
-  MENTAL<br>
-  <span id="design">DESIGN</span><br>
-</div>
+  <!-- Fonts div -->
+  <div id="fonts" class="w3-display-container w3-display-middle" hidden>
+    <a href="bam" class="bam">basically a mono</a><br>
+    <a href="bass" class="bass">basically a sans serif</a><br>
+    <a href="#" class="do-it">did one (i think)!</a><br>
+    <a href="#" class="bass">yet another simple sans</a>
+  </div>
 
-<!-- Footer -->
-<footer id="footer" class="w3-container w3-left w3-bottom w3-animate-opacity bam" style="display:none">
-  
-  <div class="w3-hide-small w3-hide-medium w3-padding-32">
-    <!-- <i class="fa fa-twitter"></i> <a href="https://twitter.com/MentalType">MentalType</a><br> -->
+  <!-- About div -->
+
+  <!-- Contacts div -->
+  <div id="contacts" class="w3-display-container w3-display-middle">
     <i class="fa fa-instagram"></i> <a href="https://www.instagram.com/mentaltypedesign">mentaltypedesign</a><br>
     <i class="fa fa-envelope"></i> <a href="mailto:type@mentallydesigned.com">type@mentallydesigned.com</a><br>
-    <i class="fa fa-github"></i> <a href="https://github.com/mental-design">https://github.com/mental-design</a><br>
-    <!-- <i class="fa fa-pencil"></i> <a href="https://incre.mentallydesigned.com">https://incre.mentallydesigned.com</a> -->
+    <i class="fa fa-github"></i> <a href="https://github.com/mental-design">github.com/mental-design</a><br>
+    <i class="fa fa-pencil"></i> <a href="https://incre.mentallydesigned.com">incre.mentallydesigned.com</a>
   </div>
-  <div class="w3-hide-large w3-xlarge w3-padding-16">
-    <!-- <a href="https://twitter.com/MentalType"><i class="fa fa-twitter"></i></a> -->
-    <a href="https://www.instagram.com/mentaltypedesign"><i class="fa fa-instagram"></i></a>
-    <a href="https://github.com/mental-design"><i class="fa fa-github"></i></a>
-    <!-- <a href="https://incre.mentallydesigned.com"><i class="fa fa-pencil"></i></a> -->
-    <a href="mailto:type@mentallydesigned.com"><i class="fa fa-envelope"></i></a>
-  </div>
-</footer>
 
-<script src="scripts/inobounce.min.js"></script>
-<script>
-function toggleSidebar() {
-  var sidebarHidden = isSidebarHidden();
-  hideSidebar(!sidebarHidden);
-}
-
-function isSidebarHidden() {
-  let sidebar = document.getElementById("sidebar");
-  return sidebar.style.display == "none";
-}
-
-function hideSidebar(hide) {
-  let sidebar = document.getElementById("sidebar");
-  let footer = document.getElementById("footer");
-  let sbButton = document.getElementById("sb-btn");
-
-  if(hide) {
-    sidebar.style.display = "none";
-    footer.style.display = "none";
-    sbButton.classList.add("fa-question-circle");
-    sbButton.classList.remove("fa-times-circle");
-  }
-  else { // show
-    sidebar.style.display = "block";
-    footer.style.display = "block";
-    sbButton.classList.add("fa-times-circle");
-    sbButton.classList.remove("fa-question-circle");
-  }
-}
-</script>
+  <!-- scripts -->
+  <script>
+    function handleClick(name){
+      console.log("Click!! " + name)
+    }
+  </script>
 </body>
