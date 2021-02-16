@@ -24,13 +24,13 @@
 
   <!-- Nav div -->
   <div id="nav" class="w3-top">
-    <div class="w3-bar">
+    <div id="title-bar" class="w3-bar">
       <span class="mental">mental</span><span class="design">design</span>
     </div>
     <div id="menu" class="w3-bar-block">
       <a href="#" id="menu-fonts" class="w3-bar-item" onclick="handleClick('fonts')">fonts</a>
       <a href="#" id="menu-about" class="w3-bar-item" onclick="handleClick('about')">about</a>
-      <a href="#" id="menu-contacts" class="w3-bar-item" onclick="handleClick('contact')">contact</a>
+      <a href="#" id="menu-contact" class="w3-bar-item" onclick="handleClick('contact')">contact</a>
     </div>
   </div>
 
@@ -43,19 +43,46 @@
   </div>
 
   <!-- About div -->
+  <div id="about" class="w3-container w3-display-topmiddle" hidden>
+  </div>
 
   <!-- Contacts div -->
-  <div id="contacts" class="w3-display-container w3-display-middle">
-    <i class="fa fa-instagram"></i> <a href="https://www.instagram.com/mentaltypedesign">mentaltypedesign</a><br>
-    <i class="fa fa-envelope"></i> <a href="mailto:type@mentallydesigned.com">type@mentallydesigned.com</a><br>
-    <i class="fa fa-github"></i> <a href="https://github.com/mental-design">github.com/mental-design</a><br>
-    <i class="fa fa-pencil"></i> <a href="https://incre.mentallydesigned.com">incre.mentallydesigned.com</a>
+  <div id="contact" class="w3-display-container w3-display-middle" hidden>
+    <a href="https://www.instagram.com/mentaltypedesign">
+      <i class="fa fa-instagram"></i> mentaltypedesign
+    </a><br>
+    <a href="mailto:type@mentallydesigned.com">
+      <i class="fa fa-envelope"></i> type@mentallydesigned.com
+    </a><br>
+    <a href="https://github.com/mental-design">
+      <i class="fa fa-github"></i> github.com/mental-design
+    </a><br>
+    <a href="https://incre.mentallydesigned.com">
+      <i class="fa fa-pencil"></i> incre.mentallydesigned.com
+    </a>
   </div>
 
   <!-- scripts -->
+  <script src="bass/lib/marked-1.2.7/marked.min.js"></script>
+  <script src="bass/scripts/notes.js"></script>
   <script>
+    var aboutDiv = document.getElementById('about');
+    var aboutUrl = 'models/about.md';
+    NotesSection.init(aboutDiv, aboutUrl);
+
+    var nowShowing = undefined
+
     function handleClick(name){
-      console.log("Click!! " + name)
+      // Hide current
+      if (nowShowing) {
+      document.getElementById(nowShowing).hidden = true
+      document.getElementById("menu-" +nowShowing).classList.remove("selected") 
+      }
+
+      // Show new
+      document.getElementById(name).hidden = false
+      document.getElementById("menu-"+name).classList.add("selected")
+      nowShowing = name
     }
   </script>
 </body>

@@ -4,6 +4,7 @@
 /* Globals */
 .bam {
   font-family: 'BasicallyAMono' !important;
+  font-feature-settings: "ss01" 1;
 }
 .bass {
   font-family: 'BasicallyASansSerif' !important;
@@ -42,11 +43,17 @@ a:link {
   padding: 12px 24px;
 }
 
+#title-bar {
+  padding-bottom: 8px;
+}
+
 #menu {
   font-size: 20pt;
   font-weight: 300;
+}
 
-  padding-top: 8px;
+#menu .selected {
+  color: #fff;
 }
 
 #menu .w3-bar-item {
@@ -55,11 +62,11 @@ a:link {
 }
 
 #menu a {
-  color: #5e5e5e !important;
+  color: #5e5e5e;
 }
 
 #menu a:hover {
-  color: #fff !important;
+  color: #fff;
 }
 
 /* Fonts div */
@@ -69,9 +76,38 @@ a:link {
   text-align: left;
 }
 
+/* About div */
+#about {
+  font-weight: 300;
+  font-size: 15pt;
+  color: #929292;
+  padding-top: 12px;
+  line-height: 1.3;
+}
+
+#about h1 {
+  font-family: 'BasicallyASansSerif';
+  font-weight: 500;
+  font-size: 24pt;
+  line-height: 1.1;
+  color: #fff;
+}
+
+#about h2 {
+  font-family: 'BasicallyASansSerif';
+  font-weight: 300;
+  font-size: 15pt;
+  line-height: 1.1;
+  color: #d5d5d5;
+}
+
 /* Contacts div */
-#contacts {
+#contact {
   font-size: 24pt;
   font-weight: 300;
   text-align: left;
+}
+
+#contact .fa {
+  vertical-align: -0.1em;
 }
