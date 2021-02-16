@@ -28,18 +28,28 @@
       <span class="mental">mental</span><span class="design">design</span>
     </div>
     <div id="menu" class="w3-bar-block">
-      <a href="#" id="menu-fonts" class="w3-bar-item" onclick="handleClick('fonts')">fonts</a>
-      <a href="#" id="menu-about" class="w3-bar-item" onclick="handleClick('about')">about</a>
-      <a href="#" id="menu-contact" class="w3-bar-item" onclick="handleClick('contact')">contact</a>
+      <div class="w3-bar-item">
+        <a href="#" id="menu-fonts" 
+          onmouseover="handleClick('fonts')"
+          onclick="handleClick('fonts')">fonts</a>
+      </div>
+      <div class="w3-bar-item">
+        <a href="#" id="menu-about"
+          onmouseover="handleClick('about')"
+          onclick="handleClick('about')">about</a>
+      </div>
+      <div class="w3-bar-item">
+        <a href="#" id="menu-contact"
+          onmouseover="handleClick('contact')"
+          onclick="handleClick('contact')">contact</a>
+      </div>
     </div>
   </div>
 
   <!-- Fonts div -->
   <div id="fonts" class="w3-display-container w3-display-middle" hidden>
     <a href="bam" class="bam">basically a mono</a><br>
-    <a href="bass" class="bass">basically a sans serif</a><br>
-    <a href="#" class="do-it">did one (i think)!</a><br>
-    <a href="#" class="bass">yet another simple sans</a>
+    <a href="bass" class="bass">basically a sans serif</a>
   </div>
 
   <!-- About div -->
@@ -66,6 +76,7 @@
   <script src="bass/lib/marked-1.2.7/marked.min.js"></script>
   <script src="bass/scripts/notes.js"></script>
   <script>
+    // TODO: handle anchors
     var aboutDiv = document.getElementById('about');
     var aboutUrl = 'models/about.md';
     NotesSection.init(aboutDiv, aboutUrl);
@@ -73,16 +84,20 @@
     var nowShowing = undefined
 
     function handleClick(name){
+      if (name == nowShowing)
+        return
+
       // Hide current
       if (nowShowing) {
-      document.getElementById(nowShowing).hidden = true
-      document.getElementById("menu-" +nowShowing).classList.remove("selected") 
+        document.getElementById(nowShowing).hidden = true
+        document.getElementById("menu-" +nowShowing).classList.remove("selected") 
       }
 
       // Show new
       document.getElementById(name).hidden = false
       document.getElementById("menu-"+name).classList.add("selected")
       nowShowing = name
+      // TODO: set anchor
     }
   </script>
 </body>

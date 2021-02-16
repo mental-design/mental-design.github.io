@@ -19,10 +19,6 @@ a:link {
 
 /* Intro Div */
 #intro {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
   font-weight: 200;
   font-size: 32pt;
 
@@ -69,6 +65,39 @@ a:link {
   color: #fff;
 }
 
+#menu .w3-bar-item {
+  padding-right: 15px;
+}
+
+@media (max-width: 600px) {
+  #nav {
+    background-color: #000;
+  }
+
+  .w3-bar-block {
+    width: 100%;
+    overflow: hidden
+  }
+
+  .w3-bar-block .w3-bar-item {
+      padding: 8px 16px;
+      float: left;
+      width: auto;
+      border: none;
+      display: block;
+      outline: 0
+  }
+}
+
+@media (max-width: 320px) {
+  #nav {
+    font-size: 15pt;
+  }
+  #menu {
+    font-size: 15pt;
+  }
+}
+
 /* Fonts div */
 #fonts {
   font-size: 32pt;
@@ -76,12 +105,26 @@ a:link {
   text-align: left;
 }
 
+@media (max-width: 600px) {
+  #fonts {
+    font-size: 24pt;
+    width: 80%;
+  }
+}
+
+@media (max-width: 320px) {
+  #fonts {
+    font-size: 15pt;
+  }
+}
+
 /* About div */
 #about {
+  padding-top: 12px;
+  
   font-weight: 300;
   font-size: 15pt;
   color: #929292;
-  padding-top: 12px;
   line-height: 1.3;
 }
 
@@ -101,6 +144,13 @@ a:link {
   color: #d5d5d5;
 }
 
+@media (max-width: 600px) {
+  #about {
+    padding-top: 106px;
+    width: 90%;
+  }
+}
+
 /* Contacts div */
 #contact {
   font-size: 24pt;
@@ -110,4 +160,17 @@ a:link {
 
 #contact .fa {
   vertical-align: -0.1em;
+}
+
+@media (max-width: 600px) {
+  #contact {
+    width: 80%;
+    font-size: 15pt;
+  }
+}
+
+@media (max-width: 320px) {
+  #contact {
+    font-size: 12pt;
+  }
 }
