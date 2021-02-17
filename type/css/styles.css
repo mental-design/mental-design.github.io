@@ -69,9 +69,10 @@ a:link {
   padding-right: 15px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   #nav {
     background-color: #000;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.16), 0 5px 15px 0 rgba(0, 0, 0, 0.12);
   }
 
   .w3-bar-block {
@@ -105,10 +106,15 @@ a:link {
   text-align: left;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  #fonts {
+    width: 80%;
+  }
+}
+
+@media (max-width: 414px) {
   #fonts {
     font-size: 24pt;
-    width: 80%;
   }
 }
 
@@ -144,7 +150,7 @@ a:link {
   color: #d5d5d5;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   #about {
     padding-top: 106px;
     width: 90%;
@@ -162,9 +168,14 @@ a:link {
   vertical-align: -0.1em;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   #contact {
     width: 80%;
+  }
+}
+
+@media (max-width: 414px) {
+  #contact {
     font-size: 15pt;
   }
 }
