@@ -110,6 +110,13 @@ a:link {
       -ms-transform: translate(-33%, -50%)
     }
   }
+
+  @media (max-width: 650px) {
+    #fonts {
+      width: 330px;
+      font-size: 24pt;
+    }
+  }
 }
 
 @media (max-aspect-ratio: 4/3) {  
@@ -128,11 +135,6 @@ a:link {
 /* About div */
 #about {
   padding-top: 7px;
-  
-  font-weight: 300;
-  font-size: 15pt;
-  color: #929292;
-  line-height: 1.3;
 }
 
 #about h1 {
@@ -151,6 +153,14 @@ a:link {
   color: #d5d5d5;
 }
 
+#about p {
+  font-family: 'BasicallyASansSerif';
+  font-weight: 300;
+  font-size: 15pt;
+  line-height: 1.3;
+  color: #929292;
+}
+
 @media (min-aspect-ratio: 4/3) { 
   @media (max-width: 800px) {
     #about {
@@ -161,6 +171,27 @@ a:link {
       right: 33%;
       transform: translate(-33%, 0%);
       -ms-transform: translate(-33%, 0%)
+    }
+  }
+
+  @media (max-width: 720px) {
+    #about {
+      width: 60%;
+
+      position: absolute;
+      top: 0;
+      right: 25%;
+      transform: translate(-25%, 0%);
+      -ms-transform: translate(-25%, 0%)
+    }
+
+    #about h1 {
+      font-size: 20pt;
+    }
+
+    #about h2, #about p {
+      font-size: 12pt;
+      font-weight: 400;
     }
   }
 }
@@ -193,6 +224,20 @@ a:link {
       right: 33%;
       transform: translate(-33%, -50%);
       -ms-transform: translate(-33%, -50%)
+    }
+  }
+
+  @media (max-width: 675px) {
+    #contact {
+      width: 401px;
+      font-size: 20pt;
+    }
+  }
+
+  @media (max-width: 600px) {
+    #contact {
+      width: 321px;
+      font-size: 16pt;
     }
   }
 }
