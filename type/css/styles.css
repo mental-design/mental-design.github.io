@@ -89,6 +89,12 @@ a:link {
       display: block;
       outline: 0
   }
+
+  @media(max-width: 330px) {
+    .w3-bar-block .w3-bar-item {
+      font-size: 18pt;
+    }
+  }
 }
 
 /* Fonts div */
@@ -121,7 +127,7 @@ a:link {
 
 @media (max-aspect-ratio: 4/3) {  
   #fonts {
-    max-width: 80%;
+    max-width: 90%;
   }
 
   @media (max-width: 545px) {
@@ -130,11 +136,20 @@ a:link {
       font-size: 24pt;
     }
   }
+
+  @media (max-width: 380px) {
+    #fonts {
+      width: 275px;
+      font-size: 20pt;
+    }
+  }
 }
 
 /* About div */
 #about {
   padding-top: 7px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 #about h1 {
@@ -201,6 +216,21 @@ a:link {
     padding-top: 106px;
     width: 90%;
   }
+
+  @media (max-width: 330px) {
+  #about {
+    padding-top: 103px;
+  }
+
+    #about h1 {
+      font-size: 20pt;
+    }
+
+    #about h2, #about p {
+      font-size: 12pt;
+      font-weight: 400;
+    }
+  }
 }
 
 /* Contacts div */
@@ -244,20 +274,27 @@ a:link {
 
 @media (max-aspect-ratio: 4/3) {  
   #contact {
-    max-width: 80%;
+    max-width: 90%;
   }
 
-  @media (max-width: 601px) {
+  @media (max-width: 535px) {
     #contact {
       width: 401px;
       font-size: 20pt;
     }
   }
 
-  @media (max-width: 501px) {
+  @media (max-width: 460px) {
     #contact {
       width: 321px;
       font-size: 16pt;
+    }
+  }
+
+  @media (max-width: 360px) {
+    #contact {
+      width: 275px;
+      font-size: 13.5pt;
     }
   }
 }
