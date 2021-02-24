@@ -25,7 +25,9 @@
   <!-- Nav div -->
   <div id="nav" class="w3-top">
     <div id="title-bar" class="w3-bar">
-      <span class="mental">mental</span><span class="design">design</span>
+      <a href="#" id="menu-fonts" onclick="handleClick()">
+        <span class="mental">mental</span><span class="design">design</span>
+      </a>
     </div>
     <div id="menu" class="w3-bar-block">
       <div class="w3-bar-item">
@@ -97,8 +99,11 @@
       }
 
       // Show new
+      if (name) {
       document.getElementById(name).hidden = false
       document.getElementById("menu-"+name).classList.add("selected")
+      }
+
       nowShowing = name
       // TODO: set anchor
     }

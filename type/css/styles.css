@@ -164,7 +164,7 @@ a:link {
   font-family: 'BasicallyASansSerif';
   font-weight: 300;
   font-size: 15pt;
-  line-height: 1.1;
+  line-height: 1.25;
   color: #d5d5d5;
 }
 
@@ -214,7 +214,10 @@ a:link {
 @media (max-aspect-ratio: 4/3) {  
   #about {
     padding-top: 106px;
-    width: 90%;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    width: 100%;
   }
 
   @media (max-width: 330px) {
