@@ -102,8 +102,12 @@ a:link {
   width: 450px;
 
   font-size: 32pt;
-  font-weight: 400;
+  font-weight: 300;
   text-align: left;
+}
+
+#fonts a:hover {
+  font-weight: 500;
 }
 
 @media (min-aspect-ratio: 4/3) { 
