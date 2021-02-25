@@ -220,6 +220,10 @@ a:hover {
   text-decoration: none;
 }
 
+.nav-center .title-item {
+  font-weight: 400;
+}
+
 .nav-center {
   padding-top: 14px !important;
   padding-bottom: 0px !important;
@@ -588,4 +592,8 @@ input:checked + .switch-slider:before {
   font-weight: 200;
   vertical-align: -4px;
   margin-right: 5px;
+}
+
+.footer-logo {
+  font-size: 18px;
 }

@@ -243,6 +243,10 @@ a:hover {
   line-height: 22px;
 }
 
+.nav-center .title-item {
+  font-weight: 400;
+}
+
 .nav-item-hover:hover {
   background-color: #3f3f3f !important;
   color: #fff !important;
@@ -476,4 +480,8 @@ h1 {
   font-weight: 300;
   vertical-align: -1px;
   margin-right: 5px;
+}
+
+.footer-logo {
+  font-size: 18px;
 }
