@@ -25,25 +25,25 @@
   <!-- Nav div -->
   <div id="nav" class="w3-top">
     <div id="title-bar" class="w3-bar">
-      <a href="#" id="menu-fonts" onclick="handleClick()">
+      <a href="#" onclick="showSection()">
         <span class="mental">mental</span><span class="design">design</span>
       </a>
     </div>
     <div id="menu" class="w3-bar-block">
       <div class="w3-bar-item">
-        <a href="#" id="menu-fonts" 
-          onmouseover="handleClick('fonts')"
-          onclick="handleClick('fonts')">fonts</a>
+        <a href="#fonts" id="menu-fonts"
+          onmouseover="showSection('fonts')"
+          onclick="showSection('fonts')">fonts</a>
       </div>
       <div class="w3-bar-item">
-        <a href="#" id="menu-about"
-          onmouseover="handleClick('about')"
-          onclick="handleClick('about')">about</a>
+        <a href="#about" id="menu-about"
+          onmouseover="showSection('about')"
+          onclick="showSection('about')">about</a>
       </div>
       <div class="w3-bar-item">
-        <a href="#" id="menu-contact"
-          onmouseover="handleClick('contact')"
-          onclick="handleClick('contact')">contact</a>
+        <a href="#contact" id="menu-contact"
+          onmouseover="showSection('contact')"
+          onclick="showSection('contact')">contact</a>
       </div>
     </div>
   </div>
@@ -81,31 +81,35 @@
   <script src="bass/lib/marked-1.2.7/marked.min.js"></script>
   <script src="bass/scripts/notes.js"></script>
   <script>
-    // TODO: handle anchors
-    var aboutDiv = document.getElementById('about');
-    var aboutUrl = 'models/about.md';
-    NotesSection.init(aboutDiv, aboutUrl);
-
-    var nowShowing = undefined
-
-    function handleClick(name){
+    function showSection(name){
       if (name == nowShowing)
         return
 
       // Hide current
       if (nowShowing) {
         document.getElementById(nowShowing).hidden = true
-        document.getElementById("menu-" +nowShowing).classList.remove("selected") 
+        document.getElementById("menu-" + nowShowing).classList.remove("selected") 
       }
 
       // Show new
       if (name) {
-      document.getElementById(name).hidden = false
-      document.getElementById("menu-"+name).classList.add("selected")
+        document.getElementById(name).hidden = false
+        document.getElementById("menu-" + name).classList.add("selected")
       }
 
       nowShowing = name
-      // TODO: set anchor
+      
+      // Set anchor
+      self.location.href = '#' + name
     }
+
+    var aboutDiv = document.getElementById('about')
+    var aboutUrl = 'models/about.md'
+    NotesSection.init(aboutDiv, aboutUrl)
+
+    var nowShowing = undefined
+
+    // Show anchor
+    showSection(window.location.hash.substr(1))
   </script>
 </body>
