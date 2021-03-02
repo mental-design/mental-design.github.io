@@ -1,71 +1,309 @@
 @import '../bam/fonts/basicallyamono.css';
 @import '../bass/fonts/basicallyasansserif.css';
 
+/* max-aspect-ratio changes layout */
+/* max-width changes font sizes */
+
+/* Globals */
 .bam {
   font-family: 'BasicallyAMono' !important;
+  font-feature-settings: "ss01" 1;
 }
 .bass {
   font-family: 'BasicallyASansSerif' !important;
 }
+.do-it {
+  font-family: 'Didot' !important; 
+}
 
-#name {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -35px;
-  margin-left: -60px;
+a:link {
+  text-decoration: none;
+}
 
-  width: 120px;
-  height: 140px;
-  
-  font-size: 25pt;
+/* Intro Div */
+#intro {
   font-weight: 200;
+  font-size: 32pt;
 
-  text-align: "center";
+  line-height: 1.3;
 }
 
-#design {
-  letter-spacing: 0.04em;
-}
-
-#sidebar {
-  margin-top: 44px;
-  background-color: rgba(255, 0, 0, 0);
-}
-
-.side-button {
-  padding: 8px;
-  padding-left: 16px;
-}
-
-.bar-title {
+.mental {
   font-weight: 400;
-  margin-left: 16px;
 }
 
-.bar-item {
-  text-decoration: none;
+.design {
+  font-weight: 200;
+}
+
+/* Nav Div */
+#nav {
+  font-size: 20pt;
+  padding: 12px 24px;
+  padding-right: 0;
+  width: 225px;
+}
+
+#title-bar {
+  padding-bottom: 8px;
+}
+
+#menu {
+  font-size: 20pt;
   font-weight: 300;
-  margin-left: 16px;
 }
 
-#adjust-T {
-  letter-spacing: -1.3px;
+#menu .selected {
+  color: #fff;
 }
 
-#adjust-A {
-  letter-spacing: 1.3px;
+#menu a {
+  color: #5e5e5e;
 }
 
-footer {
+#menu a:hover {
+  color: #fff;
+}
+
+#menu .w3-bar-item {
+  line-height: 1.3;
+  padding: 0;
+  padding-right: 15px;
+}
+
+@media (max-aspect-ratio: 4/3) {
+  #nav {
+    background-color: #000;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.16), 0 5px 15px 0 rgba(0, 0, 0, 0.12);
+
+    width: 100%;
+  }
+
+  /* Override w3-bar-block with w3-bar */
+  .w3-bar-block {
+    width: 100%;
+    overflow: hidden
+  }
+
+  .w3-bar-block .w3-bar-item {
+      padding: 8px 16px;
+      float: left;
+      width: auto;
+      border: none;
+      display: block;
+      outline: 0
+  }
+
+  @media(max-width: 330px) {
+    .w3-bar-block .w3-bar-item {
+      font-size: 18pt;
+    }
+  }
+}
+
+/* Fonts div */
+#fonts {
+  width: 450px;
+
+  font-size: 32pt;
+  font-weight: 400;
+  text-align: left;
+}
+
+@media (min-aspect-ratio: 4/3) { 
+  @media (max-width: 800px) {
+    #fonts {
+      position: absolute;
+      top: 50%;
+      right: 33%;
+      transform: translate(-33%, -50%);
+      -ms-transform: translate(-33%, -50%)
+    }
+  }
+
+  @media (max-width: 650px) {
+    #fonts {
+      width: 330px;
+      font-size: 24pt;
+    }
+  }
+}
+
+@media (max-aspect-ratio: 4/3) {  
+  #fonts {
+    max-width: 90%;
+  }
+
+  @media (max-width: 545px) {
+    #fonts {
+      width: 330px;
+      font-size: 24pt;
+    }
+  }
+
+  @media (max-width: 380px) {
+    #fonts {
+      width: 275px;
+      font-size: 20pt;
+    }
+  }
+}
+
+/* About div */
+#about {
+  padding-top: 7px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+#about h1 {
+  font-family: 'BasicallyASansSerif';
+  font-weight: 500;
+  font-size: 24pt;
+  line-height: 1.1;
+  color: #fff;
+}
+
+#about h2 {
+  font-family: 'BasicallyASansSerif';
   font-weight: 300;
+  font-size: 15pt;
+  line-height: 1.25;
+  color: #d5d5d5;
 }
 
-footer a:link {
-  text-decoration: none;
+#about p {
+  font-family: 'BasicallyASansSerif';
+  font-weight: 300;
+  font-size: 15pt;
+  line-height: 1.3;
+  color: #929292;
+
+  margin-top: 15px;
 }
 
-footer a:hover {
-  text-decoration: underline;
+@media (min-aspect-ratio: 4/3) { 
+  @media (max-width: 800px) {
+    #about {
+      width: 66%;
+
+      position: absolute;
+      top: 0;
+      right: 33%;
+      transform: translate(-33%, 0%);
+      -ms-transform: translate(-33%, 0%)
+    }
+  }
+
+  @media (max-width: 720px) {
+    #about {
+      width: 60%;
+
+      position: absolute;
+      top: 0;
+      right: 25%;
+      transform: translate(-25%, 0%);
+      -ms-transform: translate(-25%, 0%)
+    }
+
+    #about h1 {
+      font-size: 20pt;
+    }
+
+    #about h2, #about p {
+      font-size: 12pt;
+      font-weight: 400;
+    }
+  }
 }
 
+@media (max-aspect-ratio: 4/3) {  
+  #about {
+    padding-top: 106px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    width: 100%;
+  }
+
+  @media (max-width: 330px) {
+  #about {
+    padding-top: 103px;
+  }
+
+    #about h1 {
+      font-size: 20pt;
+    }
+
+    #about h2, #about p {
+      font-size: 12pt;
+      font-weight: 400;
+    }
+  }
+}
+
+/* Contacts div */
+#contact {
+  width: 481px;
+
+  font-size: 24pt;
+  font-weight: 300;
+  text-align: left;
+}
+
+#contact .fa {
+  vertical-align: -0.1em;
+}
+
+@media (min-aspect-ratio: 4/3) { 
+  @media (max-width: 900px) {
+    #contact {
+      position: absolute;
+      top: 50%;
+      right: 33%;
+      transform: translate(-33%, -50%);
+      -ms-transform: translate(-33%, -50%)
+    }
+  }
+
+  @media (max-width: 675px) {
+    #contact {
+      width: 401px;
+      font-size: 20pt;
+    }
+  }
+
+  @media (max-width: 600px) {
+    #contact {
+      width: 321px;
+      font-size: 16pt;
+    }
+  }
+}
+
+@media (max-aspect-ratio: 4/3) {  
+  #contact {
+    max-width: 90%;
+  }
+
+  @media (max-width: 535px) {
+    #contact {
+      width: 401px;
+      font-size: 20pt;
+    }
+  }
+
+  @media (max-width: 460px) {
+    #contact {
+      width: 321px;
+      font-size: 16pt;
+    }
+  }
+
+  @media (max-width: 360px) {
+    #contact {
+      width: 275px;
+      font-size: 13.5pt;
+    }
+  }
+}

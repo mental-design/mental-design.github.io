@@ -31,6 +31,14 @@ a:hover {
   text-decoration: underline;
 }
 
+.mental {
+  font-weight: 400;
+}
+
+.design {
+  font-weight: 200;
+}
+
 .notes {
   font-weight: 300;
   font-size: 16px;
@@ -210,6 +218,10 @@ a:hover {
 
 .title-item:hover {
   text-decoration: none;
+}
+
+.nav-center .title-item {
+  font-weight: 400;
 }
 
 .nav-center {
@@ -467,7 +479,7 @@ input:checked + .switch-slider:before {
   width: 75px;
   background: #AEC7E8;
   opacity: 1;
-  /*outline: none;*/
+  outline: none;
   -webkit-transition: .2s;
   transition: opacity .2s;
   vertical-align: middle;
@@ -563,9 +575,25 @@ input:checked + .switch-slider:before {
   text-align: center;
 }
 
+.social {
+  font-weight: 200;
+}
+
+.mail {
+  vertical-align: 1px;
+}
+
+.blog {
+  vertical-align: -1px;
+}
+
 .copyright {
   font-size: 24px;
   font-weight: 200;
   vertical-align: -4px;
   margin-right: 5px;
+}
+
+.footer-logo {
+  font-size: 18px;
 }
