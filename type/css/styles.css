@@ -1,5 +1,6 @@
 @import '../bam/fonts/basicallyamono.css';
 @import '../bass/fonts/basicallyasansserif.css';
+@import '../abc/fonts/abc.css';
 
 /* max-aspect-ratio changes layout */
 /* max-width changes font sizes */
@@ -12,8 +13,8 @@
 .bass {
   font-family: 'BasicallyASansSerif' !important;
 }
-.do-it {
-  font-family: 'Didot' !important; 
+.abc {
+  font-family: 'ABCv0.001' !important; 
 }
 
 a:link {
@@ -110,7 +111,7 @@ a:link {
   text-align: left;
 }
 
-@media (min-aspect-ratio: 4/3) { 
+@media (min-aspect-ratio: 4/3) {  /* Wide Screen */
   @media (max-width: 800px) {
     #fonts {
       position: absolute;
@@ -123,27 +124,27 @@ a:link {
 
   @media (max-width: 650px) {
     #fonts {
-      width: 330px;
+      width: 335px;
       font-size: 24pt;
     }
   }
 }
 
-@media (max-aspect-ratio: 4/3) {  
+@media (max-aspect-ratio: 4/3) {   /* Mobile */
   #fonts {
     max-width: 90%;
   }
 
   @media (max-width: 545px) {
     #fonts {
-      width: 330px;
+      width: 335px;
       font-size: 24pt;
     }
   }
 
   @media (max-width: 380px) {
     #fonts {
-      width: 275px;
+      width: 280px;
       font-size: 20pt;
     }
   }
