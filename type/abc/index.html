@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>All Birds Combination</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="resources/favicon/logo32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="resources/favicon/logo228.png" sizes="228x228">
+  <link rel="shortcut icon" sizes="196x196" href="resources/favicon/logo196.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="resources/favicon/logo180.png">
+  <!-- Styles -->
+  <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/w3.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body onload="initialize()">
+
+<!-- Navbar -->
+<div id="top-bar" class="w3-top nav-bar sample-font nav-shadow">
+  <div class="w3-black">
+    <!--Small header-->
+    <div class="w3-bar w3-content w3-hide-medium w3-hide-large w3-hover-opacity mtd mobile-padding">
+        <a href="../"><span class="mental">mental</span><span class="design">design</span></a>
+    </div>
+    <!--Medium/Large header-->
+    <div class="w3-hide-small w3-hover-opacity mtd mtd-wide">
+        <a href="../"><span class="mental">mental</span><span class="design">design</span></a>
+    </div>
+  </div>
+  <!-- Navigation -->
+  <div class="nav-dark-grey nav-wrapper">
+    <div class="w3-bar nav-dark-grey w3-content w3-center">
+      <a class="w3-bar-item w3-hide-medium w3-hide-large mobile-left nav-item menu-item" href="javascript:void(0)" onclick="toggleMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <div class="w3-bar-item w3-hide-medium w3-hide-large w3-hover-opacity nav-item nav-center">
+        <a href="#" class="title-item"onclick="hideMenu()">All Birds Combined</a>
+      </div>
+      <div class="w3-bar-item w3-hide-small w3-hide-medium nav-spacer"></div>
+      <a href="#" class="w3-bar-item w3-hide-small w3-yellow w3-hover-green w3-padding-large nav-item title-item" onclick="hideMenu()">ABC</a>
+      <a href="#overview"   class="w3-bar-item w3-hide-small nav-item w3-hover-opacity">Text</a>
+      <a href="#notes"      class="w3-bar-item w3-hide-small nav-item w3-hover-opacity">Notes</a>
+      <a href="#characters" class="w3-bar-item w3-hide-small nav-item w3-hover-opacity">Characters</a>
+      <a href="#donate"   class="w3-bar-item w3-hide-small nav-item w3-hover-opacity">Donate</a>
+      <div class="w3-bar-item w3-hide-small w3-hide-medium w3-right nav-spacer"></div>
+      <div class="w3-bar-item w3-hide-small w3-hide-large w3-right download-spacer"></div>
+      <div class="w3-bar-item w3-hide-small w3-right download-btn">
+        <a href="downloads/bass-vers1_001.zip">Download</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="mobileNav" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top nav-bar nav-shadow sample-font">
+  <a href="#overview"   class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Text</a>
+  <a href="#notes"      class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Notes</a>
+  <a href="#characters" class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Characters</a>
+  <a href="downloads/bass-vers1_001.zip" class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Download</a>
+  <a href="#donate" class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Donate</a>
+</div>
+
+<!-- Page content -->
+<div id="content" class="w3-content content">
+
+  <!-- The Title Section -->
+  <div class="w3-yellow">
+    <div class="w3-container w3-content w3-center w3-padding-64 section">
+      <h1 class="w3-wide sample-font title">All Birds Combination</h1>
+      <p class="w3-opacity sample-font subtitle">A variably different take on Albersʼ Kombinations-schrift.</p>
+    </div>
+  </div>
+
+  <!-- The Overview Section -->
+  <div id="overview" class="section-wrapper section-light-grey">
+    <div class="w3-display-container w3-content w3-padding-32 section dark-section" id="samples"></div>
+  </div>
+
+  <!-- The Notes Section -->
+  <div id="notes" class="section-wrapper">
+    <div class="w3-display-container w3-content section padding-top-32 notes" id="description">
+    </div>
+  </div>
+
+  <!-- Donation -->
+  <div id="donate" class="section-wrapper">
+    <div class="w3-display-container w3-content section padding-bottom-32 notes">
+      <h3>DONATE</h3>
+      <p>If you find the typeface useful and would like to show support, please donate. As an independent designer your support means a lot.</p>
+      <!-- KoFi Button -->
+      <a href='https://ko-fi.com/U7U52ZM5J' target='_blank'>
+        <img class="donate-btn" src='resources/kofi.png' border='0' alt='Buy Me a Coffee at ko-fi.com' id="kofi"/>
+      </a>
+      <!-- Paypal Donate Button -->
+      <form action="https://www.paypal.com/donate" method="post" target="_top" id="paypal-form">
+        <input type="hidden" name="cmd" value="_donations" />
+        <input type="hidden" name="business" value="N8P9ZPYYQHVKS" />
+        <input type="hidden" name="currency_code" value="USD" />
+        <input type="image" src="resources/paypal.png" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" class="donate-btn " id="paypal"/>
+      </form>
+    </div>
+  </div>
+
+  <!-- The Characters Section -->
+  <div id="characters" class="section-wrapper section-light-grey">
+    <div class="w3-display-container w3-content w3-padding-32 section dark-section" id="charmap">
+    </div>
+  </div>
+
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-center w3-black w3-xlarge">
+  <div class="social">
+    <!-- <i class="fa fa-google w3-hover-opacity"></i> -->
+    <a href="mailto:type@mentallydesigned.com" class="mail"><i class="fa fa-envelope-o w3-hover-opacity"></i></a>
+    <a href="https://incre.mentallydesigned.com" class="blog"><i class="fa fa-pencil-square-o w3-hover-opacity"></i></a>
+    <a href="https://github.com/mental-design/basically-a-sans-serif"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/mentaltypedesign/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/MentalType"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+  </div>
+  <p class="w3-medium w3-hover-opacity sample-font">
+    <span class="copyright">©</span><a href="../" class="footer-logo"><span class="mental">mental</span><span class="design">design</span></a>
+  </p>
+</footer>
+
+<!-- Scripts -->
+<script src="lib/marked-1.2.7/marked.min.js"></script>
+<script src="scripts/sample-slider.js"></script>
+<script src="scripts/sample-control.js"></script>
+<script src="scripts/sample-line.js"></script>
+<script src="scripts/sample.js"></script>
+<script src="scripts/notes.js"></script>
+<script src="scripts/characters.js"></script>
+<script src="scripts/w3.js"></script>
+<script>
+  function initialize(){
+    adjustToNavbar();
+
+    // The Overview Section
+    var sampleUrl = getSampleUrl();  // "models/sample_content.json";
+    var sampleDiv = document.getElementById('samples');
+    SampleSection.init(sampleDiv, sampleUrl);
+
+    // The Notes Section
+    var notesDiv = document.getElementById('description');
+    var notesUrl = 'models/notes_content.md';
+    NotesSection.init(notesDiv, notesUrl);
+    
+    // The Characters Section
+    var characterDiv = document.getElementById('charmap');
+    CharacterSection.init(characterDiv);
+  }
+
+  function getSampleUrl() {
+    var url_string = window.location.href
+    var url = new URL(url_string);
+    var mode = url.searchParams.get("m");
+    var sampleUrl = "";
+    switch(mode) {
+      case "test":
+        sampleUrl = "models/test_content.json"
+        break;
+      case "lang":
+        sampleUrl = "models/test_language.json"
+        break;
+      default:
+        sampleUrl = "models/sample_content.json";
+    }
+    return sampleUrl;
+  }
+</script>
+
+</body>
+</html>

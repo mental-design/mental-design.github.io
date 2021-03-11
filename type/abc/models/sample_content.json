@@ -1,0 +1,17 @@
+[
+  {
+    "settings": {
+      "weightIndex": 3,
+      "sizeIndex": 20,
+      "alignIndex": 0,
+      "letterSpacingIndex": 10,
+      "lineHeightIndex": 20,
+      "showControl": 1,
+      "smallScreen": {
+        "sizeIndex": 15,
+        "lineHeightIndex": 15
+      }
+    },
+    "text": "Enter your own text here and try out All Birds Combined."
+  }
+]
