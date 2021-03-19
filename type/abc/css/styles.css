@@ -107,36 +107,6 @@ a:link {
   padding-bottom: 32px !important;
 }
 
-.bam-blue {
-  background: #13477B;
-  color: #fff !important;
-}
-
-.bam-green {
-  background: #137C13;
-  color: #fff !important;
-}
-
-.bam-silver {
-  background: #f7f7f7;
-  color: #000 !important;
-}
-
-.bam-gray {
-  background: #333;
-  color: #fff !important;
-}
-
-.bam-hover-green:hover {
-  background-color: #157F1A !important;
-  color: #fff !important;
-}
-
-.bam-hover-blue:hover {
-  background-color: #13477B !important;
-  color: #fff !important;
-}
-
 .mtd {
   padding-top: 5px !important;
   padding-bottom: 5px !important;
@@ -207,6 +177,10 @@ a:link {
 
 .nav-spacer {
   padding: 8px !important;
+}
+
+#hamburger {
+  font-size: 20px;
 }
 
 .menu-item {

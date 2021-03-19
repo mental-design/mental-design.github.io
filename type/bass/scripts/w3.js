@@ -20,10 +20,11 @@ function adjustToNavbar() {
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleMenu() {
   var navMenu = document.getElementById("mobileNav");
-  if (navMenu.className.indexOf("w3-show") == -1) {
-    navMenu.classList.add("w3-show");
-  } else { 
+  if (navMenu.classList.contains("w3-show")) {
     navMenu.classList.remove("w3-show");
+  }
+  else { 
+    navMenu.classList.add("w3-show");
   }
 }
 
