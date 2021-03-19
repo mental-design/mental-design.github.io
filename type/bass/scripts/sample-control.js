@@ -51,7 +51,8 @@ var SampleControl = (function() {
     var alignControl = createAlignControl(settings.alignment);
 
     var controlDiv = document.createElement('div');
-    controlDiv.className = "control";
+    controlDiv.classList.add("control");
+    controlDiv.classList.add("control-light");
     controlDiv.appendChild(weightControl);
     controlDiv.appendChild(sizeControl);
     controlDiv.appendChild(letterSpacingControl);

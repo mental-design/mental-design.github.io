@@ -42,7 +42,9 @@ var SampleLine = (function() {
     textDiv.style.fontSize = settings.size + 'pt';
     textDiv.style.letterSpacing = settings.letterSpacing + 'em';
     textDiv.style.lineHeight = settings.lineHeight;
-    textDiv.className = "sample-font sample " + "w3-" + settings.alignment;
+    textDiv.classList.add("sample-font");
+    textDiv.classList.add("sample");
+    textDiv.classList.add("w3-" + settings.alignment);
     textDiv.contentEditable = true;
     textDiv.innerHTML = text;
   }

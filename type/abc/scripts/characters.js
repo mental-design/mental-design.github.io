@@ -10,21 +10,18 @@ var CharacterSection = (function() {
 
   // Control info
   var controlInfo = {
-    weights: [100, 200, 300, 400, 500, 600, 700],
-    weightNames: [
-      'Thin', 'ExtraLight', 'Light', 'Regular', 'Medium',
-      'SemiBold', 'Bold'
-      ],
+    weights: [100, 200, 300, 400],
+    weightNames: ['Compressed', 'Condensed', 'Narrow', 'Regular'],
     sizes: sizes(20, 160, 40)
   };
 
   // Setup info
   var defaults = {
-    weightIndex: 3,
+    weightIndex: 2,
     sizeIndex: 15
   };
   var smallScreenDefaults = {
-    weightIndex: 3,
+    weightIndex: 2,
     sizeIndex: 5
   };
 

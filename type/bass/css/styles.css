@@ -293,6 +293,7 @@ h1 {
 }
 
 .sample {
+  position: relative;
   margin-bottom: 5px;
 }
 
@@ -313,11 +314,27 @@ h1 {
 }
 
 .control {
+  padding: 5px;
+  border-radius: 5px;
   text-align: center;
+  overflow:hidden;
+}
+
+.control-light {
+  background: rgba(247, 247, 247, 0.8);
+}
+
+.control-dark {
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .control-wrapper {
-  height: 25px;
+  position: relative;
+  z-index: 100 !important;
+
+  max-width: 660px;
+  min-height: 40px;
+  margin: auto;
 }
 
 .control-item {
@@ -379,9 +396,9 @@ h1 {
   vertical-align: -1px;
 }
 
-@media (max-width:678px) {
+@media (max-width:689px) {
   .control-wrapper {
-    height: 55px;
+    min-height: 71px;
   }
 
   .control-item {

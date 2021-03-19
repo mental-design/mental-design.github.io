@@ -51,7 +51,8 @@ var SampleControl = (function() {
     var alignControl = createAlignControl(settings.alignment);
 
     var controlDiv = document.createElement('div');
-    controlDiv.className = "control";
+    controlDiv.classList.add("control");
+    controlDiv.classList.add("control-light");
     controlDiv.appendChild(weightControl);
     controlDiv.appendChild(sizeControl);
     controlDiv.appendChild(letterSpacingControl);
@@ -105,7 +106,7 @@ var SampleControl = (function() {
   function toWeightLabel(weight) {
     var weightIndex = controlInfo.weights.indexOf(weight);
     var weightName = controlInfo.weightNames[weightIndex];
-    return weightName + " " + weight;
+    return weightName;  // + " " + weight;
   }
 
   /* =============== handle event methods ================ */

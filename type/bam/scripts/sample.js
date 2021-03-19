@@ -90,9 +90,13 @@ var SampleSection = (function() {
     darkButton.setAttribute('id', 'dark-mode');
 
     var darkClass = "w3-black";
-    var lightClass = "section-light-grey";
+    var lightClass = "w3-white";
+
+    var darkControl = "control-dark";
+    var lightControl = "control-light";
 
     darkButton.onclick = function() {
+      // Toggle section
       var overviewDiv = this.parentElement.parentElement;
       if (overviewDiv.classList.contains(darkClass)) {
         overviewDiv.classList.remove(darkClass);
@@ -101,6 +105,20 @@ var SampleSection = (function() {
       else {
         overviewDiv.classList.remove(lightClass);
         overviewDiv.classList.add(darkClass);
+      }
+
+      // Toggle controls
+      var controls = overviewDiv.getElementsByClassName("control");
+      for (var i = 0; i < controls.length; i++) {
+        control = controls[i];
+        if (control.classList.contains(darkControl)) {
+          control.classList.remove(darkControl);
+          control.classList.add(lightControl);
+        }
+        else {
+          control.classList.remove(lightControl);
+          control.classList.add(darkControl);
+        }
       }
     }
 
