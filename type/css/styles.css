@@ -14,7 +14,8 @@
   font-family: 'BasicallyASansSerif' !important;
 }
 .abc {
-  font-family: 'ABCv0.001' !important; 
+  font-family: 'ABCv0.001' !important;
+  font-weight: 500;
 }
 
 a:link {
