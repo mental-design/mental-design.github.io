@@ -21,33 +21,30 @@ a:link {
 }
 
 .mental {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .design {
-  font-weight: 400;
+  font-weight: 500;
   color: #999;
 }
 
 @media
-(-webkit-min-device-pixel-ratio: 2), 
-(min-resolution: 192dpi) { /* retina display */
+(-webkit-min-device-pixel-ratio: 3),
+(min-resolution: 250dpi) { /* retina display */
   .design {
-    font-weight: 400;
     -webkit-text-stroke: 0.5px #fff;
     -webkit-text-fill-color: #000;
   }  
   #nav-logo .design {
-    font-size: 14.5px;
+    font-size: 14px;
     letter-spacing: 0.25px;
   }
   #footer-logo .design {
-    font-size: 17.5px;
+    font-size: 17px;
     letter-spacing: 0.25px;
   }
 }
-
-
 
 .notes {
   font-weight: 300;
@@ -152,9 +149,10 @@ a:link {
   margin-right: 0px;
   padding: 6px 10px !important;
   padding-bottom: 3px !important;
-  font-weight: 300;
+  font-weight: 400;
   color:#fff;
   font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 .download-btn:hover {
@@ -215,7 +213,7 @@ a:link {
 .nav-item {
   font-weight: 400;
   color:#fff;
-  letter-spacing: 0;
+  letter-spacing: 0.03em;
   padding-top: 14px !important;
   line-height: 18px;
   height: 45px;
@@ -223,6 +221,17 @@ a:link {
 
 .mobile-left {
   width:10% !important;
+}
+
+.menu-bg {
+  color: #000;
+  background: #FAE232;
+}
+
+.title-bg {
+  color: #000;
+  background: #FAE232;
+  /*background: linear-gradient(357deg, rgba(92,78,78,1) 0%, rgba(123,106,106,1) 23%, rgba(152,134,134,1) 67%, rgba(152,134,134,1) 100%);*/
 }
 
 .title-item {
@@ -264,7 +273,7 @@ a:link {
 }
 
 .title {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 56px;
   letter-spacing: 0px;
 }
@@ -283,7 +292,7 @@ a:link {
 }
 
 .subtitle {
-  font-weight: 200;
+  font-weight: 400;
   font-size: 26px;
 }
 

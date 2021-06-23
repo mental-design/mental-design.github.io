@@ -10,8 +10,8 @@ var SampleSection = (function() {
   /* =============== Model ================ */
   // Control info
   var controlInfo = {
-    weights: [100, 200, 300, 400],
-    weightNames: ['Compressed', 'Condensed', 'Narrow', 'Regular'],
+    weights: [100, 200, 300, 400, 500],
+    weightNames: ['Compressed', 'Condensed', 'Narrow', 'Regular', 'Medium'],
     sizes: sizes(8, 200, 50),
     letterSpacings: range(-0.1, 0.5, 61),
     lineHeights: range(1.0, 2.0, 101),

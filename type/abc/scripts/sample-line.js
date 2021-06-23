@@ -17,6 +17,7 @@ var SampleLine = (function() {
       var text = (e.originalEvent || e).clipboardData.getData('text/plain');  // get text
       document.execCommand("insertHTML", false, text);  // insert text manually
     }
+
     if (!settings.showControl) {
       lineDiv.onmouseover = function() {
         var control = lineDiv.getElementsByClassName('control')[0];

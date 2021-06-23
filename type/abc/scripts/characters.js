@@ -10,14 +10,14 @@ var CharacterSection = (function() {
 
   // Control info
   var controlInfo = {
-    weights: [100, 200, 300, 400],
-    weightNames: ['Compressed', 'Condensed', 'Narrow', 'Regular'],
+    weights: [100, 200, 300, 400, 500],
+    weightNames: ['Compressed', 'Condensed', 'Narrow', 'Regular', 'Medium'],
     sizes: sizes(20, 160, 40)
   };
 
   // Setup info
   var defaults = {
-    weightIndex: 2,
+    weightIndex: 3,
     sizeIndex: 15
   };
   var smallScreenDefaults = {
@@ -243,7 +243,7 @@ var CharacterSection = (function() {
   function toWeightLabel(weight) {
     var weightIndex = controlInfo.weights.indexOf(weight);
     var weightName = controlInfo.weightNames[weightIndex];
-    return weightName + " " + weight;
+    return weightName; // + " " + weight;
   }
 
   function range(start, stop, count) {

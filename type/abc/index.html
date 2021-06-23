@@ -41,7 +41,7 @@
         <a href="#" class="title-item"onclick="hideMenu()">All Birds Combination</a>
       </div>
       <div class="w3-bar-item w3-hide-small w3-hide-medium nav-spacer"></div>
-      <a href="#" class="w3-bar-item w3-hide-small w3-yellow w3-hover-green w3-padding-large nav-item title-item" onclick="hideMenu()">ABC</a>
+      <a href="#" class="w3-bar-item w3-hide-small menu-bg w3-hover-green w3-padding-large nav-item title-item" onclick="hideMenu()">ABC</a>
       <a href="#overview"   class="w3-bar-item w3-hide-small nav-item w3-hover-opacity">Text</a>
       <a href="#notes"      class="w3-bar-item w3-hide-small nav-item w3-hover-opacity">Notes</a>
       <a href="#characters" class="w3-bar-item w3-hide-small nav-item w3-hover-opacity">Characters</a>
@@ -68,7 +68,7 @@
 <div id="content" class="w3-content content">
 
   <!-- The Title Section -->
-  <div class="w3-yellow">
+  <div class="title-bg">
     <div class="w3-container w3-content w3-center w3-padding-64 section">
       <h1 class="w3-wide sample-font title">
         𓅈 All Birds 𓅌 Combination 𓅄
@@ -113,7 +113,7 @@
     </div>
   </div>
 
-  
+
 <!-- End Page Content -->
 </div>
 
@@ -154,7 +154,7 @@
     var notesDiv = document.getElementById('description');
     var notesUrl = 'models/notes_content.md';
     NotesSection.init(notesDiv, notesUrl);
-    
+
     // The Characters Section
     var characterDiv = document.getElementById('charmap');
     CharacterSection.init(characterDiv);
