@@ -28,11 +28,23 @@ a:link {
 }
 
 .mental {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .design {
-  font-weight: 200;
+  font-weight: 300;
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 250dpi) { /* retina display */
+  .mental {
+    font-weight: 400;
+  }
+
+  .design {
+    font-weight: 200;
+  }
 }
 
 .notes {
