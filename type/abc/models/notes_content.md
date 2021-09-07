@@ -2,7 +2,7 @@ All Birds Combination (ABC) is a loosely grid-based modular display typeface tha
 
 Kombinations-schrift was created using 10 different stencil shapes. The shapes were systematically created using squares and quarter circles. The resulting letters were systematic and modular making it a good typeface to analyze.
 
-![Albersʼ Kombinations-schrift](resources/images/JosefAlbersKombinationsschrift.png "Albersʼ Kombinations-schrift")
+<!-- ![Albersʼ Kombinations-schrift](resources/images/JosefAlbersKombinationsschrift.png "Albersʼ Kombinations-schrift") -->
 
 For ABC, we initially split the glyphs into the atomic components - squares, quarter circles, and circles. This  results in a 3 x 2 grid for minuscules and numerics and a 4 x 2 grid for majescules. Each grid cell can be represented by a number that maps to a component type - square, quarter circle , or circle. In turn, each glyph can be encoded into an array of numbers. 
  

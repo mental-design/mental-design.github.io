@@ -1,8 +1,8 @@
 [
   {
     "settings": {
-      "weightIndex": 4,
-      "sizeIndex": 20,
+      "weightIndex": 3,
+      "sizeIndex": 17,
       "alignIndex": 0,
       "letterSpacingIndex": 10,
       "lineHeightIndex": 20,
@@ -13,7 +13,7 @@
   {
     "settings": {
       "weightIndex": 3,
-      "sizeIndex": 15,
+      "sizeIndex": 17,
       "alignIndex": 0,
       "letterSpacingIndex": 10,
       "lineHeightIndex": 50,
@@ -24,7 +24,7 @@
   {
     "settings": {
       "weightIndex": 3,
-      "sizeIndex": 15,
+      "sizeIndex": 17,
       "alignIndex": 0,
       "letterSpacingIndex": 10,
       "lineHeightIndex": 50,
@@ -35,7 +35,7 @@
   {
     "settings": {
       "weightIndex": 3,
-      "sizeIndex": 15,
+      "sizeIndex": 17,
       "alignIndex": 0,
       "letterSpacingIndex": 10,
       "lineHeightIndex": 50,
@@ -52,7 +52,7 @@
       "lineHeightIndex": 40,
       "showControl": 0
     },
-    "text": "¿Cómo estás?<br>¿Quieres un poco más de agua?<br>Esta camisa es nueva, ¿verdad?<br>Si bailamos, ¿ellos también van a bailar?<br>¡Ayuda! ¿A dónde va con mi bolso?<br>Sin embargo, ¡tengo frío!"
+    "text": "¿Cómo estás?<br>¿Quieres un poco más de agua?<br>Esta camisa es nueva, ¿verdad?<br>Si bailamos, ¿ellos también van a bailar?<br>¡Ayuda! ¿A dónde va con mi bolso?<br>Sin embargo, ¡tengo frío!<br>Polémica en torno a «español» o «castellano»"
   },
   {
     "settings": {
@@ -96,7 +96,29 @@
       "lineHeightIndex": 40,
       "showControl": 0
     },
-    "text": "Nynorsk (Norwegian).<br>Finsk språkhistorie inkluderer både historia til det finske språket, også tida då språket enno ikkje var skrive, og historia til det finske skriftspråket. Finsk har til liks med andre uralske språk utvikla seg frå det uralske urspråket, som ifølgje tradisjonell oppfatning vart snakka for rundt 6000 år sidan i ein region mellom Volga og Uralfjella. I dag ser likevel mange språkforskarar ururalsk som mykje yngre, kanskje datert til 2000 f.Kr. Språklege typologiske trekk arva frå det uralske morsmålet til moderne finsk er til dømes agglutinering, bruk av suffiks, trykkplassering i første staving og vokalharmoni."
+    "text": "Norsk Nynorsk (Norwegian).<br>Finsk språkhistorie inkluderer både historia til det finske språket, også tida då språket enno ikkje var skrive, og historia til det finske skriftspråket. Finsk har til liks med andre uralske språk utvikla seg frå det uralske urspråket, som ifølgje tradisjonell oppfatning vart snakka for rundt 6000 år sidan i ein region mellom Volga og Uralfjella. I dag ser likevel mange språkforskarar ururalsk som mykje yngre, kanskje datert til 2000 f.Kr. Språklege typologiske trekk arva frå det uralske morsmålet til moderne finsk er til dømes agglutinering, bruk av suffiks, trykkplassering i første staving og vokalharmoni."
+  },
+  {
+    "settings": {
+      "weightIndex": 3,
+      "sizeIndex": 17,
+      "alignIndex": 0,
+      "letterSpacingIndex": 10,
+      "lineHeightIndex": 40,
+      "showControl": 0
+    },
+    "text": "Dansk (Danish).<br>Mary Griffith (spilt av Sigourney Weaver) er en kristen kvinne som oppdrar barna sine i den evangelikalske lære. Da hun finner ut at sønnen Bobby (Ryan Kelley) er homofil, fornekter hun det og får ham til å gå til en psykolog for å «kurere» det. Imidlertid blir han bare mer deprimert, og ender opp med å flytte til Portland, hvor han blir forelsket i en gutt. Etterhvert finner Mary ut at sønnen hennes har begått selvmord, og livet hennes snus opp ned."
+  },
+  {
+    "settings": {
+      "weightIndex": 3,
+      "sizeIndex": 17,
+      "alignIndex": 0,
+      "letterSpacingIndex": 10,
+      "lineHeightIndex": 40,
+      "showControl": 0
+    },
+    "text": "Čeština (Czech).<br>Střítež je obec v okrese Jihlava v Kraji Vysočina. Leží zhruba 9 km severovýchodně od Jihlavy v průměrné nadmořské výšce 483 metrů. Katastrální území nese název Střítež u Jihlavy. První zmínka pochází z roku 1347, obec je však pravděpodobně starší. Původ jejího názvu není příliš jasný. Nejspíš souvisí s českým výrazem střežiti, což naznačuje, že Střítež původně vznikla jako strážní osada. Jméno se však podle jiných zdrojů mohlo také vyvinout z českého slovního základu čert, z něhož byl odvozen název Čertež a zkomolením vznikl konečný název Střítež. Majitelé vesnice se často střídali, ves patřila například městu Jihlava, dále Lichtenburkům, Trčkům z Lípy a dalším šlechtickým rodům. Na přelomu 20. a 21. století začala výstavba průmyslové zóny směrem na Jihlavu a přímo v obci vznikají nové rodinné domy."
   },
   {
     "settings": {
@@ -129,7 +151,7 @@
       "lineHeightIndex": 40,
       "showControl": 0
     },
-    "text": "Bân-lâm-gú (Chinese (Min Nan)).<br>Âng-hái sī Ìn-tō͘-iûⁿ ê 1-ê hái-oan, tiàm-tī A-chiu kap Hui-chiu kau-kài ê só͘-chāi. Thàng hái ê chhùi tī siōng lâm kak, keng-kòe Bab-el-Mandeb Hái-kiap sio-chiap Aden-oan. Í-pak sī Sinai Poàn-tó, Aqaba-oan, kap Suez-oan kiam Suez Ūn-hô. Âng-hái sī sè-kài siōng pak ê jia̍t-tài hái, lâm-pak iok-lio̍k 1900 km tn̂g, siōng khoah 300 km khah ke. Bīn-chek tāi-iok 450000 km². Hái-té pêng-kin ū 500 m chhim, tī tiong-ng hái-kau hit-tah-á siōng chhim 2500 m. Oá pak-hoāⁿ ê kok-ka ū Ai-ki̍p, Í-sek-lia̍t, Iok-tàn; sai-hoāⁿ ū Sudan kap Ai-ki̍p; tang-hoāⁿ ū Saud ê A-la-pek kap Yemen; lâm-hoāⁿ ū Djibouti, Eritrea, Somalia téng-kok."
+    "text": "Slovenčina. (Slovak)<br>Psychedelický rock je štýl rockovej hudby, ktorý je inšpirovaný, alebo aj ovplyvnený psychedelickou kultúrou a opakovanými pokusmi o zvýšenie halucinogénnych skúseností užívaním psychedelických drog. Tento hudobný štýl často využíva nové nahrávacie techniky, efekty, získava inšpirácie z nezápadných zdrojov ako sú rágy a dróny v indickej hudbe. Jeho priekopníkmi boli hudobníci ako The Beatles, The Byrds a The Yardbirds. Vyvíjal sa medzi britskými a americkými folk a blues rockovými kapelami niekedy v polovici 60. rokov 20. storočia ako boli Grateful Dead, Jefferson Airplane, The Jimi Hendrix Experience, Cream, The Doors a Pink Floyd."
   },
   {
     "settings": {
@@ -140,7 +162,7 @@
       "lineHeightIndex": 40,
       "showControl": 0
     },
-    "text": "Slovenčina. (Slovak)<br>Psychedelický rock je štýl rockovej hudby, ktorý je inšpirovaný, alebo aj ovplyvnený psychedelickou kultúrou a opakovanými pokusmi o zvýšenie halucinogénnych skúseností užívaním psychedelických drog. Tento hudobný štýl často využíva nové nahrávacie techniky, efekty, získava inšpirácie z nezápadných zdrojov ako sú rágy a dróny v indickej hudbe. Jeho priekopníkmi boli hudobníci ako The Beatles, The Byrds a The Yardbirds. Vyvíjal sa medzi britskými a americkými folk a blues rockovými kapelami niekedy v polovici 60. rokov 20. storočia ako boli Grateful Dead, Jefferson Airplane, The Jimi Hendrix Experience, Cream, The Doors a Pink Floyd."
+    "text": "Polski. (Polish).<br>Z punktu widzenia typologii lingwistycznej jest językiem fleksyjnym[6], operującym rozbudowaną fleksją w zakresie morfologii[7]. Akcent w języku polskim pada zwykle na drugą sylabę od końca, a w zdaniu przeważa szyk SVO (podmiot orzeczenie dopełnienie)[8]. Język polski ma obecnie największą liczbę użytkowników wśród przedstawicieli słowiańszczyzny zachodniej i jest drugim językiem słowiańskim pod względem powszechności używania[9][10][11]. W dzisiejszych czasach cechuje się słabo zaznaczonym i zanikającym zróżnicowaniem gwarowym, a także dominacją w praktyce komunikacyjnej języka standardowego[12]. Jego regulacją zajmuje się Rada Języka Polskiego, pełniąca funkcję doradczą[13]. Do zapisu języka polskiego służy alfabet łaciński, wzbogacony o dodatkowe znaki diakrytyczne."
   },
   {
     "settings": {
@@ -162,6 +184,17 @@
       "lineHeightIndex": 40,
       "showControl": 0
     },
+    "text": "Lietuvių (Lithuanian).<br>Ankstyviausi T. Pračetą įkvėpę kūriniai buvo Keneto Greihemo „Vėjas Gluosniuose“ ir Aizeko Azimovo bei Arturo Klarko darbai. Literatūrinę įtaką jam turėjo P. Dž. Vudhausas, Tomas Šarpas, Džeromas K. Džeromas, Rojus Luisas, Alanas Korenas, G. K. Čestertonas ir Markas Tvenas. Pračetas į savo kūrybą perkėlė daugybę veikėjų iš klasikinės literatūros, populiariosios kultūros ir senovės istorijos, visada netikėtu kampu. T. Pračetas taip pat buvo kriminalinių apsakymų gerbėjas, todėl jo „Disko pasaulio“ serijoje dažnai pasirodo Ankh-Morporko Miesto Sargyba. Pats Pračetas buvo vienintelis vaikas šeimoje ir jo veikėjai dažnai neturi brolių ar seserų. Pračetas yra sakęs: „Grožinėje literatūroje vienturčiai vaikai yra tie įdomieji“."
+  },
+  {
+    "settings": {
+      "weightIndex": 3,
+      "sizeIndex": 17,
+      "alignIndex": 0,
+      "letterSpacingIndex": 10,
+      "lineHeightIndex": 40,
+      "showControl": 0
+    },
     "text": "Hrvatski (Croatian).<br>Prva detaljna opažanja Marsa bila su sa zemaljskih teleskopa. Povijest ovih promatranja obilježena je Marsovim opozicijama, kada je planet najbliži Zemlji i stoga je tada najlakše vidljiv, što se događa svakih nekoliko godina. Još su zapaženije Marsove perihelske opozicije koje se javljaju otprilike svakih 16 godina, a razlikuju se po tome što je Mars najbliži Zemlji, a Jupiterov perihel ga čini još bližim Zemlji."
   },
   {
@@ -173,6 +206,39 @@
       "lineHeightIndex": 40,
       "showControl": 0
     },
-    "text": "Lietuvių (Lithuanian).<br>Ankstyviausi T. Pračetą įkvėpę kūriniai buvo Keneto Greihemo „Vėjas Gluosniuose“ ir Aizeko Azimovo bei Arturo Klarko darbai. Literatūrinę įtaką jam turėjo P. Dž. Vudhausas, Tomas Šarpas, Džeromas K. Džeromas, Rojus Luisas, Alanas Korenas, G. K. Čestertonas ir Markas Tvenas. Pračetas į savo kūrybą perkėlė daugybę veikėjų iš klasikinės literatūros, populiariosios kultūros ir senovės istorijos, visada netikėtu kampu. T. Pračetas taip pat buvo kriminalinių apsakymų gerbėjas, todėl jo „Disko pasaulio“ serijoje dažnai pasirodo Ankh-Morporko Miesto Sargyba. Pats Pračetas buvo vienintelis vaikas šeimoje ir jo veikėjai dažnai neturi brolių ar seserų. Pračetas yra sakęs: „Grožinėje literatūroje vienturčiai vaikai yra tie įdomieji“."
+    "text": "O‘zbek (Uzbek).<br>XI—XIV asrlarda amalda boʻlgan til eski turkiy til deb ataladi. Mahmud Qoshgʻariyning „Devonu-lugʻatit-turk“ („Turk tillari devoni“), Yusuf Xos Hojibning „Qutadgʻu bilig“ („Saodatga yoʻllovchi bilim“), Ahmad Yugnakiyning „Hibatul haqoyiq“ („Haqiqatlar armugʻoni“), Xorazmiyning „Muhabbatnoma“, Rabgʻuziyning „Qissai Rabgʻuziy“ asarlari shu tilda yaratilgan."
+  },
+  {
+    "settings": {
+      "weightIndex": 3,
+      "sizeIndex": 17,
+      "alignIndex": 0,
+      "letterSpacingIndex": 10,
+      "lineHeightIndex": 40,
+      "showControl": 0
+    },
+    "text": "Tiếng Việt (Vietnamese).<br>Dù tiếng Việt có lượng lớn từ vựng chuyển hoá từ tiếng Hán thành âm Hán Việt và từ Hán Việt nhưng dựa trên ngữ pháp và vốn từ căn bản, ngôn ngữ này thuộc ngữ hệ Nam Á và có số người nói nhiều nhất (nhiều hơn một số lần so với các ngôn ngữ khác cùng hệ cộng lại). Hiện tại ở Việt Nam, tiếng Việt chủ yếu sử dụng chữ Quốc ngữ (một bộ chữ Latinh thuần tượng thanh) để viết, còn chữ Hán và chữ Nôm với khả năng biểu nghĩa được dùng chủ yếu bởi cộng đồng người Kinh ở Trung Quốc.[6] Tại Việt Nam chữ Hán và chữ Nôm được sử dụng ít hơn, thường trong các hoạt động liên quan tới văn hóa truyền thống như viết thư pháp, viết sớ hay dựng câu đối, nhờ khả năng biểu nghĩa và viết dọc của chúng."
+  },
+  {
+    "settings": {
+      "weightIndex": 3,
+      "sizeIndex": 17,
+      "alignIndex": 0,
+      "letterSpacingIndex": 10,
+      "lineHeightIndex": 40,
+      "showControl": 0
+    },
+    "text": "Mìng-dĕ̤ng-ngṳ̄ (Min Dong).<br>Dṳ̀ kó̤ Màng-gōng ī-ngôi, Mìng-dĕ̤ng-ngṳ̄ huŏng-ngiòng gì sĭng-mō̤ dŭ chă-bók-dŏ̤. Hók-gióng gì Mìng-dĕ̤ng-ngṳ̄ ô 15 ciáh siŏh-iông gì sĭng-mō̤, Hók-ăng-uâ bī Hók-ciŭ-uâ dòng chók w gâe̤ng j lâng ciáh sĭng-mō̤, ô 17 ciáh. Màng-gōng sêu gáu Ngù-ngṳ̄ gì īng-hiōng, sĭng-mō̤ gì só-liông bī Hók-gióng gì Mìng-dĕ̤ng-ngṳ̄ gó lā̤ sâ̤."
+  },
+  {
+    "settings": {
+      "weightIndex": 3,
+      "sizeIndex": 17,
+      "alignIndex": 0,
+      "letterSpacingIndex": 10,
+      "lineHeightIndex": 40,
+      "showControl": 0
+    },
+    "text": "Bân-lâm-gú (Chinese (Min Nan)).<br>Âng-hái sī Ìn-tō͘-iûⁿ ê 1-ê hái-oan, tiàm-tī A-chiu kap Hui-chiu kau-kài ê só͘-chāi. Thàng hái ê chhùi tī siōng lâm kak, keng-kòe Bab-el-Mandeb Hái-kiap sio-chiap Aden-oan. Í-pak sī Sinai Poàn-tó, Aqaba-oan, kap Suez-oan kiam Suez Ūn-hô. Âng-hái sī sè-kài siōng pak ê jia̍t-tài hái, lâm-pak iok-lio̍k 1900 km tn̂g, siōng khoah 300 km khah ke. Bīn-chek tāi-iok 450000 km². Hái-té pêng-kin ū 500 m chhim, tī tiong-ng hái-kau hit-tah-á siōng chhim 2500 m. Oá pak-hoāⁿ ê kok-ka ū Ai-ki̍p, Í-sek-lia̍t, Iok-tàn; sai-hoāⁿ ū Sudan kap Ai-ki̍p; tang-hoāⁿ ū Saud ê A-la-pek kap Yemen; lâm-hoāⁿ ū Djibouti, Eritrea, Somalia téng-kok."
   }
 ]

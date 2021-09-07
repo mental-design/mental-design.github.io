@@ -2,6 +2,9 @@
 @import '../../bass/fonts/basicallyasansserif.css';
 
 html {
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1;
+  -webkit-font-feature-settings: "kern";
 }
 
 body {
@@ -14,6 +17,14 @@ body, h1, h2, h3 {
 
 .sample-font {
   font-family: "ABCv0.001", sans-serif !important;
+}
+
+.ss00 {
+  font-feature-settings: "ss01" 0;
+}
+
+.ss01 {
+  font-feature-settings: "ss01" 1;
 }
 
 a:link {
@@ -245,14 +256,14 @@ a:link {
 
 @supports (-webkit-text-stroke: 1px black) {
   .title-text {
-      -webkit-text-stroke: 1px black;
+      -webkit-text-stroke: 1.5px black;
       -webkit-text-fill-color: white;
       text-shadow: 3px 3px black;
   }
 
   @media(min-resolution: 196dpi) {
     .title-text {
-      -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+      -webkit-text-stroke: 1px black;
     }
   }
 }
@@ -398,7 +409,7 @@ h1 {
 }
 
 .weight-control .control-label {
-  width: 110px;
+  width: 70px;
 }
 
 .size-control .control-label {

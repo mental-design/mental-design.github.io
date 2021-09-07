@@ -11,7 +11,7 @@ var CharacterSection = (function() {
   // Control info
   var controlInfo = {
     weights: [100, 200, 300, 400, 500],
-    weightNames: ['Compressed', 'Condensed', 'Narrow', 'Regular', 'Medium'],
+    weightNames: ['Skinny', 'Thin', 'Slim', 'Fit', 'Regular'],
     sizes: sizes(20, 160, 40)
   };
 
@@ -92,6 +92,7 @@ var CharacterSection = (function() {
   function initializeCategoryDiv(div, category, glyphList) {
     let categoryName = category["category"];
     let range = category["range"];
+    var styleset = ("styleset" in category) ? category["styleset"] : 0;
 
     div.classList.add("char-category");
 
@@ -110,16 +111,17 @@ var CharacterSection = (function() {
       let char = charList[idx];
       if (glyphList.includes(char)) {
         var charDiv = document.createElement('div');
-        initializeCharDiv(charDiv, charList[idx]);
+        initializeCharDiv(charDiv, charList[idx], styleset);
         charListDiv.appendChild(charDiv);
       }
     }
     div.appendChild(charListDiv);
   }
 
-  function initializeCharDiv(div, char) {
+  function initializeCharDiv(div, char, styleset) {
     div.classList.add("char-cell");
     div.classList.add('sample-font');
+    div.classList.add("ss0" + styleset);
     div.innerHTML = "&#x" + char;
   }
 
