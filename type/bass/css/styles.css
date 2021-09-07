@@ -1,5 +1,9 @@
-@import '../fonts/basicallyasansserif.css';
+@import '../fonts/test/basicallyasansserif.css';
+
 html {
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1;
+  -webkit-font-feature-settings: "kern";
 }
 
 body {
@@ -7,11 +11,12 @@ body {
 }
 
 body, h1, h2, h3 {
-  font-family: 'BasicallyASansSerif', sans-serif;  
+  font-family: 'BasicallyASansSerif', sans-serif;
+  overflow-wrap: break-word;
 }
 
 .sample-font {
-  font-family: "BasicallyASansSerif", sans-serif !important;
+  font-family: "BasicallyASansSerif", serif !important;
 }
 
 a:link {
