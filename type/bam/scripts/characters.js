@@ -95,10 +95,11 @@ var CharacterSection = (function() {
   function initializeCategoryDiv(div, category, glyphList) {
     let categoryName = category["category"];
     let range = category["range"];
-    var styleset = 0;
-    if ("styleset" in category){
-      styleset = category["styleset"];
-    }
+    var styleset = ("styleset" in category) ? category["styleset"] : 0;
+    // var styleset = 0;
+    // if ("styleset" in category){
+    //   styleset = category["styleset"];
+    // }
 
     div.classList.add("char-category");
 
