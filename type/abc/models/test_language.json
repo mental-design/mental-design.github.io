@@ -206,6 +206,17 @@
       "lineHeightIndex": 40,
       "showControl": 0
     },
+    "text": "Magyar (Hungarian).<br>A magyar anyanyelvű személyek száma a világon becslések szerint 15 millió lehet. Az Európai Unióban közel 13 millió magyar anyanyelvű ember él, ebből 12,5 millió a Kárpát-medencében. A többi európai országban, Izraelt is ide számítva 500 ezer, Európán kívül becslések szerint közel 2 millió a magyar anyanyelvűek száma, ebből 1,8 millió az amerikai kontinensen (USA: 1,4 millió, Kanada: 315 ezer, Dél-Amerika: 100-120 ezer), Ausztrália és Óceánia: 65-70 ezer, Ázsia: kb. 30 ezer, Afrika: 10-30 ezer, akik közül azonban otthonában már nem mindenki használja a magyar nyelvet. További 2 millióan beszélik a magyart második nyelvként, elsősorban a Kárpát-medence országaiban."
+  },
+  {
+    "settings": {
+      "weightIndex": 3,
+      "sizeIndex": 17,
+      "alignIndex": 0,
+      "letterSpacingIndex": 10,
+      "lineHeightIndex": 40,
+      "showControl": 0
+    },
     "text": "O‘zbek (Uzbek).<br>XI—XIV asrlarda amalda boʻlgan til eski turkiy til deb ataladi. Mahmud Qoshgʻariyning „Devonu-lugʻatit-turk“ („Turk tillari devoni“), Yusuf Xos Hojibning „Qutadgʻu bilig“ („Saodatga yoʻllovchi bilim“), Ahmad Yugnakiyning „Hibatul haqoyiq“ („Haqiqatlar armugʻoni“), Xorazmiyning „Muhabbatnoma“, Rabgʻuziyning „Qissai Rabgʻuziy“ asarlari shu tilda yaratilgan."
   },
   {
@@ -240,5 +251,16 @@
       "showControl": 0
     },
     "text": "Bân-lâm-gú (Chinese (Min Nan)).<br>Âng-hái sī Ìn-tō͘-iûⁿ ê 1-ê hái-oan, tiàm-tī A-chiu kap Hui-chiu kau-kài ê só͘-chāi. Thàng hái ê chhùi tī siōng lâm kak, keng-kòe Bab-el-Mandeb Hái-kiap sio-chiap Aden-oan. Í-pak sī Sinai Poàn-tó, Aqaba-oan, kap Suez-oan kiam Suez Ūn-hô. Âng-hái sī sè-kài siōng pak ê jia̍t-tài hái, lâm-pak iok-lio̍k 1900 km tn̂g, siōng khoah 300 km khah ke. Bīn-chek tāi-iok 450000 km². Hái-té pêng-kin ū 500 m chhim, tī tiong-ng hái-kau hit-tah-á siōng chhim 2500 m. Oá pak-hoāⁿ ê kok-ka ū Ai-ki̍p, Í-sek-lia̍t, Iok-tàn; sai-hoāⁿ ū Sudan kap Ai-ki̍p; tang-hoāⁿ ū Saud ê A-la-pek kap Yemen; lâm-hoāⁿ ū Djibouti, Eritrea, Somalia téng-kok."
+  },
+  {
+    "settings": {
+      "weightIndex": 3,
+      "sizeIndex": 17,
+      "alignIndex": 0,
+      "letterSpacingIndex": 10,
+      "lineHeightIndex": 40,
+      "showControl": 0
+    },
+    "text": "Diné Bizaad. (Navajo).<br>Diné Bizaad éí tsʼídá aláahdi Diné \"Athabaskan\" éí doodaiiʼ Na-Dené danilínígíí yee yádaałtiʼ. Diné Bizaad yee yádaałtiʼígíí éí 175,000 anéeltʼeʼ. Áádóó nináhah bikʼeh díí anéeltʼeʼígíí dei anoolʼąął. Diné Bizaad éí Naaki góneʼ yéigo daʼahijoogą́ą́ʼ yę́ędą́ą́ʼ choozʼįįd nítʼę́ę́ʼ. Díí saadígíí éí Wááshindoon bee bíkáʼííjéeʼgo bee honeezná. Diné bisiláołtsooí ndaazbaaʼígíí bizaad chodeiyoosʼįįdígíí éí \"Diné Bizaad yee Nidaazbaaʼígíí\" (\"Navajo Code Talkers\") daolyéé dóó tʼáá ákótʼéego bee béédahoʼdílzin."
   }
 ]
