@@ -260,8 +260,23 @@ a:link {
 
 .title {
   font-weight: 500;
-  font-size: 48px;
+  font-size: 54pt;
   letter-spacing: 0px;
+}
+
+.subtitle {
+  font-weight: 200;
+  font-size: 16pt;
+}
+
+@media(max-width: 600px) {
+  .title {
+    font-size: 56px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
 }
 
 .section {
@@ -271,11 +286,6 @@ a:link {
 
 .dark-section {
   padding-top: 64px !important;
-}
-
-.subtitle {
-  font-weight: 200;
-  font-size: 24px;
 }
 
 h1 {

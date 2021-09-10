@@ -3,7 +3,11 @@
 
 html {
   text-rendering: optimizeLegibility;
+
   font-feature-settings: "kern" 1;
+  font-feature-settings: "ss01" 0;
+  font-variant-numeric: normal;
+
   -webkit-font-feature-settings: "kern";
 }
 
@@ -25,6 +29,10 @@ body, h1, h2, h3 {
 
 .ss01 {
   font-feature-settings: "ss01" 1;
+}
+
+.onum {
+  font-variant-numeric: oldstyle-nums;
 }
 
 a:link {
@@ -299,8 +307,20 @@ a:link {
 
 .title {
   font-weight: 500;
-  font-size: 56px;
+  font-size: 54pt;
   letter-spacing: 0px;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 26px;
+  opacity: 0.75;
+}
+
+@media(max-width: 600px) {
+  .title {
+    font-size: 56px;
+  }
 }
 
 .section {
@@ -314,12 +334,6 @@ a:link {
 
 .section-wrapper {
   width: 100%;
-}
-
-.subtitle {
-  font-weight: 400;
-  font-size: 26px;
-  opacity: 0.75;
 }
 
 h1 {
