@@ -164,9 +164,16 @@
     },
     {
         "category": "Alternatives",
-        "styleset": 1,
+        "feature": "ss01",
         "range": [
             "0x0043", "0x0106", "0x010C", "0x010A", "0x00C7"
+        ]
+    },
+    {
+        "category": "",
+        "feature": "onum",
+        "range": [
+            "0x0030-0x0039"
         ]
     }
 ]

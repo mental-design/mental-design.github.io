@@ -92,7 +92,7 @@ var CharacterSection = (function() {
   function initializeCategoryDiv(div, category, glyphList) {
     let categoryName = category["category"];
     let range = category["range"];
-    var styleset = ("styleset" in category) ? category["styleset"] : 0;
+    var feature = ("feature" in category) ? category["feature"] : undefined;
 
     div.classList.add("char-category");
 
@@ -111,17 +111,17 @@ var CharacterSection = (function() {
       let char = charList[idx];
       if (glyphList.includes(char)) {
         var charDiv = document.createElement('div');
-        initializeCharDiv(charDiv, charList[idx], styleset);
+        initializeCharDiv(charDiv, charList[idx], feature);
         charListDiv.appendChild(charDiv);
       }
     }
     div.appendChild(charListDiv);
   }
 
-  function initializeCharDiv(div, char, styleset) {
+  function initializeCharDiv(div, char, feature) {
     div.classList.add("char-cell");
     div.classList.add('sample-font');
-    div.classList.add("ss0" + styleset);
+    div.classList.add(feature);
     div.innerHTML = "&#x" + char;
   }
 
