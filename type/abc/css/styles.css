@@ -329,7 +329,7 @@ a:link {
 }
 
 .dark-section {
-  padding-top: 64px !important;
+  padding-top: 48px !important;
 }
 
 .section-wrapper {
@@ -356,6 +356,7 @@ h1 {
   padding-top: 16px;
   padding-right: 16px;
   text-align: center;
+  z-index: 1000;
 }
 
 #dark-icon {
@@ -449,7 +450,7 @@ h1 {
   vertical-align: -1px;
 }
 
-@media (max-width:689px) {
+@media (max-width:648px) {
   .control-wrapper {
     min-height: 71px;
   }
