@@ -102,7 +102,7 @@
     {
         "category": "",
         "subcategory": "Extensions",
-        "range": ["0xE00A-0xE00B"]
+        "range": ["0xE00A-0xE0FF"]
     },
     {
         "category": "Latin Accents",
