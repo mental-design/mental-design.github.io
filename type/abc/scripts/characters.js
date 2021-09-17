@@ -10,8 +10,8 @@ var CharacterSection = (function() {
 
   // Control info
   var controlInfo = {
-    weights: [100, 200, 300, 400, 500],
-    weightNames: ['Skinny', 'Thin', 'Slim', 'Fit', 'Regular'],
+    weights: [100, 200, 300, 400, 500, 600, 700],
+    weightNames: ['100', '200', '300', '400', '500', '600', '700'],
     sizes: sizes(20, 160, 40)
   };
 

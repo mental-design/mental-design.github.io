@@ -1,28 +1,57 @@
 [
   {
     "settings": {
-      "weightIndex": 4,
-      "sizeIndex": 30,
-      "alignIndex": 1,
+      "weightIndex": 6,
+      "sizeIndex": 25,
+      "alignIndex": 0,
       "letterSpacingIndex": 10,
-      "lineHeightIndex": 20,
+      "lineHeightIndex": 45,
       "showControl": 0,
       "smallScreen": {
-        "sizeIndex": 18
+        "sizeIndex": 15
       }
     },
-    "text": "Coffee & Tea"
+    "text": "Basic Components <br>Combined Systematically    <br>Bauhaus & Didone Inspired<br>with <span style='font-weight:200'>Compressed</span> Weights"
   },
   {
     "settings": {
-      "weightIndex": 3,
+      "weightIndex": 5,
+      "sizeIndex": 20,
+      "alignIndex": 2,
+      "letterSpacingIndex": 10,
+      "lineHeightIndex": 45,
+      "showControl": 0,
+      "smallScreen": {
+        "sizeIndex": 15
+      }
+    },
+    "text": "(works great with Coffee oO<br>... and Birds)  𓅌"
+  },
+  {
+    "settings": {
+      "weightIndex": 6,
+      "sizeIndex": 25,
+      "alignIndex": 1,
+      "letterSpacingIndex": 10,
+      "lineHeightIndex": 50,
+      "showControl": 0,
+      "smallScreen": {
+        "sizeIndex": 20
+      }
+    },
+    "text": "Make your own combinations!<br>   "
+  },
+  {
+    "settings": {
+      "weightIndex": 4,
       "sizeIndex": 10,
-      "alignIndex": 0,
+      "alignIndex": 3,
       "letterSpacingIndex": 10,
       "lineHeightIndex": 50,
       "showControl": 0,
       "smallScreen": {
         "sizeIndex": 8,
+        "alignIndex": 0,
         "lineHeightIndex": 50
       }
     },
@@ -30,9 +59,9 @@
   },
   {
     "settings": {
-      "weightIndex": 4,
+      "weightIndex": 6,
       "sizeIndex": 25,
-      "alignIndex": 0,
+      "alignIndex": 1,
       "letterSpacingIndex": 10,
       "lineHeightIndex": 20,
       "showControl": 0,
@@ -44,7 +73,7 @@
   },
   {
     "settings": {
-      "weightIndex": 3,
+      "weightIndex": 5,
       "sizeIndex": 20,
       "alignIndex": 0,
       "letterSpacingIndex": 10,
@@ -55,6 +84,6 @@
         "lineHeightIndex": 15
       }
     },
-    "text": "Enter your own text here and try out All Birds Combination."
+    "text": "Enter your own text here and try out All Birds Combinations."
   }
 ]
