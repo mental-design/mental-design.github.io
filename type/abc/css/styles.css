@@ -19,6 +19,10 @@ body, h1, h2, h3 {
   font-family: 'BasicallyASansSerif', sans-serif;  
 }
 
+.abc {
+  font-family: "ABCv0.001", sans-serif !important;
+}
+
 .sample-font {
   font-family: "ABCv0.001", sans-serif !important;
 }
@@ -556,6 +560,13 @@ footer {
   font-size: 18px;
 }
 
+/* Details */
+#details-btn {
+  text-align: left;
+  color: #1E6FBF !important;
+  margin-bottom: 16px;
+}
+
 .ten-parts {
   font-weight: 700;
   font-size: 32pt;
@@ -578,7 +589,7 @@ footer {
 
 .imgplay-btn {
   display:inline-block;
-  font-size: 20pt;
+  font-size: 25pt;
   color: #1E6FBF;
   vertical-align: top;
 }
@@ -595,12 +606,24 @@ footer {
   color: #fff !important;
 }
 
+.imgplay-caption {
+  text-align: center;
+  margin-bottom: 16px;
+  font-weight: 300;
+  font-size: 25px;
+}
+
 @media (max-width:480px) {
-  #trans-div {
+  .imgplay {
     width: 300px;
   }
-  #trans-div img {
+  .imgplay-img {
     width: 300px;
+    height: 100px;
+    object-position: 0 -30px;
+  }
+  .imgplay-caption {
+    font-size: 20px;
   }
 }
 

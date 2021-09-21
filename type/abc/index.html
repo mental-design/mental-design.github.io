@@ -73,7 +73,7 @@
       <h1 class="w3-wide sample-font title">
         𓅈 <span class="title-text">All Birds</span> 𓅌 <span class="title-text">Combinations</span> 𓅄
       </h1>
-      <p class="sample-font subtitle">A programmatically different take on Albersʼ Kombinations-schrift.</p>
+      <p class="sample-font subtitle">A programmatically different take on Albersʼ Kombinations-Schrift.</p>
     </div>
   </div>
 
@@ -184,28 +184,18 @@
     return sampleUrl;
   }
 
-  var isPlaying = false
-  function playTrans() {
-    if (isPlaying) return
+  function showDetails() {
+    var isHidden = document.getElementById("details").hidden
+    if (isHidden) {  // show
+      document.getElementById("details-icon").classList.remove("fa-plus-circle")
+      document.getElementById("details-icon").classList.add("fa-minus-circle")
+    }
+    else {  // hide
+      document.getElementById("details-icon").classList.remove("fa-minus-circle")
+      document.getElementById("details-icon").classList.add("fa-plus-circle")
 
-    var transBtn = document.getElementById('trans-btn')
-    isPlaying = true
-    transBtn.classList.add("trans-disable")
-
-    var transImg = document.getElementById('transition')
-    transImg.src = 'resources/images/trans0.png'
-
-    var x = 1;
-    var intervalID = setInterval(function(){
-      
-      transImg.src = 'resources/images/trans'+x+'.png'
-
-      if (++x === 5) {
-        window.clearInterval(intervalID)
-        isPlaying = false
-        transBtn.classList.remove("trans-disable")
-      }
-    }, 750)
+    }
+    document.getElementById("details").hidden = !isHidden
   }
 </script>
 
