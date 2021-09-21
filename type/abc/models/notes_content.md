@@ -1,17 +1,27 @@
-All Birds Combination (ABC) is a loosely grid-based modular display typeface that is a reinterpretation of Josef Albersʼ Kombinations-schrift.
+All Birds Combinations (ABC) is a modular display typeface often categorized as a stencil typeface.
+It is a reinterpretation of Josef Albersʼ Kombinations-schrift, where the name is also derived from.
 
-Kombinations-schrift was created using 10 different stencil shapes. The shapes were systematically created using squares and quarter circles. The resulting letters were systematic and modular making it a good typeface to analyze.
+<div class="sample-font ten-parts">   </div>
 
-<!-- ![Albersʼ Kombinations-schrift](resources/images/JosefAlbersKombinationsschrift.png "Albersʼ Kombinations-schrift") -->
+Albersʼ Kombinations-schrift was created for the age of industry and mass production. The typeface was created by combining the 10 shapes above—which could be mass produced in glass, plastic, metal or wood—and could be easily assembled anywhere.
 
-For ABC, we initially split the glyphs into the atomic components - squares, quarter circles, and circles. This  results in a 3 x 2 grid for minuscules and numerics and a 4 x 2 grid for majescules. Each grid cell can be represented by a number that maps to a component type - square, quarter circle , or circle. In turn, each glyph can be encoded into an array of numbers. 
- 
-![Encoding glyph a](resources/images/decoding.png "Encoding glyph a")
+<div class="sample-font three-parts"></div>
 
-We then implemented a decoder that takes the array of numbers and recreates the original glyph.
-But we didn't stop there. With the decoder in place, we could now adjust the glyphs by simply changing numbers. Furthermore, new components could be added as needed.
+For ABC, we wanted to translate Kombinations-schrift into a typeface of the information age, a product of data, algorithms, and software programming. The key insight was to encode each glyph into an array of numbers based on the basic shapes used to create it—square, circle, and quarter circle. We then implemented a decoder program that could take the array of numbers and create a font.
+
+<img src="resources/images/encoding.png" width="480"/>
+
+With the decoder in place, modifying a glyph was just a matter of changing numbers. Whereas Kombinationschrift has a Fraktur like quality, each glyph in ABC was revised to resemble neoclassical type, such as Didot or Bodoni. The high contrast and vertical axis of Didone typefaces makes a good reference for a strongly vertical typeface like ABC.
+<!-- Reword sentence -->
+
+<div id="trans-div">
+    <i id="trans-btn" class="fa fa-play-circle" onclick="playTrans()"></i>
+    <img id="transition" src="resources/images/trans0.png"/>
+</div>
+
+Functionality for the decoder could be further extended as needed.
 
 ### LICENSE
-All Birds Combination is licensed under the [SIL Open Font License][1]. It is free for personal and commercial use. Send us an email (type@mentallydesigned.com) to share how you used the typeface. Have fun!
+All Birds Combinations is licensed under the [SIL Open Font License][1]. It is free for personal and commercial use. Send us an email (type@mentallydesigned.com) to share how you used the typeface. Have fun!
 
 [1]: downloads/License.txt

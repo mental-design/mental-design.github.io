@@ -555,3 +555,49 @@ footer {
 .footer-logo {
   font-size: 18px;
 }
+
+.ten-parts {
+  font-weight: 700;
+  font-size: 32pt;
+  text-align: center;
+}
+
+.three-parts {
+  font-weight: 700;
+  font-size: 96pt;
+  text-align: center;
+  height: 96px;
+  line-height: 0.05;
+}
+
+#trans-div {
+  width: 480px;
+  margin: 0 auto;
+}
+
+#trans-div i {
+  display:inline-block;
+  font-size: 20pt;
+  color: #1E6FBF;
+  vertical-align: top;
+}
+
+.trans-disable {
+  color: #fff !important;
+}
+
+#trans-div img {
+  display:inline-block;
+  width: 480px;
+}
+
+
+@media (max-width:480px) {
+  #trans-div {
+    width: 300px;
+  }
+  #trans-div img {
+    width: 300px;
+  }
+}
+

@@ -143,21 +143,21 @@
 <script src="scripts/w3.js"></script>
 <script>
   function initialize(){
-    adjustToNavbar();
+    adjustToNavbar()
 
     // The Overview Section
-    var sampleUrl = getSampleUrl();  // "models/sample_content.json";
-    var sampleDiv = document.getElementById('samples');
-    SampleSection.init(sampleDiv, sampleUrl);
+    var sampleUrl = getSampleUrl()  // "models/sample_content.json";
+    var sampleDiv = document.getElementById('samples')
+    SampleSection.init(sampleDiv, sampleUrl)
 
     // The Notes Section
-    var notesDiv = document.getElementById('description');
-    var notesUrl = 'models/notes_content.md';
-    NotesSection.init(notesDiv, notesUrl);
+    var notesDiv = document.getElementById('description')
+    var notesUrl = 'models/notes_content.md'
+    NotesSection.init(notesDiv, notesUrl)
 
     // The Characters Section
-    var characterDiv = document.getElementById('charmap');
-    CharacterSection.init(characterDiv);
+    var characterDiv = document.getElementById('charmap')
+    CharacterSection.init(characterDiv)
   }
 
   function getSampleUrl() {
@@ -173,9 +173,34 @@
         sampleUrl = "models/test_language.json"
         break;
       default:
-        sampleUrl = "models/sample_content.json";
+        sampleUrl = "models/sample_content.json"
     }
     return sampleUrl;
+  }
+
+  var isPlaying = false
+  function playTrans() {
+    if (isPlaying) return
+
+    var transBtn = document.getElementById('trans-btn')
+    isPlaying = true
+    transBtn.classList.add("trans-disable")
+
+    var transImg = document.getElementById('transition')
+    transImg.src = 'resources/images/trans0.png'
+
+    var x = 1;
+    var intervalID = setInterval(function(){
+      
+      transImg.src = 'resources/images/trans'+x+'.png'
+
+      if (++x === 4) {
+        window.clearInterval(intervalID)
+        transBtn.disabled = false
+        isPlaying = false
+        transBtn.classList.remove("trans-disable")
+      }
+    }, 750)
   }
 </script>
 
