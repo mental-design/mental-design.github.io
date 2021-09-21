@@ -139,6 +139,7 @@
 <script src="scripts/sample-line.js"></script>
 <script src="scripts/sample.js"></script>
 <script src="scripts/notes.js"></script>
+<script src="scripts/image-player.js"></script>
 <script src="scripts/characters.js"></script>
 <script src="scripts/w3.js"></script>
 <script>
@@ -153,7 +154,12 @@
     // The Notes Section
     var notesDiv = document.getElementById('description')
     var notesUrl = 'models/notes_content.md'
-    NotesSection.init(notesDiv, notesUrl)
+    NotesSection.init(notesDiv, notesUrl, function(){
+      // Add image player
+      var imagesDiv = document.getElementById('image-player')
+      var imageList = ["resources/images/trans0.png", "resources/images/trans1.png", "resources/images/trans2.png", "resources/images/trans3.png", "resources/images/trans4.png"]
+      ImagePlayer.init(imagesDiv, imageList, 750)
+    })
 
     // The Characters Section
     var characterDiv = document.getElementById('charmap')
@@ -194,9 +200,8 @@
       
       transImg.src = 'resources/images/trans'+x+'.png'
 
-      if (++x === 4) {
+      if (++x === 5) {
         window.clearInterval(intervalID)
-        transBtn.disabled = false
         isPlaying = false
         transBtn.classList.remove("trans-disable")
       }

@@ -1,9 +1,10 @@
 var NotesSection = (function() {
 
   // main init method
-  function init(div, url) {
+  function init(div, url, callback) {
     fetchData(url, function(content){
       div.innerHTML = marked(content);
+      callback()
     });
   }
 

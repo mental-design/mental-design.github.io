@@ -570,27 +570,30 @@ footer {
   line-height: 0.05;
 }
 
-#trans-div {
+/* Image Player */
+.imgplay {
   width: 480px;
   margin: 0 auto;
 }
 
-#trans-div i {
+.imgplay-btn {
   display:inline-block;
   font-size: 20pt;
   color: #1E6FBF;
   vertical-align: top;
 }
 
-.trans-disable {
+.imgplay-img {
+  display:inline-block !important;
+  width: 450px;
+  height: 150px;
+  object-fit: cover;
+  object-position: 0 -50px;
+}
+
+.imgplay-disable {
   color: #fff !important;
 }
-
-#trans-div img {
-  display:inline-block;
-  width: 480px;
-}
-
 
 @media (max-width:480px) {
   #trans-div {

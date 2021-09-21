@@ -14,12 +14,12 @@ For ABC, we wanted to translate Kombinations-schrift into a typeface of the info
 With the decoder in place, modifying a glyph was just a matter of changing numbers. Whereas Kombinationschrift has a Fraktur like quality, each glyph in ABC was revised to resemble neoclassical type, such as Didot or Bodoni. The high contrast and vertical axis of Didone typefaces makes a good reference for a strongly vertical typeface like ABC.
 <!-- Reword sentence -->
 
-<div id="trans-div">
-    <i id="trans-btn" class="fa fa-play-circle" onclick="playTrans()"></i>
-    <img id="transition" src="resources/images/trans0.png"/>
-</div>
+<div id="image-player"></div>
 
-Functionality for the decoder could be further extended as needed.
+The design space of the typeface could be extend by adding new functionality to the decoder as needed. New parts, such as semi-circles for rings and triangles for bird beaks, were added as needed. Compressed weights could be created systematically by defining how to decode each number for different dimensions. This systematic approach makes the changes between the weights smooth and seamless allowing for mixing and matching like the examples below.
+<!-- This needs a lot of clean up -->
+
+<div id="wave"></div>
 
 ### LICENSE
 All Birds Combinations is licensed under the [SIL Open Font License][1]. It is free for personal and commercial use. Send us an email (type@mentallydesigned.com) to share how you used the typeface. Have fun!
