@@ -2,16 +2,8 @@ var ImagePlayer = (function() {
 
   var isPlaying = false
 
-  var captionList = [
-    "Albers' Kombinations-Schrift",
-    "All bers' Kombinations-Schrift",
-    "All Birds Kombinations-Schrift",
-    "All Birds Combinations",
-    "<span class='abc' style='font-weight:700'>All Birds Combinations 𓅄</span>"
-    ]
-
   // main init method
-  function init(div, imageList, delay) {
+  function init(div, imageList, captionList, delay) {
     div.classList.add("imgplay")
 
     // Play Button
@@ -55,8 +47,21 @@ var ImagePlayer = (function() {
     div.appendChild(playButton)
     div.appendChild(img)
     div.appendChild(captionDiv)
-  }
 
+    // Preload images
+    preload(imageList)
+  }
+  
+  /* =============== utility methods =============== */
+  var images = [];
+  function preload(imageList) {
+      for (var i = 0; i < imageList.length; i++) {
+          images[i] = new Image()
+          images[i].src = imageList[i]
+          console.log(images[i].src)
+      }
+  }
+  
   /* =============== export public methods =============== */
   return {
     init: init
