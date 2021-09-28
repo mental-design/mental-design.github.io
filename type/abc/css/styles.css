@@ -92,6 +92,7 @@ a:link {
 #notes img {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 16px;
   display: block;
   max-width: 80%;
 }
@@ -565,6 +566,7 @@ footer {
   text-align: left;
   color: #1E6FBF !important;
   margin-bottom: 16px;
+  font-weight: 400;
 }
 
 .ten-parts {
@@ -589,9 +591,11 @@ footer {
 
 .imgplay-btn {
   display:inline-block;
-  font-size: 25pt;
+  
   color: #1E6FBF;
   vertical-align: top;
+
+  font-size: 25pt;
 }
 
 .imgplay-img {
@@ -600,6 +604,7 @@ footer {
   height: 150px;
   object-fit: cover;
   object-position: 0 -50px;
+  margin-bottom: 0 !important;
 }
 
 .imgplay-disable {
@@ -611,6 +616,11 @@ footer {
   margin-bottom: 16px;
   font-weight: 300;
   font-size: 25px;
+}
+
+.bird {
+  font-weight: 700;
+  font-size: 23px;
 }
 
 @media (max-width:480px) {
@@ -626,4 +636,33 @@ footer {
     font-size: 20px;
   }
 }
+
+/* Wave */
+#wave {
+  /*margin-bottom: 16px;*/
+}
+
+.wave-sample {
+  margin-bottom: 16px;
+}
+
+.wave-btn {
+  display:inline-block;
+  
+  color: #1E6FBF;
+  vertical-align: 8px;
+
+  font-size: 20pt;
+  margin: 0 8px;
+}
+
+.wave-text {
+  display: inline-block;
+
+  margin-left: 8px;
+
+  font-size: 25pt;
+  font-weight: 400;
+}
+
 

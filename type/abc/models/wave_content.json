@@ -1,0 +1,34 @@
+[
+  {
+    "text": "Compression & Expansion",
+    "mode": "fixed",
+    "params": {
+      "size": "50",
+      "weights": [6, 3, 1, 0, 0, 0, 0, 1, 2, 3, 6,
+                  6, 6, 6,
+                 0, 1, 2, 4, 6, 4, 2, 1, 1]
+    }
+  },
+  {
+    "text": "Mixing & Matching Weights",
+    "mode": "random",
+    "params": {
+      "size": "40",
+      "delay": 90
+    }
+  },
+  {
+    "text": "Propagating information through text",
+    "mode": "wave",
+    "params": {
+      "delay": 50
+    }
+  },
+  {
+    "text": "Bouncing ideas back and forth",
+    "mode": "bounce",
+    "params": {
+      "delay": 75
+    }
+  }
+]

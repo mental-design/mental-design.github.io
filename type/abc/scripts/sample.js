@@ -81,7 +81,6 @@ var SampleSection = (function() {
   }
 
   /* =============== data fetch methods =============== */
-
   function fetchData(url, callback) {
     var unicodeRequest = fetch(url)
       .then(function(response) { 

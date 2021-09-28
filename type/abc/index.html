@@ -140,6 +140,8 @@
 <script src="scripts/sample.js"></script>
 <script src="scripts/notes.js"></script>
 <script src="scripts/image-player.js"></script>
+<script src="scripts/wave.js"></script>
+<script src="scripts/wave-line.js"></script>
 <script src="scripts/characters.js"></script>
 <script src="scripts/w3.js"></script>
 <script>
@@ -158,7 +160,19 @@
       // Add image player
       var imagesDiv = document.getElementById('image-player')
       var imageList = ["resources/images/trans0.png", "resources/images/trans1.png", "resources/images/trans2.png", "resources/images/trans3.png", "resources/images/trans4.png"]
-      ImagePlayer.init(imagesDiv, imageList, 750)
+      var captionList = [
+        "Albers' Kombinations-Schrift",
+        "All bers' Kombinations-Schrift",
+        "All Birds Kombinations-Schrift",
+        "All Birds Combinations",
+        "All Birds Combinations <span class='abc bird'>𓅄</span>"
+        ]
+      ImagePlayer.init(imagesDiv, imageList, captionList, 750)
+
+      // Add wave
+      var waveDiv = document.getElementById('wave')
+      waveUrl = "models/wave_content.json"
+      Wave.init(waveDiv, waveUrl)
     })
 
     // The Characters Section
