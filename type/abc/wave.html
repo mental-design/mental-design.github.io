@@ -8,7 +8,7 @@
 <body onload="initialize()">
     <div id="demo">
         <div id="text"></div>
-        <!-- <input id="control" class="slider" type="range"> -->
+        <input id="control" class="slider" type="range">
     </div>
     
 </body>
@@ -31,16 +31,16 @@
     // var centerChar = text.length / 2
     // moveTarget(text, centerChar)
 
-    // var slider = document.getElementById('control')
-    // slider.setAttribute('min', 0)
-    // slider.setAttribute('max', text.length - 1)
-    // slider.value = centerChar
-    // slider.oninput = function() {
-    //   moveTarget(text, this.value)
-    // }
+    var slider = document.getElementById('control')
+    slider.setAttribute('min', 0)
+    slider.setAttribute('max', text.length - 1)
+    slider.value = centerChar
+    slider.oninput = function() {
+      moveTarget(text, this.value)
+    }
 
     // setInterval(propagate, 75)
-    setInterval(bounce, 60)
+    // setInterval(bounce, 60)
     // setInterval(jitter, 100)
   }
 

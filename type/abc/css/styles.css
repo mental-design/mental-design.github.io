@@ -639,11 +639,11 @@ footer {
 
 /* Wave */
 #wave {
-  /*margin-bottom: 16px;*/
 }
 
 .wave-sample {
-  margin-bottom: 16px;
+  white-space: nowrap;
+  margin-bottom: 8px;
 }
 
 .wave-btn {
@@ -656,6 +656,10 @@ footer {
   margin: 0 8px;
 }
 
+.wave-disable {
+  color: #fff !important;
+}
+
 .wave-text {
   display: inline-block;
 
@@ -663,6 +667,16 @@ footer {
 
   font-size: 25pt;
   font-weight: 400;
+
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.wave-slider {
+  display: block;
+  width: 100%;
+  z-index: 100001 !important;
+  margin-top: 4px;
 }
 
 

@@ -58,7 +58,6 @@ var ImagePlayer = (function() {
       for (var i = 0; i < imageList.length; i++) {
           images[i] = new Image()
           images[i].src = imageList[i]
-          console.log(images[i].src)
       }
   }
   
