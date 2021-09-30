@@ -1,6 +1,8 @@
 class SliderWaveLine {
   constructor() {
     this.weightList = []
+
+    this.pulse = [700, 600, 400, 200, 200, 100]
   }
 
   initDiv(div, data) {
@@ -52,7 +54,7 @@ class SliderWaveLine {
     slider.type = "range"
     slider.min = 0
     slider.max = text.length - 1
-    slider.value = 3  // TODO: make this a parameter
+    slider.value = 10
     slider.step = 1
     var _this = this
     slider.oninput = function() {
@@ -73,9 +75,8 @@ class SliderWaveLine {
   updateWeights(value) {
     // update weight list
     for (var i = 0; i < this.weightList.length; i++) {
-      var distance = Math.min(Math.abs(i - value), 6)
-      var weight = (7 - distance) * 100
-      this.weightList[i] = weight
+      var distance = Math.min(Math.abs(i - value), this.pulse.length - 1)
+      this.weightList[i] = this.pulse[distance]
     }
   }
 

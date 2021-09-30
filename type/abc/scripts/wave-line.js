@@ -6,6 +6,8 @@ class WaveLine {
     this.step = 1
     this.centerChar = 0
     this.weightList = []
+
+    this.pulse = [700, 600, 500, 400, 300, 200, 100]
   }
 
   initDiv(div, data) {
@@ -95,9 +97,8 @@ class WaveLine {
   updateWeights(value) {
     // update weight list
     for (var i = 0; i < this.weightList.length; i++) {
-      var distance = Math.min(Math.abs(i - value), 6)
-      var weight = (7 - distance) * 100
-      this.weightList[i] = weight
+      var distance = Math.min(Math.abs(i - value), this.pulse.length - 1)
+      this.weightList[i] = this.pulse[distance]
     }
   }
 

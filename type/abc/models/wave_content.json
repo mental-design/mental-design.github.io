@@ -5,12 +5,12 @@
     "params": {
       "size": 40,
       "smallScreen": {
-        "size": 20
+        "size": 24
       }
     }
   },
   {
-    "text": "Bouncing ideas back and forth",
+    "text": "Bounce ideas back and forth",
     "mode": "wave",
     "params": {
       "size": 40,
@@ -21,13 +21,13 @@
     }
   },
   {
-    "text": "Propagating information through text",
+    "text": "Propagate information through text",
     "mode": "propagate",
     "params": {
       "size": 40,
       "delay": 50,
       "smallScreen": {
-        "size": 20
+        "size": 24
       }
     }
   }

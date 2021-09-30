@@ -650,10 +650,16 @@ footer {
   display:inline-block;
   
   color: #1E6FBF;
-  vertical-align: 8px;
+  vertical-align: 12px;
 
   font-size: 20pt;
   margin: 0 8px;
+}
+
+@media (max-width:600px) {
+  .wave-btn {
+    vertical-align: 4px;
+  }
 }
 
 .wave-disable {

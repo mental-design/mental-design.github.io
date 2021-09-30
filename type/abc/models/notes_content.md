@@ -19,7 +19,7 @@ With the decoder in place, modifying a glyph was just a matter of changing numbe
 
 <div id="image-player"></div>
 
-The design space of the typeface could be extend by adding new functionality to the decoder as needed. New parts, such as semi-circles for rings and triangles for bird beaks, were added as needed. Compressed weights could be created systematically by defining how to decode each number for tall rectangular spaces. This systematic approach makes the changes between the weights smooth and continuous, allowing for seamless mix-and-matching of different weights like the examples below.
+The design space of the typeface could be extended by adding new functionality to the decoder as needed. New parts, such as semi-circles for rings and triangles for bird beaks, were added as needed. Compressed weights could be created systematically by defining how to decode each number for tall rectangular spaces. This systematic approach makes the changes between the weights smooth and continuous, allowing for seamless mix-and-matching of different weights like the examples below.
 <!-- This needs a lot of cleaning up -->
 
 </div>
