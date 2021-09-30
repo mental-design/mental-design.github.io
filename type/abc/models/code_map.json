@@ -488,5 +488,8 @@
   "kombi_Xb":   "0xE010",
   "kombi_Xc":   "0xE011",
   "kombi_Xd":   "0xE012",
-  "kombi_Xe":   "0xE013"
+  "kombi_Xe":   "0xE013",
+  "kombi_Vb":   "0xE014",
+  "kombi_Vc":   "0xE015",
+  "kombi_Vd":   "0xE016"
 }
