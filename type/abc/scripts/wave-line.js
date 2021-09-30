@@ -12,7 +12,6 @@ class WaveLine {
 
   initDiv(div, data) {
     div.classList.add("wave-sample")
-    div.classList.add("abc")
 
     var text = data.text
     var mode = data.mode

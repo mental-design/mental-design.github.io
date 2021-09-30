@@ -6,13 +6,12 @@ class PropWaveLine {
     this.step = 1
     this.centerChar = 0
     this.weightList = []
-    this.pulse = [100, 200, 300, 400, 500, 700]
+    this.pulse = [100, 200, 200, 200, 300, 300, 400, 500, 700, 600]
     this.pCounter = 0
   }
 
   initDiv(div, data) {
     div.classList.add("wave-sample")
-    div.classList.add("abc")
 
     var text = data.text
     var mode = data.mode

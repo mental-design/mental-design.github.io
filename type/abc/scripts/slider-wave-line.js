@@ -7,7 +7,6 @@ class SliderWaveLine {
 
   initDiv(div, data) {
     div.classList.add("wave-sample")
-    div.classList.add("abc")
 
     var text = data.text
     var mode = data.mode
@@ -54,7 +53,7 @@ class SliderWaveLine {
     slider.type = "range"
     slider.min = 0
     slider.max = text.length - 1
-    slider.value = 10
+    slider.value = Math.round((text.length - 1)/2 - 1)
     slider.step = 1
     var _this = this
     slider.oninput = function() {

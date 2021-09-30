@@ -1,6 +1,6 @@
 [
   {
-    "text": "Move the point of interest",
+    "text": "Moving the point of interest",
     "mode": "slider",
     "params": {
       "size": 40,
@@ -10,7 +10,7 @@
     }
   },
   {
-    "text": "Bounce ideas back and forth",
+    "text": "Bouncing ideas back and forth",
     "mode": "wave",
     "params": {
       "size": 40,
@@ -21,11 +21,11 @@
     }
   },
   {
-    "text": "Propagate information through text",
+    "text": "Propagating information through text",
     "mode": "propagate",
     "params": {
       "size": 40,
-      "delay": 50,
+      "delay": 33,
       "smallScreen": {
         "size": 24
       }
