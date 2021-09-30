@@ -1,4 +1,4 @@
-class WaveLine {
+class PropWaveLine {
   constructor() {
     this.isPlaying = false
     this.intervalID = undefined
@@ -6,6 +6,8 @@ class WaveLine {
     this.step = 1
     this.centerChar = 0
     this.weightList = []
+    this.pulse = [100, 200, 300, 400, 500, 700]
+    this.pCounter = 0
   }
 
   initDiv(div, data) {
@@ -19,7 +21,7 @@ class WaveLine {
     // Add play button
     var playButton = document.createElement("i")
     playButton.classList.add("fa")
-    playButton.classList.add("fa-play-circle")
+    playButton.classList.add("fa-arrow-circle-right")
     playButton.classList.add("wave-btn")
 
     var textDiv = document.createElement("div")
@@ -31,7 +33,7 @@ class WaveLine {
       var charSpan = document.createElement('span')
       charSpan.innerHTML = text.charAt(i)
       textDiv.appendChild(charSpan)
-      this.weightList.push(400)
+      this.weightList.push(100)
     }
 
     if (screen.width > 600) {
@@ -48,65 +50,53 @@ class WaveLine {
   
     var _this = this
     playButton.onclick = function() {
-      if (_this.isPlaying) {  // Pause
-        window.clearInterval(_this.intervalID)
-
-        // Change button
-        playButton.classList.add("fa-play-circle")
-        playButton.classList.remove("fa-pause-circle")
-      }
-      else {  // Play
-        // Change button
-        playButton.classList.add("fa-pause-circle")
-        playButton.classList.remove("fa-play-circle")
-
+      if (!_this.isPlaying) {  // Start loop
         _this.intervalID = setInterval(function() {
-          _this.bounce(textDiv)
-        }, modeParams.delay, textDiv)
+          _this.updateWeights()
+          _this.updateText(textDiv, _this.weightList)
+
+          _this.checkForStop()
+        }, modeParams.delay)
+
+        _this.isPlaying = true
       }
 
-      _this.isPlaying = !_this.isPlaying
+      _this.pCounter = _this.pulse.length - 1
     }
 
     // Initialize text weights
-    this.updateWeights(this.centerChar)
     this.updateText(textDiv, this.weightList)
   
     div.appendChild(playButton)
     div.appendChild(textDiv)
   }
 
-  /* =============== animation methods =============== */
-
-  bounce(textDiv) {
-    if (this.centerChar >= textDiv.childNodes.length - 1) {
-        this.step = -1;
-    }
-    if (this.centerChar <= 0) {
-        this.step = 1;
-    }
-
-    this.centerChar = this.centerChar + this.step
-    
-    this.updateWeights(this.centerChar)
-    this.updateText(textDiv, this.weightList)
-  }
-
-  updateWeights(value) {
-    // update weight list
-    for (var i = 0; i < this.weightList.length; i++) {
-      var distance = Math.min(Math.abs(i - value), 6)
-      var weight = (7 - distance) * 100
-      this.weightList[i] = weight
+  checkForStop() {
+    // Stop if all the weights are the same
+    const firstValue = this.weightList[0]
+    var allEqual = this.weightList.every(x => x == firstValue)
+    if (allEqual) {
+        window.clearInterval(this.intervalID)
+        this.isPlaying = false
     }
   }
 
-  updateText(textDiv, weightList) {
+  updateWeights() {
+    this.weightList.unshift(this.pulse[this.pCounter])
+    this.weightList.pop()
+
+    if (this.pCounter > 0) {
+      this.pCounter--
+    }
+  }
+
+  updateText(textDiv) {
     // update text
     var childList = textDiv.childNodes
     for (var i = 0; i < childList.length; i++) {
       var charSpan = childList[i]
-      charSpan.style.fontWeight = weightList[i]
+      charSpan.style.fontWeight = this.weightList[i]
     }
   }
+    
 }

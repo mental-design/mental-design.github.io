@@ -76,7 +76,6 @@ class SliderWaveLine {
       var distance = Math.min(Math.abs(i - value), 6)
       var weight = (7 - distance) * 100
       this.weightList[i] = weight
-      // this.weightList[i] = (i == value) ? 700 : 100
     }
   }
 

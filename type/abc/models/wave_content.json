@@ -1,6 +1,6 @@
 [
   {
-    "text": "Propagating information through text",
+    "text": "Move the point of interest",
     "mode": "slider",
     "params": {
       "size": 40,
@@ -17,6 +17,17 @@
       "delay": 50,
       "smallScreen": {
         "size": 24
+      }
+    }
+  },
+  {
+    "text": "Propagating information through text",
+    "mode": "propagate",
+    "params": {
+      "size": 40,
+      "delay": 50,
+      "smallScreen": {
+        "size": 20
       }
     }
   }

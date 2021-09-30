@@ -23,10 +23,11 @@ var Wave = (function() {
         return new FixedWaveLine()
       case "slider":
         return new SliderWaveLine()
+      case "propagate":
+        return new PropWaveLine()
       default:
         return new WaveLine()
     }
-
   }
 
   /* =============== data fetch methods =============== */
