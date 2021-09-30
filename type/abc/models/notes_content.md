@@ -1,8 +1,18 @@
-All Birds Combinations (ABC) is a modular display typeface often categorized as a stencil typeface.
-It is a reinterpretation of Josef Albersʼ Kombinations-Schrift, where the name is also derived from.
+All Birds Combinations (ABC) is a modular display typeface with 7 levels of compressed weights. ABC is a reinterpretation of Josef Albersʼ Kombinations-Schrift, where the name is also derived from.
+Whereas Kombinations-Schrift is a product of the age of mass production, ABC was designed as a product of the information age.
+
+For ABC, each glyph is represented by an array of numbers (encodings) which is decoded using custom code to create the contours. This approach allows us to explore a design space defined by the decoder in which we could further refine the shape of each glyph. 
+While the basic structure was formed by Kombinations-Schrift, each glyph was refined with influences from neoclassical typefaces like Bodoni and Didot to make the typeface feel more natural and balanced.
+
+By extending the functionality of the decoder, we could expand the design space to handle shapes that were hard to represent previously. Compressed weights could be created by defining how to decode the encodings for tall rectangular spaces. This systematic approach makes the changes between the weights smooth and continuous, allowing for natural mix-and-matching of different weights like the examples below. (For more details, click on the details button below the examples.)
+
+<div id="wave" class="abc"></div>
+
 <div id="details-btn" onclick="showDetails()">
     <i id="details-icon" class="fa fa-plus-circle"> </i> Details
 </div>
+
+<!-- Details! -->
 <div id="details" hidden>
 <div class="sample-font ten-parts">   </div>
 
@@ -14,17 +24,15 @@ For ABC, we wanted to translate Kombinations-Schrift into a typeface of the info
 
 <img src="resources/images/encoding.png" width="480"/>
 
-With the decoder in place, modifying a glyph was just a matter of changing numbers. Whereas Kombinations-Schrift has a Fraktur like quality, each glyph in ABC was revised to resemble neoclassical type, such as Didot or Bodoni. The high contrast and vertical axis of Didone typefaces makes a good reference for a strongly vertical typeface like ABC.
-<!-- Reword sentence -->
+With the decoder in place, modifying a glyph was just a matter of changing numbers. Whereas Kombinations-Schrift has a Fraktur like quality, each glyph in ABC was revised to resemble neoclassical type, such as Didot or Bodoni. ABC has strong verticals similar to the strongly vertical and high contrast Didone typefaces which made them a good reference for refinement.
 
 <div id="image-player"></div>
 
-The design space of the typeface could be extended by adding new functionality to the decoder as needed. New parts, such as semi-circles for rings and triangles for bird beaks, were added as needed. Compressed weights could be created systematically by defining how to decode each number for tall rectangular spaces. This systematic approach makes the changes between the weights smooth and continuous, allowing for seamless mix-and-matching of different weights like the examples below.
-<!-- This needs a lot of cleaning up -->
+The design space of the typeface could be extended by adding new functionality to the decoder. New parts, such as semi-circles for rings and triangles for bird beaks, were added as needed. A quarter-sized square was added for currency glyphs, giving them a distinct impression compared to other glyphs.
+Compressed weights could be created systematically by defining how to decode each number for tall rectangular spaces. This systematic approach makes the changes between the weights smooth and continuous, allowing for seamless mix-and-matching of different weights.
 
 </div>
-
-<div id="wave"></div>
+<!-- Details End -->
 
 ### LICENSE
 All Birds Combinations is licensed under the [SIL Open Font License][1]. It is free for personal and commercial use. Send us an email (type@mentallydesigned.com) to share how you used the typeface. Have fun!
