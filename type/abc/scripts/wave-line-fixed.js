@@ -43,10 +43,12 @@ class FixedWaveLine {
     playButton.classList.add("wave-disable")
 
     // setup text
-    var wIndex = modeParams["weights"]
-    var childList = textDiv.childNodes
-    for (var i = 0; i < childList.length; i++) {
-      childList[i].style.fontWeight = this.weights[wIndex[i]]
+    if ("weights" in modeParams) {
+      var wIndex = modeParams.weights
+      var childList = textDiv.childNodes
+      for (var i = 0; i < childList.length; i++) {
+        childList[i].style.fontWeight = this.weights[wIndex[i]]
+      }
     }
 
     div.appendChild(playButton)
