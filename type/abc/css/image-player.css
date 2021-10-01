@@ -1,0 +1,54 @@
+.imgplay {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.imgplay-btn {
+  display:inline-block;
+  
+  color: #1E6FBF;
+  vertical-align: top;
+
+  font-size: 25pt;
+}
+
+.imgplay-img {
+  display:inline-block !important;
+  width: 500px;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 0 !important;
+}
+
+.imgplay-disable {
+  color: #fff !important;
+  opacity: 0;
+}
+
+.imgplay-caption {
+  text-align: center;
+  margin-bottom: 16px;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.bird {
+  font-weight: 700;
+  font-size: 23px;
+}
+
+@media (max-width:480px) {
+  .imgplay {
+    width: 300px;
+  }
+  .imgplay-img {
+    width: 300px;
+    height: 120px;
+  }
+  .imgplay-caption {
+    font-size: 20px;
+  }
+  .bird {
+    font-size: 19px;
+  }
+}
