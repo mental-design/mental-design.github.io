@@ -566,9 +566,11 @@ footer {
   text-align: left;
   color: #1E6FBF !important;
   font-weight: 400;
+  font-size: 20px;
 }
 
 #details-wrapper {
+  margin-top: 8px;
   margin-bottom: 16px;
 }
 
@@ -594,6 +596,13 @@ footer {
 #three-parts {
   position: relative;
   top: -110px;
+}
+
+#a-weights {
+  font-size: 40pt;
+  font-weight: 700;
+  text-align: center;
+  margin-top: -24px;
 }
 
 #wave {

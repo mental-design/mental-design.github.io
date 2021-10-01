@@ -21,7 +21,7 @@ var CharacterSection = (function() {
     sizeIndex: 15
   };
   var smallScreenDefaults = {
-    weightIndex: 3,
+    weightIndex: 6,
     sizeIndex: 5
   };
 
