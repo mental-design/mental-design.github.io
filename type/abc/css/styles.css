@@ -578,18 +578,22 @@ footer {
   padding-bottom: 1px;
 }
 
-.ten-parts {
+#ten-parts {
   font-weight: 700;
-  font-size: 32pt;
+  font-size: 40pt;
   text-align: center;
 }
 
-.three-parts {
+#three-wrapper {
   font-weight: 700;
   font-size: 96pt;
   text-align: center;
-  height: 96px;
-  line-height: 0.05;
+  height: 64px;
+}
+
+#three-parts {
+  position: relative;
+  top: -110px;
 }
 
 #wave {
