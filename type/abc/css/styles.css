@@ -20,11 +20,11 @@ body, h1, h2, h3 {
 }
 
 .abc {
-  font-family: "ABCv0.001", sans-serif !important;
+  font-family: "AllBirdsCombinations", sans-serif !important;
 }
 
 .sample-font {
-  font-family: "ABCv0.001", sans-serif !important;
+  font-family: "AllBirdsCombinations", sans-serif !important;
 }
 
 .ss00 {
@@ -570,7 +570,7 @@ footer {
 }
 
 #details-wrapper {
-  margin-top: 8px;
+  margin-top: 12px;
   margin-bottom: 16px;
 }
 
