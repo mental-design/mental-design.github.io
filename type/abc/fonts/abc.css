@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'AllBirdsCombinations';
+  src:  url('AllBirdsCombinations-Full.woff2') format('woff2');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'AllBirdsCombinations';
+  src:  url('AllBirdsCombinations-Regular.woff2') format('woff2');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'AllBirdsCombinations';
+  src:  url('AllBirdsCombinations-Fit.woff2') format('woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'AllBirdsCombinations';
+  src:  url('AllBirdsCombinations-Lean.woff2') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'AllBirdsCombinations';
+  src:  url('AllBirdsCombinations-Narrow.woff2') format('woff2');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'AllBirdsCombinations';
+  src:  url('AllBirdsCombinations-Thin.woff2') format('woff2');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'AllBirdsCombinations';
+  src:  url('AllBirdsCombinations-Skinny.woff2') format('woff2');
+  font-weight: 100;
+}
