@@ -2,9 +2,9 @@ All Birds Combinations (ABC) is a modular display typeface with 7 levels of comp
 Whereas Kombinations-Schrift is a product of the age of mass production, ABC was designed as a product of the information age.
 
 Each glyph in ABC is represented by an array of numbers (encodings) which is decoded using custom code to create the contours. This approach allows us to explore a design space defined by the decoder in which we could further refine the shape of each glyph. 
-While the basic structure was formed by Kombinations-Schrift, each glyph was refined with influences from neoclassical typefaces like Bodoni and Didot to make the typeface feel more natural and balanced.
+While the basic structure was formed by Kombinations-Schrift, each glyph was refined with influences from neoclassical typefaces, like Bodoni and Didot, to make the typeface feel more natural and balanced.
 
-Furthermore, we could modify the decoder to systematically create compressed weights. This makes the changes between the weights smooth and continuous, allowing for a fluid transition between different weights demonstrated by the examples below.
+Furthermore, we modified the decoder to systematically create compressed weights. This structured approach makes changing weights smooth and continuous, even allowing fluid transitions between different weights in-line as is demonstrated by the examples below.
 
 <div id="wave" class="abc"></div>
 
@@ -17,7 +17,7 @@ Furthermore, we could modify the decoder to systematically create compressed wei
 <div id="details" class="section-light-grey" hidden>
 <div id="ten-parts" class="sample-font">   </div>
 
-Albersʼ Kombinations-schrift was created for the age of industry and mass production. The typeface was constructed by combining the 10 shapes above which could be mass produced in glass, plastic, metal or wood and easily assembled anywhere.
+Albersʼ Kombinations-schrift is a typeface that was created for an age of industry and mass production. The typeface was constructed by combining the 10 shapes above which could be mass produced in glass, plastic, metal or wood and easily assembled anywhere.
 
 <div id="three-wrapper" class="sample-font">
     <div id="three-parts">
@@ -29,7 +29,8 @@ For ABC, we wanted to translate Kombinations-Schrift into a typeface of the info
 
 <img src="resources/images/encodings.png" width="480"/>
 
-With the decoder in place, modifying a glyph was just a matter of changing numbers. Each glyph was revised to make the typeface feel more balanced and natural. Neoclassical typefaces like Bodoni and Didot were used as a reference. With strong verticals and high contrast these typefaces were a good fit for refining ABC.
+With the decoder in place, modifying a glyph was just a matter of changing numbers in the encodings. Each glyph was revised to make the typeface feel more balanced and natural. With strong verticals and high contrast, neoclassical typefaces like Bodoni and Didot provided a good reference point for guiding the design refinements.
+<!-- Neoclassical typefaces like Bodoni and Didot were used as a reference. With strong verticals and high contrast these typefaces were a good fit for refining ABC. -->
 
 <div id="image-player"></div>
 
@@ -45,7 +46,7 @@ By extending the functionality of the decoder, we could expand the design space 
     <span style="font-weight:100">a</span>
 </div>
 
-Compressed weights could be created by defining how to decode each number for tall rectangular spaces. This systematic approach makes the changes between the weights smooth and continuous.
+Compressed weights could be created by defining how to decode each number for tall rectangular spaces. This systematic approach makes changes between weights smooth and continuous.
 
 </div>
 <!-- Details End -->

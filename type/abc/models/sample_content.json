@@ -11,7 +11,7 @@
         "sizeIndex": 15
       }
     },
-    "text": "Basic Components <br>Combined Systematically    <br>Bauhaus & Didone Inspired<br>with <span style='font-weight:200'>Compressed</span> Weights"
+    "text": "Basic Components <br>Combined Systematically    <br>Bauhaus & Didone Influenced<br>with <span style='font-weight:200'>Compressed</span> Weights"
   },
   {
     "settings": {
@@ -50,6 +50,7 @@
       "lineHeightIndex": 50,
       "showControl": 0,
       "smallScreen": {
+        "weightIndex": 5,
         "sizeIndex": 8,
         "alignIndex": 0,
         "lineHeightIndex": 50
