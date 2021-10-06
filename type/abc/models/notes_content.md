@@ -1,10 +1,10 @@
 All Birds Combinations (ABC) is a modular display typeface with 7 levels of compressed weights. ABC is a reinterpretation of Josef Albersʼ Kombinations-Schrift, from which the name, All Birds Combinations, is also derived.
-Whereas Kombinations-Schrift is a product of the age of mass production, ABC was designed as a product of the information age.
+Whereas Kombinations-Schrift is a typeface of the age of mass production, ABC was designed as a product of the information age.
 
 Each glyph in ABC is represented by an array of numbers (encodings) which is decoded using custom code to create the contours. This approach allows us to explore a design space defined by the decoder in which we could further refine the shape of each glyph. 
-While the basic structure was formed by Kombinations-Schrift, each glyph was refined with influences from neoclassical typefaces, like Bodoni and Didot, to make the typeface feel more natural and balanced.
+While the basic structure was formed by Kombinations-Schrift, each glyph was refined with influences from neoclassical typefaces to make the typeface feel more natural and balanced.
 
-Furthermore, we modified the decoder to systematically create compressed weights. This structured approach makes changing weights smooth and continuous, even allowing fluid transitions between different weights in-line as is demonstrated by the examples below.
+Furthermore, we modified the decoder to systematically create compressed weights. This structured approach enables fluid transitions between different weights, even within the same line, as is demonstrated by the examples below.
 
 <div id="wave" class="abc"></div>
 
@@ -25,12 +25,11 @@ Albersʼ Kombinations-schrift is a typeface that was created for an age of indus
     </div>
 </div>
 
-For ABC, we wanted to translate Kombinations-Schrift into a typeface of the information age—a product of data, algorithms, and software programming. The key insight was to encode each glyph into an array of numbers (encodings) based on the basic shapes used to create it—square, circle, and quarter circle. We implemented a decoder program that could take the encodings and create a font.
+For ABC, we wanted to translate Kombinations-Schrift into a typeface of the information age—a product of data, algorithms, and software programming. The key insight was to encode each glyph into an array of numbers (encodings) based on the basic shapes used to create it—square, circle, and quarter circle. We then implemented a decoder program that could take the encodings and create a font.
 
 <img src="resources/images/encodings.png" width="480"/>
 
 With the decoder in place, modifying a glyph was just a matter of changing numbers in the encodings. Each glyph was revised to make the typeface feel more balanced and natural. With strong verticals and high contrast, neoclassical typefaces like Bodoni and Didot provided a good reference point for guiding the design refinements.
-<!-- Neoclassical typefaces like Bodoni and Didot were used as a reference. With strong verticals and high contrast these typefaces were a good fit for refining ABC. -->
 
 <div id="image-player"></div>
 
