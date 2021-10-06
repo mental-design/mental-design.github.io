@@ -4,8 +4,8 @@ The motivation for designing BAM was to create a typeface that had a clean and o
 Each point, line, curve is calculated and no point is manipulated manually. 
 The result is a typeface with very precise geometry.
 
-BAM provides both single story and double story lowercase **a** glyphs via stylistic sets.
-The single story **a** fits the overall minimalist idea of BAM and is recommended for print or display use. However, we understand the importance of being able to differentiate between **a** and **o**, especially when reading and writing code, which is why we provide the double story **a** as the default. So you can be sure it's "**Yes, I can.**" and not "**Yes, I con.**"
+BAM provides both single story <span class='bam notes-sample ss01'>a</span> and double story lowercase <span class='bam notes-sample ss00'>a</span> via stylistic sets.
+The single story <span class='bam notes-sample ss01'>a</span> fits the overall minimalist idea of BAM and is recommended for print or display use. However, we understand the importance of being able to differentiate between **a** and **o**, especially when reading and writing code, which is why we provide the double story <span class='bam notes-sample ss00'>a</span> as the default. So you can be sure it's "**Yes, I can.**" and not "**Yes, I con.**"
 
 ### LICENSE
 Basically A Mono is licensed under the [SIL Open Font License][1]. It is free for personal and commercial use. Send us an email (type@mentallydesigned.com) to share how you used the typeface. Have fun!

@@ -11,16 +11,16 @@ body, h1, h2, h3 {
   font-family: 'BasicallyASansSerif', sans-serif;  
 }
 
-code, .sample-font, .mono, .CodeMirror {
+code, .bam, .sample-font, .mono, .CodeMirror {
   font-family: 'BasicallyAMono', monospace !important;
 }
 
 .ss00 {
-  font-feature-settings: "ss01" 0;
+  font-feature-settings: "ss01" 0 !important;
 }
 
 .ss01 {
-  font-feature-settings: "ss01" 1;
+  font-feature-settings: "ss01" 1 !important;
 }
 
 a:link {
@@ -61,6 +61,11 @@ a:link {
   font-size: 18px;
   margin-bottom: 0px;
   margin-top: 0px;
+}
+
+.notes-sample {
+  font-size: 19px;
+  font-weight: 500;
 }
 
 @media (max-width:600px) {
