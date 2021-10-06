@@ -61,6 +61,12 @@ class SliderWaveLine {
       _this.updateText(textDiv, _this.weightList)
     }
 
+    // Firefox will not infer the width from the text.
+    var isFirefox = (typeof InstallTrigger !== 'undefined')
+    if (isFirefox) {
+      slider.style.width = "400px"
+    }
+
     textDiv.append(slider)
 
     // Initialize text weights
