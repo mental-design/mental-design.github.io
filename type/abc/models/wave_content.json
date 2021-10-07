@@ -25,7 +25,7 @@
     "mode": "propagate",
     "params": {
       "size": 40,
-      "delay": 33,
+      "delay": 37,
       "smallScreen": {
         "size": 24
       }

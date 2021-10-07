@@ -64,7 +64,12 @@ class SliderWaveLine {
     // Firefox will not infer the width from the text.
     var isFirefox = (typeof InstallTrigger !== 'undefined')
     if (isFirefox) {
-      slider.style.width = "400px"
+      if (screen.width > 600) {
+        slider.style.width = "400px"
+      }
+      else {
+        slider.style.width = "240px"
+      }
     }
 
     textDiv.append(slider)
