@@ -8,10 +8,11 @@
       "lineHeightIndex": 45,
       "showControl": 0,
       "smallScreen": {
-        "sizeIndex": 15
+        "sizeIndex": 16,
+        "lineHeightIndex": 20
       }
     },
-    "text": "Basic Components <br>Combined Systematically    <br>Bauhaus & Didone Influenced<br>with <span style='font-weight:200'>Compressed</span> Weights"
+    "text": "Basic Components <br/>Combined Systematically    <br/>Bauhaus & Didone Influenced<br>with <span style='font-weight:200'>Compressed</span> Weights"
   },
   {
     "settings": {
@@ -22,10 +23,11 @@
       "lineHeightIndex": 45,
       "showControl": 0,
       "smallScreen": {
-        "sizeIndex": 13
+        "sizeIndex": 14,
+        "lineHeightIndex": 30
       }
     },
-    "text": "(works great with Coffee oO<br>... and Birds)  𓅌"
+    "text": "(works great with Coffee oO<br/>... and Birds)  𓅌"
   },
   {
     "settings": {
@@ -39,7 +41,7 @@
         "sizeIndex": 20
       }
     },
-    "text": "Make your own combinations!<br>   "
+    "text": "Make your own combinations!<br/>   "
   },
   {
     "settings": {
@@ -67,10 +69,12 @@
       "lineHeightIndex": 20,
       "showControl": 0,
       "smallScreen": {
-        "sizeIndex": 18
+        "weightIndex": 1,
+        "sizeIndex": 28,
+        "letterSpacingIndex": 8
       }
     },
-    "text": "Beauty in Geometry<br>Designed by Numbers<br>Keeping It Simple<br>"
+    "text": "Beauty in Geometry<br/>Designed by Numbers<br/>Keeping It Simple<br><br/>"
   },
   {
     "settings": {
