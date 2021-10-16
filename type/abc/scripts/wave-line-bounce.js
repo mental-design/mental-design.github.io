@@ -7,6 +7,9 @@ class WaveLine {
     this.centerChar = 0
     this.weightList = []
 
+    this.delay = 100
+    this.delayFactor = []
+
     this.pulse = [700, 600, 500, 400, 300, 200, 100]
   }
 
@@ -16,6 +19,16 @@ class WaveLine {
     var text = data.text
     var mode = data.mode
     var modeParams = data.params
+
+    // Delay
+    this.delay = modeParams.delay
+    // Create delay array
+    var alpha = 0.3
+    var gamma = 2
+    for (var i = 0; i < text.length; i++) {
+      var value = (1 - alpha) + alpha * ((0.5 + Math.cos(2 * Math.PI * i / (text.length - 1)) * 0.5) ** gamma)
+      this.delayFactor.push(value / (1 - alpha))
+    }
 
     // Add play button
     var playButton = document.createElement("i")
@@ -49,8 +62,10 @@ class WaveLine {
   
     var _this = this
     playButton.onclick = function() {
-      if (_this.isPlaying) {  // Pause
-        window.clearInterval(_this.intervalID)
+      _this.isPlaying = !_this.isPlaying
+
+      if (!_this.isPlaying) {  // Pause
+      //   window.clearInterval(_this.intervalID)
 
         // Change button
         playButton.classList.add("fa-play-circle")
@@ -61,12 +76,11 @@ class WaveLine {
         playButton.classList.add("fa-pause-circle")
         playButton.classList.remove("fa-play-circle")
 
-        _this.intervalID = setInterval(function() {
-          _this.bounce(textDiv)
-        }, modeParams.delay, textDiv)
+      //   _this.intervalID = setInterval(function() {
+      //     _this.bounce(textDiv)
+      //   }, modeParams.delay, textDiv)
+        _this.bounce(textDiv, _this)
       }
-
-      _this.isPlaying = !_this.isPlaying
     }
 
     // Initialize text weights
@@ -79,18 +93,23 @@ class WaveLine {
 
   /* =============== animation methods =============== */
 
-  bounce(textDiv) {
-    if (this.centerChar >= textDiv.childNodes.length - 1) {
-        this.step = -1;
+  bounce(textDiv, _this) {
+    if (_this.centerChar >= textDiv.childNodes.length - 1) {
+        _this.step = -1;
     }
-    if (this.centerChar <= 0) {
-        this.step = 1;
+    if (_this.centerChar <= 0) {
+        _this.step = 1;
     }
 
-    this.centerChar = this.centerChar + this.step
+    _this.centerChar = _this.centerChar + _this.step
     
-    this.updateWeights(this.centerChar)
-    this.updateText(textDiv, this.weightList)
+    _this.updateWeights(_this.centerChar)
+    _this.updateText(textDiv, _this.weightList)
+
+    if (_this.isPlaying) {
+      var delay = _this.delay * _this.delayFactor[_this.centerChar]
+      setTimeout(_this.bounce, delay, textDiv, _this)
+    }
   }
 
   updateWeights(value) {
