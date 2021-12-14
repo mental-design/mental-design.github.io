@@ -4,6 +4,7 @@ html {
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern" 1;
   -webkit-font-feature-settings: "kern";
+  font-feature-settings: "calt" 1;
 }
 
 body {
