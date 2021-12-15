@@ -11,7 +11,7 @@ body, h1, h2, h3 {
   font-family: 'BasicallyASansSerif', sans-serif;  
 }
 
-code, .bam, .sample-font, .mono, .CodeMirror {
+code, .bam, .sample-font, .mono, .mono-font, .CodeMirror {
   font-family: 'BasicallyAMono', monospace !important;
 }
 
@@ -592,6 +592,8 @@ input:checked + .switch-slider:before {
   padding-top: 20px;
 }
 
+/* Characters */
+
 .char-category {
   margin-bottom: 8px;
 }
@@ -614,6 +616,26 @@ input:checked + .switch-slider:before {
   text-align: center;
 }
 
+.char-div {
+  display: inline-block;
+}
+
+.char-code {
+  font-size: 10px;
+  color: #999;
+  height: 10px;
+}
+
+/* Footer */
+
+footer {
+  box-shadow: 0px 0px 30px 3px rgba(255, 255, 255, 0.10);
+}
+
+.footer-logo {
+  font-size: 18px;
+}
+
 .social {
   font-weight: 200;
 }
@@ -631,12 +653,4 @@ input:checked + .switch-slider:before {
   font-weight: 200;
   vertical-align: -4px;
   margin-right: 5px;
-}
-
-footer {
-  box-shadow: 0px 0px 30px 3px rgba(255, 255, 255, 0.10);
-}
-
-.footer-logo {
-  font-size: 18px;
 }

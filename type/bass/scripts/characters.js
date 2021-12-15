@@ -122,7 +122,6 @@ var CharacterSection = (function() {
   }
 
   function initializeCharDiv(div, char) {
-    // div.innerHTML = "&#x" + char;
     div.classList.add("char-cell");
 
     var charDiv = document.createElement('div');
@@ -170,37 +169,41 @@ var CharacterSection = (function() {
 
   /* =============== control callback methods ================ */
 
-  function updateFontSize(size) {
+  function updateCell(cell, size) {
+    if (cell.style == undefined)   // cell.style is undefined for some cells. TODO: fix this.
+        return
+
     let divWPx = (1.4 * size) + 'px';
     let divHPx = (1.5 * size) + 'px';
+
     let lhPx = (1.6 * size) + 'px';
     let sizePx = (size) + 'px';
     let chPx = (1.5 * size - 8) + 'px';
 
+    cell.style.width = divWPx;
+    cell.style.height = divHPx;
+    var charDiv = cell.querySelector(".char-div");
+    charDiv.style.fontSize = sizePx;
+    charDiv.style.lineHeight = lhPx;
+
+    var charCode = cell.querySelector(".char-code");
+    if (size < 50) {  // Hide unicode
+      charDiv.style.marginTop = 0;
+      charDiv.style.marginBottom = 0;
+      charCode.hidden = true;
+    }
+    else {
+      charDiv.style.marginTop = "-6px";
+      charDiv.style.height = chPx;
+      charCode.hidden = false; 
+    }
+  }
+
+  function updateFontSize(size) {
     let charCells = document.getElementsByClassName("char-cell");
     for (const idx in charCells) {
       var cell = charCells[idx];
-      if (cell.style) {  // cell.style is undefined for some cells. TODO: fix this.
-        // cell.style.fontSize = sizePx;
-        cell.style.width = divWPx;
-        cell.style.height = divHPx;
-        // cell.style.lineHeight = lhPx;
-        var charDiv = cell.querySelector(".char-div");
-        charDiv.style.fontSize = sizePx;
-        charDiv.style.lineHeight = lhPx;
-
-        var charCode = cell.querySelector(".char-code");
-        if (size < 50) {  // Hide code
-          charDiv.style.marginTop = 0;
-          charDiv.style.marginBottom = 0;
-          charCode.hidden = true;
-        }
-        else {
-          charDiv.style.marginTop = "-6px";
-          charDiv.style.height = chPx;
-          charCode.hidden = false; 
-        }
-      }
+      updateCell(cell, size);
     }
   }
 

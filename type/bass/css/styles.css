@@ -480,6 +480,8 @@ h1 {
   color: #1E6FBF;
 }
 
+/* Characters */
+
 .char-category {
   margin-bottom: 8px;
 }
@@ -507,7 +509,6 @@ h1 {
 }
 
 .char-code {
-  /*display: inline-block;*/
   font-size: 10px;
   color: #999;
   height: 10px;

@@ -1,5 +1,6 @@
 @import '../fonts/abc.css';
 @import '../../bass/fonts/basicallyasansserif.css';
+@import '../../bam/fonts/basicallyamono.css';
 
 html {
   text-rendering: optimizeLegibility;
@@ -19,12 +20,12 @@ body, h1, h2, h3 {
   font-family: 'BasicallyASansSerif', sans-serif;  
 }
 
-.abc {
+.abc, .sample-font {
   font-family: "AllBirdsCombinations", sans-serif !important;
 }
 
-.sample-font {
-  font-family: "AllBirdsCombinations", sans-serif !important;
+.mono-font {
+  font-family: "BasicallyAMono", monospace !important;
 }
 
 .ss00 {
@@ -33,10 +34,6 @@ body, h1, h2, h3 {
 
 .ss01 {
   font-feature-settings: "ss01" 1;
-}
-
-.onum {
-  font-variant-numeric: oldstyle-nums;
 }
 
 a:link {
@@ -512,6 +509,8 @@ h1 {
   color: #1E6FBF;
 }
 
+/* Characters */
+
 .char-category {
   margin-bottom: 8px;
 }
@@ -534,6 +533,26 @@ h1 {
   text-align: center;
 }
 
+.char-div {
+  display: inline-block;
+}
+
+.char-code {
+  font-size: 10px;
+  color: #999;
+  height: 10px;
+}
+
+/* Footer */
+
+footer {
+  box-shadow: 0px 0px 30px 3px rgba(255, 255, 255, 0.10);
+}
+
+.footer-logo {
+  font-size: 18px;
+}
+
 .social {
   font-weight: 200;
 }
@@ -551,14 +570,6 @@ h1 {
   font-weight: 300;
   vertical-align: -1px;
   margin-right: 5px;
-}
-
-footer {
-  box-shadow: 0px 0px 30px 3px rgba(255, 255, 255, 0.10);
-}
-
-.footer-logo {
-  font-size: 18px;
 }
 
 /* Details */
