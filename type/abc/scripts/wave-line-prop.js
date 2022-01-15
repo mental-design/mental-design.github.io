@@ -28,11 +28,23 @@ class PropWaveLine {
     this.textDiv = textDiv
 
     // Add text
+    let kern1List = ["r", "t"]
+    let kern2List = ["e", "o"]
     for (var i = 0; i < text.length; i++) {
+      let thisChar = text.charAt(i)
+
       var charSpan = document.createElement('span')
-      charSpan.innerHTML = text.charAt(i)
+      charSpan.innerHTML = thisChar
       textDiv.appendChild(charSpan)
       this.weightList.push(100)
+
+      // add kerning for [r, t] + @o
+      if (kern1List.includes(thisChar)) {
+        let nextChar = text.charAt(i + 1)
+        if (kern2List.includes(nextChar)) {
+          charSpan.classList.add("wave-kern-" + thisChar)
+        }
+      }
     }
 
     if (screen.width > 600) {

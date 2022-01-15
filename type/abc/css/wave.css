@@ -47,3 +47,11 @@
   margin-top: 4px;
   z-index: 100001 !important;
 }
+
+.wave-kern-t {
+  letter-spacing: -1.1pt;
+}
+
+.wave-kern-r {
+  letter-spacing: -0.9pt;
+}
