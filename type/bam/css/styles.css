@@ -534,6 +534,7 @@ input:checked + .switch-slider:before {
   background: #1E6FBF;
   cursor: pointer;
   border: 1px solid #1E6FBF;
+  box-shadow: none;
 }
 
 .slider::-moz-range-thumb {

@@ -254,7 +254,6 @@ a:link {
 .title-bg {
   color: #000;
   background: #FAE232;
-  /*background: linear-gradient(357deg, rgba(92,78,78,1) 0%, rgba(123,106,106,1) 23%, rgba(152,134,134,1) 67%, rgba(152,134,134,1) 100%);*/
 }
 
 .title-item {
@@ -471,6 +470,7 @@ h1 {
 
 .slider {
   -webkit-appearance: none;
+  appearance: none;
   height: 2px; 
   width: 75px;
   background: #AEC7E8;
@@ -490,6 +490,7 @@ h1 {
   background: #1E6FBF;
   cursor: pointer;
   border: 1px solid #1E6FBF;
+  box-shadow: none;
 }
 
 .slider::-moz-range-thumb {
