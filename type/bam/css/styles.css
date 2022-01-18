@@ -5,13 +5,14 @@ html {
 
 body {
   min-width: 400px;
+  background-color: #000;
 }
 
 body, h1, h2, h3 {
   font-family: 'BasicallyASansSerif', sans-serif;  
 }
 
-code, .bam, .sample-font, .mono, .CodeMirror {
+code, .bam, .sample-font, .mono, .mono-font, .CodeMirror {
   font-family: 'BasicallyAMono', monospace !important;
 }
 
@@ -33,18 +34,6 @@ a:link {
 
 .design {
   font-weight: 300;
-}
-
-@media
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 250dpi) { /* retina display */
-  .mental {
-    font-weight: 400;
-  }
-
-  .design {
-    font-weight: 200;
-  }
 }
 
 .notes {
@@ -533,6 +522,7 @@ input:checked + .switch-slider:before {
   background: #1E6FBF;
   cursor: pointer;
   border: 1px solid #1E6FBF;
+  box-shadow: none;
 }
 
 .slider::-moz-range-thumb {
@@ -592,6 +582,8 @@ input:checked + .switch-slider:before {
   padding-top: 20px;
 }
 
+/* Characters */
+
 .char-category {
   margin-bottom: 8px;
 }
@@ -614,6 +606,26 @@ input:checked + .switch-slider:before {
   text-align: center;
 }
 
+.char-div {
+  display: inline-block;
+}
+
+.char-code {
+  font-size: 10px;
+  color: #999;
+  height: 10px;
+}
+
+/* Footer */
+
+footer {
+  box-shadow: 0px 0px 30px 3px rgba(255, 255, 255, 0.10);
+}
+
+.footer-logo {
+  font-size: 18px;
+}
+
 .social {
   font-weight: 200;
 }
@@ -631,12 +643,4 @@ input:checked + .switch-slider:before {
   font-weight: 200;
   vertical-align: -4px;
   margin-right: 5px;
-}
-
-footer {
-  box-shadow: 0px 0px 30px 3px rgba(255, 255, 255, 0.10);
-}
-
-.footer-logo {
-  font-size: 18px;
 }

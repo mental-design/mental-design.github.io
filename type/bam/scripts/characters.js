@@ -96,10 +96,6 @@ var CharacterSection = (function() {
     let categoryName = category["category"];
     let range = category["range"];
     var styleset = ("styleset" in category) ? category["styleset"] : 0;
-    // var styleset = 0;
-    // if ("styleset" in category){
-    //   styleset = category["styleset"];
-    // }
 
     div.classList.add("char-category");
 
@@ -127,9 +123,19 @@ var CharacterSection = (function() {
 
   function initializeCharDiv(div, char, styleset) {
     div.classList.add("char-cell");
-    div.classList.add("mono");
-    div.classList.add("ss0" + styleset);
-    div.innerHTML = "&#x" + char;
+
+    var charDiv = document.createElement('div');
+    charDiv.classList.add("char-div");
+    charDiv.classList.add('sample-font');
+    charDiv.classList.add('ss0' + styleset);
+    charDiv.innerHTML = "&#x" + char;
+    div.appendChild(charDiv);
+
+    var codeDiv = document.createElement('div');
+    codeDiv.classList.add('mono-font');
+    codeDiv.classList.add("char-code");
+    codeDiv.innerHTML = "0x" + char.toUpperCase();
+    div.appendChild(codeDiv);
   }
 
   // ===== Controls =====
@@ -163,27 +169,47 @@ var CharacterSection = (function() {
   }
 
   /* =============== control callback methods ================ */
+  function updateCell(cell, size) {
+    if (cell.style == undefined)   // cell.style is undefined for some cells. TODO: fix this.
+        return
+
+    let divWPx = (1.4 * size) + 'px';
+    let divHPx = (1.5 * size) + 'px';
+
+    let lhPx = (1.6 * size) + 'px';
+    let sizePx = (size) + 'px';
+    let chPx = (1.5 * size - 8) + 'px';
+
+    cell.style.width = divWPx;
+    cell.style.height = divHPx;
+    var charDiv = cell.querySelector(".char-div");
+    charDiv.style.fontSize = sizePx;
+    charDiv.style.lineHeight = lhPx;
+
+    var charCode = cell.querySelector(".char-code");
+    if (size < 50) {  // Hide unicode
+      charDiv.style.marginTop = 0;
+      charDiv.style.marginBottom = 0;
+      charCode.hidden = true;
+    }
+    else {
+      charDiv.style.marginTop = "-6px";
+      charDiv.style.height = chPx;
+      charCode.hidden = false; 
+    }
+  }
 
   function updateFontSize(size) {
-    let divWPx = toSizeLabel(1.4 * size);
-    let divHPx = toSizeLabel(1.5 * size);
-    let lhPx = toSizeLabel(1.6 * size);
-    let sizePx = toSizeLabel(size);
 
     let charCells = document.getElementsByClassName("char-cell");
     for (const idx in charCells) {
       var cell = charCells[idx];
-      if (cell.style) {  // cell.style is undefined for some cells. TODO: fix this.
-        cell.style.fontSize = sizePx;
-        cell.style.width = divWPx;
-        cell.style.height = divHPx;
-        cell.style.lineHeight = lhPx;
-      }
+      updateCell(cell, size);
     }
   }
 
   function updateWeight(weight) {
-    let charCells = document.getElementsByClassName("char-cell");
+    let charCells = document.getElementsByClassName("char-div");
     for (const idx in charCells) {
       var cell = charCells[idx];
       if (cell.style) {  // cell.style is undefined for some cells. TODO: fix this.
@@ -206,7 +232,6 @@ var CharacterSection = (function() {
 
   function fetchData(callback) {
     // file containing the unicode characters to show
-    // var unicodeURL = 'models/test_unicode.json';
     var unicodeURL = 'models/unicode.json';
     var unicodeRequest = fetch(unicodeURL)
       .then(function(response) { 

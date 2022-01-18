@@ -1,13 +1,16 @@
 @import '../fonts/basicallyasansserif.css';
+@import '../../bam/fonts/basicallyamono.css';
 
 html {
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern" 1;
   -webkit-font-feature-settings: "kern";
+  font-feature-settings: "calt" 1;
 }
 
 body {
   min-width: 400px;
+  background-color: #000;
 }
 
 body, h1, h2, h3 {
@@ -17,6 +20,10 @@ body, h1, h2, h3 {
 
 .sample-font {
   font-family: "BasicallyASansSerif", serif !important;
+}
+
+.mono-font {
+  font-family: "BasicallyAMono", monospace !important;
 }
 
 a:link {
@@ -29,18 +36,6 @@ a:link {
 
 .design {
   font-weight: 300;
-}
-
-@media
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 250dpi) { /* retina display */
-  .mental {
-    font-weight: 400;
-  }
-
-  .design {
-    font-weight: 200;
-  }
 }
 
 .notes {
@@ -461,6 +456,7 @@ h1 {
   background: #1E6FBF;
   cursor: pointer;
   border: 1px solid #1E6FBF;
+  box-shadow: none;
 }
 
 .slider::-moz-range-thumb {
@@ -480,6 +476,8 @@ h1 {
 .item-blue {
   color: #1E6FBF;
 }
+
+/* Characters */
 
 .char-category {
   margin-bottom: 8px;
@@ -503,6 +501,26 @@ h1 {
   text-align: center;
 }
 
+.char-div {
+  display: inline-block;
+}
+
+.char-code {
+  font-size: 10px;
+  color: #999;
+  height: 10px;
+}
+
+/* Footer */
+
+footer {
+  box-shadow: 0px 0px 30px 3px rgba(255, 255, 255, 0.10);
+}
+
+.footer-logo {
+  font-size: 18px;
+}
+
 .social {
   font-weight: 200;
 }
@@ -520,12 +538,4 @@ h1 {
   font-weight: 300;
   vertical-align: -1px;
   margin-right: 5px;
-}
-
-footer {
-  box-shadow: 0px 0px 30px 3px rgba(255, 255, 255, 0.10);
-}
-
-.footer-logo {
-  font-size: 18px;
 }
