@@ -118,12 +118,13 @@ var CharacterSection = (function() {
     div.appendChild(charListDiv);
   }
 
-  function initializeCharDiv(div, char) {
+  function initializeCharDiv(div, char, feature) {
     div.classList.add("char-cell");
 
     var charDiv = document.createElement('div');
     charDiv.classList.add("char-div");
     charDiv.classList.add('sample-font');
+    charDiv.classList.add(feature);
     charDiv.innerHTML = "&#x" + char;
     div.appendChild(charDiv);
 

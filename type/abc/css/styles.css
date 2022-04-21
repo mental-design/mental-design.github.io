@@ -1,15 +1,12 @@
 @import '../fonts/abc.css';
 @import '../../bass/fonts/basicallyasansserif.css';
-@import '../../bam/fonts/basicallyamono.css';
+@import '../../bam/fonts/bam.css';
 
 html {
   text-rendering: optimizeLegibility;
 
   font-feature-settings: "kern" 1;
   font-feature-settings: "ss01" 0;
-  font-variant-numeric: normal;
-
-  -webkit-font-feature-settings: "kern";
 }
 
 body {
