@@ -48,9 +48,10 @@
       "sizeIndex": 10,
       "alignIndex": 0,
       "letterSpacingIndex": 0,
-      "lineHeightIndex": 30,
+      "lineHeightIndex": 50,
       "showControl": 0,
       "smallScreen": {
+        "weightIndex": 3,
         "sizeIndex": 5
       }
     },

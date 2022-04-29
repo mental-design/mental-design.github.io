@@ -32,11 +32,11 @@
   },
   {
     "settings": {
-      "weightIndex": 3,
-      "sizeIndex": 12,
+      "weightIndex": 2,
+      "sizeIndex": 10,
       "alignIndex": 0,
       "letterSpacingIndex": 10,
-      "lineHeightIndex": 30,
+      "lineHeightIndex": 40,
       "showControl": 0,
       "smallScreen": {
         "sizeIndex": 8,
@@ -47,7 +47,7 @@
   },
   {
     "settings": {
-      "weightIndex": 2,
+      "weightIndex": 3,
       "sizeIndex": 20,
       "alignIndex": 0,
       "letterSpacingIndex": 7,
@@ -57,7 +57,7 @@
         "sizeIndex": 15
       }
     },
-    "text": "Beauty in Geometry<br>Designed by Numbers<br>Keeping It Simple<br><span style='color:#999'>> catchphrase goes here <</span><br><span style='font-weight:600'>Steal This Font!*</span>"
+    "text": "Beauty in Geometry<br>Designed by Numbers<br>Keeping It Simple<br><span style='font-weight:300;color:#999'>> catchphrase goes here <</span><br><span style='font-weight:600'>Steal This Font!*</span>"
   },
   {
     "settings": {

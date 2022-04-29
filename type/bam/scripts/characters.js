@@ -1,11 +1,11 @@
 var CharacterSection = (function() {
 
   // main init method
-  function init(div) {
-
+  function init(div, unicodeURL) {
+    // var unicodeURL = 'models/test_unicode.json';
     fetchData(function(data){
       initializeCharactersDiv(div, data, getSettings());
-    });
+    }, unicodeURL);
   }
 
   // Control info
@@ -35,6 +35,8 @@ var CharacterSection = (function() {
       return parseInt(e).toString(16);
     });
     let unicodeMap = data["unicodeMap"];
+
+    div.classList.add("ss00");
 
     // Add darkmode button
     var darkButton = document.createElement('div');
@@ -95,7 +97,7 @@ var CharacterSection = (function() {
   function initializeCategoryDiv(div, category, glyphList) {
     let categoryName = category["category"];
     let range = category["range"];
-    var styleset = ("styleset" in category) ? category["styleset"] : 0;
+    var feature = ("feature" in category) ? category["feature"] : undefined;
 
     div.classList.add("char-category");
 
@@ -114,20 +116,20 @@ var CharacterSection = (function() {
       let char = charList[idx];
       if (glyphList.includes(char)) {
         var charDiv = document.createElement('div');
-        initializeCharDiv(charDiv, charList[idx], styleset);
+        initializeCharDiv(charDiv, charList[idx], feature);
         charListDiv.appendChild(charDiv);
       }
     }
     div.appendChild(charListDiv);
   }
 
-  function initializeCharDiv(div, char, styleset) {
+  function initializeCharDiv(div, char, feature) {
     div.classList.add("char-cell");
 
     var charDiv = document.createElement('div');
     charDiv.classList.add("char-div");
     charDiv.classList.add('sample-font');
-    charDiv.classList.add('ss0' + styleset);
+    charDiv.classList.add(feature);
     charDiv.innerHTML = "&#x" + char;
     div.appendChild(charDiv);
 
@@ -230,9 +232,8 @@ var CharacterSection = (function() {
 
   /* =============== data fetch methods =============== */
 
-  function fetchData(callback) {
+  function fetchData(callback, unicodeURL) {
     // file containing the unicode characters to show
-    var unicodeURL = 'models/unicode.json';
     var unicodeRequest = fetch(unicodeURL)
       .then(function(response) { 
          return response.json()
