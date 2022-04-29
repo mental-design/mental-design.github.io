@@ -1,5 +1,5 @@
-@import '../bam/fonts/basicallyamono.css';
-@import '../bass/fonts/basicallyasansserif.css';
+@import '../bam/fonts/bam.css';
+@import '../bass/fonts/bass.css';
 @import '../abc/fonts/abc.css';
 
 /* max-aspect-ratio changes layout */
