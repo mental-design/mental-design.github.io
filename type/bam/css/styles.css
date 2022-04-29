@@ -1,5 +1,5 @@
-@import '../fonts/basicallyamono.css';
-@import '../../bass/fonts/basicallyasansserif.css';
+@import '../fonts/bam.css';
+@import '../../bass/fonts/bass.css';
 html {
 }
 
@@ -185,7 +185,7 @@ a:link {
 }
 
 .nav-bar {
-  z-index: 1000 !important;
+  z-index: 10000000001 !important;
 }
 
 .nav-spacer {
