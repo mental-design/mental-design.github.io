@@ -1,6 +1,7 @@
 @import '../fonts/bam.css';
 @import '../../bass/fonts/bass.css';
 html {
+  text-rendering: optimizeLegibility;
 }
 
 body {

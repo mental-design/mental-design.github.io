@@ -2,7 +2,6 @@ var CharacterSection = (function() {
 
   // main init method
   function init(div, unicodeURL) {
-    // var unicodeURL = 'models/test_unicode.json';
     fetchData(function(data){
       initializeCharactersDiv(div, data, getSettings());
     }, unicodeURL);
