@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'ChamferedBeveledAngled';
+  src:  url('ChamferedBeveledAngled-Full.woff2') format('woff2');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'ChamferedBeveledAngled';
+  src:  url('ChamferedBeveledAngled-Regular.woff2') format('woff2');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'ChamferedBeveledAngled';
+  src:  url('ChamferedBeveledAngled-Fit.woff2') format('woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'ChamferedBeveledAngled';
+  src:  url('ChamferedBeveledAngled-Lean.woff2') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'ChamferedBeveledAngled';
+  src:  url('ChamferedBeveledAngled-Narrow.woff2') format('woff2');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'ChamferedBeveledAngled';
+  src:  url('ChamferedBeveledAngled-Thin.woff2') format('woff2');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'ChamferedBeveledAngled';
+  src:  url('ChamferedBeveledAngled-Skinny.woff2') format('woff2');
+  font-weight: 100;
+}

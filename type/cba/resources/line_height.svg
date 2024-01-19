@@ -1,0 +1,41 @@
+<svg version="1.1"
+     xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 80 90">
+  <style>
+    .letter {
+      fill: #1E6FBF;
+    }
+    .arrow {
+      fill: none;
+      stroke: #1E6FBF;
+      stroke-width: 6;
+      stroke-linejoin: round;
+      stroke-linecap: round;
+    }
+  </style>
+
+  <!-- Draw bottom A -->
+  <polygon points="0,90 8.8,90 26.4,46 17.6,46" class="letter" />
+  <polygon points="35.2,90 44,90 26.4,46 17.6,46" class="letter" />
+  <polygon points="8.8,80.1 35.2,80.1 35.2,72.4 8.8,72.4" class="letter" />
+
+  <!-- Draw top A -->
+  <polygon points="0,45 8.8,45 26.4,1 17.6,1" class="letter" />
+  <polygon points="35.2,45 44,45 26.4,1 17.6,1" class="letter" />
+  <polygon points="8.8,35.1 35.2,35.1 35.2,27.4 8.8,27.4" class="letter" />
+
+  <!-- Draw arrow -->
+  <line x1="65" y1="85" x2="65" y2="50" class="arrow" />
+  <polyline points="55,72 65,87 75,72" class="arrow" />
+  <polyline points="55,60 65,45 75,60" class="arrow" />
+</svg>
+
+ 
+
+
+
+ 
+
+ 
+
+
