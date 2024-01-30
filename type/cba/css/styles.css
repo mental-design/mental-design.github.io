@@ -606,6 +606,11 @@ footer {
   margin-bottom: 0px !important;
 }
 
+#dots {
+  padding: 10px;
+  width: 400px;
+}
+
 #mixing {
   text-align: center;
   font-weight: 700;
@@ -613,13 +618,31 @@ footer {
 }
 
 #a-weights {
-  font-size: 40pt;
+  font-size: 48pt;
   font-weight: 700;
   text-align: center;
   margin-top: -24px;
 }
 
-#wave {
-  margin: 0 auto;
+@media (max-width:680px) {
+  #dots {
+    padding: 5px;
+    width: 350px;
+  }
+
+  #a-weights {
+    font-size: 44pt;
+  }
+}
+
+@media (max-width:480px) {
+  #dots {
+    padding: 5px;
+    width: 350px;
+  }
+
+  #a-weights {
+    font-size: 40pt;
+  }
 }
 

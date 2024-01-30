@@ -15,11 +15,13 @@ Because CBA uses the same drawing code as ABC, it has, for the most part, the sa
 
 Each typeface codebase/system defines a design space. At Mental Design, we not only write our own code to create typefaces, we have a keen interest in using these systems to try different things and experiment. We have previously done this by taking the monospace code of <a href="../bam/">Basically A Mono</a> and extended it to work with varied glyph widths to create <a href="../bass/">Basically A Sans Serif</a>.
 
-In the case of ABC, each glyph was translated to an array of numbers (encodings), that were decoded using a map. (See the Notes section of ABC for details.) Changing the decoder map would create different glyphs and in turn define a new typeface. By replacing the circular components <img src="resources/quad_abc.svg" class="quad"></img> in the decoder map with angular components <img src="resources/quad_cba.svg" class="quad"></img>, we could make a new angular typeface, which is what we did to create CBA.
-
 <div id="image-player"></div>
 
-One of the more interesting decisions to make was the location of the cut. The first attempt was naturally to position the cut where the quarters would create a perfect octogon. However, this made the corners look bulky and unnatural. In the end, we found that positioning the angled cut at the golden ratio created a comfortable balance.
+In the case of ABC, each glyph was translated to an array of numbers (encodings), that were decoded using a map. (See the Notes section of ABC for details.) Changing the decoder map would create different glyphs and in turn define a new typeface. By replacing the circular components <img src="resources/quad_abc.svg" class="quad"></img> in the decoder map with angular components <img src="resources/quad_cba.svg" class="quad"></img>, we could make a new angular typeface, which is what we did to create CBA.
+
+<img id="dots" src="resources/images/five_dots.png"/>
+
+One of the more interesting decisions to make was the location of the cut. The first attempt was naturally to position the cut where a circle would become an equilateral octagon. However, this made the corners look bulky and unnatural. In the end, we found that positioning the angled cut at the golden ratio created a comfortable balance.
 
 From there, adjustments were made to fix details that did not translate well from round to angular. Also changes were made to make the typeface fit the cut, machined look of CBA. These changes include replacing circle dots with squares and swapping circles in letters like c, a with angled quarters.
 
