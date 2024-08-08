@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<head>
+  <title>Outline Cutout Details</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, viewport-fit=cover">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="resources/favicon/logo32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="resources/favicon/logo228.png" sizes="228x228">
+  <link rel="shortcut icon" sizes="196x196" href="resources/favicon/logo196.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="resources/favicon/logo180.png">
+  <!-- Styles -->
+  <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/w3.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/image-player.css">
+  <link rel="stylesheet" href="css/details.css">
+  <link rel="stylesheet" href="css/cats.css">
+</head>
+
+<body onload="initialize()">
+
+<!-- Navbar -->
+<div id="top-bar" class="w3-top nav-bar sample-font nav-shadow">
+  <div class="w3-black">
+    <!--Small header-->
+    <div class="w3-bar w3-content w3-hide-medium w3-hide-large w3-hover-opacity mtd mobile-padding">
+        <a href="../"><span class="mental">mental</span><span class="design">design</span></a>
+    </div>
+    <!--Medium/Large header-->
+    <div class="w3-hide-small w3-hover-opacity mtd mtd-wide">
+        <a href="../"><span class="mental">mental</span><span class="design">design</span></a>
+    </div>
+  </div>
+  <!-- Navigation -->
+  <div class="ocd-grey nav-wrapper">
+    <div class="w3-bar ocd-grey w3-content w3-center">
+      <a class="w3-bar-item w3-hide-medium w3-hide-large mobile-left nav-item menu-item" href="javascript:void(0)" onclick="toggleMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <div class="w3-bar-item w3-hide-medium w3-hide-large w3-hover-opacity nav-item nav-center">
+        <a href="#" class="title-item"onclick="hideMenu()">Outline Cutout Detail</a>
+      </div>
+      <div class="w3-bar-item w3-hide-small w3-hide-medium nav-spacer"></div>
+      <a href="#" class="w3-bar-item w3-hide-small w3-padding-large nav-item ocd-blue ocd-hover-red title-item" onclick="hideMenu()">OCD</a>
+      <a href="#overview"   class="w3-bar-item w3-hide-small nav-item w3-hover-opacity">Text</a>
+      <a href="#notes"      class="w3-bar-item w3-hide-small nav-item w3-hover-opacity">Notes</a>
+      <a href="#characters" class="w3-bar-item w3-hide-small nav-item w3-hover-opacity">Characters</a>
+      <a href="#donate"   class="w3-bar-item w3-hide-small nav-item w3-hover-opacity">Donate</a>
+      <div class="w3-bar-item w3-hide-small w3-hide-medium w3-right nav-spacer"></div>
+      <div class="w3-bar-item w3-hide-small w3-hide-large w3-right download-spacer"></div>
+      <div class="w3-bar-item w3-hide-small w3-right download-btn">
+        <a href="downloads/ocd-vers1_000.zip">Download</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="mobileNav" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top nav-bar nav-shadow sample-font">
+  <a href="#overview"   class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Text</a>
+  <a href="#notes"      class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Notes</a>
+  <a href="#characters" class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Characters</a>
+  <a href="downloads/ocd-vers1_000.zip" class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Download</a>
+  <a href="#donate" class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Donate</a>
+</div>
+
+<!-- Page content -->
+<div id="content" class="w3-content content">
+
+  <!-- The Title Section -->
+  <div class="ocd-blue">
+    <div class="w3-container w3-content w3-center w3-padding-64 section">
+      <h1 class="w3-wide sample-font title"><span class="outline">Outline</span> <span class="cutout">Cutout</span> <span class="detail">Detail</span></h1>
+      <p class="w3-opacity sample-font subtitle">A precisely cut and crafted geometric sans serif typeface.</p>
+    </div>
+  </div>
+
+  <!-- The Overview Section -->
+  <div id="overview" class="section-wrapper section-light-grey">
+    <div id="samples" class="w3-display-container w3-content w3-padding-32 section dark-section"></div>
+  </div>
+
+  <div class="w3-white">
+    <!-- The Notes Section -->
+    <div id="notes" class="section-wrapper">
+      <div class="w3-display-container w3-content section padding-top-32 notes" id="description"></div>
+    </div>
+
+    <!-- Donation -->
+    <div id="donate" class="section-wrapper">
+      <div class="w3-display-container w3-content section padding-bottom-32 notes">
+        <h3>DONATE</h3>
+        <p>If you find the typeface useful and would like to show support, please donate. As an independent designer your support means a lot.</p>
+        <!-- KoFi Button -->
+        <a href='https://ko-fi.com/U7U52ZM5J' target='_blank'>
+          <img class="donate-btn" src='resources/kofi.png' border='0' alt='Buy Me a Coffee at ko-fi.com' id="kofi"/>
+        </a>
+        <!-- Paypal Donate Button -->
+        <form action="https://www.paypal.com/donate" method="post" target="_top" id="paypal-form">
+          <input type="hidden" name="cmd" value="_donations" />
+          <input type="hidden" name="business" value="N8P9ZPYYQHVKS" />
+          <input type="hidden" name="currency_code" value="USD" />
+          <input type="image" src="resources/paypal.png" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" class="donate-btn " id="paypal"/>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Characters Section -->
+  <div id="characters" class="section-wrapper section-light-grey">
+    <div class="w3-display-container w3-content w3-padding-32 section dark-section" id="charmap">
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Cats -->
+<div id="characters" class="section-wrapper section-light-grey">
+  <div class="w3-display-container w3-content section" id="cats">
+    <img src="resources/cats_moon_day.png" class="fioneo" id="cats-day" title="Meow"/>
+    <img src="resources/cats_moon_night.png" class="fioneo" id="cats-night" title="Meow" hidden/>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-center w3-black w3-xlarge">
+  <div class="social">
+    <a href="mailto:type@mentallydesigned.com" class="mail"><i class="fa fa-envelope-o w3-hover-opacity"></i></a>
+    <a href="https://incre.mentallydesigned.com" class="blog"><i class="fa fa-pencil-square-o w3-hover-opacity"></i></a>
+    <a href="https://github.com/mental-design/outline-cutout-detail"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/mentallydesigned/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  </div>
+  <p class="w3-medium w3-hover-opacity sample-font">
+    <span class="copyright">©</span><a href="../" class="footer-logo"><span class="mental">mental</span><span class="design">design</span></a>
+  </p>
+</footer>
+
+<!-- Scripts -->
+<script src="lib/marked-1.2.7/marked.min.js"></script>
+<script src="scripts/sample-slider.js"></script>
+<script src="scripts/sample-control.js"></script>
+<script src="scripts/sample-line.js"></script>
+<script src="scripts/sample.js"></script>
+<script src="scripts/notes.js"></script>
+<script src="scripts/image-player.js"></script>
+<script src="scripts/characters.js"></script>
+<script src="scripts/w3.js"></script>
+<script>
+  function initialize(){
+    adjustToNavbar()
+
+    // The Overview Section
+    var sampleUrl = "models/sample_content.json"
+    var sampleDiv = document.getElementById('samples')
+    SampleSection.init(sampleDiv, sampleUrl)
+
+    // The Notes Section
+    var notesDiv = document.getElementById('description')
+    var notesUrl = 'models/notes_content.md'
+    NotesSection.init(notesDiv, notesUrl, function(){
+      // Add image player for S design process
+      var sProcDiv = document.getElementById('s-process')
+      if (sProcDiv) {
+        var imageList = [
+          "resources/images/thb/s_process_1.png",
+          "resources/images/thb/s_process_2.png",
+          "resources/images/thb/s_process_3.png"
+        ]
+        var captionList = [
+          "The initial shape decomposition for <span class='ocd'>S</span>.",
+          "Finding the two points that smoothly connect two quarter ellipses. The solution can be obtained numerically using the last two equations. (<a href='resources/images/s_process_2.png'>Enlarge</a>)",
+          "The actual shapes used to form <span class='ocd'>S</span> after parameter tuning."
+        ]
+
+        ImagePlayer.init(sProcDiv, imageList, captionList, 1000, true)
+      }
+
+      // Add image player for specification glyphs
+      var specDiv = document.getElementById('spec-glyphs')
+      if (specDiv) {
+        var imageList = [
+          "resources/images/thb/spec_euro.png",
+          "resources/images/thb/spec_turk_lira.png",
+          "resources/images/thb/spec_rupee.png",
+          "resources/images/thb/infinity.png"
+        ]
+        var captionList = [
+          "<span class='fig-marker'>Top Left</span>: The official specification. (<a href='https://european-union.europa.eu/institutions-law-budget/euro/design_en'>Source</a>) <span class='fig-marker'>Top Right</span>: The shapes used to form the glyph <span class='ocd'>€</span>.",
+          "<span class='fig-marker'>Top Left</span>: The official specification. (<a href='https://www.tcmb.gov.tr/wps/wcm/connect/110f1302-72ac-49e9-a332-44261d58515c/TLSimge_teknik-download.jpg?MOD=AJPERES&CVID=m5jWW06'>Source</a>) <span class='fig-marker'>Top Right</span>: The shapes used to form the glyph <span class='ocd'>₺</span>.",
+          "<span class='fig-marker'>Top Left</span>: The official specification. (<a href='https://www.idc.iitb.ac.in/events/Indian_Rupee_Symbol.pdf'>Source</a>) <span class='fig-marker'>Top Right</span>: The shapes used to form the glyph <span class='ocd'>₹</span> with <span class='ocd'>R</span> in red for comparison.",
+          "<span class='fig-marker'>Top Left</span>: Three <a href='https://en.wikipedia.org/wiki/Cassini_oval'>Cassini Ovals</a> with the Lemniscate of Bernoulli in red. <span class='fig-marker'>Top Right</span>: Decomposition sketch for the infinity symbol (<span class='ocd'>∞</span>)."
+        ]
+
+        ImagePlayer.init(specDiv, imageList, captionList, 1000, true)
+      }
+
+      // Add image player for curvature adjustments
+      var c2Div = document.getElementById('c2-adjust')
+      if (c2Div) {
+        var imageList = [
+          "resources/images/thb/c2_s_compare.png",
+          "resources/images/thb/c2_s_compare_1.png"
+        ]
+        var captionList = [
+          "Comparison of glyph <span class='ocd'>s</span> before (Left) and after (Right) curvature adjustments with curvatures visualized. (<a href='resources/images/c2_s_compare.png'>Enlarge</a>)",
+          "Comparison of glyph <span class='ocd'>s</span> before (Left) and after (Right) curvature adjustments without annotation. (<a href='resources/images/c2_s_compare.png'>Enlarge</a>)"
+        ]
+
+        ImagePlayer.init(c2Div, imageList, captionList, 1000, true)
+      }
+    })
+    
+    // The Characters Section
+    var unicodeURL = "models/char_map.json"
+    var characterDiv = document.getElementById('charmap')
+    CharacterSection.init(characterDiv, unicodeURL, null,
+    function(isDark){
+        document.getElementById('cats-day').hidden = isDark;
+        document.getElementById('cats-night').hidden = !isDark;
+    })
+
+    // Cats
+    document.getElementById('cats-day').onclick = function(){
+      CharacterSection.setDarkMode(false)
+    }
+    document.getElementById('cats-night').onclick = function(){
+      CharacterSection.setDarkMode(true)
+    }
+  }
+
+  function showDetails() {
+    var isHidden = document.getElementById("details").hidden
+    if (isHidden) {  // show
+      document.getElementById("details-icon").classList.remove("fa-plus-circle")
+      document.getElementById("details-icon").classList.add("fa-minus-circle")
+    }
+    else {  // hide
+      document.getElementById("details-icon").classList.remove("fa-minus-circle")
+      document.getElementById("details-icon").classList.add("fa-plus-circle")
+
+    }
+    document.getElementById("details").hidden = !isHidden
+  }
+</script>
+
+</body>
+</html>

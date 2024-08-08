@@ -2,6 +2,7 @@
 @import '../bass/fonts/bass.css';
 @import '../abc/fonts/abc.css';
 @import '../cba/fonts/cba.css';
+@import '../ocd/fonts/ocd.css';
 
 /* max-aspect-ratio changes layout */
 /* max-width changes font sizes */
@@ -20,7 +21,10 @@
 }
 .cba {
   font-family: 'ChamferedBeveledAngled' !important;
-  font-weight: 700;
+  font-weight: 500;
+}
+.ocd {
+  font-family: 'OutlineCutoutDetail' !important;
 }
 
 a:link {
@@ -123,6 +127,14 @@ a:link {
   line-height: 0.9;
 }
 
+#fonts .cba {
+  font-size: 31pt;
+}
+
+#fonts .ocd {
+  font-size: 33.25pt;
+}
+
 @media (min-aspect-ratio: 4/3) {  /* Wide Screen */
   @media (max-width: 800px) {
     #fonts {
@@ -134,15 +146,38 @@ a:link {
     }
   }
 
-  @media (max-width: 650px) {
+  @media (max-height: 650px) {
     #fonts {
-      width: 350px;
-      font-size: 24pt;
+      width: 400px;
+      font-size: 28pt;
+    }
+
+    #fonts .cba {
+      font-size: 27.25pt;
+    }
+
+    #fonts .ocd {
+      font-size: 29.25pt;
+    }
+  }
+
+  @media (max-height: 300px) {
+    #fonts {
+      width: 300px;
+      font-size: 22pt;
+    }
+
+    #fonts .cba {
+      font-size: 21.5pt;
+    }
+
+    #fonts .ocd {
+      font-size: 23pt;
     }
   }
 }
 
-@media (max-aspect-ratio: 4/3) {   /* Mobile */
+@media (max-aspect-ratio: 4/3) {  /* Mobile */
   #fonts {
     max-width: 90%;
   }
@@ -152,12 +187,28 @@ a:link {
       width: 350px;
       font-size: 24pt;
     }
+
+    #fonts .cba {
+      font-size: 23.5pt;
+    }
+
+    #fonts .ocd {
+      font-size: 25.25pt;
+    }
   }
 
-  @media (max-width: 380px) {
+  @media (max-width: 400px) {
     #fonts {
       width: 300px;
       font-size: 20pt;
+    }
+
+    #fonts .cba {
+      font-size: 19.5pt;
+    }
+
+    #fonts .ocd {
+      font-size: 21pt;
     }
   }
 }
@@ -179,26 +230,29 @@ a:link {
 }
 
 #about h2 {
-  font-family: 'BasicallyASansSerif';
+  font-family: 'OutlineCutoutDetail';
+  font-feature-settings: "ss02";
+  letter-spacing: 0.01em;
   font-weight: 300;
   font-size: 15pt;
   line-height: 1.25;
   color: #7e7e7e;
 
-  margin-top: 0px;
+  margin-top: 7px;
 }
 
 #about p {
-  font-family: 'BasicallyASansSerif';
-  font-weight: 300;
-  font-size: 15pt;
+  font-family: 'OutlineCutoutDetail';
+  font-feature-settings: "ss01";
+  font-weight: 200;
+  font-size: 14pt;
   line-height: 1.3;
-  color: #d5d5d5;
+  color: #e7e7e7;
 
   margin-top: 10px;
 }
 
-@media (min-aspect-ratio: 4/3) { 
+@media (min-aspect-ratio: 4/3) {  /* Wide Screen */
   @media (max-width: 800px) {
     #about {
       width: 66%;
@@ -233,7 +287,7 @@ a:link {
   }
 }
 
-@media (max-aspect-ratio: 4/3) {  
+@media (max-aspect-ratio: 4/3) {  /* Mobile */
   #about {
     padding-top: 106px;
     padding-left: 24px;
@@ -242,18 +296,26 @@ a:link {
     width: 100%;
   }
 
-  @media (max-width: 330px) {
-  #about {
-    padding-top: 103px;
+  #about h1 {
+    font-size: 20pt;
   }
 
+  #about h2, #about p {
+      font-weight: 300;
+      font-size: 14pt;
+  }
+
+  @media (max-width: 330px) {
+    #about {
+      padding-top: 103px;
+    }
+
     #about h1 {
-      font-size: 20pt;
+      font-size: 18pt;
     }
 
     #about h2, #about p {
       font-size: 12pt;
-      font-weight: 400;
     }
   }
 }
@@ -271,7 +333,7 @@ a:link {
   vertical-align: -0.1em;
 }
 
-@media (min-aspect-ratio: 4/3) { 
+@media (min-aspect-ratio: 4/3) {  /* Wide Screen */
   @media (max-width: 900px) {
     #contact {
       position: absolute;
@@ -295,9 +357,16 @@ a:link {
       font-size: 16pt;
     }
   }
+
+  @media (max-height: 400px) {
+    #contact {
+      width: 360px;
+      font-size: 18pt;
+    }
+  }
 }
 
-@media (max-aspect-ratio: 4/3) {  
+@media (max-aspect-ratio: 4/3) {  /* Mobile */
   #contact {
     max-width: 90%;
   }
