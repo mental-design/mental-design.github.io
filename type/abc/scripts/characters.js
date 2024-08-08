@@ -1,11 +1,18 @@
 var CharacterSection = (function() {
 
+  var _charDiv = null
+  var _onDarkChange = null
+
   // main init method
-  function init(div) {
+  function init(div, unicodeURL, callback=null, onDarkChange=null) {
+    _charDiv = div.parentElement
+    _onDarkChange = onDarkChange
 
     fetchData(function(data){
-      initializeCharactersDiv(div, data, getSettings());
-    });
+      initializeCharactersDiv(div, data, getSettings(), onDarkChange);
+      if (callback)
+        callback()
+    }, unicodeURL);
   }
 
   // Control info
@@ -21,34 +28,54 @@ var CharacterSection = (function() {
     sizeIndex: 15
   };
   var smallScreenDefaults = {
-    weightIndex: 6,
+    weightIndex: 3,
     sizeIndex: 5
   };
 
   /* =============== initialize methods ================ */
 
-  function initializeCharactersDiv(div, data, settings) {
-    let glyphList = Object.values(data["glyphMap"]).map(function(e){
-      return parseInt(e).toString(16);
-    });
-    let unicodeMap = data["unicodeMap"];
+  function initializeDarkModeButton(darkButton, onDarkChange) {
+    darkButton.className = "w3-display-topright w3-xlarge";
+    darkButton.setAttribute('id', 'dark-mode');
+
+    darkButton.onclick = function() {
+      var charDiv = _charDiv
+      var darkClass = "char-dark"
+      var isDark = charDiv.classList.contains(darkClass)
+      
+      setDarkMode(isDark)
+    }
+
+    var icon = document.createElement('i')
+    icon.className = "fa fa-adjust"
+    icon.id = "dark-icon"
+    darkButton.appendChild(icon)
+  }
+
+  function initializeCharactersDiv(div, data, settings, onDarkChange) {
+    div.classList.add("ss00");
 
     // Add darkmode button
     var darkButton = document.createElement('div');
-    initializeDarkModeButton(darkButton);
+    initializeDarkModeButton(darkButton, onDarkChange);
     div.appendChild(darkButton);
 
     // Create Controller
     var controlDiv = document.createElement('div');
     initializeControls(controlDiv, controlInfo, settings);
     div.appendChild(controlDiv);
+
+    let glyphList = Object.values(data["glyphMap"]).map(function(e){
+      return parseInt(e).toString(16);
+    });
+    let unicodeMap = data["unicodeMap"];
     
-    // Add characters per type
+    // Add category div
     for (const catIdx in unicodeMap) {
-      var charTypeDiv = document.createElement('div');
-      var category = unicodeMap[catIdx];
-      initializeCategoryDiv(charTypeDiv, category, glyphList);
-      div.appendChild(charTypeDiv);
+      var categoryDiv = document.createElement('div');
+      var catData = unicodeMap[catIdx];
+      initializeCategoryDiv(categoryDiv, catData, glyphList);
+      div.appendChild(categoryDiv);
     }
 
     // Set defaults
@@ -58,43 +85,22 @@ var CharacterSection = (function() {
     updateFontSize(size);
   }
 
-  function initializeDarkModeButton(darkButton) {
-    darkButton.className = "w3-display-topright w3-xlarge";
-    darkButton.setAttribute('id', 'dark-mode');
-
-    darkButton.onclick = function() {
-      var charDiv = this.parentElement.parentElement;
-      var cellBgColor = "#fefefe";
-      var darkClass = "w3-black"
-      if (charDiv.classList.contains(darkClass)) {
-        charDiv.classList.remove(darkClass);
-      }
-      else {
-        charDiv.classList.add(darkClass);
-        cellBgColor = "#0c0c0c";
-      }
-
-      let charCells = document.getElementsByClassName("char-cell");
-      for (const idx in charCells) {
-        var cell = charCells[idx];
-        if (cell.style) {
-          cell.style.background = cellBgColor;
-        }
+  function checkFolding(subsData) {
+    var isFolding = false
+    for (const subIdx in subsData) {
+      var subData = subsData[subIdx];
+      if (Object.keys(subData).includes("foldable")) {
+        isFolding = true
       }
     }
-
-    var icon = document.createElement('i');
-    icon.className = "fa fa-adjust";
-    icon.id = "dark-icon";
-    darkButton.appendChild(icon);
+    return isFolding
   }
 
-  function initializeCategoryDiv(div, category, glyphList) {
-    let categoryName = category["category"];
-    let range = category["range"];
-    var feature = ("feature" in category) ? category["feature"] : undefined;
-
+  function initializeCategoryDiv(div, catData, glyphList) {
+    let categoryName = catData["title"];
     div.classList.add("char-category");
+
+    let subsData = catData["subs"]
 
     // Add title
     if (categoryName.length > 0) {
@@ -104,34 +110,69 @@ var CharacterSection = (function() {
       div.appendChild(titleDiv);
     }
 
+    // Check for folding
+    if (checkFolding(subsData)) { // Add more button
+      var moreBtn = document.createElement('div')
+      moreBtn.classList.add("char-expand-btn")
+      moreBtn.innerHTML = "More +"
+      moreBtn.onclick = function () {
+        let expanded = expandCharDiv(div)
+        if (expanded) 
+          moreBtn.innerHTML = "Less -"
+        else
+          moreBtn.innerHTML = "More +"
+      }
+      titleDiv.appendChild(moreBtn)
+    }
+
+    // Add sub divs
+    for (const subIdx in subsData) {
+      var subDiv = document.createElement('div');
+      var subData = subsData[subIdx];
+      initializeSubCategoryDiv(subDiv, subData, glyphList);
+      div.appendChild(subDiv);
+    }
+  }
+
+  function initializeSubCategoryDiv(div, subData, glyphList) {
+    let subName = subData["title"];
+
+    div.classList.add("char-sub-category");
+
     // Add characters
+    range = subData["range"]
     var charListDiv = document.createElement('div');
     var charList = translateCodeRange(range);
     for (const idx in charList) {
       let char = charList[idx];
       if (glyphList.includes(char)) {
         var charDiv = document.createElement('div');
-        initializeCharDiv(charDiv, charList[idx], feature);
+        initializeCharDiv(charDiv, charList[idx]);
         charListDiv.appendChild(charDiv);
       }
     }
     div.appendChild(charListDiv);
+
+    let keys = Object.keys(subData)
+    if (keys.includes("foldable")) {
+      div.hidden = true
+      div.classList.add("foldable")
+    }
   }
 
-  function initializeCharDiv(div, char, feature) {
+  function initializeCharDiv(div, char) {
     div.classList.add("char-cell");
 
     var charDiv = document.createElement('div');
     charDiv.classList.add("char-div");
     charDiv.classList.add('sample-font');
-    charDiv.classList.add(feature);
     charDiv.innerHTML = "&#x" + char;
     div.appendChild(charDiv);
 
     var codeDiv = document.createElement('div');
     codeDiv.classList.add('mono-font');
     codeDiv.classList.add("char-code");
-    codeDiv.innerHTML = "0x" + char.toUpperCase();
+    codeDiv.innerHTML = "0x" + zeroFill(char, 4).toUpperCase();
     div.appendChild(codeDiv);
   }
 
@@ -191,8 +232,7 @@ var CharacterSection = (function() {
       charCode.hidden = true;
     }
     else {
-      charDiv.style.marginTop = "-10px";
-      charDiv.style.marginBottom = "2px";
+      charDiv.style.marginTop = "-6px";
       charDiv.style.height = chPx;
       charCode.hidden = false; 
     }
@@ -228,9 +268,8 @@ var CharacterSection = (function() {
 
   /* =============== data fetch methods =============== */
 
-  function fetchData(callback) {
+  function fetchData(callback, unicodeURL) {
     // file containing the unicode characters to show
-    var unicodeURL = 'models/unicode.json';
     var unicodeRequest = fetch(unicodeURL)
       .then(function(response) { 
          return response.json()
@@ -253,6 +292,18 @@ var CharacterSection = (function() {
   }
 
   /* =============== utility methods =============== */
+  function expandCharDiv(charDiv) {
+    var expanded = false
+    let childList = charDiv.children
+    for (var i = childList.length - 1; i >= 0; i--) {
+      let child = childList[i]
+      if(child.classList.contains("foldable")) {
+        child.hidden = !child.hidden
+        expanded = !child.hidden
+      }
+    }
+    return expanded
+  }
 
   function translateCodeRange(codeRange) {
     var charList = [];
@@ -276,7 +327,7 @@ var CharacterSection = (function() {
   function toWeightLabel(weight) {
     var weightIndex = controlInfo.weights.indexOf(weight);
     var weightName = controlInfo.weightNames[weightIndex];
-    return weightName; // + " " + weight;
+    return weightName;
   }
 
   function range(start, stop, count) {
@@ -294,10 +345,52 @@ var CharacterSection = (function() {
   function getSettings() {
     return (screen.width < 600) ? smallScreenDefaults : defaults;
   }
+
+  function zeroFill(char, n) {
+    let fillCount = n - char.length
+
+    if (fillCount > 0)
+      return "0".repeat(fillCount) + char
+    else
+      return char
+  }
+
+  /* =============== public methods =============== */
+
+  function setDarkMode(isDark) {
+    var cellBgColor = "#fefefe"
+    var darkClass = "char-dark"
+    var lightClass = "section-light-grey"
+    var charDiv = _charDiv
+    var onDarkChange = _onDarkChange
+
+    if (isDark) {  // light
+      charDiv.classList.remove(darkClass)
+      charDiv.classList.add(lightClass)
+    }
+    else {  // dark
+      charDiv.classList.remove(lightClass)
+      charDiv.classList.add(darkClass)
+      cellBgColor = "#161616"
+    }
+
+    let charCells = document.getElementsByClassName("char-cell")
+    for (const idx in charCells) {
+      var cell = charCells[idx]
+      if (cell.style) {
+        cell.style.background = cellBgColor
+      }
+    }
+
+    if (onDarkChange) {
+      onDarkChange(!isDark)
+    }
+  }
   
   /* =============== export public methods =============== */
 
   return {
-    init: init
+    init: init,
+    setDarkMode: setDarkMode
   };
 }());

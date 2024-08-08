@@ -509,38 +509,7 @@ h1 {
 }
 
 /* Characters */
-
-.char-category {
-  margin-bottom: 8px;
-}
-
-.char-title {
-  margin-top: 16px;
-  margin-bottom: 2px;
-  margin-left: 2px;
-
-  font-size: 16px;
-  font-weight: 400;
-  color: #5e5e5e;
-}
-
-.char-cell {
-  display: inline-block;
-  margin: 2px;
-  background: #fefefe;
-  
-  text-align: center;
-}
-
-.char-div {
-  display: inline-block;
-}
-
-.char-code {
-  font-size: 10px;
-  color: #999;
-  height: 10px;
-}
+/* moved to characters.css */
 
 /* Footer */
 

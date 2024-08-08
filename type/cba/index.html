@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/w3.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/characters.css">
   <link rel="stylesheet" href="css/image-player.css">
 </head>
 
@@ -173,8 +174,9 @@
     })
 
     // The Characters Section
+    var unicodeURL = "models/char_map.json"
     var characterDiv = document.getElementById('charmap')
-    CharacterSection.init(characterDiv)
+    CharacterSection.init(characterDiv, unicodeURL)
   }
 
   function showDetails() {
