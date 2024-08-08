@@ -41,6 +41,14 @@ a:link {
   font-size: 16px;
 }
 
+.notes thin {
+  font-weight: 100;
+}
+
+.notes b {
+  font-weight: 700;
+}
+
 .notes strong {
   font-weight: 500;
 }

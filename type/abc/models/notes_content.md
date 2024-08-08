@@ -1,4 +1,4 @@
-All Birds Combinations (ABC) is a modular display typeface with 7 levels of compressed weights. ABC is a reinterpretation of Josef Albersʼ Kombinations-Schrift, from which the name, All Birds Combinations, is also derived.
+<strong>All Birds Combinations (ABC)</strong> is a modular display typeface with <strong>7 levels of compressed weights</strong>. ABC is a reinterpretation of Josef Albersʼ Kombinations-Schrift, from which the name, All Birds Combinations, is also derived.
 Whereas Kombinations-Schrift is a typeface of the age of mass production, ABC was designed as a product of the information age.
 
 Each glyph in ABC is represented by an array of numbers (encodings) which is decoded using custom code to create the contours. This approach allows us to explore a design space defined by the decoder in which we could further refine the shape of each glyph. 

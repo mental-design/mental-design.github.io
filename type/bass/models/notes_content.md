@@ -1,4 +1,4 @@
-Basically A Sans Serif (BASS) is a monolinear geometric sans serif typeface designed for display use.
+<strong>Basically A Sans Serif (BASS)</strong> is a monolinear geometric sans serif typeface designed for display use. BASS comes in <strong>7 weights</strong> from <thin>THIN</thin> to <b>BOLD</b>.
 
 For BASS, we took the design guidelines and the drawing code of [Basically A Mono][2] (BAM) and applied it to a display sans serif. As a result BASS also has very precise geometry.
 While influenced by geometric sans serifs such as ITC Avant Garde Gothic and Futura, we designed BASS to have balance and proportions closer to typefaces like Gotham and Gilroy.

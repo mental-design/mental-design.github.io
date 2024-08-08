@@ -1,4 +1,4 @@
-Chamfered Beveled Angled (CBA) is a modular display typeface with 7 levels of compressed weights. CBA is a chamfered/beveled/angled version of <a href="../abc/">All Birds Combination</a> (ABC) — a programmatic reinterpretation of Josef Albersʼ Kombinations-Schrift.
+<strong>Chamfered Beveled Angled (CBA)</strong> is a modular display typeface with <strong>7 levels of compressed weights</strong>. CBA is a chamfered/beveled/angled version of <a href="../abc/">All Birds Combination</a> (ABC) — a programmatic reinterpretation of Josef Albersʼ Kombinations-Schrift.
 
 For CBA, we replaced the circular curves of ABC with an angular cut, giving the typeface a different look and feel.
 While at full width, the typeface looks chiseled and machined, this turns into a folded origami look at thinner weights.
