@@ -8,13 +8,29 @@ function adjustToNavbar() {
   contentDiv.style.marginTop = navBarHeight + "px";
 
   // adjust for navbar
-  window.addEventListener("hashchange", function(ev) { 
+  window.addEventListener("hashchange", function(ev) {
     var adjust = -navBarHeight;
     if (location.hash === "#donate") {
       adjust += -16;
     }
     scrollBy(0, adjust);
   });
+}
+
+function checkLabel() {
+  label = location.hash.slice(1);
+  element = document.getElementById(label);
+  if (element) {
+    element.scrollIntoView();
+
+    // Adjust for navbar
+    var navBarHeight = document.getElementById("top-bar").clientHeight;
+    var adjust = -navBarHeight;
+    if (location.hash === "#donate") {
+      adjust += -16;
+    }
+    scrollBy(0, adjust);
+  }
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button

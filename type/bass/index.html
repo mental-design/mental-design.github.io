@@ -41,7 +41,7 @@
       </div>
       <div class="w3-bar-item w3-hide-small w3-hide-medium nav-spacer"></div>
       <a href="#" class="w3-bar-item w3-hide-small w3-hover-green w3-padding-large nav-item bam-silver title-item" onclick="hideMenu()">BASS</a>
-      <a href="#overview"   class="w3-bar-item w3-hide-small nav-item w3-hover-opacity">Text</a>
+      <a href="#text"   class="w3-bar-item w3-hide-small nav-item w3-hover-opacity">Text</a>
       <a href="#notes"      class="w3-bar-item w3-hide-small nav-item w3-hover-opacity">Notes</a>
       <a href="#characters" class="w3-bar-item w3-hide-small nav-item w3-hover-opacity">Characters</a>
       <a href="#donate"   class="w3-bar-item w3-hide-small nav-item w3-hover-opacity">Donate</a>
@@ -56,7 +56,7 @@
 
 <!-- Navbar on small screens -->
 <div id="mobileNav" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top nav-bar nav-shadow sample-font">
-  <a href="#overview"   class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Text</a>
+  <a href="#text"   class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Text</a>
   <a href="#notes"      class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Notes</a>
   <a href="#characters" class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Characters</a>
   <a href="downloads/bass-vers1_103.zip" class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Download</a>
@@ -75,7 +75,7 @@
   </div>
 
   <!-- The Overview Section -->
-  <div id="overview" class="section-wrapper section-light-grey">
+  <div id="text" class="section-wrapper section-light-grey">
     <div id="samples" class="w3-display-container w3-content w3-padding-32 section dark-section"></div>
   </div>
 
@@ -145,17 +145,17 @@
     // The Overview Section
     var sampleUrl = "models/sample_content.json"
     var sampleDiv = document.getElementById('samples');
-    SampleSection.init(sampleDiv, sampleUrl);
+    SampleSection.init(sampleDiv, sampleUrl, checkLabel);
 
     // The Notes Section
     var notesDiv = document.getElementById('description');
     var notesUrl = 'models/notes_content.md';
-    NotesSection.init(notesDiv, notesUrl);
+    NotesSection.init(notesDiv, notesUrl, checkLabel);
     
     // The Characters Section
     var unicodeURL = "models/char_map.json"
     var characterDiv = document.getElementById('charmap')
-    CharacterSection.init(characterDiv, unicodeURL)
+    CharacterSection.init(characterDiv, unicodeURL, checkLabel)
   }
 </script>
 

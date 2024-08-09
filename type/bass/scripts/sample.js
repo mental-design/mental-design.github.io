@@ -1,9 +1,11 @@
 var SampleSection = (function() {
 
   // main init method
-  function init(div, url) {
+  function init(div, url, callback=null) {
     fetchData(url, function(content){
       initializeSampleArea(div, controlInfo, content);
+      if (callback)
+        callback()
     });
   }
 
