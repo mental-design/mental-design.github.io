@@ -28,6 +28,7 @@
   <link rel="stylesheet" href="lib/codemirror-5.51.0/codemirror.css">
   <link rel="stylesheet" href="css/w3.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/characters.css">
 </head>
 
 <body onload="initialize()" class="ss01">
@@ -188,9 +189,9 @@
     });
 
     // Characters Section
-    var unicodeURL = getCharacterUrl();
-    var characterDiv = document.getElementById('charmap');
-    CharacterSection.init(characterDiv, unicodeURL);
+    var unicodeURL = "models/char_map.json"
+    var characterDiv = document.getElementById('charmap')
+    CharacterSection.init(characterDiv, unicodeURL)
   }
 
   function getSampleUrl() {
