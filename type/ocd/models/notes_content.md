@@ -42,7 +42,7 @@ In practice, a type designer typically begins by sketching the glyphs, transferr
 
 We wanted to design a typeface directly using a process similar to punchcutting. The core idea was to form glyphs through a series of additive and subtractive steps using geometric primitives. This meant the first shape would become the <b>Outline</b>, then the counter would be <b>Cutout</b>, and if necessary <b>Details</b> would be added, like a cross bar in the case of <span class="ocd">A</span>.
 
-The thought of creating separate components for the outlines and contours occurred while working on <a href="../BAM">Basically A Mono</a> (BAM) and <a href="../BASS">Basically A Sans Serif</a> (BASS). Each glyph in BAM and BASS is constructed by assembling monolinear parts following a geometric stroke, much like fitting pipes together. This made it easy to create very geometric and monolinear glyphs, which is the core concept of the Basically A typeface family. The side effect of this approach is that the outlines and counters were determined by the implied stroke, making it very difficult to adjust the counters independently from the outlines. 
+The thought of creating separate components for the outlines and contours occurred while working on <a href="../bam">Basically A Mono</a> (BAM) and <a href="../bass">Basically A Sans Serif</a> (BASS). Each glyph in BAM and BASS is constructed by assembling monolinear parts following a geometric stroke, much like fitting pipes together. This made it easy to create very geometric and monolinear glyphs, which is the core concept of the Basically A typeface family. The side effect of this approach is that the outlines and counters were determined by the implied stroke, making it very difficult to adjust the counters independently from the outlines. 
 An additive/subtractive approach would allow for independent control of the outlines and counters, adding a degree of freedom for adjustments. Furthermore, the relative movement between the outlines and counters would naturally create stroke modulations while keeping both parts geometric.
 
 <!-- Design Goals -->
@@ -106,4 +106,3 @@ More recent geometric sans serifs like Geograph, Mont Blanc Type, Programme, Cen
 Outline Cutout Detail is licensed under the [SIL Open Font License][1]. It is free for personal and commercial use. Send us an email (type@mentallydesigned.com) to share how you used the typeface. Have fun!
 
 [1]: downloads/License.txt
-[2]: ../bass/index.html
