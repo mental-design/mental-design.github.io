@@ -7,6 +7,7 @@
       "letterSpacingIndex": 50,
       "lineHeightIndex": 50,
       "showControl": 0,
+      "editable": 0,
       "smallScreen": {
         "weightIndex": 1,
         "sizeIndex": 21,
@@ -23,12 +24,13 @@
       "letterSpacingIndex": 12,
       "lineHeightIndex": 25,
       "showControl": 0,
+      "editable": 0,
       "smallScreen": {
         "weightIndex": 6,
         "sizeIndex": 15
       }
     },
-    "text": "NUMERICALLY CONSTRUCTED<br>SYSTEMATICALLY DESIGNED<br>PROGRESSIVELY TUNED<br>TYPE. ENGINEERED."
+    "text": "<br><span style='font-weight:500'>NUMERICALLY</span> CONSTRUCTED<br><span style='font-weight:500'>SYSTEMATICALLY</span> DESIGNED<br><span style='font-weight:500'>PROGRESSIVELY</span> TUNED<br>TYPE. <span style='font-weight:500'>ENGINEERED</span>.<br><br>"
   },
   {
     "settings": {
@@ -37,7 +39,8 @@
       "alignIndex": 0,
       "letterSpacingIndex": 10,
       "lineHeightIndex": 40,
-      "showControl": 0,
+      "showControl": 1,
+      "editable": 0,
       "smallScreen": {
         "sizeIndex": 8,
         "lineHeightIndex": 50
@@ -48,16 +51,17 @@
   {
     "settings": {
       "weightIndex": 3,
-      "sizeIndex": 20,
+      "sizeIndex": 22,
       "alignIndex": 0,
       "letterSpacingIndex": 7,
       "lineHeightIndex": 20,
       "showControl": 0,
+      "editable": 0,
       "smallScreen": {
         "sizeIndex": 15
       }
     },
-    "text": "Beauty in Geometry<br>Designed by Numbers<br>Keeping It Simple<br><span style='font-weight:300;color:#999'>> catchphrase goes here <</span><br><span style='font-weight:600'>Steal This Font!*</span>"
+    "text": "<br/>Beauty in Geometry<br>Designed by Numbers<br>Keeping It Simple<br><span style='font-weight:300;color:#999'>> catchphrase goes here <</span><br><span style='font-weight:600'>Steal This Font!*</span>"
   },
   {
     "settings": {
@@ -67,12 +71,13 @@
       "letterSpacingIndex": 12,
       "lineHeightIndex": 20,
       "showControl": 0,
+      "editable": 0,
       "smallScreen": {
         "weightIndex": 2,
         "sizeIndex": 8
       }
     },
-    "text": "*It's actually free. Free as in Beer, Freedom of Speech, and “Feel Free to Donate!” :-)<br><br>"
+    "text": "<br/>*It's actually free. Free as in Beer, Freedom of Speech, and “Feel Free to Donate!” :-)<br><br>"
   },
   {
     "settings": {
