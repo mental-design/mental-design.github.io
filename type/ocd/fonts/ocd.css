@@ -40,15 +40,3 @@
   font-weight: 700;
 }
 
-@font-face {
-  font-family: 'OutlineCutoutDetail';
-  src:  url('OutlineCutoutDetail-ExtraBold.woff2') format('woff2');
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: 'OutlineCutoutDetail';
-  src:  url('OutlineCutoutDetail-Thick.woff2') format('woff2');
-  font-weight: 900;
-}
-
