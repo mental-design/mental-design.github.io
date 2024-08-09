@@ -106,7 +106,7 @@ var SampleControl = (function() {
   function toWeightLabel(weight) {
     var weightIndex = controlInfo.weights.indexOf(weight);
     var weightName = controlInfo.weightNames[weightIndex];
-    return weightName;  // + " " + weight;
+    return weightName + " " + weight;
   }
 
   /* =============== handle event methods ================ */
