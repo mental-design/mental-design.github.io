@@ -8,6 +8,8 @@ Furthermore, we modified the decoder to systematically create compressed weights
 
 <div id="wave" class="abc"></div>
 
+Click the Details button below for more information about the typeface.
+
 <div id="details-wrapper">
 <div id="details-btn" onclick="showDetails()">
     <i id="details-icon" class="fa fa-plus-circle"> </i> Details

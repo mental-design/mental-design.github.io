@@ -5,7 +5,7 @@ The typeface was created with real geometry — each glyph is formed through a s
 OCD comes in <strong>7 weights</strong> with <strong>3 additional stylistic sets</strong> to fit your design needs. The stylistic sets are <span class="bam" style="font-weight:400">ss01</span>: a style with cut apexes (<span class="ocd ss01">Aa</span>), <span class="bam" style="font-weight:400">ss02</span>: a style with geometric alternatives (<span class="ocd ss02">Aa</span>), and <span class="bam" style="font-weight:400">ss03</span>: a style with geometric alternatives and cut apexes (<span class="ocd ss03">Aa</span>).
 Try them out by adjusting the <span class="ocd">Aa</span> slider in the section above.
 
-Click below for more details on how the typeface was made.
+Click the Details button below for more information on how the typeface was made.
 
 <div id="details-wrapper">
 <div id="details-btn" onclick="showDetails()">

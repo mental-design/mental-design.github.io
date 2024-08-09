@@ -5,6 +5,8 @@ While at full width, the typeface looks chiseled and machined, this turns into a
 
 Because CBA uses the same drawing code as ABC, it has, for the most part, the same dimensions as ABC and the two typefaces can be mixed without further adjustments.
 
+Click the Details button below for more information about the typeface.
+
 <div id="details-wrapper">
 <div id="details-btn" onclick="showDetails()">
     <i id="details-icon" class="fa fa-plus-circle"> </i> Details
