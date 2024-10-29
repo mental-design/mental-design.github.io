@@ -24,11 +24,11 @@ var CharacterSection = (function() {
 
   // Setup info
   var defaults = {
-    weightIndex: 3,
+    weightIndex: 5,
     sizeIndex: 15
   };
   var smallScreenDefaults = {
-    weightIndex: 3,
+    weightIndex: 5,
     sizeIndex: 5
   };
 

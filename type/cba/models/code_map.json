@@ -214,7 +214,6 @@
   "cedilla":      "0x00B8",
   "ogonek":       "0x02DB",
   "macron":       "0x00AF",
-  "A_with_diaeresis":   "0x00C4",
   "A_with_grave":       "0x00C0",
   "A_with_acute":       "0x00C1",
   "A_with_circumflex":  "0x00C2",

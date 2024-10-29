@@ -141,6 +141,24 @@
         ]
     },
     {
+        "title": "Components",
+        "subs": [
+        	{
+        		"title": "",
+		        "range": ["0xE000-0xE016"]
+		    }
+		]
+	},
+    {
+        "title": "Birds",
+        "subs": [
+        	{
+        		"title": "",
+		        "range": ["0x13140-0x13157"]
+		    }
+		]
+	},
+    {
         "title": "Latin Extended",
         "subs": [
         	{
