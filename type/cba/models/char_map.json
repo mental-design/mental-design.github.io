@@ -144,8 +144,13 @@
         "title": "Components",
         "subs": [
         	{
-        		"title": "",
-		        "range": ["0xE000-0xE016"]
+        		"title": "Original",
+		        "range": ["0xE000-0xE009"]
+		    },
+        	{
+        		"title": "Extended",
+        		"foldable": true,
+		        "range": ["0xE00A-0xE016"]
 		    }
 		]
 	},
@@ -153,8 +158,13 @@
         "title": "Birds",
         "subs": [
         	{
-        		"title": "",
-		        "range": ["0x13140-0x13157"]
+        		"title": "Open",
+		        "range": ["0x13140-0x13147"]
+		    },
+        	{
+        		"title": "Closed",
+        		"foldable": true,
+		        "range": ["0x13148-0x13157"]
 		    }
 		]
 	},
