@@ -114,9 +114,9 @@ a:link {
 
 /* Fonts div */
 #fonts {
-  width: 500px;
+  width: 425px;
 
-  font-size: 32pt;
+  font-size: 32.15pt;
   font-weight: 400;
   text-align: left;
   line-height: 1;
@@ -127,8 +127,16 @@ a:link {
   line-height: 0.9;
 }
 
+#fonts .bass {
+  font-size: 31.2pt;
+}
+
 #fonts .cba {
   font-size: 31pt;
+}
+
+#fonts .abc {
+  font-size: 31.8pt;
 }
 
 #fonts .ocd {
@@ -148,31 +156,47 @@ a:link {
 
   @media (max-height: 650px) {
     #fonts {
-      width: 400px;
-      font-size: 28pt;
+      width: 375px;
+      font-size: 28.15pt;
     }
 
-    #fonts .cba {
+    #fonts .bass {
       font-size: 27.25pt;
     }
 
+    #fonts .abc {
+      font-size: 27.85pt;
+    }
+
+    #fonts .cba {
+      font-size: 27.1pt;
+    }
+
     #fonts .ocd {
-      font-size: 29.25pt;
+      font-size: 29pt;
     }
   }
 
   @media (max-height: 300px) {
     #fonts {
-      width: 300px;
+      width: 295px;
+      font-size: 22.25pt;
+    }
+
+    #fonts .bass {
+      font-size: 21.5pt;
+    }
+
+    #fonts .abc {
       font-size: 22pt;
     }
 
     #fonts .cba {
-      font-size: 21.5pt;
+      font-size: 21.4pt;
     }
 
     #fonts .ocd {
-      font-size: 23pt;
+      font-size: 22.9pt;
     }
   }
 }
@@ -184,31 +208,47 @@ a:link {
 
   @media (max-width: 545px) {
     #fonts {
-      width: 350px;
+      width: 321px;
+      font-size: 24.25pt;
+    }
+
+    #fonts .bass {
+      font-size: 23.5pt;
+    }
+
+    #fonts .abc {
       font-size: 24pt;
     }
 
     #fonts .cba {
-      font-size: 23.5pt;
+      font-size: 23.35pt;
     }
 
     #fonts .ocd {
-      font-size: 25.25pt;
+      font-size: 25pt;
     }
   }
 
   @media (max-width: 400px) {
     #fonts {
-      width: 300px;
+      width: 265px;
       font-size: 20pt;
     }
 
+    #fonts .bass {
+      font-size: 19.4pt;
+    }
+
+    #fonts .abc {
+      font-size: 19.9pt;
+    }
+
     #fonts .cba {
-      font-size: 19.5pt;
+      font-size: 19.35pt;
     }
 
     #fonts .ocd {
-      font-size: 21pt;
+      font-size: 20.7pt;
     }
   }
 }
@@ -322,7 +362,7 @@ a:link {
 
 /* Contacts div */
 #contact {
-  width: 481px;
+  width: 495px;
 
   font-size: 24pt;
   font-weight: 300;
@@ -331,6 +371,14 @@ a:link {
 
 #contact .fa {
   vertical-align: -0.1em;
+}
+
+#contact .fa-envelope-o {
+  vertical-align: 0.0em;
+}
+
+#contact .fa-instagram {
+  vertical-align: -0.05em;
 }
 
 @media (min-aspect-ratio: 4/3) {  /* Wide Screen */
@@ -360,7 +408,7 @@ a:link {
 
   @media (max-height: 400px) {
     #contact {
-      width: 360px;
+      width: 370px;
       font-size: 18pt;
     }
   }
@@ -373,14 +421,14 @@ a:link {
 
   @media (max-width: 535px) {
     #contact {
-      width: 401px;
+      width: 410px;
       font-size: 20pt;
     }
   }
 
   @media (max-width: 460px) {
     #contact {
-      width: 321px;
+      width: 326px;
       font-size: 16pt;
     }
   }
