@@ -16,7 +16,7 @@ Click the Details button below for more information about the typeface.
 </div>
 
 <!-- Details! -->
-<div id="details" class="section-light-grey" >
+<div id="details" class="section-light-grey" hidden>
 <div id="ten-parts" class="sample-font">   </div>
 
 Albersʼ Kombinations-schrift is a typeface that was created for an age of industry and mass production. The typeface was constructed by combining the 10 shapes above which could be mass produced in glass, plastic, metal or wood and easily assembled anywhere.
