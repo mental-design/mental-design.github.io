@@ -1,0 +1,19 @@
+<svg version="1.1"
+     xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 100 90">
+  <style>
+    .letter{
+      fill: #1E6FBF;
+    }
+  </style>
+
+  <!-- Draw small A -->
+  <polygon points="0,80 8,80 24,40 16,40" class="letter" />
+  <polygon points="32,80 40,80 24,40 16,40" class="letter" />
+  <polygon points="8,71 32,71 32,64 8,64" class="letter" />
+
+  <!-- Draw large A -->
+  <polygon points="40,80 52,80 76,20 64,20" class="letter" />
+  <polygon points="88,80 100,80 76,20 64,20 " class="letter" />
+  <polygon points="52,66.5 88,66.5 88,56 52,56 " class="letter" />
+</svg>

@@ -1,0 +1,19 @@
+<svg version="1.1"
+     xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 120 90">
+  <style>
+    .letter{
+      fill: #1E6FBF;
+    }
+  </style>
+
+  <!-- Draw thin A -->
+  <polygon points="0,80 6,80 30,21 24,21" class="letter" />
+  <polygon points="48,80 54,80 30,21 24,21 " class="letter" />
+  <polygon points="12,65 42,65 42,59 12,59 " class="letter" />
+
+  <!-- Draw thick A -->
+  <polygon points="56,80 68,80 92,18 80,18" class="letter" />
+  <polygon points="104,80 116,80 92,18 80,18 " class="letter" />
+  <polygon points="68,66.5 102,66.5 102,56 68,56 " class="letter" />
+</svg>

@@ -1,0 +1,98 @@
+@import '../../abc/fonts/abc.css';
+@import '../../bam/fonts/bam.css';
+@import '../../bass/fonts/bass.css';
+/*@import '../../bau/fonts/bau-dev.css';*/
+@import '../../ocd/fonts/ocd.css';
+
+body {
+  min-width: 375px;
+  width: 90%;
+  background-color: #fff;
+  margin: auto;
+  margin-top: 25px;
+  font-family: 'BasicallyASansSerif', sansserif;
+  font-feature-settings: "calt" 0;
+}
+
+/* Fonts */
+.abc {
+  font-family: "AllBirdsCombinations";
+}
+
+.bam {
+  font-family: 'BasicallyAMono';
+}
+
+.bass {
+  font-family: 'BasicallyASansSerif';
+}
+
+.bau {
+  font-family: "BAU";
+}
+
+.ocd {
+	font-family: "OutlineCutoutDetail";
+}
+
+/* Samples */
+#samples {
+	border-top: 1px solid #000;
+	margin-top: 4px;
+  line-height: 1.1;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.sample {
+	margin: 4px;
+}
+
+/* Controls*/
+#controls {
+  margin-bottom: 8px;
+}
+
+.separator {
+  border-right: 1px solid #AEC7E8;
+}
+
+.control-div {
+  display: inline-block;
+}
+
+.control-item {
+  display: inline-block;
+  height: 25px;
+  line-height: 22.5px;
+  padding-right: 5px;
+}
+
+#glyph-control {
+  padding: 0 5px;
+}
+
+input {
+  text-align: center;
+}
+
+#glyph-input {
+  width: 25px;
+  margin: 0 4px;
+}
+
+#ruler-input {
+  width: 50px;
+  margin: 0 4px;
+}
+
+#inline-control {
+  padding: 0 5px;
+}
+
+#inline-control span {
+  padding: 0 5px;
+  vertical-align: middle;
+}
