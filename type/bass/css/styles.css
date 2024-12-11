@@ -17,7 +17,8 @@ body, h1, h2, h3 {
 }
 
 .sample-font {
-  font-family: "BasicallyASansSerif", serif !important;
+  font-family: "BasicallyASansSerif", serif;
+  /*text-transform: uppercase;*/
 }
 
 .mono-font {

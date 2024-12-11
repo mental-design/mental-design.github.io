@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Unicode",
+        "subs": [
+            {   
+                "title": "All",
+                "range": ["0x0021-0xDFFF"]
+            }
+        ]
+    },
+    {
+        "title": "Custom",
+        "subs": [
+            {
+                "title": "Custom",
+                "range": ["0xE000-0xEFFF"]
+            }
+        ]
+    }
+]

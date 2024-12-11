@@ -56,7 +56,7 @@
       <div class="w3-bar-item w3-hide-small w3-hide-medium w3-right nav-spacer"></div>
       <div class="w3-bar-item w3-hide-small w3-hide-large w3-right download-spacer"></div>
       <div class="w3-bar-item w3-hide-small w3-right download-btn">
-        <a href="downloads/bass-vers1_103.zip">Download</a>
+        <a href="downloads/bass-vers1_104.zip">Download</a>
       </div>
     </div>
   </div>
@@ -67,7 +67,7 @@
   <a href="#text"   class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Text</a>
   <a href="#notes"      class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Notes</a>
   <a href="#characters" class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Characters</a>
-  <a href="downloads/bass-vers1_103.zip" class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Download</a>
+  <a href="downloads/bass-vers1_104.zip" class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Download</a>
   <a href="#donate" class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Donate</a>
 </div>
 
@@ -150,20 +150,67 @@
   function initialize(){
     adjustToNavbar();
 
+    var typefaceOverride = getOverrideTypeface()
+
     // The Overview Section
-    var sampleUrl = "models/sample_content.json"
-    var sampleDiv = document.getElementById('samples');
-    SampleSection.init(sampleDiv, sampleUrl, checkLabel);
+    // var sampleUrl = "models/sample_content.json"
+    var sampleUrl = getSampleUrl()
+    var sampleDiv = document.getElementById('samples')
+    SampleSection.init(sampleDiv, sampleUrl, function(){
+      checkLabel()
+      setTypeface(sampleDiv, 'sample-font', typefaceOverride)
+    })
 
     // The Notes Section
-    var notesDiv = document.getElementById('description');
-    var notesUrl = 'models/notes_content.md';
-    NotesSection.init(notesDiv, notesUrl, checkLabel);
+    var notesDiv = document.getElementById('description')
+    var notesUrl = 'models/notes_content.md'
+    NotesSection.init(notesDiv, notesUrl, checkLabel)
     
     // The Characters Section
     var unicodeURL = "models/char_map.json"
     var characterDiv = document.getElementById('charmap')
-    CharacterSection.init(characterDiv, unicodeURL, checkLabel)
+    CharacterSection.init(characterDiv, unicodeURL, function(){
+      checkLabel()
+      setTypeface(characterDiv, 'sample-font', typefaceOverride)
+    })
+
+    setTypeface(document, 'sample-font', typefaceOverride)
+  }
+
+  function getSampleUrl() {
+    var url_string = window.location.href
+    var url = new URL(url_string)
+    var mode = url.searchParams.get("m")
+    var sampleURL = ""
+    switch(mode) {
+      case "test":
+        sampleURL = "models/test_content.json"
+        break
+      case "lang":
+        sampleURL = "models/test_language.json"
+        break
+
+      default:
+        sampleURL = "models/sample_content.json"
+    }
+    return sampleURL
+  }
+
+  function getOverrideTypeface() {
+    var url_string = window.location.href
+    var url = new URL(url_string)
+    return url.searchParams.get("t")
+  }
+
+  function setTypeface(el, cls, tf) {
+    if(tf == null)
+      return
+
+    var elements = el.getElementsByClassName(cls)
+    console.log(elements)
+    for (var i = elements.length - 1; i >= 0; i--) {
+      elements[i].style.fontFamily = tf
+    }
   }
 </script>
 
