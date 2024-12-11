@@ -50,6 +50,14 @@ a:link {
   font-weight: 700;
 }
 
+.notes xbold {
+  font-weight: 800;
+}
+
+.notes thick {
+  font-weight: 900;
+}
+
 .notes strong {
   font-weight: 500;
 }
@@ -498,15 +506,29 @@ footer {
 }
 
 .social {
+  font-size: 24px;
   font-weight: 200;
 }
 
+.social-item {
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+.blog-item {
+  width: 25px;
+}
+
 .mail {
-  vertical-align: 1px;
+  vertical-align: 0.5px;
 }
 
 .blog {
   vertical-align: -1px;
+  padding-left: 2px;
+  margin-left: 3px;
 }
 
 .copyright {

@@ -27,15 +27,19 @@ Albersʼ Kombinations-schrift is a typeface that was created for an age of indus
     </div>
 </div>
 
-For ABC, we wanted to translate Kombinations-Schrift into a typeface of the information age—a product of data, algorithms, and software programming. The key insight was to encode each glyph into an array of numbers (encodings) based on the basic shapes used to create it—square, circle, and quarter circle. We then implemented a decoder program that could take the encodings and create a font.
+For ABC, we wanted to translate Kombinations-Schrift into a typeface of the information age—a product of data, algorithms, and software programming. The main idea was to represent each glyph as an array of numbers, namely itʼs encoding, based on the basic shapes used to create it—square, circle, and quarter circle. We then implemented a decoder program that could take the encodings and create a font.
 
 <img src="resources/images/encodings.png" width="480"/>
 
-With the decoder in place, modifying a glyph was just a matter of changing numbers in the encodings. Each glyph was revised to make the typeface feel more balanced and natural. With strong verticals and high contrast, neoclassical typefaces like Bodoni and Didot provided a good reference point for guiding the design refinements.
+The diagram above shows the encoding process for glyph <strong>a</strong>. First, the glyph is divided into square sections. Then using the map on the left, each section can be assigned a number. These numbers are then arranged into an array, which we call itʼs <strong>encoding</strong>. The encodings are saved in a file. This file contains the information needed to create the font.
+
+To create a font, the encodings are <strong>decoded</strong> by applying the reverse process. For each glyph, the decoder takes the encoding, looks up the map for each section, and then draws the corresponding shape. These sections are then merged to form the final glyph.
 
 <div id="image-player"></div>
 
-By extending the functionality of the decoder, we could expand the design space to handle glyphs that were hard to represent previously. New components, such as semi-circles for rings and triangles for bird beaks, were added as needed. A quarter-sized square component was added for currency glyphs, giving them a distinct impression compared to other glyphs.
+With the decoder in place, modifying a glyph was just a matter of changing numbers in the encodings. Each glyph was revised and adjusted to give the typeface a more balanced and natural appearance. Neoclassical typefaces like Bodoni and Didot, with their strong verticals and high contrast, were used as references for the design refinements.
+
+By extending the functionality of the decoder, we could expand the design space to handle glyphs that were hard to represent previously. New components, such as semi-circles for rings and triangles for bird beaks, were added as needed. A quarter-sized square component was added for currency glyphs, giving them a distinct appearance compared to other glyphs.
 
 <div id="a-weights" class="abc">
     <span style="font-weight:700">a</span>
@@ -47,7 +51,7 @@ By extending the functionality of the decoder, we could expand the design space 
     <span style="font-weight:100">a</span>
 </div>
 
-Compressed weights could be created by defining how to decode each number for tall rectangular spaces. This systematic approach makes changes between weights smooth and continuous.
+By defining how to decode tall rectangular sections, compressed weights could be generated from the existing encodings. This systematic approach makes changes between weights smooth and continuous.
 
 </div>
 <!-- Details End -->
