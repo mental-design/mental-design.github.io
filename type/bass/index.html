@@ -166,6 +166,7 @@
     SampleSection.init(sampleDiv, sampleUrl, function(){
       checkLabel()
       setTypeface(sampleDiv, 'sample-font', typefaceOverride)
+      setUppercase(document, 'sample')
     })
 
     // The Notes Section
@@ -182,6 +183,7 @@
     })
 
     setTypeface(document, 'sample-font', typefaceOverride)
+    setUppercase(document, 'sample')
   }
 
   function getSampleUrl() {
@@ -214,9 +216,22 @@
       return
 
     var elements = el.getElementsByClassName(cls)
-    console.log(elements)
     for (var i = elements.length - 1; i >= 0; i--) {
       elements[i].style.fontFamily = tf
+    }
+  }
+
+  function setUppercase(el, cls) {
+    var url_string = window.location.href
+    var url = new URL(url_string)
+    caseType = url.searchParams.get("u")
+
+    if(caseType == null)
+      return
+
+    var elements = el.getElementsByClassName(cls)
+    for (var i = elements.length - 1; i >= 0; i--) {
+      elements[i].style.textTransform = caseType
     }
   }
 </script>
