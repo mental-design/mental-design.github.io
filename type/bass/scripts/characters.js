@@ -192,6 +192,7 @@ var CharacterSection = (function() {
                       weight,
                       controlInfo.weights,
                       toWeightLabel,
+                      "Font Weight",
                       changeWeight);
     weightControl.classList.add("weight-control");
     weightControl.classList.add("separator");
@@ -204,6 +205,7 @@ var CharacterSection = (function() {
                       size,
                       controlInfo.sizes,
                       "resources/font_size.svg",
+                      "Font Size",
                       changeSize);
     sizeControl.classList.add("size-control");
     controlDiv.appendChild(sizeControl);
