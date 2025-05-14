@@ -17,6 +17,7 @@ var SampleControl = (function() {
                       settings.weight,
                       controlInfo.weights,
                       toWeightLabel,
+                      "Font Weight",
                       changeWeight);
     weightControl.classList.add("weight-control");
     weightControl.classList.add("separator");
@@ -26,6 +27,7 @@ var SampleControl = (function() {
                       settings.size,
                       controlInfo.sizes,
                       "resources/font_size.svg",
+                      "Font Size",
                       changeSize);
     sizeControl.classList.add("size-control");
     sizeControl.classList.add("separator");
@@ -35,6 +37,7 @@ var SampleControl = (function() {
                       settings.letterSpacing,
                       controlInfo.letterSpacings,
                       "resources/letter_spacing.svg",
+                      "Letter Spacing",
                       changeLetterSpacing);
     letterSpacingControl.classList.add("spacing-control");
     letterSpacingControl.classList.add("separator");
@@ -44,9 +47,30 @@ var SampleControl = (function() {
                       settings.lineHeight,
                       controlInfo.lineHeights,
                       "resources/line_height.svg",
+                      "Line Height",
                       changeLineHeight);
     lineHeightControl.classList.add("height-control");
     lineHeightControl.classList.add("separator");
+
+    var style1Control = document.createElement('div');
+    SampleSlider.init(style1Control,
+                      0,
+                      controlInfo.styleSets,
+                      toStyleSetLabel,
+                      "Stylistic Set 1",
+                      changeStyleSet);
+    style1Control.classList.add("style1-control");
+    style1Control.classList.add("separator");
+
+    var caseControl = document.createElement('div');
+    SampleSlider.init(caseControl,
+                      0,
+                      controlInfo.cases,
+                      toCaseLabel,
+                      "Case",
+                      changeCase);
+    caseControl.classList.add("case-control");
+    caseControl.classList.add("separator");
 
     var alignControl = createAlignControl(settings.alignment);
 
@@ -57,6 +81,8 @@ var SampleControl = (function() {
     controlDiv.appendChild(sizeControl);
     controlDiv.appendChild(letterSpacingControl);
     controlDiv.appendChild(lineHeightControl);
+    controlDiv.appendChild(style1Control);
+    controlDiv.appendChild(caseControl);
     controlDiv.appendChild(alignControl);
     controlDiv.hidden = !settings.showControl;
 
@@ -109,6 +135,36 @@ var SampleControl = (function() {
     return weightName + " " + weight;
   }
 
+  function toStyleSetLabel(styleSet) {
+    return "<span class='ss0" + styleSet + "';'>SsTt</span>"
+  }
+
+  function toCaseLabel(caseType) {
+    styleString = ""
+    if (["uppercase", "lowercase"].includes(caseType)) {
+        styleString = "text-transform:" + caseType
+    }
+    else if (["small-caps", "unicase"].includes(caseType)) {
+        styleString = "font-variant-caps:" + caseType
+    }
+    return "<span style='" + styleString + "'>Aa</span>"
+  }
+
+  function changeCaseStyle(element, caseType) {
+    if (["uppercase", "lowercase"].includes(caseType)) {
+        element.style.textTransform = caseType
+        element.style.fontVariantCaps = ''
+    }
+    else if (["small-caps", "unicase"].includes(caseType)) {
+        element.style.fontVariantCaps = caseType
+        element.style.textTransform = ''
+    }
+    else {
+        element.style.fontVariantCaps = ''
+        element.style.textTransform = ''
+    }
+  }
+
   /* =============== handle event methods ================ */
 
   function changeWeight(slider, weights) {
@@ -151,6 +207,25 @@ var SampleControl = (function() {
     sample.style.lineHeight = value;
   }
 
+  function changeStyleSet(slider, values) {
+    var value = values[slider.value];
+    var line = slider.parentElement.parentElement.parentElement.parentElement;
+    var sample = line.getElementsByClassName("sample")[0];
+    for (var i = values.length - 1; i >= 0; i--) {
+      sample.classList.remove("ss0" + values[i])
+    }
+    sample.classList.add("ss0" + value)
+  }
+
+  function changeCase(slider, values) {
+    var caseType = values[slider.value]
+
+    var line = slider.parentElement.parentElement.parentElement.parentElement
+    var sample = line.getElementsByClassName("sample")[0]
+
+    changeCaseStyle(sample, caseType)
+  }
+
   function changeAlign(aControl, index, alignments) {
     var align = alignments[index];
     // TODO: Find a cleaner way to access the line without using id
@@ -158,9 +233,9 @@ var SampleControl = (function() {
 
     // Update the alignment
     var sample = line.getElementsByClassName("sample")[0];
-    sample.classList.remove(sample.classList[sample.classList.length - 1]);
-    // Note: this assumes the last class is the alignment.
-    // TODO: write code to find the alignment
+    for (var i = alignments.length - 1; i >= 0; i--) {
+      sample.classList.remove('w3-' + alignments[i])
+    }
     sample.classList.add('w3-' + align);
   }
 

@@ -17,10 +17,10 @@ var CharacterSection = (function() {
 
   // Control info
   var controlInfo = {
-    weights: [100, 200, 300, 400, 500, 600, 700],
+    weights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
     weightNames: [
       'Thin', 'ExtraLight', 'Light', 'Regular', 'Medium',
-      'SemiBold', 'Bold'
+      'SemiBold', 'Bold', "ExtraBold", "Thick"
     ],
     sizes: sizes(20, 160, 40)
   };
