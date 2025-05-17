@@ -52,6 +52,10 @@ var SampleControl = (function() {
     lineHeightControl.classList.add("height-control");
     lineHeightControl.classList.add("separator");
 
+    var alignControl = createAlignControl(settings.alignment);
+    alignControl.classList.add("separator");
+
+    // Style set 1
     var style1Control = document.createElement('div');
     SampleSlider.init(style1Control,
                       0,
@@ -62,6 +66,7 @@ var SampleControl = (function() {
     style1Control.classList.add("style1-control");
     style1Control.classList.add("separator");
 
+    // Case
     var caseControl = document.createElement('div');
     SampleSlider.init(caseControl,
                       0,
@@ -70,20 +75,27 @@ var SampleControl = (function() {
                       "Case",
                       changeCase);
     caseControl.classList.add("case-control");
-    caseControl.classList.add("separator");
+    caseControl.classList.add("control-last");
 
-    var alignControl = createAlignControl(settings.alignment);
+    var itControl = document.createElement('div');
+    var itButton = createItalicsButton();
+    itControl.classList.add("italic-control")
+    itControl.classList.add("control-item")
+    itControl.classList.add("align-control")
+    itControl.appendChild(itButton);
+    itControl.classList.add("separator");
 
     var controlDiv = document.createElement('div');
     controlDiv.classList.add("control");
     controlDiv.classList.add("control-light");
     controlDiv.appendChild(weightControl);
+    controlDiv.appendChild(itControl);
     controlDiv.appendChild(sizeControl);
     controlDiv.appendChild(letterSpacingControl);
     controlDiv.appendChild(lineHeightControl);
+    controlDiv.appendChild(alignControl);
     controlDiv.appendChild(style1Control);
     controlDiv.appendChild(caseControl);
-    controlDiv.appendChild(alignControl);
     controlDiv.hidden = !settings.showControl;
 
     // The wrapper keeps the layout static even when the controls are hiding
@@ -91,12 +103,27 @@ var SampleControl = (function() {
     controlWrapper.appendChild(controlDiv);
   }
 
+  function createItalicsButton() {
+    var button = document.createElement('i');
+    button.className = "fa fa-italic"
+    button.onclick = function() {
+      isItalic = this.classList.contains('ctl-blue')
+      if (isItalic)
+        this.classList.remove('ctl-blue');
+      else
+        this.classList.add('ctl-blue');
+
+      changeItalics(this, !isItalic)
+    }
+    return button;
+  }
+
   // == Alignment ==
   function createAlignControl(alignment) {
     var alignIndex = controlInfo.alignments.indexOf(alignment);
 
     var div = document.createElement('div');
-    div.className = "control-item align-control control-last";
+    div.className = "control-item align-control";
 
     var alignTags = ['left', 'center', 'right', 'justify'];
     for (var i = 0; i < alignTags.length; i++) {
@@ -237,6 +264,18 @@ var SampleControl = (function() {
       sample.classList.remove('w3-' + alignments[i])
     }
     sample.classList.add('w3-' + align);
+  }
+
+  function changeItalics(iControl, value) {
+    console.log(iControl)
+    var line = iControl.parentElement.parentElement.parentElement.parentElement;
+    var sample = line.getElementsByClassName("sample")[0];
+    if (value) {
+      sample.style.fontStyle = "italic"
+    }
+    else {
+      sample.style.fontStyle = ""
+    }
   }
 
   /* =============== export public methods =============== */

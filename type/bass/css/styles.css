@@ -289,6 +289,12 @@ a:link {
   color: #fff !important;
 }
 
+.ctl-outline {
+  color: #1E6FBF;
+  border: #1E6FBF 2px solid;
+  /*color: #fff !important;*/
+}
+
 .content {
   max-width:100%;
   margin-top:46px
@@ -443,7 +449,7 @@ input:checked + .switch-slider:before {
   position: relative;
   z-index: 100 !important;
 
-  max-width: 800px;
+  max-width: 700px;
   min-height: 40px;
   margin: auto;
 }
@@ -519,6 +525,10 @@ input:checked + .switch-slider:before {
   color: #1E6FBF;
   border-radius: 3px;
   vertical-align: -1px;
+}
+
+.italic-control i {
+  width: 25px;
 }
 
 @media (max-width:689px) {

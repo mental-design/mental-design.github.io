@@ -2,6 +2,72 @@
   {
     "settings": {
       "weightIndex": 3,
+      "sizeIndex": 20,
+      "alignIndex": 0,
+      "letterSpacingIndex": 30,
+      "lineHeightIndex": 40,
+      "showControl": 1
+    },
+    "text": "´`˘ˆˇ˚¨˝˜˙¸¯<br>ÁÀÂǍĂȂȦĀÄÅȀÃẢĄḀẠ<br>ÉÈÊĚĔȆĖËȄĒẼẺȨĘḘẸḚ<br>ÓÒÔǑŎȎȮŌÕỎÖŐȌǪØƠỌ<br>ĆĈČĊÇŚŜŠṠŞȘṢ<br>ŃǸŇṄÑƝŊŅṊṆṈ"
+  },
+  {
+    "settings": {
+      "weightIndex": 3,
+      "sizeIndex": 20,
+      "alignIndex": 0,
+      "letterSpacingIndex": 10,
+      "lineHeightIndex": 40,
+      "showControl": 0
+    },
+    "text": "ĐĦƗŁØŦƵ đħɨłøŧƶ<br>ÇȨḨŞŢ çȩḩşţ<br>ĄĘĮǪŲ ąęįǫų<br>ƑƝŊ ƒɲŋ ƠƯH ơưH<br>ȦÅŮȧåůẙ ẠḀạḁ<br>ÄËḦÏÖÜẄẌŸ äëḧïöüẅẍÿ<br>"
+  },
+  {
+    "settings": {
+      "weightIndex": 3,
+      "sizeIndex": 35,
+      "alignIndex": 0,
+      "letterSpacingIndex": 30,
+      "lineHeightIndex": 40,
+      "showControl": 0
+    },
+    "text": "¸˛<br>ÇĻŞŢĄĘĮŲȘȚ<br>çļşţąęįųșț"
+  },
+  {
+    "settings": {
+      "weightIndex": 3,
+      "sizeIndex": 35,
+      "alignIndex": 0,
+      "letterSpacingIndex": 30,
+      "lineHeightIndex": 40,
+      "showControl": 0
+    },
+    "text": "ỚớỜờỠỡỢợỞở<br>ỨứỪừỮữỰựỬử"
+  },
+  {
+    "settings": {
+      "weightIndex": 3,
+      "sizeIndex": 43,
+      "alignIndex": 0,
+      "letterSpacingIndex": 10,
+      "lineHeightIndex": 40,
+      "showControl": 0
+    },
+    "text": "ďľťĽ‘'’'I\"“\"”ʼʻ,‚„"
+  },
+  {
+    "settings": {
+      "weightIndex": 3,
+      "sizeIndex": 20,
+      "alignIndex": 0,
+      "letterSpacingIndex": 30,
+      "lineHeightIndex": 40,
+      "showControl": 0
+    },
+    "text": "o\u0300 o\u0301 o\u0302 o\u0303 o\u0304 o\u0306 o\u0307 o\u0308 o\u0309 o\u030A o\u030B o\u030C o\u030D o\u030E o\u030F o\u0311 o\u031B<br>o\u0323 o\u0324 o\u0325 o\u0326 o\u0327 o\u0328 o\u0330 o\u0331 o\u0358"
+  },
+  {
+    "settings": {
+      "weightIndex": 3,
       "sizeIndex": 30,
       "alignIndex": 0,
       "letterSpacingIndex": 10,
@@ -41,7 +107,106 @@
       "lineHeightIndex": 20,
       "showControl": 0
     },
+    "text": "ÆŒÐÞƏẞŊ<br>æœðþəßŋ<br>ȸȹıȷĸſ<br>ΔΠΣδμπσ<br>∑∏∆◊¬"
+  },
+  {
+    "settings": {
+      "weightIndex": 3,
+      "sizeIndex": 35,
+      "alignIndex": 0,
+      "letterSpacingIndex": 10,
+      "lineHeightIndex": 20,
+      "showControl": 0
+    },
     "text": "0123456789<br>₀₁₂₃₄₅₆₇₈₉<br>⁰¹²³⁴⁵⁶⁷⁸⁹"
+  },
+  {
+    "settings": {
+      "weightIndex": 8,
+      "sizeIndex": 35,
+      "alignIndex": 0,
+      "letterSpacingIndex": 10,
+      "lineHeightIndex": 20,
+      "showControl": 0
+    },
+    "text": "A₳ B₿ C₵₡€<br>F₣ G₲ K₭ L£₤₺<br>M₼ N₦ P₧₱₽<br>R₹ S$ ₸T W₩ Y¥<br>c¢ d₫ fƒ ¤°"
+  },
+  {
+    "settings": {
+      "weightIndex": 8,
+      "sizeIndex": 25,
+      "alignIndex": 0,
+      "letterSpacingIndex": 10,
+      "lineHeightIndex": 30,
+      "showControl": 0
+    },
+    "text": "!?.:;,¿¡<br><>{}(|)[]/\\<br>@#$%&^~-+*="
+  },
+  {
+    "settings": {
+      "weightIndex": 8,
+      "sizeIndex": 25,
+      "alignIndex": 2,
+      "letterSpacingIndex": 10,
+      "lineHeightIndex": 20,
+      "showControl": 0
+    },
+    "text": "12:56 pm<br>09:30 am<br>04:20 pm<br><br>$25.50<br>$30.79<br>$76.24"
+  },
+  {
+    "settings": {
+      "weightIndex": 8,
+      "sizeIndex": 25,
+      "alignIndex": 1,
+      "letterSpacingIndex": 10,
+      "lineHeightIndex": 20,
+      "showControl": 0
+    },
+    "text": "\"HELLO\" \"hello\" x″<br>'HELLO' 'hello' x′<br>“HELLO” “hello”<br>‘HELLO’ ‘hello’<br>“\"” ‘'’<br>‘'’'\"“\"”ʼʻ,‚„<br>‘H’ 'H' “H” \"H\"<br>But, thatʼs it; Itʼs done!"
+  },
+  {
+    "settings": {
+      "weightIndex": 8,
+      "sizeIndex": 15,
+      "alignIndex": 1,
+      "letterSpacingIndex": 10,
+      "lineHeightIndex": 20,
+      "showControl": 0
+    },
+    "text": "‹HELLO› ‹hello› 'HELLO' 'hello'<br>«HELLO» «hello» \"HELLO\" \"hello\"<br>[HELLO] [hello]<br>(HELLO) (hello)<br>{HELLO} {hello}<br>&ltHELLO&gt &lthello&gt<br>/HELLO/ /hello/<br>|HELLO| |hello|<br>\\HELLO\\ \\hello\\<br>-HELLO- -hello-<br>%HELLO% %hello%<br>*HELLO* *hello*<br>#HELLO# #hello#"
+  },
+  {
+    "settings": {
+      "weightIndex": 8,
+      "sizeIndex": 25,
+      "alignIndex": 0,
+      "letterSpacingIndex": 10,
+      "lineHeightIndex": 20,
+      "showControl": 0
+    },
+    "text": "+−×÷=<br>10+2=12≠13<br>10−2=8≤9±1<br>10×2=20≈20.1<br>10÷2=5<br>1÷0=∞<br>∑x<sup>2</sup>∆t + ∏(n+1)<sup>3</sup>◊<sub>S</sub><br>x″ = lim<sub>∞</sub>∆x′/∆t"
+  },
+  {
+    "settings": {
+      "weightIndex": 8,
+      "sizeIndex": 19,
+      "alignIndex": 0,
+      "letterSpacingIndex": 10,
+      "lineHeightIndex": 20,
+      "showControl": 0
+    },
+    "text": "hskim08@ccrma.stanford.edu<br>hyung.suk.kim@icloud.com<br>mastak@gmail.com<br>http://experi.mentallydesigned.com/type/hint.html"
+  },
+  {
+    "settings": {
+      "weightIndex": 8,
+      "sizeIndex": 30,
+      "alignIndex": 0,
+      "letterSpacingIndex": 10,
+      "lineHeightIndex": 20,
+      "showControl": 0
+    },
+    "text": "#†‡ªº№<br>§¶µ&∞~<br>@©®™<br>§3¶4<br>©Copyright<br>Registered®<br>Trademark™"
   },
   {
     "settings": {
@@ -90,17 +255,6 @@
   {
     "settings": {
       "weightIndex": 3,
-      "sizeIndex": 25,
-      "alignIndex": 0,
-      "letterSpacingIndex": 10,
-      "lineHeightIndex": 30,
-      "showControl": 0
-    },
-    "text": "!?.:;,¿¡<br><>{}(|)[]/\\<br>@#$%&^~-+*="
-  },
-  {
-    "settings": {
-      "weightIndex": 3,
       "sizeIndex": 30,
       "alignIndex": 0,
       "letterSpacingIndex": 10,
@@ -108,17 +262,6 @@
       "showControl": 0
     },
     "text": "But, thatʼs it;<br>‘'’'\"“\"”ʼʻ,‚„<br>‘H’ 'H' “H” \"H\"<br>macyʼs"
-  },
-  {
-    "settings": {
-      "weightIndex": 3,
-      "sizeIndex": 19,
-      "alignIndex": 0,
-      "letterSpacingIndex": 10,
-      "lineHeightIndex": 20,
-      "showControl": 0
-    },
-    "text": "hskim08@ccrma.stanford.edu<br>hyung.suk.kim@icloud.com<br>mastak@gmail.com<br>http://experi.mentallydesigned.com/type/"
   },
   {
     "settings": {
@@ -152,61 +295,6 @@
       "showControl": 0
     },
     "text": "¹⁄₄ ¼ ¹⁄₂ ½ ³⁄₄ ¾ ¹⁄₇ ⅐ ¹⁄₉ ⅑<br>¹⁄₃ ⅓ ²⁄₃ ⅔ ¹⁄₅ ⅕ ²⁄₅ ⅖ ³⁄₅ ⅗ ⁴⁄₅ ⅘<br>¹⁄₆ ⅙ ⁵⁄₆ ⅚ ¹⁄₈ ⅛ ³⁄₈ ⅜ ⁵⁄₈ ⅝ ⁷⁄₈ ⅞"
-  },
-  {
-    "settings": {
-      "weightIndex": 3,
-      "sizeIndex": 35,
-      "alignIndex": 0,
-      "letterSpacingIndex": 10,
-      "lineHeightIndex": 20,
-      "showControl": 0
-    },
-    "text": "¤$¢£¥<br>ƒ₡₣₤₦<br>₧₩₫€₭<br>₱₲₳₵₸<br>₹₺₼₽₿"
-  },
-  {
-    "settings": {
-      "weightIndex": 3,
-      "sizeIndex": 43,
-      "alignIndex": 0,
-      "letterSpacingIndex": 10,
-      "lineHeightIndex": 40,
-      "showControl": 0
-    },
-    "text": "ďľťĽ‘'’'I\"“\"”ʼʻ,‚„"
-  },
-  {
-    "settings": {
-      "weightIndex": 3,
-      "sizeIndex": 35,
-      "alignIndex": 0,
-      "letterSpacingIndex": 30,
-      "lineHeightIndex": 40,
-      "showControl": 0
-    },
-    "text": "ỚớỜờỠỡỢợỞở<br>ỨứỪừỮữỰựỬử"
-  },
-  {
-    "settings": {
-      "weightIndex": 3,
-      "sizeIndex": 35,
-      "alignIndex": 0,
-      "letterSpacingIndex": 30,
-      "lineHeightIndex": 40,
-      "showControl": 0
-    },
-    "text": "¸˛<br>ÇĻŞŢĄĘĮŲȘȚ<br>çļşţąęįųșț"
-  },
-  {
-    "settings": {
-      "weightIndex": 3,
-      "sizeIndex": 35,
-      "alignIndex": 0,
-      "letterSpacingIndex": 30,
-      "lineHeightIndex": 40,
-      "showControl": 0
-    },
-    "text": "´`˘ˆˇ˚¨˝˜˙¸¯<br>ÁÀÂÅÄÃĀĆČÇ<br>ÉÈÊËĖĒÍÌÎÏĪŃÑ<br>ÓÒÔÖÕŌØŚŠ<br>ÚÙÛÜŪÝŸŹŽŻ"
   },
   {
     "settings": {
