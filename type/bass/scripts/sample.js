@@ -20,8 +20,9 @@ var SampleSection = (function() {
     sizes: sizes(8, 200, 50),
     letterSpacings: range(-0.1, 0.5, 61),
     lineHeights: range(1.0, 2.0, 101),
-    styleSets: [0, 1],
-    cases: ['normal', 'uppercase', 'small-caps', 'unicase', 'lowercase'],
+    styleSet1: [0, 1],
+    styleSet2: [0, 1],
+    cases: ['lowercase', 'unicase', 'normal', 'small-caps', 'uppercase'],
     alignments: ['left-align', 'center', 'right-align', 'justify']
   };
 

@@ -1,18 +1,21 @@
 var SampleControl = (function() {
 
   var controlInfo;
+  var styleSetOn;
 
   // main init method
   function init(div, cInfo, settings) {
-    controlInfo = cInfo;
+    controlInfo = cInfo
+    styleSetOn = [0, 0]
 
-    createControls(div, controlInfo, settings);
+    createControls(div, controlInfo, settings)
   }
 
   /* =============== create methods ================ */
 
   function createControls(controlWrapper, controlInfo, settings) {
     var weightControl = document.createElement('div');
+
     SampleSlider.init(weightControl,
                       settings.weight,
                       controlInfo.weights,
@@ -59,17 +62,27 @@ var SampleControl = (function() {
     var style1Control = document.createElement('div');
     SampleSlider.init(style1Control,
                       0,
-                      controlInfo.styleSets,
-                      toStyleSetLabel,
+                      controlInfo.styleSet1,
+                      toStyleSet1Label,
                       "Stylistic Set 1",
-                      changeStyleSet);
+                      changeStyleSet1);
     style1Control.classList.add("style1-control");
     style1Control.classList.add("separator");
+
+    var style2Control = document.createElement('div');
+    SampleSlider.init(style2Control,
+                      0,
+                      controlInfo.styleSet2,
+                      toStyleSet2Label,
+                      "Stylistic Set 2",
+                      changeStyleSet2);
+    style2Control.classList.add("style2-control");
+    style2Control.classList.add("separator");
 
     // Case
     var caseControl = document.createElement('div');
     SampleSlider.init(caseControl,
-                      0,
+                      settings.caseType,
                       controlInfo.cases,
                       toCaseLabel,
                       "Case",
@@ -95,6 +108,7 @@ var SampleControl = (function() {
     controlDiv.appendChild(lineHeightControl);
     controlDiv.appendChild(alignControl);
     controlDiv.appendChild(style1Control);
+    controlDiv.appendChild(style2Control);
     controlDiv.appendChild(caseControl);
     controlDiv.hidden = !settings.showControl;
 
@@ -162,8 +176,12 @@ var SampleControl = (function() {
     return weightName + " " + weight;
   }
 
-  function toStyleSetLabel(styleSet) {
+  function toStyleSet1Label(styleSet) {
     return "<span class='ss0" + styleSet + "';'>SsTt</span>"
+  }
+
+  function toStyleSet2Label(styleSet) {
+    return "<span class='ss0" + (styleSet * 2) + "';'>an</span>"
   }
 
   function toCaseLabel(caseType) {
@@ -234,14 +252,38 @@ var SampleControl = (function() {
     sample.style.lineHeight = value;
   }
 
-  function changeStyleSet(slider, values) {
+  function updateFFS(ss, sample) {
+    ffsString = "font-feature-settings: "
+    for (var i = ss.length - 1; i >= 0; i--) {
+      if (ss[i] > 0) {
+        ffsString = ffsString + '"ss0' + (i + 1) + '" 1,'
+      }
+    }
+    ffsString = ffsString.slice(0,-1) + ";"
+
+    // get existing styles, then add font-feature-settings
+    sample.style.fontFeatureSettings = null
+    var s = sample.style.cssText 
+    s += " " + ffsString
+    sample.setAttribute("style", s)
+  }
+
+  function changeStyleSet1(slider, values) {
     var value = values[slider.value];
     var line = slider.parentElement.parentElement.parentElement.parentElement;
     var sample = line.getElementsByClassName("sample")[0];
-    for (var i = values.length - 1; i >= 0; i--) {
-      sample.classList.remove("ss0" + values[i])
-    }
-    sample.classList.add("ss0" + value)
+
+    styleSetOn[0] = value
+    updateFFS(styleSetOn, sample)
+  }
+
+  function changeStyleSet2(slider, values) {
+    var value = values[slider.value];
+    var line = slider.parentElement.parentElement.parentElement.parentElement;
+    var sample = line.getElementsByClassName("sample")[0];
+
+    styleSetOn[1] = value
+    updateFFS(styleSetOn, sample)
   }
 
   function changeCase(slider, values) {

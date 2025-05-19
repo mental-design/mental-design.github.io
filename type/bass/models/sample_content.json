@@ -6,6 +6,7 @@
       "alignIndex": 1,
       "letterSpacingIndex": 50,
       "lineHeightIndex": 50,
+      "caseIndex": 2,
       "showControl": 0,
       "editable": 0,
       "smallScreen": {
@@ -22,6 +23,7 @@
       "alignIndex": 2,
       "letterSpacingIndex": 12,
       "lineHeightIndex": 25,
+      "caseIndex": 2,
       "showControl": 0,
       "editable": 0,
       "smallScreen": {
@@ -37,6 +39,7 @@
       "alignIndex": 0,
       "letterSpacingIndex": 10,
       "lineHeightIndex": 40,
+      "caseIndex": 2,
       "showControl": 1,
       "editable": 0,
       "smallScreen": {
@@ -53,6 +56,7 @@
       "alignIndex": 0,
       "letterSpacingIndex": 7,
       "lineHeightIndex": 15,
+      "caseIndex": 2,
       "showControl": 0,
       "editable": 0,
       "smallScreen": {
@@ -68,6 +72,7 @@
       "alignIndex": 0,
       "letterSpacingIndex": 12,
       "lineHeightIndex": 20,
+      "caseIndex": 2,
       "showControl": 0,
       "editable": 0,
       "smallScreen": {
@@ -84,6 +89,7 @@
       "alignIndex": 0,
       "letterSpacingIndex": 10,
       "lineHeightIndex": 20,
+      "caseIndex": 2,
       "showControl": 1,
       "smallScreen": {
         "sizeIndex": 15,

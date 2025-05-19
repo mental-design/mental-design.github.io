@@ -10,7 +10,7 @@ var SampleLine = (function() {
 
   function initializeSampleLine(lineDiv, controlInfo, content) {
     var settings = translateSettings(content.settings, controlInfo);
-
+    
     lineDiv.classList.add("sample-line");
     lineDiv.onpaste = function(e) {
       e.preventDefault();  // cancel paste
@@ -48,6 +48,7 @@ var SampleLine = (function() {
     textDiv.style.fontSize = settings.size + 'pt';
     textDiv.style.letterSpacing = settings.letterSpacing + 'em';
     textDiv.style.lineHeight = settings.lineHeight;
+    setCase(textDiv, settings.case)
     textDiv.classList.add("sample-font");
     textDiv.classList.add("sample");
     textDiv.classList.add("w3-" + settings.alignment);
@@ -82,13 +83,29 @@ var SampleLine = (function() {
     translated.letterSpacing = controlInfo.letterSpacings[settings.letterSpacingIndex];
     translated.lineHeight = controlInfo.lineHeights[settings.lineHeightIndex];
     translated.alignment = controlInfo.alignments[settings.alignIndex];
+    translated.caseType = controlInfo.cases[settings.caseIndex];
     translated.showControl = settings.showControl > 0;
     translated.editable = settings.editable > 0;
     if ("text" in settings) {  // TODO: clean this up. The mobile text override is messy
       translated.text = settings.text
     }
     return translated;
-  }  
+  }
+
+  function setCase(div, caseType) {
+    if (["uppercase", "lowercase"].includes(caseType)) {
+        div.style.textTransform = caseType
+        div.style.fontVariantCaps = ''
+    }
+    else if (["small-caps", "unicase"].includes(caseType)) {
+        div.style.fontVariantCaps = caseType
+        div.style.textTransform = ''
+    }
+    else {
+        div.style.fontVariantCaps = ''
+        div.style.textTransform = ''
+    }
+  }
 
   /* =============== export public methods =============== */
   return {

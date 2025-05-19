@@ -17,11 +17,15 @@ body, h1, h2, h3 {
 }
 
 .ss00 {
-  font-feature-settings: "ss01" 0;
+  font-feature-settings: "ss01" 0, "ss02" 0;
 }
 
 .ss01 {
   font-feature-settings: "ss01" 1;
+}
+
+.ss02 {
+  font-feature-settings: "ss02" 1;
 }
 
 .sample-font {
@@ -503,7 +507,8 @@ input:checked + .switch-slider:before {
 }
 
 .style1-control .control-label {
-  width: 35px;
+  width: 40px;
+  font-size: 17px;
   font-weight: 600;
 }
 
@@ -511,8 +516,19 @@ input:checked + .switch-slider:before {
   width: 50px;
 }
 
+.style2-control .control-label {
+  width: 33px;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.style2-control .slider {
+  width: 50px;
+}
+
 .case-control .control-label {
-  width: 25px;
+  width: 28px;
+  font-size: 17px;
   font-weight: 600;
 }
 
@@ -550,6 +566,7 @@ input:checked + .switch-slider:before {
 }
 
 .slider {
+  appearance: none;
   -webkit-appearance: none;
   height: 2px; 
   width: 75px;

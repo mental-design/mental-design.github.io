@@ -303,7 +303,7 @@
         	{
         		"title": "Set1-Latin Uppercase",
 		        "range": [
-		            "0xE100-0xE10E", "0xE113"
+		            "0xE100-0xE10E"
 		        ]
         	},
         	{
@@ -314,6 +314,7 @@
         	},
         	{
         		"title": "Set1-Numerics",
+		        "foldable": true,
 		        "range": [
 		            "0xE120-0xE12C", "0xED0A"
 		        ]
@@ -322,7 +323,7 @@
         		"title": "Set1-Latin Extended Uppercase",
 		        "foldable": true,
 		        "range": [
-		            "0xE180-0xE1EF", "0xE280-0xE29F"
+		            "0xE180-0xE1AC", "0xE113", "0xE1AD-0xE1EF", "0xE280-0xE29F"
 		        ]
         	},
         	{
@@ -337,6 +338,23 @@
 		        "foldable": true,
 		        "range": [
 		            "0xEFA0-0xEFBF"
+		        ]
+        	}
+        ]
+    },
+    {
+        "title": "Stylistic Set 2 - Geometric Joints",
+        "subs": [
+        	{
+        		"title": "Set2-Latin Lowercase",
+		        "range": [
+		            "0xE400-0xE40F"
+		        ]
+        	},
+        	{
+        		"title": "Set2-Latin Extended Lowercase",
+		        "range": [
+		            "0xE410-0xE41F"
 		        ]
         	}
         ]
