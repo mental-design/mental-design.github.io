@@ -77,6 +77,10 @@ var SampleLine = (function() {
       settings.editable = 1
     }
 
+    if (!("caseIndex" in settings)) {
+      settings.caseIndex = 2
+    }
+
     var translated = {};
     translated.weight = controlInfo.weights[settings.weightIndex];
     translated.size = controlInfo.sizes[settings.sizeIndex];
