@@ -309,7 +309,6 @@ var SampleControl = (function() {
   }
 
   function changeItalics(iControl, value) {
-    console.log(iControl)
     var line = iControl.parentElement.parentElement.parentElement.parentElement;
     var sample = line.getElementsByClassName("sample")[0];
     if (value) {
