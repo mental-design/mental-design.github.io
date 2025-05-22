@@ -6,7 +6,7 @@ var SampleControl = (function() {
   // main init method
   function init(div, cInfo, settings) {
     controlInfo = cInfo
-    styleSetOn = [0, 0]
+    styleSetOn = [0, 0, 0]
 
     createControls(div, controlInfo, settings)
   }
@@ -79,6 +79,16 @@ var SampleControl = (function() {
     style2Control.classList.add("style2-control");
     style2Control.classList.add("separator");
 
+    var style3Control = document.createElement('div');
+    SampleSlider.init(style3Control,
+                      0,
+                      controlInfo.styleSet3,
+                      toStyleSet3Label,
+                      "Stylistic Set 3",
+                      changeStyleSet3);
+    style3Control.classList.add("style3-control");
+    style3Control.classList.add("separator");
+
     // Case
     var caseControl = document.createElement('div');
     SampleSlider.init(caseControl,
@@ -109,6 +119,7 @@ var SampleControl = (function() {
     controlDiv.appendChild(alignControl);
     controlDiv.appendChild(style1Control);
     controlDiv.appendChild(style2Control);
+    controlDiv.appendChild(style3Control);
     controlDiv.appendChild(caseControl);
     controlDiv.hidden = !settings.showControl;
 
@@ -184,6 +195,10 @@ var SampleControl = (function() {
     return "<span class='ss0" + (styleSet * 2) + "';'>an</span>"
   }
 
+  function toStyleSet3Label(styleSet) {
+    return "<span class='ss0" + (styleSet * 3) + "';'>i;!</span>"
+  }
+
   function toCaseLabel(caseType) {
     styleString = ""
     if (["uppercase", "lowercase"].includes(caseType)) {
@@ -254,7 +269,7 @@ var SampleControl = (function() {
 
   function updateFFS(ss, sample) {
     ffsString = "font-feature-settings: "
-    for (var i = ss.length - 1; i >= 0; i--) {
+    for (var i = 0; i <= ss.length; i++) {
       if (ss[i] > 0) {
         ffsString = ffsString + '"ss0' + (i + 1) + '" 1,'
       }
@@ -283,6 +298,15 @@ var SampleControl = (function() {
     var sample = line.getElementsByClassName("sample")[0];
 
     styleSetOn[1] = value
+    updateFFS(styleSetOn, sample)
+  }
+
+  function changeStyleSet3(slider, values) {
+    var value = values[slider.value];
+    var line = slider.parentElement.parentElement.parentElement.parentElement;
+    var sample = line.getElementsByClassName("sample")[0];
+
+    styleSetOn[2] = value
     updateFFS(styleSetOn, sample)
   }
 

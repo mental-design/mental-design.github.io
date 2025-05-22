@@ -22,6 +22,7 @@ var SampleSection = (function() {
     lineHeights: range(1.0, 2.0, 101),
     styleSet1: [0, 1],
     styleSet2: [0, 1],
+    styleSet3: [0, 1],
     cases: ['lowercase', 'unicase', 'normal', 'small-caps', 'uppercase'],
     alignments: ['left-align', 'center', 'right-align', 'justify']
   };
