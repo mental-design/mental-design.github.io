@@ -1,12 +1,10 @@
 var SampleControl = (function() {
 
   var controlInfo;
-  var styleSetOn;
 
   // main init method
   function init(div, cInfo, settings) {
     controlInfo = cInfo
-    styleSetOn = [0, 0, 0]
 
     createControls(div, controlInfo, settings)
   }
@@ -196,7 +194,7 @@ var SampleControl = (function() {
   }
 
   function toStyleSet3Label(styleSet) {
-    return "<span class='ss0" + (styleSet * 3) + "';'>i;!</span>"
+    return "<span class='ss0" + (styleSet * 3) + "';'>i!;</span>"
   }
 
   function toCaseLabel(caseType) {
@@ -223,6 +221,31 @@ var SampleControl = (function() {
         element.style.fontVariantCaps = ''
         element.style.textTransform = ''
     }
+  }
+
+  function updateFFS(ss, sample) {
+    ffsString = "font-feature-settings: "
+    for (var i = 0; i <= ss.length; i++) {
+      if (ss[i] > 0) {
+        ffsString = ffsString + '"ss0' + (i + 1) + '" 1,'
+      }
+    }
+    ffsString = ffsString.slice(0,-1) + ";"
+
+    // get existing styles, then add font-feature-settings
+    sample.style.fontFeatureSettings = null
+    var s = sample.style.cssText 
+    s += " " + ffsString
+    sample.setAttribute("style", s)
+  }
+
+  function getStyleSetOn(ffs) {
+    styleSetOn = [0, 0, 0]
+    for (var i = 0; i < styleSetOn.length; i++) {
+      if (ffs.includes("ss0" + (i+1)))
+        styleSetOn[i] = 1
+    }
+    return styleSetOn
   }
 
   /* =============== handle event methods ================ */
@@ -267,27 +290,12 @@ var SampleControl = (function() {
     sample.style.lineHeight = value;
   }
 
-  function updateFFS(ss, sample) {
-    ffsString = "font-feature-settings: "
-    for (var i = 0; i <= ss.length; i++) {
-      if (ss[i] > 0) {
-        ffsString = ffsString + '"ss0' + (i + 1) + '" 1,'
-      }
-    }
-    ffsString = ffsString.slice(0,-1) + ";"
-
-    // get existing styles, then add font-feature-settings
-    sample.style.fontFeatureSettings = null
-    var s = sample.style.cssText 
-    s += " " + ffsString
-    sample.setAttribute("style", s)
-  }
-
   function changeStyleSet1(slider, values) {
     var value = values[slider.value];
     var line = slider.parentElement.parentElement.parentElement.parentElement;
     var sample = line.getElementsByClassName("sample")[0];
 
+    styleSetOn = getStyleSetOn(sample.style.fontFeatureSettings)
     styleSetOn[0] = value
     updateFFS(styleSetOn, sample)
   }
@@ -297,6 +305,7 @@ var SampleControl = (function() {
     var line = slider.parentElement.parentElement.parentElement.parentElement;
     var sample = line.getElementsByClassName("sample")[0];
 
+    styleSetOn = getStyleSetOn(sample.style.fontFeatureSettings)
     styleSetOn[1] = value
     updateFFS(styleSetOn, sample)
   }
@@ -306,6 +315,7 @@ var SampleControl = (function() {
     var line = slider.parentElement.parentElement.parentElement.parentElement;
     var sample = line.getElementsByClassName("sample")[0];
 
+    styleSetOn = getStyleSetOn(sample.style.fontFeatureSettings)
     styleSetOn[2] = value
     updateFFS(styleSetOn, sample)
   }
