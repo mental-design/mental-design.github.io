@@ -30,11 +30,6 @@ var SampleSection = (function() {
   /* =============== initialize methods ================ */
 
   function initializeSampleArea(sampleDiv, controlInfo, sectionContent) {
-    // Add style set toggle
-    // var styleButton = document.createElement('div');
-    // initializeStyleButton(styleButton);
-    // sampleDiv.appendChild(styleButton);
-
     // Add darkmode button
     var darkButton = document.createElement('div');
     initializeDarkModeButton(darkButton);
@@ -49,46 +44,6 @@ var SampleSection = (function() {
       sampleDiv.appendChild(lineDiv);
     }
   }
-
-  // function initializeStyleButton(styleButton) {
-  //   // The toggle button
-  //   styleButton.classList.add("w3-display-topleft");
-  //   styleButton.setAttribute('id', 'toggle-style');
-
-  //   var input = document.createElement('input');
-  //   input.type = "checkbox";
-  //   input.checked = false;
-  //   // selectStyleSet(input.checked);
-    
-  //   input.oninput = function() {
-  //     var overviewDiv = document.body;
-  //     if (input.checked) {
-  //       overviewDiv.style.fontFeatureSettings = '"ss01"'
-  //     }
-  //     else {
-  //       overviewDiv.style.fontFeatureSettings = ''
-  //     }
-  //     // selectStyleSet(input.checked);
-  //   };
-  //   var span = document.createElement('span');
-  //   span.classList.add("switch-slider");
-
-  //   var label = document.createElement('label');
-  //   label.classList.add("switch");
-  //   label.appendChild(input);
-  //   label.appendChild(span);
-
-  //   // single story a
-  //   var singleSpan = document.createElement('span');
-  //   singleSpan.classList.add("switch-label");
-  //   singleSpan.classList.add("single-story");
-  //   singleSpan.classList.add("mono");
-  //   singleSpan.innerHTML = "SS01";
-
-  //   // Construct
-  //   styleButton.appendChild(singleSpan);
-  //   styleButton.appendChild(label);
-  // }
 
   function initializeDarkModeButton(darkButton) {
     darkButton.classList.add("w3-display-topright")
