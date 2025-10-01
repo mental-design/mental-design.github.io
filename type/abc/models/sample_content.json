@@ -62,7 +62,7 @@
         "lineHeightIndex": 50
       }
     },
-    "text": "At Mental Design, the design process of a typeface starts with a concept—an abstract idea about how to analyze and synthesize letters. The concept is encoded into components which are programmatically translated into shapes, paths, and points. These components are then combined to create each glyph. No point is manipulated directly, rather each glyph is adjusted by parameters that change the settings for each component. The parameters are tuned along a system of proportions, then iteratively adjusted to make the characters fit together harmoniously. This systematic design approach reduces arbitrary artifacts and gives the typeface a coherent look and feel.<br><br>"
+    "text": "At Mental Design, the design process of a typeface starts with a concept—an abstract idea about how to analyze and synthesize letters. The concept is encoded into components which are programmatically translated into shapes, paths, and points. These components are then combined to create each glyph. No point is manipulated directly, rather each glyph is adjusted by parameters that change the settings for each component. The parameters are tuned along a system of proportions, then iteratively adjusted to make the characters fit together harmoniously. This systematic design approach enables precise control and accurate reproduction of the contours, reducing arbitrary artifacts and ensuring a coherent look and feel for the typeface.<br><br>"
   },
   {
     "settings": {

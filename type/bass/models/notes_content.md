@@ -6,15 +6,15 @@ BASS supports several OpenType features including <b>SmallCaps(<code>smcp</code>
 
 With the new features introduced in version 2, BASS has evolved from a simple typeface to a versatile typographic toolkit, ideal for your next geometric graphic design project.
 
-Click the Details button below to discover how the typeface was created and to explore more about its features and design elements.
+Click the Details button below to discover how the typeface was created and to learn more about its features and design elements.
 
-<div id="details-wrapper">
+<div id="details">
 <div id="details-btn" onclick="showDetails()">
     <i id="details-icon" class="fa fa-plus-circle"> </i> Details
 </div>
 
 <!-- Details! -->
-<div id="details" class="section-light-grey" hidden>
+<div id="details-content" class="section-light-grey" hidden>
 
 <!-- TODO: Add image of mathematical basis -->
 
@@ -152,17 +152,17 @@ Of course, you can always combine the OpenType features to create the typographi
 
 BASS has undergone numerous refinements since its initial release, as we continue to push the boundaries of geometric typography. With the added features in version 2, we evolve BASS from a basic typeface into a typographic toolkit for geometric graphic design projects. We encourage you to experiment with the different styles and features, and share your experiences with us. As we continue to refine and improve BASS, we appreciate your feedback and support.
 
+</div><!-- details-content End -->
 </div><!-- details End -->
-</div><!-- details-wrapper End -->
 
 ### DOWNLOAD
-To download the current version (vers 2.0.0) click [here][2].<br>
+To download the latest version (vers 2.0.0) click [here][2].<br>
 Older versions can be found [here][3].
 
 ### LICENSE
 Basically A Sans Serif is licensed under the [SIL Open Font License][1]. It is free for personal and commercial use. Send us an email (type@mentallydesigned.com) to share how you used the typeface. Have fun!
 
 [1]: downloads/License.txt
-[2]: downloads/bass-vers2_000a.zip
+[2]: downloads/bass-vers2_000.zip
 [3]: https://github.com/mental-design/basically-a-sans-serif/tags
 [4]: https://en.wikipedia.org/wiki/Basis_(linear_algebra)
