@@ -11,9 +11,19 @@
   <link rel="shortcut icon" sizes="196x196" href="resources/favicon/logo196.png">
   <link rel="apple-touch-icon" sizes="180x180" href="resources/favicon/logo180.png">
   <!-- Styles -->
-  <link rel="stylesheet" href="css/w3.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <!-- Fonts -->
+  <link rel="preload" href="bam/fonts/BasicallyAMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="bass/fonts/BasicallyASansSerif-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="bass/fonts/BasicallyASansSerif-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="bass/fonts/BasicallyASansSerif-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="abc/fonts/AllBirdsCombinations-Full.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="cba/fonts/ChamferedBeveledAngled-Fit.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="ocd/fonts/OutlineCutoutDetail-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="ocd/fonts/OutlineCutoutDetail-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="preload" href="lib/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin>
 </head>
 
 <body class="w3-black bass">
@@ -52,13 +62,21 @@
   <div id="fonts" class="w3-display-container w3-display-middle" hidden>
     <div class="font-name"><a href="bam" class="bam w3-hover-opacity">basically a mono</a></div>
     <div class="font-name"><a href="bass" class="bass w3-hover-opacity">basically a sans serif</a></div>
-    <div class="font-name"><a href="abc" class="abc w3-hover-opacity">all birds combination</a></div>
+    <div class="font-name"><a href="abc" class="abc w3-hover-opacity">all birds combinations</a></div>
     <div class="font-name"><a href="cba" class="cba w3-hover-opacity">chamfered beveled angled</a></div>
     <div class="font-name"><a href="ocd" class="ocd w3-hover-opacity">outline cutout detail</a></div>
   </div>
 
   <!-- About div -->
   <div id="about" class="w3-container w3-display-topmiddle" hidden>
+    <h1 id="fundamental-elemental-experimental">Fundamental. Elemental. Experimental.</h1>
+    <!-- ## Type Design guided by Visual Perception, shaped with Software Engineering. -->
+    <h2 id="mentaldesign-code--typeface">@mentaldesign: Code == Typeface</h2>
+    <p>At Mental Design, the design process of a typeface starts with a concept—an abstract idea about how to analyze and synthesize letters. The concept is encoded into components which are programmatically translated into shapes, paths, and points. These components are then combined to create each glyph. No point is manipulated directly, rather each glyph is adjusted by parameters that change the settings for each component. The parameters are tuned along a system of proportions, then iteratively adjusted to make the characters fit together harmoniously. This systematic design approach enables precise control and accurate reproduction of the contours, reducing arbitrary artifacts and ensuring a coherent look and feel for the typeface.</p>
+    <h1 id="hyung-suk-kim">Hyung-Suk Kim</h1>
+    <h2 id="chief-vision-officer--head-of-research--mental-development--lead-implementor">Chief Vision Officer + Head of Research &amp; (Mental) Development + Lead Implementor</h2>
+    <p>Hyung-Suk is a type designer that lives in the Bay Area. He created his first font with a font editor that he programmed for a homework in the introduction to computer graphics class at Stanford. He has a masters degree in image systems from the Department of Electrical Engineering at Stanford where he studied computer graphics, data visualization and human computer interaction. He also has a doctorate in electrical engineering on audio perception and signal processing from the Center for Computer Research in Music and Acoustics (CCRMA) at Stanford University. He previously worked at Apple (IMG Audio) and Shazam as a software engineer on audio signal processing and machine learning.</p>
+    <!-- If the job title piqued your interest (and you found this comment), yes, this is currently a one person operation so I did everything - type design, writing the drawing library, the rendering pipeline, web design, programming all components of the webpage, and webpage optimization. Vertical integration in its purest form. But I am not a do-it-all tyrant, or at least I don't think I am. If you want to collaborate, contact me at type@mentallydesigned.com. Many friends and previous colleagues say that I am nice, and my cat agrees. ;-) -->
   </div>
 
   <!-- Contacts div -->
@@ -78,8 +96,6 @@
   </div>
 
   <!-- scripts -->
-  <script src="bass/lib/marked-1.2.7/marked.min.js"></script>
-  <script src="bass/scripts/notes.js"></script>
   <script>
     function showSection(name){
       if (name == nowShowing)
@@ -102,10 +118,6 @@
       // Set anchor
       self.location.href = '#' + name
     }
-
-    var aboutDiv = document.getElementById('about')
-    var aboutUrl = 'models/about.md'
-    NotesSection.init(aboutDiv, aboutUrl)
 
     var nowShowing = undefined
 

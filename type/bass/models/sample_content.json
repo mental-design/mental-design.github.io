@@ -5,77 +5,16 @@
       "sizeIndex": 30,
       "alignIndex": 1,
       "letterSpacingIndex": 50,
-      "lineHeightIndex": 50,
+      "lineHeightIndex": 70,
+      "caseIndex": 2,
       "showControl": 0,
       "editable": 0,
       "smallScreen": {
         "sizeIndex": 21,
-        "lineHeightIndex": 30
-      }
-    },
-    "text": "NEUTRAL<br>PRECISE<br>SIMPLE<br>BALANCED"
-  },
-  {
-    "settings": {
-      "weightIndex": 0,
-      "sizeIndex": 25,
-      "alignIndex": 2,
-      "letterSpacingIndex": 12,
-      "lineHeightIndex": 25,
-      "showControl": 0,
-      "editable": 0,
-      "smallScreen": {
-        "sizeIndex": 15
-      }
-    },
-    "text": "<br>NUMERICALLY CONSTRUCTED<br>SYSTEMATICALLY DESIGNED<br>PROGRESSIVELY TUNED<br>TYPE. ENGINEERED.<br><br>"
-  },
-  {
-    "settings": {
-      "weightIndex": 3,
-      "sizeIndex": 7,
-      "alignIndex": 0,
-      "letterSpacingIndex": 10,
-      "lineHeightIndex": 40,
-      "showControl": 1,
-      "editable": 0,
-      "smallScreen": {
-        "sizeIndex": 6,
         "lineHeightIndex": 50
       }
     },
-    "text": "At Mental Design, the design process of a typeface starts with a concept—an abstract idea about how to analyze and synthesize letters. The concept is encoded into components which are programmatically translated into shapes, paths, and points. These components are then combined to create each glyph. No point is manipulated directly, rather each glyph is adjusted by parameters that change the settings for each component. The parameters are tuned along a system of proportions, then iteratively adjusted to make the characters fit together harmoniously. This systematic design approach reduces arbitrary artifacts and gives the typeface a coherent look and feel."
-  },
-  {
-    "settings": {
-      "weightIndex": 3,
-      "sizeIndex": 24,
-      "alignIndex": 0,
-      "letterSpacingIndex": 7,
-      "lineHeightIndex": 15,
-      "showControl": 0,
-      "editable": 0,
-      "smallScreen": {
-        "sizeIndex": 15
-      }
-    },
-    "text": "<br/><b>Beauty</b> in <b>Geometry</b><br><b>Designed</b> by <b>Numbers</b><br><b>Keeping It Simple</b><br><span style='font-weight:300;color:#999'>> catchphrase goes here <</span><br><b>Steal This Font!</b>*"
-  },
-  {
-    "settings": {
-      "weightIndex": 2,
-      "sizeIndex": 10,
-      "alignIndex": 0,
-      "letterSpacingIndex": 12,
-      "lineHeightIndex": 20,
-      "showControl": 0,
-      "editable": 0,
-      "smallScreen": {
-        "weightIndex": 2,
-        "sizeIndex": 8
-      }
-    },
-    "text": "<br/>*It's actually free. Free as in Beer, Freedom of Speech, and “Feel Free to Donate!” :-)<br><br>"
+    "text": "NEUTRAL<br>PRECISE<br>SIMPLE<br>BALANCED"
   },
   {
     "settings": {
@@ -83,11 +22,83 @@
       "sizeIndex": 20,
       "alignIndex": 0,
       "letterSpacingIndex": 10,
-      "lineHeightIndex": 20,
+      "lineHeightIndex": 70,
+      "caseIndex": 2,
+      "showControl": 0,
+      "editable": 0,
+      "smallScreen": {
+        "sizeIndex": 12,
+        "lineHeightIndex": 50
+      }
+    },
+    "text": "<div style='line-height:1.1'><br></div><b>BASS</b> is the <b>ideal typographic toolkit</b> for your next geometric graphic design project."
+  },
+  {
+    "settings": {
+      "weightIndex": 0,
+      "sizeIndex": 25,
+      "alignIndex": 2,
+      "letterSpacingIndex": 12,
+      "lineHeightIndex": 45,
+      "caseIndex": 2,
+      "showControl": 0,
+      "editable": 0,
+      "smallScreen": {
+        "weightIndex": 1,
+        "sizeIndex": 16,
+        "text": "<br>NUMERICALLY CONSTRUCTED<br>SYSTEMATICALLY DESIGNED<br>PROGRESSIVELY TUNED<br>TYPE. ENGINEERED.<br><br>"
+      }
+    },
+    "text": "<br><bold>NUMERICALLY</bold> CONSTRUCTED<br><bold>SYSTEMATICALLY</bold> DESIGNED<br><bold>PROGRESSIVELY</bold> TUNED<br>TYPE. <bold>ENGINEERED.</bold><br><br>"
+  },
+  {
+    "settings": {
+      "weightIndex": 3,
+      "sizeIndex": 7,
+      "alignIndex": 3,
+      "letterSpacingIndex": 10,
+      "lineHeightIndex": 60,
+      "caseIndex": 2,
+      "showControl": 1,
+      "editable": 0,
+      "smallScreen": {
+        "sizeIndex": 6,
+        "alignIndex": 0,
+        "lineHeightIndex": 70
+      }
+    },
+    "text": "At Mental Design, the design process of a typeface starts with a concept—an abstract idea about how to analyze and synthesize letters. The concept is encoded into components which are programmatically translated into shapes, paths, and points. These components are then combined to create each glyph. No point is manipulated directly, rather each glyph is adjusted by parameters that change the settings for each component. The parameters are tuned along a system of proportions, then iteratively adjusted to make the characters fit together harmoniously. This systematic design approach enables precise control and accurate reproduction of the contours, reducing arbitrary artifacts and ensuring a coherent look and feel for the typeface."
+  },
+  {
+    "settings": {
+      "weightIndex": 7,
+      "sizeIndex": 26,
+      "alignIndex": 0,
+      "letterSpacingIndex": 8,
+      "lineHeightIndex": 35,
+      "caseIndex": 2,
+      "showControl": 0,
+      "editable": 0,
+      "smallScreen": {
+        "sizeIndex": 17,
+        "lineHeightIndex": 40,
+        "letterSpacingIndex": 9
+      }
+    },
+    "text": "<br/>Beauty <span style='font-weight:300'>in</span> Geometry<br>Designed <span style='font-weight:300'>by</span> Numbers<br>Keeping It Simple<br/><br/>"
+  },
+  {
+    "settings": {
+      "weightIndex": 3,
+      "sizeIndex": 20,
+      "alignIndex": 0,
+      "letterSpacingIndex": 10,
+      "lineHeightIndex": 40,
+      "caseIndex": 2,
       "showControl": 1,
       "smallScreen": {
         "sizeIndex": 15,
-        "lineHeightIndex": 15
+        "lineHeightIndex": 35
       }
     },
     "text": "Enter your own text here and try out Basically A Sans Serif."

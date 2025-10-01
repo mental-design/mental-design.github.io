@@ -12,11 +12,10 @@
   <link rel="shortcut icon" sizes="196x196" href="resources/favicon/logo196.png">
   <link rel="apple-touch-icon" sizes="180x180" href="resources/favicon/logo180.png">
   <!-- Styles -->
-  <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/w3.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/characters.css">
+  <link rel="stylesheet" href="css/min/main.min.css">
+  
   <!-- Fonts -->
+  <link rel="stylesheet" href="fonts/bass.css">
   <link rel="preload" href="fonts/BasicallyASansSerif-Thin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/BasicallyASansSerif-ExtraLight.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/BasicallyASansSerif-Light.woff2" as="font" type="font/woff2" crossorigin>
@@ -24,6 +23,14 @@
   <link rel="preload" href="fonts/BasicallyASansSerif-Medium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/BasicallyASansSerif-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/BasicallyASansSerif-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/BasicallyASansSerif-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/BasicallyASansSerif-Thick.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="../bam/fonts/bam.css">
+  <link rel="preload" href="../bam/fonts/BasicallyAMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../bam/fonts/BasicallyAMono-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="preload" href="lib/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin>
 </head>
 
 <body onload="initialize()">
@@ -32,21 +39,23 @@
 <div id="top-bar" class="w3-top nav-bar sample-font nav-shadow">
   <div class="w3-black">
     <!--Small header-->
-    <div class="w3-bar w3-content w3-hide-medium w3-hide-large w3-hover-opacity mtd mobile-padding">
-        <a href="../"><span class="mental">mental</span><span class="design">design</span></a>
+    <div class="w3-bar w3-content w3-hide-medium w3-hide-large mtd mobile-padding">
+        <a href="../" class="w3-hover-opacity"><span class="mental">mental</span><span class="design">design</span></a>
     </div>
     <!--Medium/Large header-->
-    <div class="w3-hide-small w3-hover-opacity mtd mtd-wide">
-        <a href="../"><span class="mental">mental</span><span class="design">design</span></a>
+    <div class="w3-hide-small mtd mtd-wide">
+        <a href="../" class="w3-hover-opacity"><span class="mental">mental</span><span class="design">design</span></a>
     </div>
   </div>
   <!-- Navigation -->
   <div class="nav-dark-grey nav-wrapper">
     <div class="w3-bar nav-dark-grey w3-content w3-center">
+      <!-- minibar -->
       <a class="w3-bar-item w3-hide-medium w3-hide-large mobile-left nav-item menu-item" href="javascript:void(0)" onclick="toggleMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
       <div class="w3-bar-item w3-hide-medium w3-hide-large w3-hover-opacity nav-item nav-center">
         <a href="#" class="title-item"onclick="hideMenu()">Basically A Sans Serif</a>
       </div>
+      <!-- fullbar -->
       <div class="w3-bar-item w3-hide-small w3-hide-medium nav-spacer"></div>
       <a href="#" class="w3-bar-item w3-hide-small w3-hover-green w3-padding-large nav-item bam-silver title-item" onclick="hideMenu()">BASS</a>
       <a href="#text"   class="w3-bar-item w3-hide-small nav-item w3-hover-opacity">Text</a>
@@ -56,7 +65,7 @@
       <div class="w3-bar-item w3-hide-small w3-hide-medium w3-right nav-spacer"></div>
       <div class="w3-bar-item w3-hide-small w3-hide-large w3-right download-spacer"></div>
       <div class="w3-bar-item w3-hide-small w3-right download-btn">
-        <a href="downloads/bass-vers1_200.zip">Download</a>
+        <a href="downloads/bass-vers2_000.zip">Download</a>
       </div>
     </div>
   </div>
@@ -67,7 +76,7 @@
   <a href="#text"   class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Text</a>
   <a href="#notes"      class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Notes</a>
   <a href="#characters" class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Characters</a>
-  <a href="downloads/bass-vers1_200.zip" class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Download</a>
+  <a href="#download" class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Download</a>
   <a href="#donate" class="w3-bar-item nav-item nav-item-hover mobile-padding" onclick="hideMenu()">Donate</a>
 </div>
 
@@ -146,26 +155,49 @@
 
 <!-- Scripts -->
 <script src="lib/marked-1.2.7/marked.min.js"></script>
-<script src="scripts/sample-slider.js"></script>
-<script src="scripts/sample-control.js"></script>
-<script src="scripts/sample-line.js"></script>
-<script src="scripts/sample.js"></script>
-<script src="scripts/notes.js"></script>
-<script src="scripts/characters.js"></script>
-<script src="scripts/w3.js"></script>
+<script src="scripts/min/scripts.min.js"></script>
 <script>
   function initialize(){
-    adjustToNavbar();
+    window.addEventListener("hashchange", function(ev) {
+      checkLabel()
+    })
+
+    adjustToNavbar()
 
     // The Overview Section
     var sampleUrl = "models/sample_content.json"
-    var sampleDiv = document.getElementById('samples');
-    SampleSection.init(sampleDiv, sampleUrl, checkLabel);
+    var sampleDiv = document.getElementById('samples')
+    SampleSection.init(sampleDiv, sampleUrl, checkLabel)
 
     // The Notes Section
-    var notesDiv = document.getElementById('description');
-    var notesUrl = 'models/notes_content.md';
-    NotesSection.init(notesDiv, notesUrl, checkLabel);
+    var notesDiv = document.getElementById('description')
+    var notesUrl = 'models/notes_content.md'
+    NotesSection.init(notesDiv, notesUrl, function(){
+      checkLabel()
+      var controlInfo = SampleSection.controlInfo()
+
+      var content = {
+        "settings": {
+          "weightIndex": 6,
+          "sizeIndex": 28,
+          "alignIndex": 1,
+          "letterSpacingIndex": 10,
+          "lineHeightIndex": 15,
+          "showControl": 2,
+          "editable": 0,
+          "caseIndex": 1,
+          "styleSet1": 1,
+          "styleSet2": 1,
+          "styleSet3": 1,
+          "smallScreen": {
+            "sizeIndex": 25,
+            "lineHeightIndex": 20,
+          }
+        },
+        "text": "Itʼs 8:31. Make Haste!"
+      }
+      NotesSection.initSsMix(controlInfo, content)
+    })
     
     // The Characters Section
     var unicodeURL = "models/char_map.json"

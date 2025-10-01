@@ -1,8 +1,15 @@
 <html>
 <head>
-    <title>Hyung-Suk Kim</title>
-    <meta http-equiv="refresh" content="0; url=type/" />
+  <title>Mental Design</title>
+  <link rel="preload" href="type/bass/fonts/BasicallyASansSerif-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <style type="text/css">html{box-sizing:border-box;overflow-x:hidden;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}*,*:before,*:after{box-sizing:inherit}body{margin:0;line-height:1.1;background:black;color:white}a{color:inherit;background-color:transparent}a:link{text-decoration:none}#title{transition-property:opacity;transition-duration:1s}.fade{opacity:0}.w3-bar{width:100%;overflow:hidden}.w3-bar:before,.w3-bar:after{content:"";display:table;clear:both}.small{font-size:20pt;width:120px;margin-left:-60px;margin-top:-10px}.big{font-size:72pt;width:400px;margin-left:-200px;margin-top:-100px}.big #design{letter-spacing:.05em}.center{position:absolute;top:50%;left:50%;text-align:center}#design{font-weight:300;letter-spacing:.035em}.bass{font-family:"BasicallyASansSerif";font-weight:300;color:#fff}.ss01{font-feature-settings:"ss01"}.ss00{font-feature-settings:"ss00"}@font-face{font-family:'BasicallyASansSerif';src:url('type/bass/fonts/BasicallyASansSerif-Light.woff2') format('woff2');font-weight:300}
+</style>
 </head>
-<body style="background: black; color: white">
-    Routing to <a href="type/">https://experi.mentallydesigned.com/type/</a>...
+<body onload=onload()>
+  <div id="nav" class="w3-bar bass center">
+    <a href="type/#fonts" id="title">
+      <span id="mental">MeNTaL</span><br><span id="design">DesIGN</span>
+    </a>
+  </div>
+   <script type="text/javascript">function delay(e){return null==e&&(e=175),new Promise(t=>{setTimeout(t,e)})}function toSS01(t){return mainDiv.classList.add("ss01"),delay(t)}function toSS00(t){return mainDiv.classList.remove("ss01"),mainDiv.classList.add("ss00"),delay(t)}function toNormal(t){return mainDiv.style.textTransform="none",delay(t)}function toUpper(t){return mainDiv.style.textTransform="uppercase",delay(t)}function toLower(t){return mainDiv.style.textTransform="lowercase",delay(t)}function toUnicase(t){return mainDiv.style.fontVariantCaps="unicase",delay(t)}function toSmallCaps(t){return mainDiv.style.fontVariantCaps="small-caps",delay(t)}function toRegularCap(t){return mainDiv.style.fontVariantCaps=null,delay(t)}function fadeOut(t){return mainDiv.classList.add("fade"),delay(t)}function redirect(){window.location="type/#fonts"}function onload(){navDiv=document.getElementById("nav"),screen.width<600?navDiv.classList.add("big"):navDiv.classList.add("small"),Promise.resolve().then(()=>toSS01(200)).then(()=>toNormal()).then(()=>toSmallCaps()).then(()=>toUnicase()).then(()=>toLower()).then(()=>toRegularCap()).then(()=>toUpper()).then(()=>toSS00()).then(()=>toUnicase()).then(()=>toRegularCap()).then(()=>toLower()).then(()=>toSmallCaps()).then(()=>toNormal()).then(()=>toUpper(1e3)).then(()=>fadeOut(1e3)).then(()=>redirect())}mainDiv=document.getElementById("title");</script>
 </body>
