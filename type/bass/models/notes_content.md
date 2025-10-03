@@ -41,7 +41,7 @@ As a result, <extrabold>ExtraBold</extrabold> and <thick>Thick</thick> were desi
 
 <!-- Changes in V2 -->
 <!-- Contrast -->
-For version 2, we finally decided to loosen the mono-linear constraint and add stroke contrast as necessary. This change aimed to enhance typographic color while maintaining the constructed design approach. New components were developed to handle varying stroke widths. Notably, circular arcs were replaced with more flexible elliptical arcs with different start and end widths.
+For version 2, we finally decided to loosen the mono-linear constraint and add stroke contrast as necessary. This change aimed to enhance typographic color while maintaining the constructed design approach. New components were developed to handle varying stroke widths. Notably, circular arcs were replaced with more flexible elliptical arcs that have variable start and end widths.
 
 <div class="w3-center figure">
 <img class="diagram" src="resources/images/ampersand_annotated.png" width="480" />
@@ -75,7 +75,7 @@ Several OpenType features were added to BASS for version 2, enhancing its functi
 Scaling uppercase glyphs down to the lowercase height (x-height) is a simple method of achieving small caps. This is known as "fake small caps" or "faux small caps". The issue with this approach is that the stroke width also gets scaled down, making small caps look thinner or lighter than normal glyphs.
 To create true small caps, the stroke width of scaled-down glyphs must be adjusted to be thicker, ensuring it closely matches the stroke width of the unscaled glyphs.
 In the case of BASS, this is easily achieved due to the typeface's programmatic nature, where each glyph has a function that draws the contours for a target stroke width.
-To accurately adjust the stroke width for true small caps, the glyph function is called with an adjusted stroke width where <code>adjusted_stroke_width = stroke_width / x_height * cap_height</code>. 
+To accurately adjust the stroke width for true small caps, glyph function is called with an adjusted stroke width where <code>adjusted_stroke_width = stroke_width / x_height * cap_height</code>, then scaled down to the appropriate height. 
 In practice, we add a nudge factor to fine-tune the stroke width so it looks perceptually balanced in all weights.
 True small caps also offers the added benefit of unicase, providing a unique aesthetic which can be useful for eccentric logotypes.
 
@@ -112,7 +112,7 @@ While designing BASS, we aimed to create a geometric typeface from first princip
 </div>
 </div>
 
-<ss01>With Stylistic Set 1, we drew further inspiration from ITC Avant Garde Gothic, focusing on the shapes and balance of the alphabet glyphs. We added alternative glyphs, including a full-height arched <b>M</b> and a tailless <b>t</b>. The single-jointed <b>K</b>, <b>k</b> and <b>ĸ</b> were moved to Stylistic Set 1 and double-jointed versions (<ss00><b>K</b>/<b>k</b>/<b>ĸ</b></ss00>) were added to the default set. <b>S</b> and <b>s</b> were made narrower to achieve rounder counters, in contrast to the default <ss00><b>s</b></ss00>, which has a circular silhouette. Many double-storied uppercase glyphs were then adjusted to better balance with the narrower <b>K</b> and <b>S</b>. Alternative versions of the numeric glyphs <b>1</b>, <b>3</b>, <b>8</b> were added to complete the set.</ss01>
+<ss01>With Stylistic Set 1, we drew further inspiration from ITC Avant Garde Gothic, focusing on the shapes and balance of the alphanumeric glyphs. We added alternative glyphs, including a full-height arched <b>M</b> and a tailless <b>t</b>. The single-jointed <b>K</b>, <b>k</b> and <b>ĸ</b> were moved to Stylistic Set 1 and double-jointed versions (<ss00><b>K</b>/<b>k</b>/<b>ĸ</b></ss00>) were added to the default set. <b>S</b> and <b>s</b> were made narrower to achieve rounder counters, in contrast to the default <ss00><b>s</b></ss00>, which has a circular silhouette. Many double-storied uppercase glyphs were then adjusted to better balance with the narrower <b>K</b> and <b>S</b>. Alternative versions of the numeric glyphs <b>1</b>, <b>3</b>, <b>8</b> were added to complete the set.</ss01>
 
 <!-- StyleSet2 - Square Dots -->
 <div id="ss02-sample" class="sample-font styleset-samples styleset-border">
@@ -150,7 +150,7 @@ Of course, you can always combine the OpenType features to create the typographi
 <div id="mix-samples" class="sample-font styleset-samples">
 </div>
 
-BASS has undergone numerous refinements since its initial release, as we continue to push the boundaries of geometric typography. With the added features in version 2, we evolve BASS from a basic typeface into a typographic toolkit for geometric graphic design projects. We encourage you to experiment with the different styles and features, and share your experiences with us. As we continue to refine and improve BASS, we appreciate your feedback and support.
+BASS has undergone numerous refinements since its initial release as we continue to push the boundaries of geometric typography. With the added features in version 2, we evolve BASS from a basic typeface into a typographic toolkit for geometric graphic design projects. We encourage you to experiment with the different styles and features, and share your experiences with us. As we continue to refine and improve BASS, we appreciate your feedback and support.
 
 </div><!-- details-content End -->
 </div><!-- details End -->
