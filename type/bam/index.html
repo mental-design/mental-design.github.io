@@ -12,24 +12,9 @@
   <link rel="shortcut icon" sizes="196x196" href="resources/favicon/logo196.png">
   <link rel="apple-touch-icon" sizes="180x180" href="resources/favicon/logo180.png">
   <!-- Editor Themes -->
-  <link rel="stylesheet" href="lib/codemirror-5.51.0/theme/colorforth.css">
-  <link rel="stylesheet" href="lib/codemirror-5.51.0/theme/eclipse.css">
-  <link rel="stylesheet" href="lib/codemirror-5.51.0/theme/lesser-dark.css">
-  <link rel="stylesheet" href="lib/codemirror-5.51.0/theme/lucario.css">
-  <link rel="stylesheet" href="lib/codemirror-5.51.0/theme/mbo.css">
-  <link rel="stylesheet" href="lib/codemirror-5.51.0/theme/monokai.css">
-  <link rel="stylesheet" href="lib/codemirror-5.51.0/theme/moxer.css">
-  <link rel="stylesheet" href="lib/codemirror-5.51.0/theme/ssms.css">
-  <link rel="stylesheet" href="lib/codemirror-5.51.0/theme/twilight.css">
-  <link rel="stylesheet" href="lib/codemirror-5.51.0/theme/vibrant-ink.css">
-  <link rel="stylesheet" href="lib/codemirror-5.51.0/theme/xq-light.css">
-  <!-- Styles -->
-  <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="lib/codemirror-5.51.0/codemirror.css">
-  <link rel="stylesheet" href="css/w3.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/characters.css">
+  <link rel="stylesheet" type="text/css" href="css/min/main.min.css">
   <!-- Fonts -->
+  <link rel="stylesheet" type="text/css" href="fonts/bam.css">
   <link rel="preload" href="fonts/BasicallyAMono-Thin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/BasicallyAMono-ExtraLight.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/BasicallyAMono-Light.woff2" as="font" type="font/woff2" crossorigin>
@@ -37,6 +22,21 @@
   <link rel="preload" href="fonts/BasicallyAMono-Medium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/BasicallyAMono-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/BasicallyAMono-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" type="text/css" href="../bass/fonts/bass.css">
+  <link rel="preload" href="../bass/fonts/BasicallyASansSerif-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../bass/fonts/BasicallyASansSerif-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../bass/fonts/BasicallyASansSerif-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../bass/fonts/BasicallyASansSerif-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../bass/fonts/BasicallyASansSerif-ExtraLight.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="preload" href="lib/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin>
+
+  <!-- Data -->
+  <link rel="preload" href="models/sample_content.json" as="fetch" crossorigin>
+  <link rel="preload" href="models/char_map.json" as="fetch" crossorigin>
+  <link rel="preload" href="models/code_map.json" as="fetch" crossorigin>
+  <link rel="preload" href="models/notes_content.md" as="fetch" crossorigin>
 </head>
 
 <body onload="initialize()" class="ss01">
@@ -166,23 +166,11 @@
   </p>
 </footer>
 
-
 <!-- Scripts -->
-<script src="lib/codemirror-5.51.0/codemirror.js"></script>
-<script src="lib/codemirror-5.51.0/mode/javascript.js"></script>
-<script src="lib/codemirror-5.51.0/mode/markdown.js"></script>
-<script src="lib/codemirror-5.51.0/mode/python.js"></script>
-<script src="lib/codemirror-5.51.0/mode/swift.js"></script>
-<script src="lib/codemirror-5.51.0/mode/cpp.js"></script>
+<!-- <script src="lib/codemirror-5.51.0/codemirror.js"></script> -->
+<script src="lib/codemirror-5.51.0/min/codemirror.min.js"></script>
 <script src="lib/marked-1.2.7/marked.min.js"></script>
-<script src="scripts/sample-slider.js"></script>
-<script src="scripts/sample-control.js"></script>
-<script src="scripts/sample-line.js"></script>
-<script src="scripts/sample.js"></script>
-<script src="scripts/preview-dropdown.js"></script>
-<script src="scripts/preview.js"></script>
-<script src="scripts/characters.js"></script>
-<script src="scripts/w3.js"></script>
+<script src="scripts/min/scripts.min.js"></script>
 <script>
   function initialize(){
     adjustToNavbar();
